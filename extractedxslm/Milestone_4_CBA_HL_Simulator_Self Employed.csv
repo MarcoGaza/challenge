@@ -1,0 +1,163 @@
+Row,Column,Value,Formula
+3,2,Self-Employed Applicant/s Income Details,
+5,2,Self-Employed Applicant 1's Income Details:,
+7,6,Year 1,
+7,8,Year 2,
+8,5,Year Ended  ,
+8,15,"=IF(AND(F8<>"""",F9<>"""",F10<>""""),TRUE,FALSE)","=IF(AND(F8<>"""",F9<>"""",F10<>""""),TRUE,FALSE)"
+8,16,"=IF(AND(H8<>"""",H9<>"""",H10<>""""),TRUE,FALSE)","=IF(AND(H8<>"""",H9<>"""",H10<>""""),TRUE,FALSE)"
+9,5,Number of Months  ,
+9,10,"=IF(AND(F9>0,H9>0),IF(F9=H9,""Average"",""Extrapolated Average""),""Average"")","=IF(AND(F9>0,H9>0),IF(F9=H9,""Average"",""Extrapolated Average""),""Average"")"
+9,12,Comments,
+10,2,Net Profit (Loss) Before Tax,
+10,10,"=IF(AND($O$8,$P$8),(F10/$F$9+H10/$H$9)/2*12,IF($O$8,F10,IF($P$8,H10,0)))","=IF(AND($O$8,$P$8),(F10/$F$9+H10/$H$9)/2*12,IF($O$8,F10,IF($P$8,H10,0)))"
+12,2,Add Backs:,
+13,3,Interest,
+13,10,"=IF(AND($O$8,$P$8),(F13/$F$9+H13/$H$9)/2*12,IF($O$8,F13,IF($P$8,H13,0)))","=IF(AND($O$8,$P$8),(F13/$F$9+H13/$H$9)/2*12,IF($O$8,F13,IF($P$8,H13,0)))"
+14,3,Depreciation/Amortisation,
+14,10,"=IF(AND($O$8,$P$8),(F14/$F$9+H14/$H$9)/2*12,IF($O$8,F14,IF($P$8,H14,0)))","=IF(AND($O$8,$P$8),(F14/$F$9+H14/$H$9)/2*12,IF($O$8,F14,IF($P$8,H14,0)))"
+15,3,Personal Wages/Salary (before tax),
+15,10,"=IF(AND($O$8,$P$8),(F15/$F$9+H15/$H$9)/2*12,IF($O$8,F15,IF($P$8,H15,0)))","=IF(AND($O$8,$P$8),(F15/$F$9+H15/$H$9)/2*12,IF($O$8,F15,IF($P$8,H15,0)))"
+16,3,Non-Cash Personal Benefits,
+16,10,"=IF(AND($O$8,$P$8),(F16/$F$9+H16/$H$9)/2*12,IF($O$8,F16,IF($P$8,H16,0)))","=IF(AND($O$8,$P$8),(F16/$F$9+H16/$H$9)/2*12,IF($O$8,F16,IF($P$8,H16,0)))"
+17,3,Other Non-Cash/Non-Recurring Expenses,
+17,10,"=IF(AND($O$8,$P$8),(F17/$F$9+H17/$H$9)/2*12,IF($O$8,F17,IF($P$8,H17,0)))","=IF(AND($O$8,$P$8),(F17/$F$9+H17/$H$9)/2*12,IF($O$8,F17,IF($P$8,H17,0)))"
+18,3,Other,
+18,10,"=IF(AND($O$8,$P$8),(F18/$F$9+H18/$H$9)/2*12,IF($O$8,F18,IF($P$8,H18,0)))","=IF(AND($O$8,$P$8),(F18/$F$9+H18/$H$9)/2*12,IF($O$8,F18,IF($P$8,H18,0)))"
+19,3,Sub-Total of Add Backs,
+19,6,=SUM(F13:F18),=SUM(F13:F18)
+19,8,=SUM(H13:H18),=SUM(H13:H18)
+19,10,"=IF(AND($O$8,$P$8),(F19/$F$9+H19/$H$9)/2*12,IF($O$8,F19,IF($P$8,H19,0)))","=IF(AND($O$8,$P$8),(F19/$F$9+H19/$H$9)/2*12,IF($O$8,F19,IF($P$8,H19,0)))"
+21,2,Total Available,
+21,6,"=IF(O8,F19+F10,0)","=IF(O8,F19+F10,0)"
+21,8,"=IF(P8,H10+H19,0)","=IF(P8,H10+H19,0)"
+21,10,"=IF(AND($O$8,$P$8),(F21/$F$9+H21/$H$9)/2*12,IF($O$8,F21,IF($P$8,H21,0)))","=IF(AND($O$8,$P$8),(F21/$F$9+H21/$H$9)/2*12,IF($O$8,F21,IF($P$8,H21,0)))"
+22,2,Total Available - Monthly Average,
+22,6,"=IF(O8,F21/F9,0)","=IF(O8,F21/F9,0)"
+22,8,"=IF(P8,H21/H9,0)","=IF(P8,H21/H9,0)"
+22,10,"=IF(AND($O$8,$P$8),(F22+H22)/2,IF($O$8,F22,IF($P$8,H22,0)))","=IF(AND($O$8,$P$8),(F22+H22)/2,IF($O$8,F22,IF($P$8,H22,0)))"
+23,2,Total Available - Annual Average,
+23,6,"=IF(O8,F22*12,0)","=IF(O8,F22*12,0)"
+23,8,"=IF(P8,H22*12,0)","=IF(P8,H22*12,0)"
+23,10,"=IF(AND($O$8,$P$8),(F23+H23)/2,IF($O$8,F23,IF($P$8,H23,0)))","=IF(AND($O$8,$P$8),(F23+H23)/2,IF($O$8,F23,IF($P$8,H23,0)))"
+25,2,Self-Employed Applicant 2's Income Details:,
+27,6,Year 1,
+27,8,Year 2,
+28,5,Year Ended  ,
+28,15,"=IF(AND(F28<>"""",F29<>"""",F30<>""""),TRUE,FALSE)","=IF(AND(F28<>"""",F29<>"""",F30<>""""),TRUE,FALSE)"
+28,16,"=IF(AND(H28<>"""",H29<>"""",H30<>""""),TRUE,FALSE)","=IF(AND(H28<>"""",H29<>"""",H30<>""""),TRUE,FALSE)"
+29,5,Number of Months  ,
+29,10,"=IF(AND(F29>0,H29>0),IF(F29=H29,""Average"",""Extrapolated Average""),""Average"")","=IF(AND(F29>0,H29>0),IF(F29=H29,""Average"",""Extrapolated Average""),""Average"")"
+29,12,Comments,
+30,2,Net Profit (Loss) Before Tax,
+30,10,"=IF(AND($O$28,$P$28),(F30/$F$29+H30/$H$29)/2*12,IF($O$28,F30,IF($P$28,H30,0)))","=IF(AND($O$28,$P$28),(F30/$F$29+H30/$H$29)/2*12,IF($O$28,F30,IF($P$28,H30,0)))"
+32,2,Add Backs:,
+33,3,Interest,
+33,10,"=IF(AND($O$28,$P$28),(F33/$F$29+H33/$H$29)/2*12,IF($O$28,F33,IF($P$28,H33,0)))","=IF(AND($O$28,$P$28),(F33/$F$29+H33/$H$29)/2*12,IF($O$28,F33,IF($P$28,H33,0)))"
+34,3,Depreciation/Amortisation,
+34,10,"=IF(AND($O$28,$P$28),(F34/$F$29+H34/$H$29)/2*12,IF($O$28,F34,IF($P$28,H34,0)))","=IF(AND($O$28,$P$28),(F34/$F$29+H34/$H$29)/2*12,IF($O$28,F34,IF($P$28,H34,0)))"
+35,3,Personal Wages/Salary (before tax),
+35,10,"=IF(AND($O$28,$P$28),(F35/$F$29+H35/$H$29)/2*12,IF($O$28,F35,IF($P$28,H35,0)))","=IF(AND($O$28,$P$28),(F35/$F$29+H35/$H$29)/2*12,IF($O$28,F35,IF($P$28,H35,0)))"
+36,3,Non-Cash Personal Benefits,
+36,10,"=IF(AND($O$28,$P$28),(F36/$F$29+H36/$H$29)/2*12,IF($O$28,F36,IF($P$28,H36,0)))","=IF(AND($O$28,$P$28),(F36/$F$29+H36/$H$29)/2*12,IF($O$28,F36,IF($P$28,H36,0)))"
+37,3,Other Non-Cash/Non-Recurring Expenses,
+37,10,"=IF(AND($O$28,$P$28),(F37/$F$29+H37/$H$29)/2*12,IF($O$28,F37,IF($P$28,H37,0)))","=IF(AND($O$28,$P$28),(F37/$F$29+H37/$H$29)/2*12,IF($O$28,F37,IF($P$28,H37,0)))"
+38,3,Other,
+38,10,"=IF(AND($O$28,$P$28),(F38/$F$29+H38/$H$29)/2*12,IF($O$28,F38,IF($P$28,H38,0)))","=IF(AND($O$28,$P$28),(F38/$F$29+H38/$H$29)/2*12,IF($O$28,F38,IF($P$28,H38,0)))"
+39,3,Sub-Total of Add Backs,
+39,6,=SUM(F33:F38),=SUM(F33:F38)
+39,8,=SUM(H33:H38),=SUM(H33:H38)
+39,10,"=IF(AND($O$28,$P$28),(F39/$F$29+H39/$H$29)/2*12,IF($O$28,F39,IF($P$28,H39,0)))","=IF(AND($O$28,$P$28),(F39/$F$29+H39/$H$29)/2*12,IF($O$28,F39,IF($P$28,H39,0)))"
+41,2,Total Available,
+41,6,"=IF(O28,F30+F39,0)","=IF(O28,F30+F39,0)"
+41,8,"=IF(P28,H30+H39,0)","=IF(P28,H30+H39,0)"
+41,10,"=IF(AND($O$28,$P$28),(F41/$F$29+H41/$H$29)/2*12,IF($O$28,F41,IF($P$28,H41,0)))","=IF(AND($O$28,$P$28),(F41/$F$29+H41/$H$29)/2*12,IF($O$28,F41,IF($P$28,H41,0)))"
+42,2,Total Available - Monthly Average,
+42,6,"=IF(O28,F41/F29,0)","=IF(O28,F41/F29,0)"
+42,8,"=IF(P28,H41/H29,0)","=IF(P28,H41/H29,0)"
+42,10,"=IF(AND($O$28,$P$28),(F42+H42)/2,IF($O$28,F42,IF($P$28,H42,0)))","=IF(AND($O$28,$P$28),(F42+H42)/2,IF($O$28,F42,IF($P$28,H42,0)))"
+43,2,Total Available - Annual Average,
+43,6,"=IF(O28,F42*12,0)","=IF(O28,F42*12,0)"
+43,8,"=IF(P28,H42*12,0)","=IF(P28,H42*12,0)"
+43,10,"=IF(AND($O$28,$P$28),(F43+H43)/2,IF($O$28,F43,IF($P$28,H43,0)))","=IF(AND($O$28,$P$28),(F43+H43)/2,IF($O$28,F43,IF($P$28,H43,0)))"
+45,2,Self-Employed Applicant 3's Income Details:,
+47,6,Year 1,
+47,8,Year 2,
+48,5,Year Ended  ,
+48,15,"=IF(AND(F48<>"""",F49<>"""",F50<>""""),TRUE,FALSE)","=IF(AND(F48<>"""",F49<>"""",F50<>""""),TRUE,FALSE)"
+48,16,"=IF(AND(H48<>"""",H49<>"""",H50<>""""),TRUE,FALSE)","=IF(AND(H48<>"""",H49<>"""",H50<>""""),TRUE,FALSE)"
+49,5,Number of Months  ,
+49,10,"=IF(AND(F49>0,H49>0),IF(F49=H49,""Average"",""Extrapolated Average""),""Average"")","=IF(AND(F49>0,H49>0),IF(F49=H49,""Average"",""Extrapolated Average""),""Average"")"
+49,12,Comments,
+50,2,Net Profit (Loss) Before Tax,
+50,10,"=IF(AND($O$48,$P$48),(F50/$F$49+H50/$H$49)/2*12,IF($O$48,F50,IF($P$48,H50,0)))","=IF(AND($O$48,$P$48),(F50/$F$49+H50/$H$49)/2*12,IF($O$48,F50,IF($P$48,H50,0)))"
+52,2,Add Backs:,
+53,3,Interest,
+53,10,"=IF(AND($O$48,$P$48),(F53/$F$49+H53/$H$49)/2*12,IF($O$48,F53,IF($P$48,H53,0)))","=IF(AND($O$48,$P$48),(F53/$F$49+H53/$H$49)/2*12,IF($O$48,F53,IF($P$48,H53,0)))"
+54,3,Depreciation/Amortisation,
+54,10,"=IF(AND($O$48,$P$48),(F54/$F$49+H54/$H$49)/2*12,IF($O$48,F54,IF($P$48,H54,0)))","=IF(AND($O$48,$P$48),(F54/$F$49+H54/$H$49)/2*12,IF($O$48,F54,IF($P$48,H54,0)))"
+55,3,Personal Wages/Salary (before tax),
+55,10,"=IF(AND($O$48,$P$48),(F55/$F$49+H55/$H$49)/2*12,IF($O$48,F55,IF($P$48,H55,0)))","=IF(AND($O$48,$P$48),(F55/$F$49+H55/$H$49)/2*12,IF($O$48,F55,IF($P$48,H55,0)))"
+56,3,Non-Cash Personal Benefits,
+56,10,"=IF(AND($O$48,$P$48),(F56/$F$49+H56/$H$49)/2*12,IF($O$48,F56,IF($P$48,H56,0)))","=IF(AND($O$48,$P$48),(F56/$F$49+H56/$H$49)/2*12,IF($O$48,F56,IF($P$48,H56,0)))"
+57,3,Other Non-Cash/Non-Recurring Expenses,
+57,10,"=IF(AND($O$48,$P$48),(F57/$F$49+H57/$H$49)/2*12,IF($O$48,F57,IF($P$48,H57,0)))","=IF(AND($O$48,$P$48),(F57/$F$49+H57/$H$49)/2*12,IF($O$48,F57,IF($P$48,H57,0)))"
+58,3,Other,
+58,10,"=IF(AND($O$48,$P$48),(F58/$F$49+H58/$H$49)/2*12,IF($O$48,F58,IF($P$48,H58,0)))","=IF(AND($O$48,$P$48),(F58/$F$49+H58/$H$49)/2*12,IF($O$48,F58,IF($P$48,H58,0)))"
+59,3,Sub-Total of Add Backs,
+59,6,=SUM(F53:F58),=SUM(F53:F58)
+59,8,=SUM(H53:H58),=SUM(H53:H58)
+59,10,"=IF(AND($O$48,$P$48),(F59/$F$49+H59/$H$49)/2*12,IF($O$48,F59,IF($P$48,H59,0)))","=IF(AND($O$48,$P$48),(F59/$F$49+H59/$H$49)/2*12,IF($O$48,F59,IF($P$48,H59,0)))"
+61,2,Total Available,
+61,6,"=IF(O48,F50+F59,0)","=IF(O48,F50+F59,0)"
+61,8,"=IF(P48,H50+H59,0)","=IF(P48,H50+H59,0)"
+61,10,"=IF(AND($O$48,$P$48),(F61/$F$49+H61/$H$49)/2*12,IF($O$48,F61,IF($P$48,H61,0)))","=IF(AND($O$48,$P$48),(F61/$F$49+H61/$H$49)/2*12,IF($O$48,F61,IF($P$48,H61,0)))"
+62,2,Total Available - Monthly Average,
+62,6,"=IF(O48,F61/F49,0)","=IF(O48,F61/F49,0)"
+62,8,"=IF(P48,H61/H49,0)","=IF(P48,H61/H49,0)"
+62,10,"=IF(AND($O$48,$P$48),(F62/$F$49+H62/$H$49)/2*12,IF($O$48,F62,IF($P$48,H62,0)))","=IF(AND($O$48,$P$48),(F62/$F$49+H62/$H$49)/2*12,IF($O$48,F62,IF($P$48,H62,0)))"
+63,2,Total Available - Annual Average,
+63,6,"=IF(O48,F62*12,0)","=IF(O48,F62*12,0)"
+63,8,"=IF(P48,H62*12,0)","=IF(P48,H62*12,0)"
+63,10,"=IF(AND($O$48,$P$48),(F63/$F$49+H63/$H$49)/2*12,IF($O$48,F63,IF($P$48,H63,0)))","=IF(AND($O$48,$P$48),(F63/$F$49+H63/$H$49)/2*12,IF($O$48,F63,IF($P$48,H63,0)))"
+65,2,Self-Employed Applicant 4's Income Details:,
+67,6,Year 1,
+67,8,Year 2,
+68,5,Year Ended  ,
+68,15,"=IF(AND(F68<>"""",F69<>"""",F70<>""""),TRUE,FALSE)","=IF(AND(F68<>"""",F69<>"""",F70<>""""),TRUE,FALSE)"
+68,16,"=IF(AND(H68<>"""",H69<>"""",H70<>""""),TRUE,FALSE)","=IF(AND(H68<>"""",H69<>"""",H70<>""""),TRUE,FALSE)"
+69,5,Number of Months  ,
+69,10,"=IF(AND(F69>0,H69>0),IF(F69=H69,""Average"",""Extrapolated Average""),""Average"")","=IF(AND(F69>0,H69>0),IF(F69=H69,""Average"",""Extrapolated Average""),""Average"")"
+69,12,Comments,
+70,2,Net Profit (Loss) Before Tax,
+70,10,"=IF(AND($O$68,$P$68),(F70/$F$69+H70/$H$69)/2*12,IF($O$68,F70,IF($P$68,H70,0)))","=IF(AND($O$68,$P$68),(F70/$F$69+H70/$H$69)/2*12,IF($O$68,F70,IF($P$68,H70,0)))"
+72,2,Add Backs:,
+73,3,Interest,
+73,10,"=IF(AND($O$68,$P$68),(F73/$F$69+H73/$H$69)/2*12,IF($O$68,F73,IF($P$68,H73,0)))","=IF(AND($O$68,$P$68),(F73/$F$69+H73/$H$69)/2*12,IF($O$68,F73,IF($P$68,H73,0)))"
+74,3,Depreciation/Amortisation,
+74,10,"=IF(AND($O$68,$P$68),(F74/$F$69+H74/$H$69)/2*12,IF($O$68,F74,IF($P$68,H74,0)))","=IF(AND($O$68,$P$68),(F74/$F$69+H74/$H$69)/2*12,IF($O$68,F74,IF($P$68,H74,0)))"
+75,3,Personal Wages/Salary (before tax),
+75,10,"=IF(AND($O$68,$P$68),(F75/$F$69+H75/$H$69)/2*12,IF($O$68,F75,IF($P$68,H75,0)))","=IF(AND($O$68,$P$68),(F75/$F$69+H75/$H$69)/2*12,IF($O$68,F75,IF($P$68,H75,0)))"
+76,3,Non-Cash Personal Benefits,
+76,10,"=IF(AND($O$68,$P$68),(F76/$F$69+H76/$H$69)/2*12,IF($O$68,F76,IF($P$68,H76,0)))","=IF(AND($O$68,$P$68),(F76/$F$69+H76/$H$69)/2*12,IF($O$68,F76,IF($P$68,H76,0)))"
+77,3,Other Non-Cash/Non-Recurring Expenses,
+77,10,"=IF(AND($O$68,$P$68),(F77/$F$69+H77/$H$69)/2*12,IF($O$68,F77,IF($P$68,H77,0)))","=IF(AND($O$68,$P$68),(F77/$F$69+H77/$H$69)/2*12,IF($O$68,F77,IF($P$68,H77,0)))"
+78,3,Other,
+78,10,"=IF(AND($O$68,$P$68),(F78/$F$69+H78/$H$69)/2*12,IF($O$68,F78,IF($P$68,H78,0)))","=IF(AND($O$68,$P$68),(F78/$F$69+H78/$H$69)/2*12,IF($O$68,F78,IF($P$68,H78,0)))"
+79,3,Sub-Total of Add Backs,
+79,6,=SUM(F73:F78),=SUM(F73:F78)
+79,8,=SUM(H73:H78),=SUM(H73:H78)
+79,10,"=IF(AND($O$68,$P$68),(F79/$F$69+H79/$H$69)/2*12,IF($O$68,F79,IF($P$68,H79,0)))","=IF(AND($O$68,$P$68),(F79/$F$69+H79/$H$69)/2*12,IF($O$68,F79,IF($P$68,H79,0)))"
+81,2,Total Available,
+81,6,"=IF(O68,F70+F79,0)","=IF(O68,F70+F79,0)"
+81,8,"=IF(P68,H70+H79,0)","=IF(P68,H70+H79,0)"
+81,10,"=IF(AND($O$68,$P$68),(F81/$F$69+H81/$H$69)/2*12,IF($O$68,F81,IF($P$68,H81,0)))","=IF(AND($O$68,$P$68),(F81/$F$69+H81/$H$69)/2*12,IF($O$68,F81,IF($P$68,H81,0)))"
+82,2,Total Available - Monthly Average,
+82,6,"=IF(O68,F81/F69,0)","=IF(O68,F81/F69,0)"
+82,8,"=IF(P68,H81/H69,0)","=IF(P68,H81/H69,0)"
+82,10,"=IF(AND($O$68,$P$68),(F82/$F$69+H82/$H$69)/2*12,IF($O$68,F82,IF($P$68,H82,0)))","=IF(AND($O$68,$P$68),(F82/$F$69+H82/$H$69)/2*12,IF($O$68,F82,IF($P$68,H82,0)))"
+83,2,Total Available - Annual Average,
+83,6,"=IF(O68,F82*12,0)","=IF(O68,F82*12,0)"
+83,8,"=IF(P68,H82*12,0)","=IF(P68,H82*12,0)"
+83,10,"=IF(AND($O$68,$P$68),(F83/$F$69+H83/$H$69)/2*12,IF($O$68,F83,IF($P$68,H83,0)))","=IF(AND($O$68,$P$68),(F83/$F$69+H83/$H$69)/2*12,IF($O$68,F83,IF($P$68,H83,0)))"
+85,12,Product of the Commonwealth Bank of Australia   ABN 48 123 123 124,

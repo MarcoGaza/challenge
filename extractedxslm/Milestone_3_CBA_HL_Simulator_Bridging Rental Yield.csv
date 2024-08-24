@@ -1,0 +1,218 @@
+Row,Column,Value,Formula
+2,2,Rental Details for Individuals,
+4,2,Property Details:,
+6,3,Address,
+6,4,Suburb,
+6,5,Postcode,
+6,6,OEV,
+6,7,Declared Weekly Rental Income,
+6,8,Existing or Proposed,
+6,9,Bridging or Ongoing,
+6,10,Declared Rental Yield,
+6,11,Monthly Rental Income capped to 6%,
+6,12,Annual Rental Income capped to 6%,
+7,2,1,
+7,10,"=IF(AND(NOT('Bridging Calculations'!O30),'Bridging Calculations'!P30),(G7*52)/F7,"""")","=IF(AND(NOT('Bridging Calculations'!O30),'Bridging Calculations'!P30),(G7*52)/F7,"""")"
+7,11,"=IF(AND(NOT('Bridging Calculations'!O30),'Bridging Calculations'!P30),MIN((G7*52)/12,(F7*0.06)/12),"""")","=IF(AND(NOT('Bridging Calculations'!O30),'Bridging Calculations'!P30),MIN((G7*52)/12,(F7*0.06)/12),"""")"
+7,12,"=IF(AND(NOT('Bridging Calculations'!O30),'Bridging Calculations'!P30),K7*12,"""")","=IF(AND(NOT('Bridging Calculations'!O30),'Bridging Calculations'!P30),K7*12,"""")"
+7,15,='Bridging Calculations'!O30,='Bridging Calculations'!O30
+8,2,2,
+8,10,"=IF(AND(NOT('Bridging Calculations'!O31),'Bridging Calculations'!P31),(G8*52)/F8,"""")","=IF(AND(NOT('Bridging Calculations'!O31),'Bridging Calculations'!P31),(G8*52)/F8,"""")"
+8,11,"=IF(AND(NOT('Bridging Calculations'!O31),'Bridging Calculations'!P31),MIN((G8*52)/12,(F8*0.06)/12),"""")","=IF(AND(NOT('Bridging Calculations'!O31),'Bridging Calculations'!P31),MIN((G8*52)/12,(F8*0.06)/12),"""")"
+8,12,"=IF(AND(NOT('Bridging Calculations'!O31),'Bridging Calculations'!P31),K8*12,"""")","=IF(AND(NOT('Bridging Calculations'!O31),'Bridging Calculations'!P31),K8*12,"""")"
+8,15,='Bridging Calculations'!O31,='Bridging Calculations'!O31
+9,2,3,
+9,10,"=IF(AND(NOT('Bridging Calculations'!O32),'Bridging Calculations'!P32),(G9*52)/F9,"""")","=IF(AND(NOT('Bridging Calculations'!O32),'Bridging Calculations'!P32),(G9*52)/F9,"""")"
+9,11,"=IF(AND(NOT('Bridging Calculations'!O32),'Bridging Calculations'!P32),MIN((G9*52)/12,(F9*0.06)/12),"""")","=IF(AND(NOT('Bridging Calculations'!O32),'Bridging Calculations'!P32),MIN((G9*52)/12,(F9*0.06)/12),"""")"
+9,12,"=IF(AND(NOT('Bridging Calculations'!O32),'Bridging Calculations'!P32),K9*12,"""")","=IF(AND(NOT('Bridging Calculations'!O32),'Bridging Calculations'!P32),K9*12,"""")"
+9,15,='Bridging Calculations'!O32,='Bridging Calculations'!O32
+10,2,4,
+10,10,"=IF(AND(NOT('Bridging Calculations'!O33),'Bridging Calculations'!P33),(G10*52)/F10,"""")","=IF(AND(NOT('Bridging Calculations'!O33),'Bridging Calculations'!P33),(G10*52)/F10,"""")"
+10,11,"=IF(AND(NOT('Bridging Calculations'!O33),'Bridging Calculations'!P33),MIN((G10*52)/12,(F10*0.06)/12),"""")","=IF(AND(NOT('Bridging Calculations'!O33),'Bridging Calculations'!P33),MIN((G10*52)/12,(F10*0.06)/12),"""")"
+10,12,"=IF(AND(NOT('Bridging Calculations'!O33),'Bridging Calculations'!P33),K10*12,"""")","=IF(AND(NOT('Bridging Calculations'!O33),'Bridging Calculations'!P33),K10*12,"""")"
+10,15,='Bridging Calculations'!O33,='Bridging Calculations'!O33
+11,2,5,
+11,10,"=IF(AND(NOT('Bridging Calculations'!O34),'Bridging Calculations'!P34),(G11*52)/F11,"""")","=IF(AND(NOT('Bridging Calculations'!O34),'Bridging Calculations'!P34),(G11*52)/F11,"""")"
+11,11,"=IF(AND(NOT('Bridging Calculations'!O34),'Bridging Calculations'!P34),MIN((G11*52)/12,(F11*0.06)/12),"""")","=IF(AND(NOT('Bridging Calculations'!O34),'Bridging Calculations'!P34),MIN((G11*52)/12,(F11*0.06)/12),"""")"
+11,12,"=IF(AND(NOT('Bridging Calculations'!O34),'Bridging Calculations'!P34),K11*12,"""")","=IF(AND(NOT('Bridging Calculations'!O34),'Bridging Calculations'!P34),K11*12,"""")"
+11,15,='Bridging Calculations'!O34,='Bridging Calculations'!O34
+12,2,6,
+12,10,"=IF(AND(NOT('Bridging Calculations'!O35),'Bridging Calculations'!P35),(G12*52)/F12,"""")","=IF(AND(NOT('Bridging Calculations'!O35),'Bridging Calculations'!P35),(G12*52)/F12,"""")"
+12,11,"=IF(AND(NOT('Bridging Calculations'!O35),'Bridging Calculations'!P35),MIN((G12*52)/12,(F12*0.06)/12),"""")","=IF(AND(NOT('Bridging Calculations'!O35),'Bridging Calculations'!P35),MIN((G12*52)/12,(F12*0.06)/12),"""")"
+12,12,"=IF(AND(NOT('Bridging Calculations'!O35),'Bridging Calculations'!P35),K12*12,"""")","=IF(AND(NOT('Bridging Calculations'!O35),'Bridging Calculations'!P35),K12*12,"""")"
+12,15,='Bridging Calculations'!O35,='Bridging Calculations'!O35
+13,2,7,
+13,10,"=IF(AND(NOT('Bridging Calculations'!O36),'Bridging Calculations'!P36),(G13*52)/F13,"""")","=IF(AND(NOT('Bridging Calculations'!O36),'Bridging Calculations'!P36),(G13*52)/F13,"""")"
+13,11,"=IF(AND(NOT('Bridging Calculations'!O36),'Bridging Calculations'!P36),MIN((G13*52)/12,(F13*0.06)/12),"""")","=IF(AND(NOT('Bridging Calculations'!O36),'Bridging Calculations'!P36),MIN((G13*52)/12,(F13*0.06)/12),"""")"
+13,12,"=IF(AND(NOT('Bridging Calculations'!O36),'Bridging Calculations'!P36),K13*12,"""")","=IF(AND(NOT('Bridging Calculations'!O36),'Bridging Calculations'!P36),K13*12,"""")"
+13,15,='Bridging Calculations'!O36,='Bridging Calculations'!O36
+14,2,8,
+14,10,"=IF(AND(NOT('Bridging Calculations'!O37),'Bridging Calculations'!P37),(G14*52)/F14,"""")","=IF(AND(NOT('Bridging Calculations'!O37),'Bridging Calculations'!P37),(G14*52)/F14,"""")"
+14,11,"=IF(AND(NOT('Bridging Calculations'!O37),'Bridging Calculations'!P37),MIN((G14*52)/12,(F14*0.06)/12),"""")","=IF(AND(NOT('Bridging Calculations'!O37),'Bridging Calculations'!P37),MIN((G14*52)/12,(F14*0.06)/12),"""")"
+14,12,"=IF(AND(NOT('Bridging Calculations'!O37),'Bridging Calculations'!P37),K14*12,"""")","=IF(AND(NOT('Bridging Calculations'!O37),'Bridging Calculations'!P37),K14*12,"""")"
+14,15,='Bridging Calculations'!O37,='Bridging Calculations'!O37
+15,2,9,
+15,10,"=IF(AND(NOT('Bridging Calculations'!O38),'Bridging Calculations'!P38),(G15*52)/F15,"""")","=IF(AND(NOT('Bridging Calculations'!O38),'Bridging Calculations'!P38),(G15*52)/F15,"""")"
+15,11,"=IF(AND(NOT('Bridging Calculations'!O38),'Bridging Calculations'!P38),MIN((G15*52)/12,(F15*0.06)/12),"""")","=IF(AND(NOT('Bridging Calculations'!O38),'Bridging Calculations'!P38),MIN((G15*52)/12,(F15*0.06)/12),"""")"
+15,12,"=IF(AND(NOT('Bridging Calculations'!O38),'Bridging Calculations'!P38),K15*12,"""")","=IF(AND(NOT('Bridging Calculations'!O38),'Bridging Calculations'!P38),K15*12,"""")"
+15,15,='Bridging Calculations'!O38,='Bridging Calculations'!O38
+16,2,10,
+16,10,"=IF(AND(NOT('Bridging Calculations'!O39),'Bridging Calculations'!P39),(G16*52)/F16,"""")","=IF(AND(NOT('Bridging Calculations'!O39),'Bridging Calculations'!P39),(G16*52)/F16,"""")"
+16,11,"=IF(AND(NOT('Bridging Calculations'!O39),'Bridging Calculations'!P39),MIN((G16*52)/12,(F16*0.06)/12),"""")","=IF(AND(NOT('Bridging Calculations'!O39),'Bridging Calculations'!P39),MIN((G16*52)/12,(F16*0.06)/12),"""")"
+16,12,"=IF(AND(NOT('Bridging Calculations'!O39),'Bridging Calculations'!P39),K16*12,"""")","=IF(AND(NOT('Bridging Calculations'!O39),'Bridging Calculations'!P39),K16*12,"""")"
+16,15,='Bridging Calculations'!O39,='Bridging Calculations'!O39
+17,2,11,
+17,10,"=IF(AND(NOT('Bridging Calculations'!O40),'Bridging Calculations'!P40),(G17*52)/F17,"""")","=IF(AND(NOT('Bridging Calculations'!O40),'Bridging Calculations'!P40),(G17*52)/F17,"""")"
+17,11,"=IF(AND(NOT('Bridging Calculations'!O40),'Bridging Calculations'!P40),MIN((G17*52)/12,(F17*0.06)/12),"""")","=IF(AND(NOT('Bridging Calculations'!O40),'Bridging Calculations'!P40),MIN((G17*52)/12,(F17*0.06)/12),"""")"
+17,12,"=IF(AND(NOT('Bridging Calculations'!O40),'Bridging Calculations'!P40),K17*12,"""")","=IF(AND(NOT('Bridging Calculations'!O40),'Bridging Calculations'!P40),K17*12,"""")"
+17,15,='Bridging Calculations'!O40,='Bridging Calculations'!O40
+18,2,12,
+18,10,"=IF(AND(NOT('Bridging Calculations'!O41),'Bridging Calculations'!P41),(G18*52)/F18,"""")","=IF(AND(NOT('Bridging Calculations'!O41),'Bridging Calculations'!P41),(G18*52)/F18,"""")"
+18,11,"=IF(AND(NOT('Bridging Calculations'!O41),'Bridging Calculations'!P41),MIN((G18*52)/12,(F18*0.06)/12),"""")","=IF(AND(NOT('Bridging Calculations'!O41),'Bridging Calculations'!P41),MIN((G18*52)/12,(F18*0.06)/12),"""")"
+18,12,"=IF(AND(NOT('Bridging Calculations'!O41),'Bridging Calculations'!P41),K18*12,"""")","=IF(AND(NOT('Bridging Calculations'!O41),'Bridging Calculations'!P41),K18*12,"""")"
+18,15,='Bridging Calculations'!O41,='Bridging Calculations'!O41
+19,2,13,
+19,10,"=IF(AND(NOT('Bridging Calculations'!O42),'Bridging Calculations'!P42),(G19*52)/F19,"""")","=IF(AND(NOT('Bridging Calculations'!O42),'Bridging Calculations'!P42),(G19*52)/F19,"""")"
+19,11,"=IF(AND(NOT('Bridging Calculations'!O42),'Bridging Calculations'!P42),MIN((G19*52)/12,(F19*0.06)/12),"""")","=IF(AND(NOT('Bridging Calculations'!O42),'Bridging Calculations'!P42),MIN((G19*52)/12,(F19*0.06)/12),"""")"
+19,12,"=IF(AND(NOT('Bridging Calculations'!O42),'Bridging Calculations'!P42),K19*12,"""")","=IF(AND(NOT('Bridging Calculations'!O42),'Bridging Calculations'!P42),K19*12,"""")"
+19,15,='Bridging Calculations'!O42,='Bridging Calculations'!O42
+20,2,14,
+20,10,"=IF(AND(NOT('Bridging Calculations'!O43),'Bridging Calculations'!P43),(G20*52)/F20,"""")","=IF(AND(NOT('Bridging Calculations'!O43),'Bridging Calculations'!P43),(G20*52)/F20,"""")"
+20,11,"=IF(AND(NOT('Bridging Calculations'!O43),'Bridging Calculations'!P43),MIN((G20*52)/12,(F20*0.06)/12),"""")","=IF(AND(NOT('Bridging Calculations'!O43),'Bridging Calculations'!P43),MIN((G20*52)/12,(F20*0.06)/12),"""")"
+20,12,"=IF(AND(NOT('Bridging Calculations'!O43),'Bridging Calculations'!P43),K20*12,"""")","=IF(AND(NOT('Bridging Calculations'!O43),'Bridging Calculations'!P43),K20*12,"""")"
+20,15,='Bridging Calculations'!O43,='Bridging Calculations'!O43
+21,2,15,
+21,10,"=IF(AND(NOT('Bridging Calculations'!O44),'Bridging Calculations'!P44),(G21*52)/F21,"""")","=IF(AND(NOT('Bridging Calculations'!O44),'Bridging Calculations'!P44),(G21*52)/F21,"""")"
+21,11,"=IF(AND(NOT('Bridging Calculations'!O44),'Bridging Calculations'!P44),MIN((G21*52)/12,(F21*0.06)/12),"""")","=IF(AND(NOT('Bridging Calculations'!O44),'Bridging Calculations'!P44),MIN((G21*52)/12,(F21*0.06)/12),"""")"
+21,12,"=IF(AND(NOT('Bridging Calculations'!O44),'Bridging Calculations'!P44),K21*12,"""")","=IF(AND(NOT('Bridging Calculations'!O44),'Bridging Calculations'!P44),K21*12,"""")"
+21,15,='Bridging Calculations'!O44,='Bridging Calculations'!O44
+22,2,16,
+22,10,"=IF(AND(NOT('Bridging Calculations'!O45),'Bridging Calculations'!P45),(G22*52)/F22,"""")","=IF(AND(NOT('Bridging Calculations'!O45),'Bridging Calculations'!P45),(G22*52)/F22,"""")"
+22,11,"=IF(AND(NOT('Bridging Calculations'!O45),'Bridging Calculations'!P45),MIN((G22*52)/12,(F22*0.06)/12),"""")","=IF(AND(NOT('Bridging Calculations'!O45),'Bridging Calculations'!P45),MIN((G22*52)/12,(F22*0.06)/12),"""")"
+22,12,"=IF(AND(NOT('Bridging Calculations'!O45),'Bridging Calculations'!P45),K22*12,"""")","=IF(AND(NOT('Bridging Calculations'!O45),'Bridging Calculations'!P45),K22*12,"""")"
+22,15,='Bridging Calculations'!O45,='Bridging Calculations'!O45
+23,2,17,
+23,10,"=IF(AND(NOT('Bridging Calculations'!O46),'Bridging Calculations'!P46),(G23*52)/F23,"""")","=IF(AND(NOT('Bridging Calculations'!O46),'Bridging Calculations'!P46),(G23*52)/F23,"""")"
+23,11,"=IF(AND(NOT('Bridging Calculations'!O46),'Bridging Calculations'!P46),MIN((G23*52)/12,(F23*0.06)/12),"""")","=IF(AND(NOT('Bridging Calculations'!O46),'Bridging Calculations'!P46),MIN((G23*52)/12,(F23*0.06)/12),"""")"
+23,12,"=IF(AND(NOT('Bridging Calculations'!O46),'Bridging Calculations'!P46),K23*12,"""")","=IF(AND(NOT('Bridging Calculations'!O46),'Bridging Calculations'!P46),K23*12,"""")"
+23,15,='Bridging Calculations'!O46,='Bridging Calculations'!O46
+24,2,18,
+24,10,"=IF(AND(NOT('Bridging Calculations'!O47),'Bridging Calculations'!P47),(G24*52)/F24,"""")","=IF(AND(NOT('Bridging Calculations'!O47),'Bridging Calculations'!P47),(G24*52)/F24,"""")"
+24,11,"=IF(AND(NOT('Bridging Calculations'!O47),'Bridging Calculations'!P47),MIN((G24*52)/12,(F24*0.06)/12),"""")","=IF(AND(NOT('Bridging Calculations'!O47),'Bridging Calculations'!P47),MIN((G24*52)/12,(F24*0.06)/12),"""")"
+24,12,"=IF(AND(NOT('Bridging Calculations'!O47),'Bridging Calculations'!P47),K24*12,"""")","=IF(AND(NOT('Bridging Calculations'!O47),'Bridging Calculations'!P47),K24*12,"""")"
+24,15,='Bridging Calculations'!O47,='Bridging Calculations'!O47
+25,2,19,
+25,10,"=IF(AND(NOT('Bridging Calculations'!O48),'Bridging Calculations'!P48),(G25*52)/F25,"""")","=IF(AND(NOT('Bridging Calculations'!O48),'Bridging Calculations'!P48),(G25*52)/F25,"""")"
+25,11,"=IF(AND(NOT('Bridging Calculations'!O48),'Bridging Calculations'!P48),MIN((G25*52)/12,(F25*0.06)/12),"""")","=IF(AND(NOT('Bridging Calculations'!O48),'Bridging Calculations'!P48),MIN((G25*52)/12,(F25*0.06)/12),"""")"
+25,12,"=IF(AND(NOT('Bridging Calculations'!O48),'Bridging Calculations'!P48),K25*12,"""")","=IF(AND(NOT('Bridging Calculations'!O48),'Bridging Calculations'!P48),K25*12,"""")"
+25,15,='Bridging Calculations'!O48,='Bridging Calculations'!O48
+26,2,20,
+26,10,"=IF(AND(NOT('Bridging Calculations'!O49),'Bridging Calculations'!P49),(G26*52)/F26,"""")","=IF(AND(NOT('Bridging Calculations'!O49),'Bridging Calculations'!P49),(G26*52)/F26,"""")"
+26,11,"=IF(AND(NOT('Bridging Calculations'!O49),'Bridging Calculations'!P49),MIN((G26*52)/12,(F26*0.06)/12),"""")","=IF(AND(NOT('Bridging Calculations'!O49),'Bridging Calculations'!P49),MIN((G26*52)/12,(F26*0.06)/12),"""")"
+26,12,"=IF(AND(NOT('Bridging Calculations'!O49),'Bridging Calculations'!P49),K26*12,"""")","=IF(AND(NOT('Bridging Calculations'!O49),'Bridging Calculations'!P49),K26*12,"""")"
+26,15,='Bridging Calculations'!O49,='Bridging Calculations'!O49
+28,6,Share of Rental Income:,
+29,3,Annual Rental Income capped to 6%,
+29,4,Eligible Percentage,
+29,5,Eligible Income,
+29,6,Applicant 1,
+29,7,Applicant 2,
+30,2,1,
+30,3,"=IF(AND(NOT('Bridging Calculations'!O30),'Bridging Calculations'!P30),L7,"""")","=IF(AND(NOT('Bridging Calculations'!O30),'Bridging Calculations'!P30),L7,"""")"
+30,5,"=IF(AND(NOT('Bridging Calculations'!O30),'Bridging Calculations'!P30),C30*D30,"""")","=IF(AND(NOT('Bridging Calculations'!O30),'Bridging Calculations'!P30),C30*D30,"""")"
+30,15,=SUM(F30:I30),=SUM(F30:I30)
+31,2,2,
+31,3,"=IF(AND(NOT('Bridging Calculations'!O31),'Bridging Calculations'!P31),L8,"""")","=IF(AND(NOT('Bridging Calculations'!O31),'Bridging Calculations'!P31),L8,"""")"
+31,5,"=IF(AND(NOT('Bridging Calculations'!O31),'Bridging Calculations'!P31),C31*D31,"""")","=IF(AND(NOT('Bridging Calculations'!O31),'Bridging Calculations'!P31),C31*D31,"""")"
+31,15,=SUM(F31:I31),=SUM(F31:I31)
+32,2,3,
+32,3,"=IF(AND(NOT('Bridging Calculations'!O32),'Bridging Calculations'!P32),L9,"""")","=IF(AND(NOT('Bridging Calculations'!O32),'Bridging Calculations'!P32),L9,"""")"
+32,5,"=IF(AND(NOT('Bridging Calculations'!O32),'Bridging Calculations'!P32),C32*D32,"""")","=IF(AND(NOT('Bridging Calculations'!O32),'Bridging Calculations'!P32),C32*D32,"""")"
+32,15,=SUM(F32:I32),=SUM(F32:I32)
+33,2,4,
+33,3,"=IF(AND(NOT('Bridging Calculations'!O33),'Bridging Calculations'!P33),L10,"""")","=IF(AND(NOT('Bridging Calculations'!O33),'Bridging Calculations'!P33),L10,"""")"
+33,5,"=IF(AND(NOT('Bridging Calculations'!O33),'Bridging Calculations'!P33),C33*D33,"""")","=IF(AND(NOT('Bridging Calculations'!O33),'Bridging Calculations'!P33),C33*D33,"""")"
+33,15,=SUM(F33:I33),=SUM(F33:I33)
+34,2,5,
+34,3,"=IF(AND(NOT('Bridging Calculations'!O34),'Bridging Calculations'!P34),L11,"""")","=IF(AND(NOT('Bridging Calculations'!O34),'Bridging Calculations'!P34),L11,"""")"
+34,5,"=IF(AND(NOT('Bridging Calculations'!O34),'Bridging Calculations'!P34),C34*D34,"""")","=IF(AND(NOT('Bridging Calculations'!O34),'Bridging Calculations'!P34),C34*D34,"""")"
+34,15,=SUM(F34:I34),=SUM(F34:I34)
+35,2,6,
+35,3,"=IF(AND(NOT('Bridging Calculations'!O35),'Bridging Calculations'!P35),L12,"""")","=IF(AND(NOT('Bridging Calculations'!O35),'Bridging Calculations'!P35),L12,"""")"
+35,5,"=IF(AND(NOT('Bridging Calculations'!O35),'Bridging Calculations'!P35),C35*D35,"""")","=IF(AND(NOT('Bridging Calculations'!O35),'Bridging Calculations'!P35),C35*D35,"""")"
+35,15,=SUM(F35:I35),=SUM(F35:I35)
+36,2,7,
+36,3,"=IF(AND(NOT('Bridging Calculations'!O36),'Bridging Calculations'!P36),L13,"""")","=IF(AND(NOT('Bridging Calculations'!O36),'Bridging Calculations'!P36),L13,"""")"
+36,5,"=IF(AND(NOT('Bridging Calculations'!O36),'Bridging Calculations'!P36),C36*D36,"""")","=IF(AND(NOT('Bridging Calculations'!O36),'Bridging Calculations'!P36),C36*D36,"""")"
+36,15,=SUM(F36:I36),=SUM(F36:I36)
+37,2,8,
+37,3,"=IF(AND(NOT('Bridging Calculations'!O37),'Bridging Calculations'!P37),L14,"""")","=IF(AND(NOT('Bridging Calculations'!O37),'Bridging Calculations'!P37),L14,"""")"
+37,5,"=IF(AND(NOT('Bridging Calculations'!O37),'Bridging Calculations'!P37),C37*D37,"""")","=IF(AND(NOT('Bridging Calculations'!O37),'Bridging Calculations'!P37),C37*D37,"""")"
+37,15,=SUM(F37:I37),=SUM(F37:I37)
+38,2,9,
+38,3,"=IF(AND(NOT('Bridging Calculations'!O38),'Bridging Calculations'!P38),L15,"""")","=IF(AND(NOT('Bridging Calculations'!O38),'Bridging Calculations'!P38),L15,"""")"
+38,5,"=IF(AND(NOT('Bridging Calculations'!O38),'Bridging Calculations'!P38),C38*D38,"""")","=IF(AND(NOT('Bridging Calculations'!O38),'Bridging Calculations'!P38),C38*D38,"""")"
+38,15,=SUM(F38:I38),=SUM(F38:I38)
+39,2,10,
+39,3,"=IF(AND(NOT('Bridging Calculations'!O39),'Bridging Calculations'!P39),L16,"""")","=IF(AND(NOT('Bridging Calculations'!O39),'Bridging Calculations'!P39),L16,"""")"
+39,5,"=IF(AND(NOT('Bridging Calculations'!O39),'Bridging Calculations'!P39),C39*D39,"""")","=IF(AND(NOT('Bridging Calculations'!O39),'Bridging Calculations'!P39),C39*D39,"""")"
+39,15,=SUM(F39:I39),=SUM(F39:I39)
+40,2,11,
+40,3,"=IF(AND(NOT('Bridging Calculations'!O40),'Bridging Calculations'!P40),L17,"""")","=IF(AND(NOT('Bridging Calculations'!O40),'Bridging Calculations'!P40),L17,"""")"
+40,5,"=IF(AND(NOT('Bridging Calculations'!O40),'Bridging Calculations'!P40),C40*D40,"""")","=IF(AND(NOT('Bridging Calculations'!O40),'Bridging Calculations'!P40),C40*D40,"""")"
+40,15,=SUM(F40:I40),=SUM(F40:I40)
+41,2,12,
+41,3,"=IF(AND(NOT('Bridging Calculations'!O41),'Bridging Calculations'!P41),L18,"""")","=IF(AND(NOT('Bridging Calculations'!O41),'Bridging Calculations'!P41),L18,"""")"
+41,5,"=IF(AND(NOT('Bridging Calculations'!O41),'Bridging Calculations'!P41),C41*D41,"""")","=IF(AND(NOT('Bridging Calculations'!O41),'Bridging Calculations'!P41),C41*D41,"""")"
+41,15,=SUM(F41:I41),=SUM(F41:I41)
+42,2,13,
+42,3,"=IF(AND(NOT('Bridging Calculations'!O42),'Bridging Calculations'!P42),L19,"""")","=IF(AND(NOT('Bridging Calculations'!O42),'Bridging Calculations'!P42),L19,"""")"
+42,5,"=IF(AND(NOT('Bridging Calculations'!O42),'Bridging Calculations'!P42),C42*D42,"""")","=IF(AND(NOT('Bridging Calculations'!O42),'Bridging Calculations'!P42),C42*D42,"""")"
+42,15,=SUM(F42:I42),=SUM(F42:I42)
+43,2,14,
+43,3,"=IF(AND(NOT('Bridging Calculations'!O43),'Bridging Calculations'!P43),L20,"""")","=IF(AND(NOT('Bridging Calculations'!O43),'Bridging Calculations'!P43),L20,"""")"
+43,5,"=IF(AND(NOT('Bridging Calculations'!O43),'Bridging Calculations'!P43),C43*D43,"""")","=IF(AND(NOT('Bridging Calculations'!O43),'Bridging Calculations'!P43),C43*D43,"""")"
+43,15,=SUM(F43:I43),=SUM(F43:I43)
+44,2,15,
+44,3,"=IF(AND(NOT('Bridging Calculations'!O44),'Bridging Calculations'!P44),L21,"""")","=IF(AND(NOT('Bridging Calculations'!O44),'Bridging Calculations'!P44),L21,"""")"
+44,5,"=IF(AND(NOT('Bridging Calculations'!O44),'Bridging Calculations'!P44),C44*D44,"""")","=IF(AND(NOT('Bridging Calculations'!O44),'Bridging Calculations'!P44),C44*D44,"""")"
+44,15,=SUM(F44:I44),=SUM(F44:I44)
+45,2,16,
+45,3,"=IF(AND(NOT('Bridging Calculations'!O45),'Bridging Calculations'!P45),L22,"""")","=IF(AND(NOT('Bridging Calculations'!O45),'Bridging Calculations'!P45),L22,"""")"
+45,5,"=IF(AND(NOT('Bridging Calculations'!O45),'Bridging Calculations'!P45),C45*D45,"""")","=IF(AND(NOT('Bridging Calculations'!O45),'Bridging Calculations'!P45),C45*D45,"""")"
+45,15,=SUM(F45:I45),=SUM(F45:I45)
+46,2,17,
+46,3,"=IF(AND(NOT('Bridging Calculations'!O46),'Bridging Calculations'!P46),L23,"""")","=IF(AND(NOT('Bridging Calculations'!O46),'Bridging Calculations'!P46),L23,"""")"
+46,5,"=IF(AND(NOT('Bridging Calculations'!O46),'Bridging Calculations'!P46),C46*D46,"""")","=IF(AND(NOT('Bridging Calculations'!O46),'Bridging Calculations'!P46),C46*D46,"""")"
+46,15,=SUM(F46:I46),=SUM(F46:I46)
+47,2,18,
+47,3,"=IF(AND(NOT('Bridging Calculations'!O47),'Bridging Calculations'!P47),L24,"""")","=IF(AND(NOT('Bridging Calculations'!O47),'Bridging Calculations'!P47),L24,"""")"
+47,5,"=IF(AND(NOT('Bridging Calculations'!O47),'Bridging Calculations'!P47),C47*D47,"""")","=IF(AND(NOT('Bridging Calculations'!O47),'Bridging Calculations'!P47),C47*D47,"""")"
+47,15,=SUM(F47:I47),=SUM(F47:I47)
+48,2,19,
+48,3,"=IF(AND(NOT('Bridging Calculations'!O48),'Bridging Calculations'!P48),L25,"""")","=IF(AND(NOT('Bridging Calculations'!O48),'Bridging Calculations'!P48),L25,"""")"
+48,5,"=IF(AND(NOT('Bridging Calculations'!O48),'Bridging Calculations'!P48),C48*D48,"""")","=IF(AND(NOT('Bridging Calculations'!O48),'Bridging Calculations'!P48),C48*D48,"""")"
+48,15,=SUM(F48:I48),=SUM(F48:I48)
+49,2,20,
+49,3,"=IF(AND(NOT('Bridging Calculations'!O49),'Bridging Calculations'!P49),L26,"""")","=IF(AND(NOT('Bridging Calculations'!O49),'Bridging Calculations'!P49),L26,"""")"
+49,5,"=IF(AND(NOT('Bridging Calculations'!O49),'Bridging Calculations'!P49),C49*D49,"""")","=IF(AND(NOT('Bridging Calculations'!O49),'Bridging Calculations'!P49),C49*D49,"""")"
+49,15,=SUM(F49:I49),=SUM(F49:I49)
+51,2,Bridging Summary:,
+53,6,Applicant 1,
+53,7,Applicant 2,
+54,5,Total Eligible Existing Rental Income ,
+54,6,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A65B91F0>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A65B91F0>
+54,7,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A59C7FB0>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A59C7FB0>
+55,5,Total Eligible Proposed Rental Income ,
+55,6,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A6604410>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A6604410>
+55,7,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A6606CF0>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A6606CF0>
+57,2,Ongoing Summary:,
+59,6,Applicant 1,
+59,7,Applicant 2,
+60,5,Total Eligible Existing Rental Income ,
+60,6,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A66042F0>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A66042F0>
+60,7,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A6607F20>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A6607F20>
+61,5,Total Eligible Proposed Rental Income ,
+61,6,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A66056D0>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A66056D0>
+61,7,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A6605790>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A6605790>
+64,12,Product of the Commonwealth Bank of Australia   ABN 48 123 123 124,

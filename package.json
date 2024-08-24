@@ -1,0 +1,18 @@
+{
+  "name": "cba-home-loan-calculator",
+  "version": "1.0.0",
+  "description": "CBA Home Loan Calculator implementation in TypeScript",
+  "main": "src/CBACalc.ts", // Entry point of the application
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1" // Placeholder for test command
+  },
+  "author": "marijoy",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/lodash": "^4.14.191", // Type definitions for Lodash
+    "typescript": "^4.9.5" // TypeScript compiler
+  },
+  "dependencies": {
+    "lodash": "^4.17.21" // Lodash library for utility functions
+  }
+}

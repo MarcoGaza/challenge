@@ -1,0 +1,77 @@
+Row,Column,Value,Formula
+2,2,Self-Employed Applicant/s Income Details,
+4,2,Self-Employed Applicant 1's Income Details:,
+6,3,Year 1,
+6,5,Year 2,
+7,2,Year Ended  ,
+8,2,Number of Months  ,
+8,7,"=IF(AND(C8>0,E8>0),IF(C8=E8,""Average"",""Extrapolated Average""),""Average"")","=IF(AND(C8>0,E8>0),IF(C8=E8,""Average"",""Extrapolated Average""),""Average"")"
+9,2,Net Profit (Loss) Before Tax  ,
+9,7,"=IF(AND($C$10,$E$10),(C9/$C$8+E9/$E$8)/2*12,IF($C$10,C9,IF($E$10,E9,0)))","=IF(AND($C$10,$E$10),(C9/$C$8+E9/$E$8)/2*12,IF($C$10,C9,IF($E$10,E9,0)))"
+10,3,"=AND(C7<>"""",C8<>"""",C9<>"""")","=AND(C7<>"""",C8<>"""",C9<>"""")"
+10,5,"=AND(E7<>"""",E8<>"""",E9<>"""")","=AND(E7<>"""",E8<>"""",E9<>"""")"
+11,2,Add Backs:,
+11,3,"=AND(C7="""",C8="""",C9="""",C12="""",C13="""",C14="""",C15="""",C16="""",C17="""")","=AND(C7="""",C8="""",C9="""",C12="""",C13="""",C14="""",C15="""",C16="""",C17="""")"
+11,5,"=AND(E7="""",E8="""",E9="""",E12="""",E13="""",E14="""",E15="""",E16="""",E17="""")","=AND(E7="""",E8="""",E9="""",E12="""",E13="""",E14="""",E15="""",E16="""",E17="""")"
+12,2,    Interest,
+12,7,"=IF(AND($C$10,$E$10),(C12/$C$8+E12/$E$8)/2*12,IF($C$10,C12,IF($E$10,E12,0)))","=IF(AND($C$10,$E$10),(C12/$C$8+E12/$E$8)/2*12,IF($C$10,C12,IF($E$10,E12,0)))"
+13,2,    Depreciation/Amortisation,
+13,7,"=IF(AND($C$10,$E$10),(C13/$C$8+E13/$E$8)/2*12,IF($C$10,C13,IF($E$10,E13,0)))","=IF(AND($C$10,$E$10),(C13/$C$8+E13/$E$8)/2*12,IF($C$10,C13,IF($E$10,E13,0)))"
+14,2,    Personal Wages/Salary (before tax),
+14,7,"=IF(AND($C$10,$E$10),(C14/$C$8+E14/$E$8)/2*12,IF($C$10,C14,IF($E$10,E14,0)))","=IF(AND($C$10,$E$10),(C14/$C$8+E14/$E$8)/2*12,IF($C$10,C14,IF($E$10,E14,0)))"
+15,2,    Non-Cash Personal Benefits,
+15,7,"=IF(AND($C$10,$E$10),(C15/$C$8+E15/$E$8)/2*12,IF($C$10,C15,IF($E$10,E15,0)))","=IF(AND($C$10,$E$10),(C15/$C$8+E15/$E$8)/2*12,IF($C$10,C15,IF($E$10,E15,0)))"
+16,2,    Other Non-Cash/Non-Recurring Expenses,
+16,7,"=IF(AND($C$10,$E$10),(C16/$C$8+E16/$E$8)/2*12,IF($C$10,C16,IF($E$10,E16,0)))","=IF(AND($C$10,$E$10),(C16/$C$8+E16/$E$8)/2*12,IF($C$10,C16,IF($E$10,E16,0)))"
+17,2,    Other,
+17,7,"=IF(AND($C$10,$E$10),(C17/$C$8+E17/$E$8)/2*12,IF($C$10,C17,IF($E$10,E17,0)))","=IF(AND($C$10,$E$10),(C17/$C$8+E17/$E$8)/2*12,IF($C$10,C17,IF($E$10,E17,0)))"
+18,2,    Sub-Total of Add Backs,
+18,3,=SUM(C12:C17),=SUM(C12:C17)
+18,5,=SUM(E12:E17),=SUM(E12:E17)
+18,7,"=IF(AND($C$10,$E$10),(C18/$C$8+E18/$E$8)/2*12,IF($C$10,C18,IF($E$10,E18,0)))","=IF(AND($C$10,$E$10),(C18/$C$8+E18/$E$8)/2*12,IF($C$10,C18,IF($E$10,E18,0)))"
+20,2,Total Available - Monthly Average,
+20,3,=C21/12,=C21/12
+20,5,=E21/12,=E21/12
+20,7,=G21/12,=G21/12
+21,2,Total Available - Annual Average,
+21,3,"=IF(C10,((C9+C18)/C8)*12,0)","=IF(C10,((C9+C18)/C8)*12,0)"
+21,5,"=IF(E10,((E9+E18)/E8)*12,0)","=IF(E10,((E9+E18)/E8)*12,0)"
+21,7,"=IF(AND(C10,E10),(C21+E21)/2,IF(C10,C21,IF(E10,E21,0)))","=IF(AND(C10,E10),(C21+E21)/2,IF(C10,C21,IF(E10,E21,0)))"
+23,2,Self-Employed Applicant 2's Income Details:,
+25,3,Year 1,
+25,5,Year 2,
+26,2,Year Ended  ,
+27,2,Number of Months  ,
+27,7,"=IF(AND(C27>0,E27>0),IF(C27=E27,""Average"",""Extrapolated Average""),""Average"")","=IF(AND(C27>0,E27>0),IF(C27=E27,""Average"",""Extrapolated Average""),""Average"")"
+28,2,Net Profit (Loss) Before Tax  ,
+28,7,"=IF(AND($C$29,$E$29),(C28/$C$27+E28/$E$27)/2*12,IF($C$29,C28,IF($E$29,E28,0)))","=IF(AND($C$29,$E$29),(C28/$C$27+E28/$E$27)/2*12,IF($C$29,C28,IF($E$29,E28,0)))"
+29,3,"=AND(C26<>"""",C27<>"""",C28<>"""")","=AND(C26<>"""",C27<>"""",C28<>"""")"
+29,5,"=AND(E26<>"""",E27<>"""",E28<>"""")","=AND(E26<>"""",E27<>"""",E28<>"""")"
+30,2,Add Backs:,
+30,3,"=AND(C26="""",C27="""",C28="""",C31="""",C32="""",C33="""",C34="""",C35="""",C36="""")","=AND(C26="""",C27="""",C28="""",C31="""",C32="""",C33="""",C34="""",C35="""",C36="""")"
+30,5,"=AND(E26="""",E27="""",E28="""",E31="""",E32="""",E33="""",E34="""",E35="""",E36="""")","=AND(E26="""",E27="""",E28="""",E31="""",E32="""",E33="""",E34="""",E35="""",E36="""")"
+31,2,    Interest,
+31,7,"=IF(AND($C$29,$E$29),(C31/$C$27+E31/$E$27)/2*12,IF($C$29,C31,IF($E$29,E31,0)))","=IF(AND($C$29,$E$29),(C31/$C$27+E31/$E$27)/2*12,IF($C$29,C31,IF($E$29,E31,0)))"
+32,2,    Depreciation/Amortisation,
+32,7,"=IF(AND($C$29,$E$29),(C32/$C$27+E32/$E$27)/2*12,IF($C$29,C32,IF($E$29,E32,0)))","=IF(AND($C$29,$E$29),(C32/$C$27+E32/$E$27)/2*12,IF($C$29,C32,IF($E$29,E32,0)))"
+33,2,    Personal Wages/Salary (before tax),
+33,7,"=IF(AND($C$29,$E$29),(C33/$C$27+E33/$E$27)/2*12,IF($C$29,C33,IF($E$29,E33,0)))","=IF(AND($C$29,$E$29),(C33/$C$27+E33/$E$27)/2*12,IF($C$29,C33,IF($E$29,E33,0)))"
+34,2,    Non-Cash Personal Benefits,
+34,7,"=IF(AND($C$29,$E$29),(C34/$C$27+E34/$E$27)/2*12,IF($C$29,C34,IF($E$29,E34,0)))","=IF(AND($C$29,$E$29),(C34/$C$27+E34/$E$27)/2*12,IF($C$29,C34,IF($E$29,E34,0)))"
+35,2,    Other Non-Cash/Non-Recurring Expenses,
+35,7,"=IF(AND($C$29,$E$29),(C35/$C$27+E35/$E$27)/2*12,IF($C$29,C35,IF($E$29,E35,0)))","=IF(AND($C$29,$E$29),(C35/$C$27+E35/$E$27)/2*12,IF($C$29,C35,IF($E$29,E35,0)))"
+36,2,    Other,
+36,7,"=IF(AND($C$29,$E$29),(C36/$C$27+E36/$E$27)/2*12,IF($C$29,C36,IF($E$29,E36,0)))","=IF(AND($C$29,$E$29),(C36/$C$27+E36/$E$27)/2*12,IF($C$29,C36,IF($E$29,E36,0)))"
+37,2,    Sub-Total of Add Backs,
+37,3,=SUM(C31:C36),=SUM(C31:C36)
+37,5,=SUM(E31:E36),=SUM(E31:E36)
+37,7,"=IF(AND($C$29,$E$29),(C37/$C$27+E37/$E$27)/2*12,IF($C$29,C37,IF($E$29,E37,0)))","=IF(AND($C$29,$E$29),(C37/$C$27+E37/$E$27)/2*12,IF($C$29,C37,IF($E$29,E37,0)))"
+39,2,Total Available - Monthly Average,
+39,3,=C40/12,=C40/12
+39,5,=E40/12,=E40/12
+39,7,=G40/12,=G40/12
+40,2,Total Available - Annual Average,
+40,3,"=IF(C29,((C28+C37)/C27)*12,0)","=IF(C29,((C28+C37)/C27)*12,0)"
+40,5,"=IF(E29,((E28+E37)/E27)*12,0)","=IF(E29,((E28+E37)/E27)*12,0)"
+40,7,"=IF(AND(C29,E29),(C40+E40)/2,IF(C29,C40,IF(E29,E40,0)))","=IF(AND(C29,E29),(C40+E40)/2,IF(C29,C40,IF(E29,E40,0)))"
+42,7,Product of the Commonwealth Bank of Australia   ABN 48 123 123 124,

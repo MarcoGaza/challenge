@@ -1,0 +1,76 @@
+Row,Column,Value,Formula
+2,2,Negatively Geared Investment Home Loans,
+3,2,"Refer to the Postcode Lookup Tool for geographic negative gearing eligibility. 
+Note: Negative Gearing calculates the interest and monthly charges to be paid on an investment home loan each year and uses this figure as a tax deduction.  Therefore the applicant(s) taxable income will be less, which means that the tax paid by the applicant(s) will be less.
+Negative gearing is not applicable in the servicing of IHL applications with a Base LVR greater than 90% or for customers receiving the First Home Buyers' grant.
+",
+4,2,Existing Loans:,
+5,2,=Calculations!Z9,=Calculations!Z9
+6,5,Tax benefit % applicable to:,
+7,2,Loan Balance,
+7,3,Interest Rate,
+7,4,Interest,
+7,5,Applicant 1,
+7,6,Applicant 2,
+7,7,Applicant 3,
+7,8,Applicant 4,
+8,2,"=IF(Calculations!V8,IF(OR(Model!B39=""CBA Line of Credit"",Model!B39=""OFI Line of Credit (Other financial institution)""),Model!G39,Model!F39),"""")","=IF(Calculations!V8,IF(OR(Model!B39=""CBA Line of Credit"",Model!B39=""OFI Line of Credit (Other financial institution)""),Model!G39,Model!F39),"""")"
+8,4,"=IF(AND(B8<>"""",C8<>""""),B8*C8,"""")","=IF(AND(B8<>"""",C8<>""""),B8*C8,"""")"
+9,2,"=IF(Calculations!V9,IF(OR(Model!B40=""CBA Line of Credit"",Model!B40=""OFI Line of Credit (Other financial institution)""),Model!G40,Model!F40),"""")","=IF(Calculations!V9,IF(OR(Model!B40=""CBA Line of Credit"",Model!B40=""OFI Line of Credit (Other financial institution)""),Model!G40,Model!F40),"""")"
+9,4,"=IF(AND(B9<>"""",C9<>""""),B9*C9,"""")","=IF(AND(B9<>"""",C9<>""""),B9*C9,"""")"
+10,2,"=IF(Calculations!V10,IF(OR(Model!B41=""CBA Line of Credit"",Model!B41=""OFI Line of Credit (Other financial institution)""),Model!G41,Model!F41),"""")","=IF(Calculations!V10,IF(OR(Model!B41=""CBA Line of Credit"",Model!B41=""OFI Line of Credit (Other financial institution)""),Model!G41,Model!F41),"""")"
+10,4,"=IF(AND(B10<>"""",C10<>""""),B10*C10,"""")","=IF(AND(B10<>"""",C10<>""""),B10*C10,"""")"
+11,2,"=IF(Calculations!V11,IF(OR(Model!B42=""CBA Line of Credit"",Model!B42=""OFI Line of Credit (Other financial institution)""),Model!G42,Model!F42),"""")","=IF(Calculations!V11,IF(OR(Model!B42=""CBA Line of Credit"",Model!B42=""OFI Line of Credit (Other financial institution)""),Model!G42,Model!F42),"""")"
+11,4,"=IF(AND(B11<>"""",C11<>""""),B11*C11,"""")","=IF(AND(B11<>"""",C11<>""""),B11*C11,"""")"
+12,2,"=IF(Calculations!V12,IF(OR(Model!B43=""CBA Line of Credit"",Model!B43=""OFI Line of Credit (Other financial institution)""),Model!G43,Model!F43),"""")","=IF(Calculations!V12,IF(OR(Model!B43=""CBA Line of Credit"",Model!B43=""OFI Line of Credit (Other financial institution)""),Model!G43,Model!F43),"""")"
+12,4,"=IF(AND(B12<>"""",C12<>""""),B12*C12,"""")","=IF(AND(B12<>"""",C12<>""""),B12*C12,"""")"
+13,2,"=IF(Calculations!V13,IF(OR(Model!B44=""CBA Line of Credit"",Model!B44=""OFI Line of Credit (Other financial institution)""),Model!G44,Model!F44),"""")","=IF(Calculations!V13,IF(OR(Model!B44=""CBA Line of Credit"",Model!B44=""OFI Line of Credit (Other financial institution)""),Model!G44,Model!F44),"""")"
+13,4,"=IF(AND(B13<>"""",C13<>""""),B13*C13,"""")","=IF(AND(B13<>"""",C13<>""""),B13*C13,"""")"
+14,2,"=IF(Calculations!V14,IF(OR(Model!B45=""CBA Line of Credit"",Model!B45=""OFI Line of Credit (Other financial institution)""),Model!G45,Model!F45),"""")","=IF(Calculations!V14,IF(OR(Model!B45=""CBA Line of Credit"",Model!B45=""OFI Line of Credit (Other financial institution)""),Model!G45,Model!F45),"""")"
+14,4,"=IF(AND(B14<>"""",C14<>""""),B14*C14,"""")","=IF(AND(B14<>"""",C14<>""""),B14*C14,"""")"
+16,2,Proposed Loans:,
+18,5,Tax benefit % applicable to:,
+19,2,Loan Balance,
+19,3,Interest Rate,
+19,4,Interest,
+19,5,Applicant 1,
+19,6,Applicant 2,
+19,7,Applicant 3,
+19,8,Applicant 4,
+20,2,"=IF(Calculations!V17,Model!G52,"""")","=IF(Calculations!V17,Model!G52,"""")"
+20,4,"=IF(AND(B20<>"""",C20<>""""),B20*C20,"""")","=IF(AND(B20<>"""",C20<>""""),B20*C20,"""")"
+21,2,"=IF(Calculations!V18,Model!G53,"""")","=IF(Calculations!V18,Model!G53,"""")"
+21,4,"=IF(AND(B21<>"""",C21<>""""),B21*C21,"""")","=IF(AND(B21<>"""",C21<>""""),B21*C21,"""")"
+22,2,"=IF(Calculations!V19,Model!G54,"""")","=IF(Calculations!V19,Model!G54,"""")"
+22,4,"=IF(AND(B22<>"""",C22<>""""),B22*C22,"""")","=IF(AND(B22<>"""",C22<>""""),B22*C22,"""")"
+23,2,"=IF(Calculations!V20,Model!G55,"""")","=IF(Calculations!V20,Model!G55,"""")"
+23,4,"=IF(AND(B23<>"""",C23<>""""),B23*C23,"""")","=IF(AND(B23<>"""",C23<>""""),B23*C23,"""")"
+24,2,"=IF(Calculations!V21,Model!G56,"""")","=IF(Calculations!V21,Model!G56,"""")"
+24,4,"=IF(AND(B24<>"""",C24<>""""),B24*C24,"""")","=IF(AND(B24<>"""",C24<>""""),B24*C24,"""")"
+25,2,"=IF(Calculations!V22,Model!G57,"""")","=IF(Calculations!V22,Model!G57,"""")"
+25,4,"=IF(AND(B25<>"""",C25<>""""),B25*C25,"""")","=IF(AND(B25<>"""",C25<>""""),B25*C25,"""")"
+27,2,Interest expenses applicable to:,
+27,5,Existing,
+27,6,Proposed,
+27,7,Total,
+28,4,Applicant 1: ,
+28,5,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5BA21E0>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5BA21E0>
+28,6,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5BA3800>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5BA3800>
+28,7,=SUM(E28:F28),=SUM(E28:F28)
+29,4,Applicant 2: ,
+29,5,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5BA02F0>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5BA02F0>
+29,6,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5BA3A10>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5BA3A10>
+29,7,=SUM(E29:F29),=SUM(E29:F29)
+30,4,Applicant 3: ,
+30,5,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5BA0560>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5BA0560>
+30,6,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5BA3800>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5BA3800>
+30,7,=SUM(E30:F30),=SUM(E30:F30)
+31,4,Applicant 4: ,
+31,5,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5BA1BE0>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5BA1BE0>
+31,6,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5BA3A10>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5BA3A10>
+31,7,=SUM(E31:F31),=SUM(E31:F31)
+32,4,Total: ,
+32,5,=SUM(E28:E31),=SUM(E28:E31)
+32,6,=SUM(F28:F31),=SUM(F28:F31)
+32,7,=SUM(E32:F32),=SUM(E32:F32)
+35,8,Product of the Commonwealth Bank of Australia  ABN 48 123 123 124,

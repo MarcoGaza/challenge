@@ -1,0 +1,365 @@
+{
+    "Income Tax": [
+      {
+        "Upper Limit": 0,
+        "Rate": 0,
+        "Carry": 0,
+        "Taxable_income": 37500,
+        "Offset_tax": 700,
+        "cent": 0
+      },
+      {
+        "Upper Limit": 18200,
+        "Rate": 0.19,
+        "Carry": 0,
+        "Taxable_income": 45000,
+        "Offset_tax": 3572,
+        "cent": 0.5
+      },
+      {
+        "Upper Limit": 45000,
+        "Rate": 0.325,
+        "Carry": 5092,
+        "Taxable_income": 120000,
+        "Offset_tax": 29467,
+        "cent": 0.5
+      },
+      {
+        "Upper Limit": 120000,
+        "Rate": 0.37,
+        "Carry": 29467,
+        "Taxable_income": 180000,
+        "Offset_tax": 51667,
+        "cent": 0.5
+      },
+      {
+        "Upper Limit": 180000,
+        "Rate": 0.45,
+        "Carry": 51667,
+        "Taxable_income": 180000,
+        "Offset_tax": 51667,
+        "cent": 0.5
+      }
+    ],
+    "Medicare Levy": [
+      {
+        "Threshold": 0,
+        "Rate": 0,
+        "Carry": 0
+      },
+      {
+        "Threshold": 22801,
+        "Rate": 0.1,
+        "Carry": 0
+      },
+      {
+        "Threshold": 28501,
+        "Rate": 0.02,
+        "Carry": 0
+      }
+    ],
+    "LITO": [
+      {
+        "Taxable_income": 37500,
+        "Offset_tax": 700,
+        "cent": 0
+      },
+      {
+        "Taxable_income": 45000,
+        "Offset_tax": 700,
+        "cent": 5
+      },
+      {
+        "Taxable_income": 66667,
+        "Offset_tax": 445,
+        "cent": 15
+      },
+      {
+        "Taxable_income": 90000,
+        "Offset_tax": 1080,
+        "cent": 0
+      },
+      {
+        "Taxable_income": 126000,
+        "Offset_tax": 1080,
+        "cent": 3
+      }
+    ],
+    "LMITO": [
+      {
+        "Taxable_income": 37000,
+        "Offset_tax": 255,
+        "cent": 0
+      },
+      {
+        "Taxable_income": 48000,
+        "Offset_tax": 255,
+        "cent": 75
+      },
+      {
+        "Taxable_income": 90000,
+        "Offset_tax": 1080,
+        "cent": 0
+      },
+      {
+        "Taxable_income": 126000,
+        "Offset_tax": 1080,
+        "cent": 3
+      }
+    ],
+    "Sliding Scale Commitment Level": {
+      "Income": [
+        {
+          "Lower": 0,
+          "Upper": 10000
+        },
+        {
+          "Lower": 10001,
+          "Upper": 15000
+        },
+        {
+          "Lower": 15001,
+          "Upper": 20000
+        },
+        {
+          "Lower": 20001,
+          "Upper": 55000
+        },
+        {
+          "Lower": 55001,
+          "Upper": 180000
+        },
+        {
+          "Lower": 180001,
+          "Upper": 190000
+        },
+        {
+          "Lower": 190001,
+          "Upper": 200000
+        },
+        {
+          "Lower": 200001,
+          "Upper": 250000
+        },
+        {
+          "Lower": 250001,
+          "Upper": 300000
+        },
+        {
+          "Lower": 300001,
+          "Upper": 538000
+        },
+        {
+          "Lower": 538001,
+          "Upper": 9999999999
+        }
+      ],
+      "C.L.": [
+        0.1,
+        0.15,
+        0.25,
+        0.35,
+        0.4,
+        0.45,
+        0.5,
+        0.55,
+        0.6,
+        0.65,
+        0.7
+      ]
+    },
+    "Sliding Scale Cash Buffer": {
+      "Income": [
+        {
+          "Lower": 0,
+          "Upper": 20000
+        },
+        {
+          "Lower": 20001,
+          "Upper": 55000
+        },
+        {
+          "Lower": 55001,
+          "Upper": 180000
+        },
+        {
+          "Lower": 180001,
+          "Upper": 999999999
+        }
+      ],
+      "C.B.": [
+        0,
+        0,
+        0.05,
+        0.1
+      ]
+    },
+    "Household Expenditure Measure": {
+      "Lower": [
+        0,
+        22001,
+        32001,
+        43001,
+        54001,
+        65001,
+        86001,
+        108001,
+        129001,
+        151001,
+        172001,
+        215001,
+        269001,
+        323001,
+        538001,
+        538001
+      ],
+      "Upper": [
+        22000,
+        32000,
+        43000,
+        54000,
+        65000,
+        86000,
+        108000,
+        129000,
+        151000,
+        172000,
+        215000,
+        269000,
+        323000,
+        538000,
+        999999999,
+        999999999
+      ],
+      "Single Adult": [
+        1103,
+        1169,
+        1230,
+        1320,
+        1481,
+        1690,
+        2010,
+        2227,
+        2639,
+        2807,
+        2974,
+        3454,
+        3920,
+        4161,
+        4396,
+        4396
+      ],
+      "Additional Adult": [
+        491,
+        491,
+        490,
+        490,
+        489,
+        489,
+        488,
+        488,
+        487,
+        487,
+        486,
+        486,
+        486,
+        486,
+        486,
+        486
+      ],
+      "1 Dependent": [
+        504,
+        570,
+        631,
+        721,
+        882,
+        1091,
+        1410,
+        1626,
+        2038,
+        2206,
+        2372,
+        2852,
+        3318,
+        3558,
+        3793,
+        3793
+      ],
+      "2 Dependents": [
+        895,
+        961,
+        1022,
+        1112,
+        1373,
+        1681,
+        2001,
+        2217,
+        2628,
+        2796,
+        2962,
+        3441,
+        3907,
+        4147,
+        4382,
+        4382
+      ],
+      "3 Dependents": [
+        1278,
+        1344,
+        1405,
+        1494,
+        1865,
+        2272,
+        2591,
+        2807,
+        3218,
+        3387,
+        3552,
+        4031,
+        4497,
+        4737,
+        4972,
+        4972
+      ],
+      "Additional Dependent": [
+        383,
+        383,
+        383,
+        382,
+        382,
+        381,
+        380,
+        379,
+        377,
+        377,
+        376,
+        374,
+        373,
+        372,
+        372,
+        372
+      ]
+    },
+    "Net to Gross": {
+      "Multiplier": {
+        "Weekly": 52,
+        "Fortnightly": 26,
+        "Monthly": 12,
+        "Quarterly": 4,
+        "Half Yearly": 2,
+        "Yearly": 1
+      }
+    },
+    "Existing Commitments": {
+      "Commitment": {
+        "Credit Card": 0.0382,
+        "Access Advantage": "N/A",
+        "Overdraft": 0.03,
+        "Business Overdraft": 0.015,
+        "Commercial Bill": 0.015
+      }
+    },
+    "Credit Card Minimum": 25,
+    "Assessment Rate": 0.051,
+    "Assessment Rate Buffer": 0.025
+  }

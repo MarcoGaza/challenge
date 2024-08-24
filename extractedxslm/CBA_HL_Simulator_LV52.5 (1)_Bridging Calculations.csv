@@ -1,0 +1,504 @@
+Row,Column,Value,Formula
+1,1,Bridging Period,
+1,8,Post Bridging Period,
+1,15,Existing Loans,
+1,21,Bridging,
+1,28,Post Bridging,
+2,2,Applicant 1,
+2,3,Income,
+2,5,Applicant 2,
+2,6,Income,
+2,9,Applicant 1,
+2,10,Income,
+2,12,Applicant 2,
+2,13,Income,
+2,15,Blank,
+2,16,Complete,
+2,17,Neg Gearing,
+2,18,Complete,
+2,19,Balance/Limit,
+2,21,Living Expense Calculation,
+2,22,Household 1,
+2,23,Household 2,
+2,24,Household 3,
+2,25,Household 4,
+2,26,Total,
+2,28,Living Expense Calculation,
+2,29,Household 1,
+2,30,Household 2,
+2,31,Household 3,
+2,32,Household 4,
+2,33,Total,
+3,1,Gross Annual Salary/Wages,
+3,2,=Bridging!F17,=Bridging!F17
+3,3,=B3,=B3
+3,5,=Bridging!H17,=Bridging!H17
+3,6,=E3,=E3
+3,8,Gross Annual Salary/Wages,
+3,9,=Bridging!G17,=Bridging!G17
+3,10,=I3,=I3
+3,12,=Bridging!I17,=Bridging!I17
+3,13,=L3,=L3
+3,15,=COUNTBLANK(Bridging!B39:K39)=10,=COUNTBLANK(Bridging!B39:K39)=10
+3,16,"=IF(O3,TRUE,IF(OR(Bridging!B39=""Credit Card"",Bridging!B39=""Overdraft"",Bridging!B39=""Commercial Bill""),AND(Bridging!F39<>"""",Bridging!G39<>""""),IF(Bridging!B39=""Margin Loan"",Bridging!G39<>"""",IF(OR(Bridging!E39=""With my funds"",Bridging!E39=""Add to bridging""),AND(Bridging!F39<>"""",Bridging!G39<>""""),IF(OR(Bridging!B39=""Personal Loan"",Bridging!B39=""Lease"",Bridging!B39=""Hire Purchase"",Bridging!B39=""Other""),AND(Bridging!J39<>"""",Bridging!K39<>""""),IF(OR(Bridging!B39=""CBA Variable Rate Home Loan"",Bridging!B39=""CBA Fixed Rate Home Loan"",Bridging!B39=""OFI home loan (Other financial institution)""),AND(Bridging!C39<>"""",Bridging!F39<>"""",Bridging!G39<>"""",Bridging!H39<>"""",Bridging!I39<>"""",Bridging!K39<>""""),IF(OR(Bridging!B39=""CBA Line of Credit"",Bridging!B39=""OFI Line of Credit (Other financial institution)""),AND(Bridging!C39<>"""",Bridging!F39<>"""",Bridging!G39<>"""",Bridging!I39<>"""",Bridging!K39<>""""),IF(Bridging!B39=""HECS"",Bridging!J39<>"""",FALSE))))))))","=IF(O3,TRUE,IF(OR(Bridging!B39=""Credit Card"",Bridging!B39=""Overdraft"",Bridging!B39=""Commercial Bill""),AND(Bridging!F39<>"""",Bridging!G39<>""""),IF(Bridging!B39=""Margin Loan"",Bridging!G39<>"""",IF(OR(Bridging!E39=""With my funds"",Bridging!E39=""Add to bridging""),AND(Bridging!F39<>"""",Bridging!G39<>""""),IF(OR(Bridging!B39=""Personal Loan"",Bridging!B39=""Lease"",Bridging!B39=""Hire Purchase"",Bridging!B39=""Other""),AND(Bridging!J39<>"""",Bridging!K39<>""""),IF(OR(Bridging!B39=""CBA Variable Rate Home Loan"",Bridging!B39=""CBA Fixed Rate Home Loan"",Bridging!B39=""OFI home loan (Other financial institution)""),AND(Bridging!C39<>"""",Bridging!F39<>"""",Bridging!G39<>"""",Bridging!H39<>"""",Bridging!I39<>"""",Bridging!K39<>""""),IF(OR(Bridging!B39=""CBA Line of Credit"",Bridging!B39=""OFI Line of Credit (Other financial institution)""),AND(Bridging!C39<>"""",Bridging!F39<>"""",Bridging!G39<>"""",Bridging!I39<>"""",Bridging!K39<>""""),IF(Bridging!B39=""HECS"",Bridging!J39<>"""",FALSE))))))))"
+3,17,"=AND(Bridging!E39<>""With my funds"",Bridging!B39<>"""",Bridging!D39=""Yes"")","=AND(Bridging!E39<>""With my funds"",Bridging!B39<>"""",Bridging!D39=""Yes"")"
+3,18,"=IF(NOT(Q3),TRUE,COUNTBLANK('Bridging Neg Gearing'!E8:F8)<2)","=IF(NOT(Q3),TRUE,COUNTBLANK('Bridging Neg Gearing'!E8:F8)<2)"
+3,19,"=IF(O3=FALSE,MAX(Bridging!F39:G39),0)","=IF(O3=FALSE,MAX(Bridging!F39:G39),0)"
+3,21,Adults,
+3,22,"=IF(OR(Bridging!I9="""",Bridging!I9=0),0,Bridging!I9)","=IF(OR(Bridging!I9="""",Bridging!I9=0),0,Bridging!I9)"
+3,23,"=IF(OR(Bridging!J9="""",Bridging!J9=0),0,Bridging!J9)","=IF(OR(Bridging!J9="""",Bridging!J9=0),0,Bridging!J9)"
+3,24,"=IF(OR(Bridging!K9="""",Bridging!K9=0),0,Bridging!K9)","=IF(OR(Bridging!K9="""",Bridging!K9=0),0,Bridging!K9)"
+3,25,"=IF(OR(Bridging!L9="""",Bridging!L9=0),0,Bridging!L9)","=IF(OR(Bridging!L9="""",Bridging!L9=0),0,Bridging!L9)"
+3,26,=SUM(V3:Y3),=SUM(V3:Y3)
+3,28,Adults,
+3,29,"=IF(OR(Bridging!I9="""",Bridging!I9=0),0,Bridging!I9)","=IF(OR(Bridging!I9="""",Bridging!I9=0),0,Bridging!I9)"
+3,30,"=IF(OR(Bridging!J9="""",Bridging!J9=0),0,Bridging!J9)","=IF(OR(Bridging!J9="""",Bridging!J9=0),0,Bridging!J9)"
+3,31,"=IF(OR(Bridging!K9="""",Bridging!K9=0),0,Bridging!K9)","=IF(OR(Bridging!K9="""",Bridging!K9=0),0,Bridging!K9)"
+3,32,"=IF(OR(Bridging!L9="""",Bridging!L9=0),0,Bridging!L9)","=IF(OR(Bridging!L9="""",Bridging!L9=0),0,Bridging!L9)"
+3,33,=SUM(AC3:AF3),=SUM(AC3:AF3)
+4,1,Gross Overtime,
+4,2,=Bridging!F18,=Bridging!F18
+4,3,=B4*Data!$C$20,=B4*Data!$C$20
+4,5,=Bridging!H18,=Bridging!H18
+4,6,=E4*Data!$C$20,=E4*Data!$C$20
+4,8,Gross Overtime,
+4,9,=Bridging!G18,=Bridging!G18
+4,10,=I4*Data!$C$20,=I4*Data!$C$20
+4,12,=Bridging!I18,=Bridging!I18
+4,13,=L4*Data!$C$20,=L4*Data!$C$20
+4,15,=COUNTBLANK(Bridging!B40:K40)=10,=COUNTBLANK(Bridging!B40:K40)=10
+4,16,"=IF(O4,TRUE,IF(OR(Bridging!B40=""Credit Card"",Bridging!B40=""Overdraft"",Bridging!B40=""Commercial Bill""),AND(Bridging!F40<>"""",Bridging!G40<>""""),IF(Bridging!B40=""Margin Loan"",Bridging!G40<>"""",IF(OR(Bridging!E40=""With my funds"",Bridging!E40=""Add to bridging""),AND(Bridging!F40<>"""",Bridging!G40<>""""),IF(OR(Bridging!B40=""Personal Loan"",Bridging!B40=""Lease"",Bridging!B40=""Hire Purchase"",Bridging!B40=""Other""),AND(Bridging!J40<>"""",Bridging!K40<>""""),IF(OR(Bridging!B40=""CBA Variable Rate Home Loan"",Bridging!B40=""CBA Fixed Rate Home Loan"",Bridging!B40=""OFI home loan (Other financial institution)""),AND(Bridging!C40<>"""",Bridging!F40<>"""",Bridging!G40<>"""",Bridging!H40<>"""",Bridging!I40<>"""",Bridging!K40<>""""),IF(OR(Bridging!B40=""CBA Line of Credit"",Bridging!B40=""OFI Line of Credit (Other financial institution)""),AND(Bridging!C40<>"""",Bridging!F40<>"""",Bridging!G40<>"""",Bridging!I40<>"""",Bridging!K40<>""""),IF(Bridging!B40=""HECS"",Bridging!J40<>"""",FALSE))))))))","=IF(O4,TRUE,IF(OR(Bridging!B40=""Credit Card"",Bridging!B40=""Overdraft"",Bridging!B40=""Commercial Bill""),AND(Bridging!F40<>"""",Bridging!G40<>""""),IF(Bridging!B40=""Margin Loan"",Bridging!G40<>"""",IF(OR(Bridging!E40=""With my funds"",Bridging!E40=""Add to bridging""),AND(Bridging!F40<>"""",Bridging!G40<>""""),IF(OR(Bridging!B40=""Personal Loan"",Bridging!B40=""Lease"",Bridging!B40=""Hire Purchase"",Bridging!B40=""Other""),AND(Bridging!J40<>"""",Bridging!K40<>""""),IF(OR(Bridging!B40=""CBA Variable Rate Home Loan"",Bridging!B40=""CBA Fixed Rate Home Loan"",Bridging!B40=""OFI home loan (Other financial institution)""),AND(Bridging!C40<>"""",Bridging!F40<>"""",Bridging!G40<>"""",Bridging!H40<>"""",Bridging!I40<>"""",Bridging!K40<>""""),IF(OR(Bridging!B40=""CBA Line of Credit"",Bridging!B40=""OFI Line of Credit (Other financial institution)""),AND(Bridging!C40<>"""",Bridging!F40<>"""",Bridging!G40<>"""",Bridging!I40<>"""",Bridging!K40<>""""),IF(Bridging!B40=""HECS"",Bridging!J40<>"""",FALSE))))))))"
+4,17,"=AND(Bridging!E40<>""With my funds"",Bridging!B40<>"""",Bridging!D40=""Yes"")","=AND(Bridging!E40<>""With my funds"",Bridging!B40<>"""",Bridging!D40=""Yes"")"
+4,18,"=IF(NOT(Q4),TRUE,COUNTBLANK('Bridging Neg Gearing'!E9:F9)<2)","=IF(NOT(Q4),TRUE,COUNTBLANK('Bridging Neg Gearing'!E9:F9)<2)"
+4,19,"=IF(O4=FALSE,MAX(Bridging!F40:G40),0)","=IF(O4=FALSE,MAX(Bridging!F40:G40),0)"
+4,21,Dependents (Children),
+4,22,"=IF(OR(Bridging!I10="""",Bridging!I10=0),0,Bridging!I10)","=IF(OR(Bridging!I10="""",Bridging!I10=0),0,Bridging!I10)"
+4,23,"=IF(OR(Bridging!J10="""",Bridging!J10=0),0,Bridging!J10)","=IF(OR(Bridging!J10="""",Bridging!J10=0),0,Bridging!J10)"
+4,24,"=IF(OR(Bridging!K10="""",Bridging!K10=0),0,Bridging!K10)","=IF(OR(Bridging!K10="""",Bridging!K10=0),0,Bridging!K10)"
+4,25,"=IF(OR(Bridging!L10="""",Bridging!L10=0),0,Bridging!L10)","=IF(OR(Bridging!L10="""",Bridging!L10=0),0,Bridging!L10)"
+4,26,=SUM(V4:Y4),=SUM(V4:Y4)
+4,28,Dependents (Children),
+4,29,"=IF(OR(Bridging!I10="""",Bridging!I10=0),0,Bridging!I10)","=IF(OR(Bridging!I10="""",Bridging!I10=0),0,Bridging!I10)"
+4,30,"=IF(OR(Bridging!J10="""",Bridging!J10=0),0,Bridging!J10)","=IF(OR(Bridging!J10="""",Bridging!J10=0),0,Bridging!J10)"
+4,31,"=IF(OR(Bridging!K10="""",Bridging!K10=0),0,Bridging!K10)","=IF(OR(Bridging!K10="""",Bridging!K10=0),0,Bridging!K10)"
+4,32,"=IF(OR(Bridging!L10="""",Bridging!L10=0),0,Bridging!L10)","=IF(OR(Bridging!L10="""",Bridging!L10=0),0,Bridging!L10)"
+4,33,=SUM(AC4:AF4),=SUM(AC4:AF4)
+5,1,Gross Bonuses,
+5,2,=Bridging!F19,=Bridging!F19
+5,3,=B5*Data!$C$21,=B5*Data!$C$21
+5,5,=Bridging!H19,=Bridging!H19
+5,6,=E5*Data!$C$21,=E5*Data!$C$21
+5,8,Gross Bonuses,
+5,9,=Bridging!G19,=Bridging!G19
+5,10,=I5*Data!$C$21,=I5*Data!$C$21
+5,12,=Bridging!I19,=Bridging!I19
+5,13,=L5*Data!$C$21,=L5*Data!$C$21
+5,15,=COUNTBLANK(Bridging!B41:K41)=10,=COUNTBLANK(Bridging!B41:K41)=10
+5,16,"=IF(O5,TRUE,IF(OR(Bridging!B41=""Credit Card"",Bridging!B41=""Overdraft"",Bridging!B41=""Commercial Bill""),AND(Bridging!F41<>"""",Bridging!G41<>""""),IF(Bridging!B41=""Margin Loan"",Bridging!G41<>"""",IF(OR(Bridging!E41=""With my funds"",Bridging!E41=""Add to bridging""),AND(Bridging!F41<>"""",Bridging!G41<>""""),IF(OR(Bridging!B41=""Personal Loan"",Bridging!B41=""Lease"",Bridging!B41=""Hire Purchase"",Bridging!B41=""Other""),AND(Bridging!J41<>"""",Bridging!K41<>""""),IF(OR(Bridging!B41=""CBA Variable Rate Home Loan"",Bridging!B41=""CBA Fixed Rate Home Loan"",Bridging!B41=""OFI home loan (Other financial institution)""),AND(Bridging!C41<>"""",Bridging!F41<>"""",Bridging!G41<>"""",Bridging!H41<>"""",Bridging!I41<>"""",Bridging!K41<>""""),IF(OR(Bridging!B41=""CBA Line of Credit"",Bridging!B41=""OFI Line of Credit (Other financial institution)""),AND(Bridging!C41<>"""",Bridging!F41<>"""",Bridging!G41<>"""",Bridging!I41<>"""",Bridging!K41<>""""),IF(Bridging!B41=""HECS"",Bridging!J41<>"""",FALSE))))))))","=IF(O5,TRUE,IF(OR(Bridging!B41=""Credit Card"",Bridging!B41=""Overdraft"",Bridging!B41=""Commercial Bill""),AND(Bridging!F41<>"""",Bridging!G41<>""""),IF(Bridging!B41=""Margin Loan"",Bridging!G41<>"""",IF(OR(Bridging!E41=""With my funds"",Bridging!E41=""Add to bridging""),AND(Bridging!F41<>"""",Bridging!G41<>""""),IF(OR(Bridging!B41=""Personal Loan"",Bridging!B41=""Lease"",Bridging!B41=""Hire Purchase"",Bridging!B41=""Other""),AND(Bridging!J41<>"""",Bridging!K41<>""""),IF(OR(Bridging!B41=""CBA Variable Rate Home Loan"",Bridging!B41=""CBA Fixed Rate Home Loan"",Bridging!B41=""OFI home loan (Other financial institution)""),AND(Bridging!C41<>"""",Bridging!F41<>"""",Bridging!G41<>"""",Bridging!H41<>"""",Bridging!I41<>"""",Bridging!K41<>""""),IF(OR(Bridging!B41=""CBA Line of Credit"",Bridging!B41=""OFI Line of Credit (Other financial institution)""),AND(Bridging!C41<>"""",Bridging!F41<>"""",Bridging!G41<>"""",Bridging!I41<>"""",Bridging!K41<>""""),IF(Bridging!B41=""HECS"",Bridging!J41<>"""",FALSE))))))))"
+5,17,"=AND(Bridging!E41<>""With my funds"",Bridging!B41<>"""",Bridging!D41=""Yes"")","=AND(Bridging!E41<>""With my funds"",Bridging!B41<>"""",Bridging!D41=""Yes"")"
+5,18,"=IF(NOT(Q5),TRUE,COUNTBLANK('Bridging Neg Gearing'!E10:F10)<2)","=IF(NOT(Q5),TRUE,COUNTBLANK('Bridging Neg Gearing'!E10:F10)<2)"
+5,19,"=IF(O5=FALSE,MAX(Bridging!F41:G41),0)","=IF(O5=FALSE,MAX(Bridging!F41:G41),0)"
+5,21,Household Eligible Income,
+5,22,"=IF(Bridging!F16=""Household 1"",$C$12+$C$29+$C$30)+IF(Bridging!H16=""Household 1"",$F$12+$F$29+$F$30)","=IF(Bridging!F16=""Household 1"",$C$12+$C$29+$C$30)+IF(Bridging!H16=""Household 1"",$F$12+$F$29+$F$30)"
+5,23,"=IF(Bridging!F16=""Household 2"",$C$12+$C$29+$C$30)+IF(Bridging!H16=""Household 2"",$F$12+$F$29+$F$30)","=IF(Bridging!F16=""Household 2"",$C$12+$C$29+$C$30)+IF(Bridging!H16=""Household 2"",$F$12+$F$29+$F$30)"
+5,24,"=IF(Bridging!F16=""Household 3"",$C$12+$C$29+$C$30)+IF(Bridging!H16=""Household 3"",$F$12+$F$29+$F$30)","=IF(Bridging!F16=""Household 3"",$C$12+$C$29+$C$30)+IF(Bridging!H16=""Household 3"",$F$12+$F$29+$F$30)"
+5,25,"=IF(Bridging!F16=""Household 4"",$C$12+$C$29+$C$30)+IF(Bridging!H16=""Household 4"",$F$12+$F$29+$F$30)","=IF(Bridging!F16=""Household 4"",$C$12+$C$29+$C$30)+IF(Bridging!H16=""Household 4"",$F$12+$F$29+$F$30)"
+5,26,=SUM(V5:Y5),=SUM(V5:Y5)
+5,28,Household Eligible Income,
+5,29,"=IF(Bridging!G16=""Household 1"",$J$12+$J$29+$J$30)+IF(Bridging!I16=""Household 1"",$M$12+$M$29+$M$30)","=IF(Bridging!G16=""Household 1"",$J$12+$J$29+$J$30)+IF(Bridging!I16=""Household 1"",$M$12+$M$29+$M$30)"
+5,30,"=IF(Bridging!G16=""Household 2"",$J$12+$J$29+$J$30)+IF(Bridging!I16=""Household 2"",$M$12+$M$29+$M$30)","=IF(Bridging!G16=""Household 2"",$J$12+$J$29+$J$30)+IF(Bridging!I16=""Household 2"",$M$12+$M$29+$M$30)"
+5,31,"=IF(Bridging!G16=""Household 3"",$J$12+$J$29+$J$30)+IF(Bridging!I16=""Household 3"",$M$12+$M$29+$M$30)","=IF(Bridging!G16=""Household 3"",$J$12+$J$29+$J$30)+IF(Bridging!I16=""Household 3"",$M$12+$M$29+$M$30)"
+5,32,"=IF(Bridging!G16=""Household 4"",$J$12+$J$29+$J$30)+IF(Bridging!I16=""Household 4"",$M$12+$M$29+$M$30)","=IF(Bridging!G16=""Household 4"",$J$12+$J$29+$J$30)+IF(Bridging!I16=""Household 4"",$M$12+$M$29+$M$30)"
+5,33,=SUM(AC5:AF5),=SUM(AC5:AF5)
+6,1,Existing Rental Income,
+6,2,=Bridging!F20,=Bridging!F20
+6,3,=B6,=B6
+6,5,=Bridging!H20,=Bridging!H20
+6,6,=E6,=E6
+6,8,Existing Rental Income,
+6,9,=Bridging!G20,=Bridging!G20
+6,10,=I6,=I6
+6,12,=Bridging!I20,=Bridging!I20
+6,13,=L6,=L6
+6,15,=COUNTBLANK(Bridging!B42:K42)=10,=COUNTBLANK(Bridging!B42:K42)=10
+6,16,"=IF(O6,TRUE,IF(OR(Bridging!B42=""Credit Card"",Bridging!B42=""Overdraft"",Bridging!B42=""Commercial Bill""),AND(Bridging!F42<>"""",Bridging!G42<>""""),IF(Bridging!B42=""Margin Loan"",Bridging!G42<>"""",IF(OR(Bridging!E42=""With my funds"",Bridging!E42=""Add to bridging""),AND(Bridging!F42<>"""",Bridging!G42<>""""),IF(OR(Bridging!B42=""Personal Loan"",Bridging!B42=""Lease"",Bridging!B42=""Hire Purchase"",Bridging!B42=""Other""),AND(Bridging!J42<>"""",Bridging!K42<>""""),IF(OR(Bridging!B42=""CBA Variable Rate Home Loan"",Bridging!B42=""CBA Fixed Rate Home Loan"",Bridging!B42=""OFI home loan (Other financial institution)""),AND(Bridging!C42<>"""",Bridging!F42<>"""",Bridging!G42<>"""",Bridging!H42<>"""",Bridging!I42<>"""",Bridging!K42<>""""),IF(OR(Bridging!B42=""CBA Line of Credit"",Bridging!B42=""OFI Line of Credit (Other financial institution)""),AND(Bridging!C42<>"""",Bridging!F42<>"""",Bridging!G42<>"""",Bridging!I42<>"""",Bridging!K42<>""""),IF(Bridging!B42=""HECS"",Bridging!J42<>"""",FALSE))))))))","=IF(O6,TRUE,IF(OR(Bridging!B42=""Credit Card"",Bridging!B42=""Overdraft"",Bridging!B42=""Commercial Bill""),AND(Bridging!F42<>"""",Bridging!G42<>""""),IF(Bridging!B42=""Margin Loan"",Bridging!G42<>"""",IF(OR(Bridging!E42=""With my funds"",Bridging!E42=""Add to bridging""),AND(Bridging!F42<>"""",Bridging!G42<>""""),IF(OR(Bridging!B42=""Personal Loan"",Bridging!B42=""Lease"",Bridging!B42=""Hire Purchase"",Bridging!B42=""Other""),AND(Bridging!J42<>"""",Bridging!K42<>""""),IF(OR(Bridging!B42=""CBA Variable Rate Home Loan"",Bridging!B42=""CBA Fixed Rate Home Loan"",Bridging!B42=""OFI home loan (Other financial institution)""),AND(Bridging!C42<>"""",Bridging!F42<>"""",Bridging!G42<>"""",Bridging!H42<>"""",Bridging!I42<>"""",Bridging!K42<>""""),IF(OR(Bridging!B42=""CBA Line of Credit"",Bridging!B42=""OFI Line of Credit (Other financial institution)""),AND(Bridging!C42<>"""",Bridging!F42<>"""",Bridging!G42<>"""",Bridging!I42<>"""",Bridging!K42<>""""),IF(Bridging!B42=""HECS"",Bridging!J42<>"""",FALSE))))))))"
+6,17,"=AND(Bridging!E42<>""With my funds"",Bridging!B42<>"""",Bridging!D42=""Yes"")","=AND(Bridging!E42<>""With my funds"",Bridging!B42<>"""",Bridging!D42=""Yes"")"
+6,18,"=IF(NOT(Q6),TRUE,COUNTBLANK('Bridging Neg Gearing'!E11:F11)<2)","=IF(NOT(Q6),TRUE,COUNTBLANK('Bridging Neg Gearing'!E11:F11)<2)"
+6,19,"=IF(O6=FALSE,MAX(Bridging!F42:G42),0)","=IF(O6=FALSE,MAX(Bridging!F42:G42),0)"
+6,21,HEM Calculated Expenses,
+6,22,"=IF(V3=0,0,IF(V3=1,VLOOKUP(V5,Data!$Q$23:$AC$43,3+MIN(3,V4))+IF(V4>3,(V4-3)*VLOOKUP(V5,Data!$Q$23:$AC$43,7),0),VLOOKUP(V5,Data!$Q$23:$AC$43,8+MIN(3,V4))+IF(V4>3,(V4-3)*VLOOKUP(V5,Data!$Q$23:$AC$43,12),0)+IF(V3>2,(V3-2)*VLOOKUP(V5,Data!$Q$23:$AC$43,13),0)))","=IF(V3=0,0,IF(V3=1,VLOOKUP(V5,Data!$Q$23:$AC$43,3+MIN(3,V4))+IF(V4>3,(V4-3)*VLOOKUP(V5,Data!$Q$23:$AC$43,7),0),VLOOKUP(V5,Data!$Q$23:$AC$43,8+MIN(3,V4))+IF(V4>3,(V4-3)*VLOOKUP(V5,Data!$Q$23:$AC$43,12),0)+IF(V3>2,(V3-2)*VLOOKUP(V5,Data!$Q$23:$AC$43,13),0)))"
+6,23,"=IF(W3=0,0,IF(W3=1,VLOOKUP(W5,Data!$Q$23:$AC$43,3+MIN(3,W4))+IF(W4>3,(W4-3)*VLOOKUP(W5,Data!$Q$23:$AC$43,7),0),VLOOKUP(W5,Data!$Q$23:$AC$43,8+MIN(3,W4))+IF(W4>3,(W4-3)*VLOOKUP(W5,Data!$Q$23:$AC$43,12),0)+IF(W3>2,(W3-2)*VLOOKUP(W5,Data!$Q$23:$AC$43,13),0)))","=IF(W3=0,0,IF(W3=1,VLOOKUP(W5,Data!$Q$23:$AC$43,3+MIN(3,W4))+IF(W4>3,(W4-3)*VLOOKUP(W5,Data!$Q$23:$AC$43,7),0),VLOOKUP(W5,Data!$Q$23:$AC$43,8+MIN(3,W4))+IF(W4>3,(W4-3)*VLOOKUP(W5,Data!$Q$23:$AC$43,12),0)+IF(W3>2,(W3-2)*VLOOKUP(W5,Data!$Q$23:$AC$43,13),0)))"
+6,24,"=IF(X3=0,0,IF(X3=1,VLOOKUP(X5,Data!$Q$23:$AC$43,3+MIN(3,X4))+IF(X4>3,(X4-3)*VLOOKUP(X5,Data!$Q$23:$AC$43,7),0),VLOOKUP(X5,Data!$Q$23:$AC$43,8+MIN(3,X4))+IF(X4>3,(X4-3)*VLOOKUP(X5,Data!$Q$23:$AC$43,12),0)+IF(X3>2,(X3-2)*VLOOKUP(X5,Data!$Q$23:$AC$43,13),0)))","=IF(X3=0,0,IF(X3=1,VLOOKUP(X5,Data!$Q$23:$AC$43,3+MIN(3,X4))+IF(X4>3,(X4-3)*VLOOKUP(X5,Data!$Q$23:$AC$43,7),0),VLOOKUP(X5,Data!$Q$23:$AC$43,8+MIN(3,X4))+IF(X4>3,(X4-3)*VLOOKUP(X5,Data!$Q$23:$AC$43,12),0)+IF(X3>2,(X3-2)*VLOOKUP(X5,Data!$Q$23:$AC$43,13),0)))"
+6,25,"=IF(Y3=0,0,IF(Y3=1,VLOOKUP(Y5,Data!$Q$23:$AC$43,3+MIN(3,Y4))+IF(Y4>3,(Y4-3)*VLOOKUP(Y5,Data!$Q$23:$AC$43,7),0),VLOOKUP(Y5,Data!$Q$23:$AC$43,8+MIN(3,Y4))+IF(Y4>3,(Y4-3)*VLOOKUP(Y5,Data!$Q$23:$AC$43,12),0)+IF(Y3>2,(Y3-2)*VLOOKUP(Y5,Data!$Q$23:$AC$43,13),0)))","=IF(Y3=0,0,IF(Y3=1,VLOOKUP(Y5,Data!$Q$23:$AC$43,3+MIN(3,Y4))+IF(Y4>3,(Y4-3)*VLOOKUP(Y5,Data!$Q$23:$AC$43,7),0),VLOOKUP(Y5,Data!$Q$23:$AC$43,8+MIN(3,Y4))+IF(Y4>3,(Y4-3)*VLOOKUP(Y5,Data!$Q$23:$AC$43,12),0)+IF(Y3>2,(Y3-2)*VLOOKUP(Y5,Data!$Q$23:$AC$43,13),0)))"
+6,26,=SUM(V6:Y6),=SUM(V6:Y6)
+6,28,HEM Calculated Expenses,
+6,29,"=IF(AC3=0,0,IF(AC3=1,VLOOKUP(AC5,Data!$Q$23:$AC$43,3+MIN(3,AC4))+IF(AC4>3,(AC4-3)*VLOOKUP(AC5,Data!$Q$23:$AC$43,7),0),VLOOKUP(AC5,Data!$Q$23:$AC$43,8+MIN(3,AC4))+IF(AC4>3,(AC4-3)*VLOOKUP(AC5,Data!$Q$23:$AC$43,12),0)+IF(AC3>2,(AC3-2)*VLOOKUP(AC5,Data!$Q$23:$AC$43,13),0)))","=IF(AC3=0,0,IF(AC3=1,VLOOKUP(AC5,Data!$Q$23:$AC$43,3+MIN(3,AC4))+IF(AC4>3,(AC4-3)*VLOOKUP(AC5,Data!$Q$23:$AC$43,7),0),VLOOKUP(AC5,Data!$Q$23:$AC$43,8+MIN(3,AC4))+IF(AC4>3,(AC4-3)*VLOOKUP(AC5,Data!$Q$23:$AC$43,12),0)+IF(AC3>2,(AC3-2)*VLOOKUP(AC5,Data!$Q$23:$AC$43,13),0)))"
+6,30,"=IF(AD3=0,0,IF(AD3=1,VLOOKUP(AD5,Data!$Q$23:$AC$43,3+MIN(3,AD4))+IF(AD4>3,(AD4-3)*VLOOKUP(AD5,Data!$Q$23:$AC$43,7),0),VLOOKUP(AD5,Data!$Q$23:$AC$43,8+MIN(3,AD4))+IF(AD4>3,(AD4-3)*VLOOKUP(AD5,Data!$Q$23:$AC$43,12),0)+IF(AD3>2,(AD3-2)*VLOOKUP(AD5,Data!$Q$23:$AC$43,13),0)))","=IF(AD3=0,0,IF(AD3=1,VLOOKUP(AD5,Data!$Q$23:$AC$43,3+MIN(3,AD4))+IF(AD4>3,(AD4-3)*VLOOKUP(AD5,Data!$Q$23:$AC$43,7),0),VLOOKUP(AD5,Data!$Q$23:$AC$43,8+MIN(3,AD4))+IF(AD4>3,(AD4-3)*VLOOKUP(AD5,Data!$Q$23:$AC$43,12),0)+IF(AD3>2,(AD3-2)*VLOOKUP(AD5,Data!$Q$23:$AC$43,13),0)))"
+6,31,"=IF(AE3=0,0,IF(AE3=1,VLOOKUP(AE5,Data!$Q$23:$AC$43,3+MIN(3,AE4))+IF(AE4>3,(AE4-3)*VLOOKUP(AE5,Data!$Q$23:$AC$43,7),0),VLOOKUP(AE5,Data!$Q$23:$AC$43,8+MIN(3,AE4))+IF(AE4>3,(AE4-3)*VLOOKUP(AE5,Data!$Q$23:$AC$43,12),0)+IF(AE3>2,(AE3-2)*VLOOKUP(AE5,Data!$Q$23:$AC$43,13),0)))","=IF(AE3=0,0,IF(AE3=1,VLOOKUP(AE5,Data!$Q$23:$AC$43,3+MIN(3,AE4))+IF(AE4>3,(AE4-3)*VLOOKUP(AE5,Data!$Q$23:$AC$43,7),0),VLOOKUP(AE5,Data!$Q$23:$AC$43,8+MIN(3,AE4))+IF(AE4>3,(AE4-3)*VLOOKUP(AE5,Data!$Q$23:$AC$43,12),0)+IF(AE3>2,(AE3-2)*VLOOKUP(AE5,Data!$Q$23:$AC$43,13),0)))"
+6,32,"=IF(AF3=0,0,IF(AF3=1,VLOOKUP(AF5,Data!$Q$23:$AC$43,3+MIN(3,AF4))+IF(AF4>3,(AF4-3)*VLOOKUP(AF5,Data!$Q$23:$AC$43,7),0),VLOOKUP(AF5,Data!$Q$23:$AC$43,8+MIN(3,AF4))+IF(AF4>3,(AF4-3)*VLOOKUP(AF5,Data!$Q$23:$AC$43,12),0)+IF(AF3>2,(AF3-2)*VLOOKUP(AF5,Data!$Q$23:$AC$43,13),0)))","=IF(AF3=0,0,IF(AF3=1,VLOOKUP(AF5,Data!$Q$23:$AC$43,3+MIN(3,AF4))+IF(AF4>3,(AF4-3)*VLOOKUP(AF5,Data!$Q$23:$AC$43,7),0),VLOOKUP(AF5,Data!$Q$23:$AC$43,8+MIN(3,AF4))+IF(AF4>3,(AF4-3)*VLOOKUP(AF5,Data!$Q$23:$AC$43,12),0)+IF(AF3>2,(AF3-2)*VLOOKUP(AF5,Data!$Q$23:$AC$43,13),0)))"
+6,33,=SUM(AC6:AF6),=SUM(AC6:AF6)
+7,1,Proposed Rental Income,
+7,2,=Bridging!F21,=Bridging!F21
+7,3,=B7,=B7
+7,5,=Bridging!H21,=Bridging!H21
+7,6,=E7,=E7
+7,8,Proposed Rental Income,
+7,9,=Bridging!G21,=Bridging!G21
+7,10,=I7,=I7
+7,12,=Bridging!I21,=Bridging!I21
+7,13,=L7,=L7
+7,15,=COUNTBLANK(Bridging!B43:K43)=10,=COUNTBLANK(Bridging!B43:K43)=10
+7,16,"=IF(O7,TRUE,IF(OR(Bridging!B43=""Credit Card"",Bridging!B43=""Overdraft"",Bridging!B43=""Commercial Bill""),AND(Bridging!F43<>"""",Bridging!G43<>""""),IF(Bridging!B43=""Margin Loan"",Bridging!G43<>"""",IF(OR(Bridging!E43=""With my funds"",Bridging!E43=""Add to bridging""),AND(Bridging!F43<>"""",Bridging!G43<>""""),IF(OR(Bridging!B43=""Personal Loan"",Bridging!B43=""Lease"",Bridging!B43=""Hire Purchase"",Bridging!B43=""Other""),AND(Bridging!J43<>"""",Bridging!K43<>""""),IF(OR(Bridging!B43=""CBA Variable Rate Home Loan"",Bridging!B43=""CBA Fixed Rate Home Loan"",Bridging!B43=""OFI home loan (Other financial institution)""),AND(Bridging!C43<>"""",Bridging!F43<>"""",Bridging!G43<>"""",Bridging!H43<>"""",Bridging!I43<>"""",Bridging!K43<>""""),IF(OR(Bridging!B43=""CBA Line of Credit"",Bridging!B43=""OFI Line of Credit (Other financial institution)""),AND(Bridging!C43<>"""",Bridging!F43<>"""",Bridging!G43<>"""",Bridging!I43<>"""",Bridging!K43<>""""),IF(Bridging!B43=""HECS"",Bridging!J43<>"""",FALSE))))))))","=IF(O7,TRUE,IF(OR(Bridging!B43=""Credit Card"",Bridging!B43=""Overdraft"",Bridging!B43=""Commercial Bill""),AND(Bridging!F43<>"""",Bridging!G43<>""""),IF(Bridging!B43=""Margin Loan"",Bridging!G43<>"""",IF(OR(Bridging!E43=""With my funds"",Bridging!E43=""Add to bridging""),AND(Bridging!F43<>"""",Bridging!G43<>""""),IF(OR(Bridging!B43=""Personal Loan"",Bridging!B43=""Lease"",Bridging!B43=""Hire Purchase"",Bridging!B43=""Other""),AND(Bridging!J43<>"""",Bridging!K43<>""""),IF(OR(Bridging!B43=""CBA Variable Rate Home Loan"",Bridging!B43=""CBA Fixed Rate Home Loan"",Bridging!B43=""OFI home loan (Other financial institution)""),AND(Bridging!C43<>"""",Bridging!F43<>"""",Bridging!G43<>"""",Bridging!H43<>"""",Bridging!I43<>"""",Bridging!K43<>""""),IF(OR(Bridging!B43=""CBA Line of Credit"",Bridging!B43=""OFI Line of Credit (Other financial institution)""),AND(Bridging!C43<>"""",Bridging!F43<>"""",Bridging!G43<>"""",Bridging!I43<>"""",Bridging!K43<>""""),IF(Bridging!B43=""HECS"",Bridging!J43<>"""",FALSE))))))))"
+7,17,"=AND(Bridging!E43<>""With my funds"",Bridging!B43<>"""",Bridging!D43=""Yes"")","=AND(Bridging!E43<>""With my funds"",Bridging!B43<>"""",Bridging!D43=""Yes"")"
+7,18,"=IF(NOT(Q7),TRUE,COUNTBLANK('Bridging Neg Gearing'!E12:F12)<2)","=IF(NOT(Q7),TRUE,COUNTBLANK('Bridging Neg Gearing'!E12:F12)<2)"
+7,19,"=IF(O7=FALSE,MAX(Bridging!F43:G43),0)","=IF(O7=FALSE,MAX(Bridging!F43:G43),0)"
+7,21,Customer Declared Expenses,
+7,22,"=IF(OR(Bridging!I11="""",Bridging!I11=0),0,Bridging!I11)","=IF(OR(Bridging!I11="""",Bridging!I11=0),0,Bridging!I11)"
+7,23,"=IF(OR(Bridging!J11="""",Bridging!J11=0),0,Bridging!J11)","=IF(OR(Bridging!J11="""",Bridging!J11=0),0,Bridging!J11)"
+7,24,"=IF(OR(Bridging!K11="""",Bridging!K11=0),0,Bridging!K11)","=IF(OR(Bridging!K11="""",Bridging!K11=0),0,Bridging!K11)"
+7,25,"=IF(OR(Bridging!L11="""",Bridging!L11=0),0,Bridging!L11)","=IF(OR(Bridging!L11="""",Bridging!L11=0),0,Bridging!L11)"
+7,26,=SUM(V7:Y7),=SUM(V7:Y7)
+7,28,Customer Declared Expenses,
+7,29,"=IF(OR(Bridging!I11="""",Bridging!I11=0),0,Bridging!I11)","=IF(OR(Bridging!I11="""",Bridging!I11=0),0,Bridging!I11)"
+7,30,"=IF(OR(Bridging!J11="""",Bridging!J11=0),0,Bridging!J11)","=IF(OR(Bridging!J11="""",Bridging!J11=0),0,Bridging!J11)"
+7,31,"=IF(OR(Bridging!K11="""",Bridging!K11=0),0,Bridging!K11)","=IF(OR(Bridging!K11="""",Bridging!K11=0),0,Bridging!K11)"
+7,32,"=IF(OR(Bridging!L11="""",Bridging!L11=0),0,Bridging!L11)","=IF(OR(Bridging!L11="""",Bridging!L11=0),0,Bridging!L11)"
+7,33,=SUM(AC7:AF7),=SUM(AC7:AF7)
+8,1,Investment Income,
+8,2,=Bridging!F22,=Bridging!F22
+8,3,=B8*Data!$C$22,=B8*Data!$C$22
+8,5,=Bridging!H22,=Bridging!H22
+8,6,=E8*Data!$C$22,=E8*Data!$C$22
+8,8,Investment Income,
+8,9,=Bridging!G22,=Bridging!G22
+8,10,=I8*Data!$C$22,=I8*Data!$C$22
+8,12,=Bridging!I22,=Bridging!I22
+8,13,=L8*Data!$C$22,=L8*Data!$C$22
+8,15,=COUNTBLANK(Bridging!B44:K44)=10,=COUNTBLANK(Bridging!B44:K44)=10
+8,16,"=IF(O8,TRUE,IF(OR(Bridging!B44=""Credit Card"",Bridging!B44=""Overdraft"",Bridging!B44=""Commercial Bill""),AND(Bridging!F44<>"""",Bridging!G44<>""""),IF(Bridging!B44=""Margin Loan"",Bridging!G44<>"""",IF(OR(Bridging!E44=""With my funds"",Bridging!E44=""Add to bridging""),AND(Bridging!F44<>"""",Bridging!G44<>""""),IF(OR(Bridging!B44=""Personal Loan"",Bridging!B44=""Lease"",Bridging!B44=""Hire Purchase"",Bridging!B44=""Other""),AND(Bridging!J44<>"""",Bridging!K44<>""""),IF(OR(Bridging!B44=""CBA Variable Rate Home Loan"",Bridging!B44=""CBA Fixed Rate Home Loan"",Bridging!B44=""OFI home loan (Other financial institution)""),AND(Bridging!C44<>"""",Bridging!F44<>"""",Bridging!G44<>"""",Bridging!H44<>"""",Bridging!I44<>"""",Bridging!K44<>""""),IF(OR(Bridging!B44=""CBA Line of Credit"",Bridging!B44=""OFI Line of Credit (Other financial institution)""),AND(Bridging!C44<>"""",Bridging!F44<>"""",Bridging!G44<>"""",Bridging!I44<>"""",Bridging!K44<>""""),IF(Bridging!B44=""HECS"",Bridging!J44<>"""",FALSE))))))))","=IF(O8,TRUE,IF(OR(Bridging!B44=""Credit Card"",Bridging!B44=""Overdraft"",Bridging!B44=""Commercial Bill""),AND(Bridging!F44<>"""",Bridging!G44<>""""),IF(Bridging!B44=""Margin Loan"",Bridging!G44<>"""",IF(OR(Bridging!E44=""With my funds"",Bridging!E44=""Add to bridging""),AND(Bridging!F44<>"""",Bridging!G44<>""""),IF(OR(Bridging!B44=""Personal Loan"",Bridging!B44=""Lease"",Bridging!B44=""Hire Purchase"",Bridging!B44=""Other""),AND(Bridging!J44<>"""",Bridging!K44<>""""),IF(OR(Bridging!B44=""CBA Variable Rate Home Loan"",Bridging!B44=""CBA Fixed Rate Home Loan"",Bridging!B44=""OFI home loan (Other financial institution)""),AND(Bridging!C44<>"""",Bridging!F44<>"""",Bridging!G44<>"""",Bridging!H44<>"""",Bridging!I44<>"""",Bridging!K44<>""""),IF(OR(Bridging!B44=""CBA Line of Credit"",Bridging!B44=""OFI Line of Credit (Other financial institution)""),AND(Bridging!C44<>"""",Bridging!F44<>"""",Bridging!G44<>"""",Bridging!I44<>"""",Bridging!K44<>""""),IF(Bridging!B44=""HECS"",Bridging!J44<>"""",FALSE))))))))"
+8,17,"=AND(Bridging!E44<>""With my funds"",Bridging!B44<>"""",Bridging!D44=""Yes"")","=AND(Bridging!E44<>""With my funds"",Bridging!B44<>"""",Bridging!D44=""Yes"")"
+8,18,"=IF(NOT(Q8),TRUE,COUNTBLANK('Bridging Neg Gearing'!E13:F13)<2)","=IF(NOT(Q8),TRUE,COUNTBLANK('Bridging Neg Gearing'!E13:F13)<2)"
+8,19,"=IF(O8=FALSE,MAX(Bridging!F44:G44),0)","=IF(O8=FALSE,MAX(Bridging!F44:G44),0)"
+8,21,Total,
+8,22,=MAX(V6:V7),=MAX(V6:V7)
+8,23,=MAX(W6:W7),=MAX(W6:W7)
+8,24,=MAX(X6:X7),=MAX(X6:X7)
+8,25,=MAX(Y6:Y7),=MAX(Y6:Y7)
+8,26,=SUM(V8:Y8),=SUM(V8:Y8)
+8,28,Total,
+8,29,=MAX(AC6:AC7),=MAX(AC6:AC7)
+8,30,=MAX(AD6:AD7),=MAX(AD6:AD7)
+8,31,=MAX(AE6:AE7),=MAX(AE6:AE7)
+8,32,=MAX(AF6:AF7),=MAX(AF6:AF7)
+8,33,=SUM(AC8:AF8),=SUM(AC8:AF8)
+9,1,Pensions,
+9,2,=Bridging!F23,=Bridging!F23
+9,3,=B9*Data!G30,=B9*Data!G30
+9,5,=Bridging!H23,=Bridging!H23
+9,6,=E9*Data!G30,=E9*Data!G30
+9,8,Pensions,
+9,9,=Bridging!G23,=Bridging!G23
+9,10,=I9*Data!G30,=I9*Data!G30
+9,12,=Bridging!I23,=Bridging!I23
+9,13,=L9*Data!G30,=L9*Data!G30
+9,15,=COUNTBLANK(Bridging!B45:K45)=10,=COUNTBLANK(Bridging!B45:K45)=10
+9,16,"=IF(O9,TRUE,IF(OR(Bridging!B45=""Credit Card"",Bridging!B45=""Overdraft"",Bridging!B45=""Commercial Bill""),AND(Bridging!F45<>"""",Bridging!G45<>""""),IF(Bridging!B45=""Margin Loan"",Bridging!G45<>"""",IF(OR(Bridging!E45=""With my funds"",Bridging!E45=""Add to bridging""),AND(Bridging!F45<>"""",Bridging!G45<>""""),IF(OR(Bridging!B45=""Personal Loan"",Bridging!B45=""Lease"",Bridging!B45=""Hire Purchase"",Bridging!B45=""Other""),AND(Bridging!J45<>"""",Bridging!K45<>""""),IF(OR(Bridging!B45=""CBA Variable Rate Home Loan"",Bridging!B45=""CBA Fixed Rate Home Loan"",Bridging!B45=""OFI home loan (Other financial institution)""),AND(Bridging!C45<>"""",Bridging!F45<>"""",Bridging!G45<>"""",Bridging!H45<>"""",Bridging!I45<>"""",Bridging!K45<>""""),IF(OR(Bridging!B45=""CBA Line of Credit"",Bridging!B45=""OFI Line of Credit (Other financial institution)""),AND(Bridging!C45<>"""",Bridging!F45<>"""",Bridging!G45<>"""",Bridging!I45<>"""",Bridging!K45<>""""),IF(Bridging!B45=""HECS"",Bridging!J45<>"""",FALSE))))))))","=IF(O9,TRUE,IF(OR(Bridging!B45=""Credit Card"",Bridging!B45=""Overdraft"",Bridging!B45=""Commercial Bill""),AND(Bridging!F45<>"""",Bridging!G45<>""""),IF(Bridging!B45=""Margin Loan"",Bridging!G45<>"""",IF(OR(Bridging!E45=""With my funds"",Bridging!E45=""Add to bridging""),AND(Bridging!F45<>"""",Bridging!G45<>""""),IF(OR(Bridging!B45=""Personal Loan"",Bridging!B45=""Lease"",Bridging!B45=""Hire Purchase"",Bridging!B45=""Other""),AND(Bridging!J45<>"""",Bridging!K45<>""""),IF(OR(Bridging!B45=""CBA Variable Rate Home Loan"",Bridging!B45=""CBA Fixed Rate Home Loan"",Bridging!B45=""OFI home loan (Other financial institution)""),AND(Bridging!C45<>"""",Bridging!F45<>"""",Bridging!G45<>"""",Bridging!H45<>"""",Bridging!I45<>"""",Bridging!K45<>""""),IF(OR(Bridging!B45=""CBA Line of Credit"",Bridging!B45=""OFI Line of Credit (Other financial institution)""),AND(Bridging!C45<>"""",Bridging!F45<>"""",Bridging!G45<>"""",Bridging!I45<>"""",Bridging!K45<>""""),IF(Bridging!B45=""HECS"",Bridging!J45<>"""",FALSE))))))))"
+9,17,"=AND(Bridging!E45<>""With my funds"",Bridging!B45<>"""",Bridging!D45=""Yes"")","=AND(Bridging!E45<>""With my funds"",Bridging!B45<>"""",Bridging!D45=""Yes"")"
+9,18,"=IF(NOT(Q9),TRUE,COUNTBLANK('Bridging Neg Gearing'!E14:F14)<2)","=IF(NOT(Q9),TRUE,COUNTBLANK('Bridging Neg Gearing'!E14:F14)<2)"
+9,19,"=IF(O9=FALSE,MAX(Bridging!F45:G45),0)","=IF(O9=FALSE,MAX(Bridging!F45:G45),0)"
+10,1,Other Regular Income,
+10,2,=Bridging!F24,=Bridging!F24
+10,3,=B10,=B10
+10,5,=Bridging!H24,=Bridging!H24
+10,6,=E10,=E10
+10,8,Other Regular Income,
+10,9,=Bridging!G24,=Bridging!G24
+10,10,=I10,=I10
+10,12,=Bridging!I24,=Bridging!I24
+10,13,=L10,=L10
+10,16,=AND(P3:P9),=AND(P3:P9)
+10,17,=OR(Q3:Q9),=OR(Q3:Q9)
+10,18,=AND(R3:R9),=AND(R3:R9)
+10,22,Bridging,
+10,23,Post Bridging,
+10,26,Complete,
+11,1,Self Employed Income,
+11,2,=Bridging!F25,=Bridging!F25
+11,3,=B11,=B11
+11,5,=Bridging!H25,=Bridging!H25
+11,6,=E11,=E11
+11,8,Self Employed Income,
+11,9,=Bridging!G25,=Bridging!G25
+11,10,=I11,=I11
+11,12,=Bridging!I25,=Bridging!I25
+11,13,=L11,=L11
+11,21,Gross non-rental Income,
+11,22,"=SUM(C3:C5,C8:C11,Bridging!F30:F31,F3:F5,F8:F11,Bridging!H30:H31)","=SUM(C3:C5,C8:C11,Bridging!F30:F31,F3:F5,F8:F11,Bridging!H30:H31)"
+11,23,"=SUM(J3:J5,J8:J11,Bridging!G30:G31,M3:M5,M8:M11,Bridging!I30:I31)","=SUM(J3:J5,J8:J11,Bridging!G30:G31,M3:M5,M8:M11,Bridging!I30:I31)"
+11,25,General Info,
+11,26,"=AND(Bridging!K7,Bridging!I6<>"""",Bridging!F16<>"""",Bridging!J6="""",Bridging!I10<>"""",IF(Bridging!I6>1,Bridging!J10<>"""",TRUE),IF(Bridging!I6>2,Bridging!K10<>"""",TRUE),IF(Bridging!I6>3,Bridging!L10<>"""",TRUE))","=AND(Bridging!K7,Bridging!I6<>"""",Bridging!F16<>"""",Bridging!J6="""",Bridging!I10<>"""",IF(Bridging!I6>1,Bridging!J10<>"""",TRUE),IF(Bridging!I6>2,Bridging!K10<>"""",TRUE),IF(Bridging!I6>3,Bridging!L10<>"""",TRUE))"
+12,1,Gross Annual Income,
+12,2,=SUM(B3:B11),=SUM(B3:B11)
+12,3,=SUM(C3:C11),=SUM(C3:C11)
+12,5,=SUM(E3:E11),=SUM(E3:E11)
+12,6,=SUM(F3:F11),=SUM(F3:F11)
+12,8,Gross Annual Income,
+12,9,=SUM(I3:I11),=SUM(I3:I11)
+12,10,=SUM(J3:J11),=SUM(J3:J11)
+12,12,=SUM(L3:L11),=SUM(L3:L11)
+12,13,=SUM(M3:M11),=SUM(M3:M11)
+12,15,Proposed Loans,
+12,21,Gross rental Income,
+12,22,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5A7C830>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5A7C830>
+12,23,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5A7DD60>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5A7DD60>
+12,25,Income,
+12,26,"=AND(SUM(Bridging!F26,Bridging!F30:F31)>0,SUM(Bridging!G26,Bridging!G30:G31)>0)","=AND(SUM(Bridging!F26,Bridging!F30:F31)>0,SUM(Bridging!G26,Bridging!G30:G31)>0)"
+13,1,Income Tax,
+13,2,=income_tax(B12),=income_tax(B12)
+13,3,=income_tax(C12),=income_tax(C12)
+13,5,=income_tax(E12),=income_tax(E12)
+13,6,=income_tax(F12),=income_tax(F12)
+13,8,Income Tax,
+13,9,=income_tax(I12),=income_tax(I12)
+13,10,=income_tax(J12),=income_tax(J12)
+13,12,=income_tax(L12),=income_tax(L12)
+13,13,=income_tax(M12),=income_tax(M12)
+13,15,Blank,
+13,16,Complete,
+13,17,Neg Gearing,
+13,18,Complete,
+13,21,Eligible rental Income,
+13,22,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5A7EFF0>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5A7EFF0>
+13,23,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5A7F6B0>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5A7F6B0>
+13,25,Loans,
+13,26,"=AND(P10,R10,P20,R20)","=AND(P10,R10,P20,R20)"
+14,1,Medicare Levy,
+14,2,=medicare_levy(B12),=medicare_levy(B12)
+14,3,=medicare_levy(C12),=medicare_levy(C12)
+14,5,=medicare_levy(E12),=medicare_levy(E12)
+14,6,=medicare_levy(F12),=medicare_levy(F12)
+14,8,Medicare Levy,
+14,9,=medicare_levy(I12),=medicare_levy(I12)
+14,10,=medicare_levy(J12),=medicare_levy(J12)
+14,12,=medicare_levy(L12),=medicare_levy(L12)
+14,13,=medicare_levy(M12),=medicare_levy(M12)
+14,15,"=AND(Bridging!B65="""",Bridging!C65="""",Bridging!D65="""",Bridging!E65="""",Bridging!F65="""",Bridging!I65="""",Bridging!J65="""",Bridging!K65="""")","=AND(Bridging!B65="""",Bridging!C65="""",Bridging!D65="""",Bridging!E65="""",Bridging!F65="""",Bridging!I65="""",Bridging!J65="""",Bridging!K65="""")"
+14,16,"=IF(O14,TRUE,IF(Bridging!B65=""Credit Card"",Bridging!E65<>"""",AND(Bridging!C65<>"""",Bridging!E65<>"""",Bridging!F65<>"""",Bridging!I65<>"""",Bridging!K65<>"""")))","=IF(O14,TRUE,IF(Bridging!B65=""Credit Card"",Bridging!E65<>"""",AND(Bridging!C65<>"""",Bridging!E65<>"""",Bridging!F65<>"""",Bridging!I65<>"""",Bridging!K65<>"""")))"
+14,17,"=AND(Bridging!B65<>"""",Bridging!D65=""Yes"")","=AND(Bridging!B65<>"""",Bridging!D65=""Yes"")"
+14,18,"=IF(NOT(Q14),TRUE,COUNTBLANK('Bridging Neg Gearing'!E32:F32)<2)","=IF(NOT(Q14),TRUE,COUNTBLANK('Bridging Neg Gearing'!E32:F32)<2)"
+14,21,Total Gross Income,
+14,22,=SUM(V11:V12),=SUM(V11:V12)
+14,23,=SUM(W11:W12),=SUM(W11:W12)
+14,25,Bridging,
+14,26,"=AND(COUNTBLANK(Bridging!F50:F53)=0,Bridging!K50<>"""",Bridging!K52<>"""")","=AND(COUNTBLANK(Bridging!F50:F53)=0,Bridging!K50<>"""",Bridging!K52<>"""")"
+15,1,LITO,
+15,2,"=IF((LITO(B12,B13)+LMITO(B12,B13))>B13,B13,LITO(B12,B13))","=IF((LITO(B12,B13)+LMITO(B12,B13))>B13,B13,LITO(B12,B13))"
+15,3,"=IF((LITO(C12,C13)+LMITO(C12,C13))>C13,C13,LITO(C12,C13))","=IF((LITO(C12,C13)+LMITO(C12,C13))>C13,C13,LITO(C12,C13))"
+15,5,"=IF((LITO(E12,E13)+LMITO(E12,E13))>E13,E13,LITO(E12,E13))","=IF((LITO(E12,E13)+LMITO(E12,E13))>E13,E13,LITO(E12,E13))"
+15,6,"=IF((LITO(F12,F13)+LMITO(F12,F13))>F13,F13,LITO(F12,F13))","=IF((LITO(F12,F13)+LMITO(F12,F13))>F13,F13,LITO(F12,F13))"
+15,8,LITO,
+15,9,"=IF((LITO(I12,I13)+LMITO(I12,I13))>I13,I13,LITO(I12,I13))","=IF((LITO(I12,I13)+LMITO(I12,I13))>I13,I13,LITO(I12,I13))"
+15,10,"=IF((LITO(J12,J13)+LMITO(J12,J13))>J13,J13,LITO(J12,J13))","=IF((LITO(J12,J13)+LMITO(J12,J13))>J13,J13,LITO(J12,J13))"
+15,12,"=IF((LITO(L12,L13)+LMITO(L12,L13))>L13,L13,LITO(L12,L13))","=IF((LITO(L12,L13)+LMITO(L12,L13))>L13,L13,LITO(L12,L13))"
+15,13,"=IF((LITO(M12,M13)+LMITO(M12,M13))>M13,M13,LITO(M12,M13))","=IF((LITO(M12,M13)+LMITO(M12,M13))>M13,M13,LITO(M12,M13))"
+15,15,"=AND(Bridging!B66="""",Bridging!C66="""",Bridging!D66="""",Bridging!E66="""",Bridging!F66="""",Bridging!I66="""",Bridging!J66="""",Bridging!K66="""")","=AND(Bridging!B66="""",Bridging!C66="""",Bridging!D66="""",Bridging!E66="""",Bridging!F66="""",Bridging!I66="""",Bridging!J66="""",Bridging!K66="""")"
+15,16,"=IF(O15,TRUE,IF(Bridging!B66=""Credit Card"",Bridging!E66<>"""",AND(Bridging!C66<>"""",Bridging!E66<>"""",Bridging!F66<>"""",Bridging!I66<>"""",Bridging!K66<>"""")))","=IF(O15,TRUE,IF(Bridging!B66=""Credit Card"",Bridging!E66<>"""",AND(Bridging!C66<>"""",Bridging!E66<>"""",Bridging!F66<>"""",Bridging!I66<>"""",Bridging!K66<>"""")))"
+15,17,"=AND(Bridging!B66<>"""",Bridging!D66=""Yes"")","=AND(Bridging!B66<>"""",Bridging!D66=""Yes"")"
+15,18,"=IF(NOT(Q15),TRUE,COUNTBLANK('Bridging Neg Gearing'!E33:F33)<2)","=IF(NOT(Q15),TRUE,COUNTBLANK('Bridging Neg Gearing'!E33:F33)<2)"
+15,25,All,
+15,26,=AND(Z11:Z14),=AND(Z11:Z14)
+16,1,LMITO,
+16,2,"=IF((LITO(B12,B13)+LMITO(B12,B13))>B13,0,LMITO(B12,B13))","=IF((LITO(B12,B13)+LMITO(B12,B13))>B13,0,LMITO(B12,B13))"
+16,3,"=IF((LITO(C12,C13)+LMITO(C12,C13))>C13,0,LMITO(C12,C13))","=IF((LITO(C12,C13)+LMITO(C12,C13))>C13,0,LMITO(C12,C13))"
+16,5,"=IF((LITO(E12,E13)+LMITO(E12,E13))>E13,0,LMITO(E12,E13))","=IF((LITO(E12,E13)+LMITO(E12,E13))>E13,0,LMITO(E12,E13))"
+16,6,"=IF((LITO(F12,F13)+LMITO(F12,F13))>F13,0,LMITO(F12,F13))","=IF((LITO(F12,F13)+LMITO(F12,F13))>F13,0,LMITO(F12,F13))"
+16,8,LMITO,
+16,9,"=IF((LITO(I12,I13)+LMITO(I12,I13))>I13,0,LMITO(I12,I13))","=IF((LITO(I12,I13)+LMITO(I12,I13))>I13,0,LMITO(I12,I13))"
+16,10,"=IF((LITO(J12,J13)+LMITO(J12,J13))>J13,0,LMITO(J12,J13))","=IF((LITO(J12,J13)+LMITO(J12,J13))>J13,0,LMITO(J12,J13))"
+16,12,"=IF((LITO(L12,L13)+LMITO(L12,L13))>L13,0,LMITO(L12,L13))","=IF((LITO(L12,L13)+LMITO(L12,L13))>L13,0,LMITO(L12,L13))"
+16,13,"=IF((LITO(M12,M13)+LMITO(M12,M13))>M13,0,LMITO(M12,M13))","=IF((LITO(M12,M13)+LMITO(M12,M13))>M13,0,LMITO(M12,M13))"
+16,15,"=AND(Bridging!B67="""",Bridging!C67="""",Bridging!D67="""",Bridging!E67="""",Bridging!F67="""",Bridging!I67="""",Bridging!J67="""",Bridging!K67="""")","=AND(Bridging!B67="""",Bridging!C67="""",Bridging!D67="""",Bridging!E67="""",Bridging!F67="""",Bridging!I67="""",Bridging!J67="""",Bridging!K67="""")"
+16,16,"=IF(O16,TRUE,IF(Bridging!B67=""Credit Card"",Bridging!E67<>"""",AND(Bridging!C67<>"""",Bridging!E67<>"""",Bridging!F67<>"""",Bridging!I67<>"""",Bridging!K67<>"""")))","=IF(O16,TRUE,IF(Bridging!B67=""Credit Card"",Bridging!E67<>"""",AND(Bridging!C67<>"""",Bridging!E67<>"""",Bridging!F67<>"""",Bridging!I67<>"""",Bridging!K67<>"""")))"
+16,17,"=AND(Bridging!B67<>"""",Bridging!D67=""Yes"")","=AND(Bridging!B67<>"""",Bridging!D67=""Yes"")"
+16,18,"=IF(NOT(Q16),TRUE,COUNTBLANK('Bridging Neg Gearing'!E34:F34)<2)","=IF(NOT(Q16),TRUE,COUNTBLANK('Bridging Neg Gearing'!E34:F34)<2)"
+16,21,Commitment Level,
+16,22,"=IF(V14>0,IF(Bridging!K57*12+Bridging!K34>V13,IF(V12<V14*Data!C18,(Bridging!K57*12+Bridging!K34-V13)/V11,(Bridging!K57*12+Bridging!K34)/V14),(Bridging!K57*12+Bridging!K34)/V14),0)","=IF(V14>0,IF(Bridging!K57*12+Bridging!K34>V13,IF(V12<V14*Data!C18,(Bridging!K57*12+Bridging!K34-V13)/V11,(Bridging!K57*12+Bridging!K34)/V14),(Bridging!K57*12+Bridging!K34)/V14),0)"
+16,23,"=IF(W14>0,IF(Bridging!L71*12+Bridging!L34>W13,IF(W12<W14*Data!C18,(Bridging!L71*12+Bridging!L34-W13)/W11,(Bridging!L71*12+Bridging!L34)/W14),(Bridging!L71*12+Bridging!L34)/W14),0)","=IF(W14>0,IF(Bridging!L71*12+Bridging!L34>W13,IF(W12<W14*Data!C18,(Bridging!L71*12+Bridging!L34-W13)/W11,(Bridging!L71*12+Bridging!L34)/W14),(Bridging!L71*12+Bridging!L34)/W14),0)"
+17,1,Total tax & levy (no n.g.),
+17,2,=B13+B14-B15-B16,=B13+B14-B15-B16
+17,3,=C13+C14-C15-C16,=C13+C14-C15-C16
+17,5,=E13+E14-E15-E16,=E13+E14-E15-E16
+17,6,=F13+F14-F15-F16,=F13+F14-F15-F16
+17,8,Total tax & levy (no n.g.),
+17,9,=I13+I14-I15-I16,=I13+I14-I15-I16
+17,10,=J13+J14-J15-J16,=J13+J14-J15-J16
+17,12,=L13+L14-L15-L16,=L13+L14-L15-L16
+17,13,=M13+M14-M15-M16,=M13+M14-M15-M16
+17,15,"=AND(Bridging!B68="""",Bridging!C68="""",Bridging!D68="""",Bridging!E68="""",Bridging!F68="""",Bridging!I68="""",Bridging!J68="""",Bridging!K68="""")","=AND(Bridging!B68="""",Bridging!C68="""",Bridging!D68="""",Bridging!E68="""",Bridging!F68="""",Bridging!I68="""",Bridging!J68="""",Bridging!K68="""")"
+17,16,"=IF(O17,TRUE,IF(Bridging!B68=""Credit Card"",Bridging!E68<>"""",AND(Bridging!C68<>"""",Bridging!E68<>"""",Bridging!F68<>"""",Bridging!I68<>"""",Bridging!K68<>"""")))","=IF(O17,TRUE,IF(Bridging!B68=""Credit Card"",Bridging!E68<>"""",AND(Bridging!C68<>"""",Bridging!E68<>"""",Bridging!F68<>"""",Bridging!I68<>"""",Bridging!K68<>"""")))"
+17,17,"=AND(Bridging!B68<>"""",Bridging!D68=""Yes"")","=AND(Bridging!B68<>"""",Bridging!D68=""Yes"")"
+17,18,"=IF(NOT(Q17),TRUE,COUNTBLANK('Bridging Neg Gearing'!E35:F35)<2)","=IF(NOT(Q17),TRUE,COUNTBLANK('Bridging Neg Gearing'!E35:F35)<2)"
+17,21,Commitment Level Limit,
+17,22,"=VLOOKUP(IF(V12<V14*Data!$C18,V11,V14),Data!$I$3:$K$7,3)","=VLOOKUP(IF(V12<V14*Data!$C18,V11,V14),Data!$I$3:$K$7,3)"
+17,23,"=VLOOKUP(IF(W12<W14*Data!$C18,W11,W14),Data!$I$3:$K$7,3)","=VLOOKUP(IF(W12<W14*Data!$C18,W11,W14),Data!$I$3:$K$7,3)"
+18,15,"=AND(Bridging!B69="""",Bridging!C69="""",Bridging!D69="""",Bridging!E69="""",Bridging!F69="""",Bridging!I69="""",Bridging!J69="""",Bridging!K69="""")","=AND(Bridging!B69="""",Bridging!C69="""",Bridging!D69="""",Bridging!E69="""",Bridging!F69="""",Bridging!I69="""",Bridging!J69="""",Bridging!K69="""")"
+18,16,"=IF(O18,TRUE,IF(Bridging!B69=""Credit Card"",Bridging!E69<>"""",AND(Bridging!C69<>"""",Bridging!E69<>"""",Bridging!F69<>"""",Bridging!I69<>"""",Bridging!K69<>"""")))","=IF(O18,TRUE,IF(Bridging!B69=""Credit Card"",Bridging!E69<>"""",AND(Bridging!C69<>"""",Bridging!E69<>"""",Bridging!F69<>"""",Bridging!I69<>"""",Bridging!K69<>"""")))"
+18,17,"=AND(Bridging!B69<>"""",Bridging!D69=""Yes"")","=AND(Bridging!B69<>"""",Bridging!D69=""Yes"")"
+18,18,"=IF(NOT(Q18),TRUE,COUNTBLANK('Bridging Neg Gearing'!E36:F36)<2)","=IF(NOT(Q18),TRUE,COUNTBLANK('Bridging Neg Gearing'!E36:F36)<2)"
+19,1,Negative Gearing Deduction,
+19,3,='Bridging Neg Gearing'!C42,='Bridging Neg Gearing'!C42
+19,6,='Bridging Neg Gearing'!C43,='Bridging Neg Gearing'!C43
+19,8,Negative Gearing Deduction,
+19,10,=SUM('Bridging Neg Gearing'!E42:F42),=SUM('Bridging Neg Gearing'!E42:F42)
+19,13,=SUM('Bridging Neg Gearing'!E43:F43),=SUM('Bridging Neg Gearing'!E43:F43)
+19,15,"=AND(Bridging!B70="""",Bridging!C70="""",Bridging!D70="""",Bridging!E70="""",Bridging!F70="""",Bridging!I70="""",Bridging!J70="""",Bridging!K70="""")","=AND(Bridging!B70="""",Bridging!C70="""",Bridging!D70="""",Bridging!E70="""",Bridging!F70="""",Bridging!I70="""",Bridging!J70="""",Bridging!K70="""")"
+19,16,"=IF(O19,TRUE,IF(Bridging!B70=""Credit Card"",Bridging!E70<>"""",AND(Bridging!C70<>"""",Bridging!E70<>"""",Bridging!F70<>"""",Bridging!I70<>"""",Bridging!K70<>"""")))","=IF(O19,TRUE,IF(Bridging!B70=""Credit Card"",Bridging!E70<>"""",AND(Bridging!C70<>"""",Bridging!E70<>"""",Bridging!F70<>"""",Bridging!I70<>"""",Bridging!K70<>"""")))"
+19,17,"=AND(Bridging!B70<>"""",Bridging!D70=""Yes"")","=AND(Bridging!B70<>"""",Bridging!D70=""Yes"")"
+19,18,"=IF(NOT(Q19),TRUE,COUNTBLANK('Bridging Neg Gearing'!E37:F37)<2)","=IF(NOT(Q19),TRUE,COUNTBLANK('Bridging Neg Gearing'!E37:F37)<2)"
+19,21,Monthly surplus,
+19,22,"=IF($Z15,Bridging!K33-$Z8-Bridging!K34/12,0)","=IF($Z15,Bridging!K33-$Z8-Bridging!K34/12,0)"
+19,23,"=IF($Z15,Bridging!L33-$AG8-Bridging!L34/12,0)","=IF($Z15,Bridging!L33-$AG8-Bridging!L34/12,0)"
+20,1,Taxable Income (with n.g.),
+20,3,"=MAX((C12-C19),0)","=MAX((C12-C19),0)"
+20,6,"=MAX((F12-F19),0)","=MAX((F12-F19),0)"
+20,8,Taxable Income (with n.g.),
+20,10,"=MAX((J12-J19),0)","=MAX((J12-J19),0)"
+20,13,"=MAX((M12-M19),0)","=MAX((M12-M19),0)"
+20,15,=AND(O14:O19),=AND(O14:O19)
+20,16,=AND(P14:P19),=AND(P14:P19)
+20,17,=OR(Q14:Q19),=OR(Q14:Q19)
+20,18,=AND(R14:R19),=AND(R14:R19)
+20,21,Surplus * Cash Buffer,
+20,22,"=IF(V19<=0,(1+V26)*V19,(1-W26)*V19)","=IF(V19<=0,(1+V26)*V19,(1-W26)*V19)"
+20,23,"=IF(W19<=0,(1+V26)*W19,(1-W26)*W19)","=IF(W19<=0,(1+V26)*W19,(1-W26)*W19)"
+21,1,Income Tax,
+21,3,=income_tax(C20),=income_tax(C20)
+21,6,=income_tax(F20),=income_tax(F20)
+21,8,Income Tax,
+21,10,=income_tax(J20),=income_tax(J20)
+21,13,=income_tax(M20),=income_tax(M20)
+21,21,Net monthly surplus (shortfall),
+21,22,"=IF(Z15,V20-Bridging!K57,0)","=IF(Z15,V20-Bridging!K57,0)"
+21,23,"=IF(Z15,W20-Bridging!L71,0)","=IF(Z15,W20-Bridging!L71,0)"
+22,1,Medicare Levy,
+22,3,=medicare_levy(C20),=medicare_levy(C20)
+22,6,=medicare_levy(F20),=medicare_levy(F20)
+22,8,Medicare Levy,
+22,10,=medicare_levy(J20),=medicare_levy(J20)
+22,13,=medicare_levy(M20),=medicare_levy(M20)
+23,1,LITO,
+23,3,"=IF((LITO(C20,C21)+LMITO(C20,C21))>C21,C21,LITO(C20,C21))","=IF((LITO(C20,C21)+LMITO(C20,C21))>C21,C21,LITO(C20,C21))"
+23,6,"=IF((LITO(F20,F21)+LMITO(F20,F21))>F21,F21,LITO(F20,F21))","=IF((LITO(F20,F21)+LMITO(F20,F21))>F21,F21,LITO(F20,F21))"
+23,8,LITO,
+23,10,"=IF((LITO(J20,J21)+LMITO(J20,J21))>J21,J21,LITO(J20,J21))","=IF((LITO(J20,J21)+LMITO(J20,J21))>J21,J21,LITO(J20,J21))"
+23,13,"=IF((LITO(M20,M21)+LMITO(M20,M21))>M21,M21,LITO(M20,M21))","=IF((LITO(M20,M21)+LMITO(M20,M21))>M21,M21,LITO(M20,M21))"
+23,21,Gross,
+23,22,"=IF(V16<=V17,""PASS"",""FAIL"")","=IF(V16<=V17,""PASS"",""FAIL"")"
+23,23,"=IF(W16<=W17,""PASS"",""FAIL"")","=IF(W16<=W17,""PASS"",""FAIL"")"
+24,1,LMITO,
+24,3,"=IF((LITO(C20,C21)+LMITO(C20,C21))>C21,0,LMITO(C20,C21))","=IF((LITO(C20,C21)+LMITO(C20,C21))>C21,0,LMITO(C20,C21))"
+24,6,"=IF((LITO(F20,F21)+LMITO(F20,F21))>F21,0,LMITO(F20,F21))","=IF((LITO(F20,F21)+LMITO(F20,F21))>F21,0,LMITO(F20,F21))"
+24,8,LMITO,
+24,10,"=IF((LITO(J20,J21)+LMITO(J20,J21))>J21,0,LMITO(J20,J21))","=IF((LITO(J20,J21)+LMITO(J20,J21))>J21,0,LMITO(J20,J21))"
+24,13,"=IF((LITO(M20,M21)+LMITO(M20,M21))>M21,0,LMITO(M20,M21))","=IF((LITO(M20,M21)+LMITO(M20,M21))>M21,0,LMITO(M20,M21))"
+24,21,Net,
+24,22,"=IF(V20-Bridging!K57>=0,""PASS"",IF(V19-Bridging!K57>0,""REFER"",""FAIL""))","=IF(V20-Bridging!K57>=0,""PASS"",IF(V19-Bridging!K57>0,""REFER"",""FAIL""))"
+24,23,"=IF(W20-Bridging!L71>=0,""PASS"",IF(W19-Bridging!L71>0,""REFER"",""FAIL""))","=IF(W20-Bridging!L71>=0,""PASS"",IF(W19-Bridging!L71>0,""REFER"",""FAIL""))"
+25,1,Total tax & levy (with n.g.),
+25,3,=C21+C22-C23-C24,=C21+C22-C23-C24
+25,6,=F21+F22-F23-F24,=F21+F22-F23-F24
+25,8,Total tax & levy (with n.g.),
+25,10,=J21+J22-J23-J24,=J21+J22-J23-J24
+25,13,=M21+M22-M23-M24,=M21+M22-M23-M24
+26,21,Cash Buffer,
+26,22,"=VLOOKUP(V14,Data!$M$3:$O$5,3)","=VLOOKUP(V14,Data!$M$3:$O$5,3)"
+26,23,"=VLOOKUP(W14,Data!$M$3:$O$5,3)","=VLOOKUP(W14,Data!$M$3:$O$5,3)"
+27,1,Total Adjustment,
+27,3,=C17-C25,=C17-C25
+27,6,=F17-F25,=F17-F25
+27,8,Total Adjustment,
+27,10,=J17-J25,=J17-J25
+27,13,=M17-M25,=M17-M25
+28,15,Rental Yield,
+28,21,Total Gross Annual Elig Inc Brid,
+28,22,=C12+F12+Bridging!K30+Bridging!K31,=C12+F12+Bridging!K30+Bridging!K31
+29,1,Tax Free Income,
+29,2,=Bridging!F30,=Bridging!F30
+29,3,=B29*Data!G28,=B29*Data!G28
+29,5,=Bridging!H30,=Bridging!H30
+29,6,=E29*Data!G28,=E29*Data!G28
+29,8,Tax Free Income,
+29,9,=Bridging!G30,=Bridging!G30
+29,10,=I29*Data!G28,=I29*Data!G28
+29,12,=Bridging!I30,=Bridging!I30
+29,13,=L29*Data!G28,=L29*Data!G28
+29,15,Blank,
+29,16,Complete,
+29,21,Total Gross Annual Elig Inc Post,
+29,22,=J12+M12+Bridging!L30+Bridging!L31,=J12+M12+Bridging!L30+Bridging!L31
+30,1,Self Employed Add Backs,
+30,2,=Bridging!F31,=Bridging!F31
+30,3,=B30,=B30
+30,5,=Bridging!H31,=Bridging!H31
+30,6,=E30,=E30
+30,8,Self Employed Add Backs,
+30,9,=Bridging!G31,=Bridging!G31
+30,10,=I30,=I30
+30,12,=Bridging!I31,=Bridging!I31
+30,13,=L30,=L30
+30,15,"=COUNTA('Bridging Rental Yield'!C7:I7,'Bridging Rental Yield'!D30,'Bridging Rental Yield'!F30:G30)=0","=COUNTA('Bridging Rental Yield'!C7:I7,'Bridging Rental Yield'!D30,'Bridging Rental Yield'!F30:G30)=0"
+30,16,"=IF(O30,TRUE,COUNTA('Bridging Rental Yield'!F7:I7)=4)","=IF(O30,TRUE,COUNTA('Bridging Rental Yield'!F7:I7)=4)"
+31,15,"=COUNTA('Bridging Rental Yield'!C8:I8,'Bridging Rental Yield'!D31,'Bridging Rental Yield'!F31:G31)=0","=COUNTA('Bridging Rental Yield'!C8:I8,'Bridging Rental Yield'!D31,'Bridging Rental Yield'!F31:G31)=0"
+31,16,"=IF(O31,TRUE,COUNTA('Bridging Rental Yield'!F8:I8)=4)","=IF(O31,TRUE,COUNTA('Bridging Rental Yield'!F8:I8)=4)"
+32,15,"=COUNTA('Bridging Rental Yield'!C9:I9,'Bridging Rental Yield'!D32,'Bridging Rental Yield'!F32:G32)=0","=COUNTA('Bridging Rental Yield'!C9:I9,'Bridging Rental Yield'!D32,'Bridging Rental Yield'!F32:G32)=0"
+32,16,"=IF(O32,TRUE,COUNTA('Bridging Rental Yield'!F9:I9)=4)","=IF(O32,TRUE,COUNTA('Bridging Rental Yield'!F9:I9)=4)"
+33,15,"=COUNTA('Bridging Rental Yield'!C10:I10,'Bridging Rental Yield'!D33,'Bridging Rental Yield'!F33:G33)=0","=COUNTA('Bridging Rental Yield'!C10:I10,'Bridging Rental Yield'!D33,'Bridging Rental Yield'!F33:G33)=0"
+33,16,"=IF(O33,TRUE,COUNTA('Bridging Rental Yield'!F10:I10)=4)","=IF(O33,TRUE,COUNTA('Bridging Rental Yield'!F10:I10)=4)"
+34,1,Debt to Income Calcs - Bridging,
+34,15,"=COUNTA('Bridging Rental Yield'!C11:I11,'Bridging Rental Yield'!D34,'Bridging Rental Yield'!F34:G34)=0","=COUNTA('Bridging Rental Yield'!C11:I11,'Bridging Rental Yield'!D34,'Bridging Rental Yield'!F34:G34)=0"
+34,16,"=IF(O34,TRUE,COUNTA('Bridging Rental Yield'!F11:I11)=4)","=IF(O34,TRUE,COUNTA('Bridging Rental Yield'!F11:I11)=4)"
+35,1,Combined Debt,
+35,2,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5C2E570>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5C2E570>
+35,15,"=COUNTA('Bridging Rental Yield'!C12:I12,'Bridging Rental Yield'!D35,'Bridging Rental Yield'!F35:G35)=0","=COUNTA('Bridging Rental Yield'!C12:I12,'Bridging Rental Yield'!D35,'Bridging Rental Yield'!F35:G35)=0"
+35,16,"=IF(O35,TRUE,COUNTA('Bridging Rental Yield'!F12:I12)=4)","=IF(O35,TRUE,COUNTA('Bridging Rental Yield'!F12:I12)=4)"
+36,1,Combined Income,
+36,2,=B12+E12-V13+V12+SUM(B29:B30)+SUM(E29:E30),=B12+E12-V13+V12+SUM(B29:B30)+SUM(E29:E30)
+36,15,"=COUNTA('Bridging Rental Yield'!C13:I13,'Bridging Rental Yield'!D36,'Bridging Rental Yield'!F36:G36)=0","=COUNTA('Bridging Rental Yield'!C13:I13,'Bridging Rental Yield'!D36,'Bridging Rental Yield'!F36:G36)=0"
+36,16,"=IF(O36,TRUE,COUNTA('Bridging Rental Yield'!F13:I13)=4)","=IF(O36,TRUE,COUNTA('Bridging Rental Yield'!F13:I13)=4)"
+37,1,Debt to Income Ratio,
+37,2,"=IF(B36>0,ROUND(B35/B36,2),0)","=IF(B36>0,ROUND(B35/B36,2),0)"
+37,15,"=COUNTA('Bridging Rental Yield'!C14:I14,'Bridging Rental Yield'!D37,'Bridging Rental Yield'!F37:G37)=0","=COUNTA('Bridging Rental Yield'!C14:I14,'Bridging Rental Yield'!D37,'Bridging Rental Yield'!F37:G37)=0"
+37,16,"=IF(O37,TRUE,COUNTA('Bridging Rental Yield'!F14:I14)=4)","=IF(O37,TRUE,COUNTA('Bridging Rental Yield'!F14:I14)=4)"
+38,15,"=COUNTA('Bridging Rental Yield'!C15:I15,'Bridging Rental Yield'!D38,'Bridging Rental Yield'!F38:G38)=0","=COUNTA('Bridging Rental Yield'!C15:I15,'Bridging Rental Yield'!D38,'Bridging Rental Yield'!F38:G38)=0"
+38,16,"=IF(O38,TRUE,COUNTA('Bridging Rental Yield'!F15:I15)=4)","=IF(O38,TRUE,COUNTA('Bridging Rental Yield'!F15:I15)=4)"
+39,1,Debt to Income Calcs - Post Bridging,
+39,15,"=COUNTA('Bridging Rental Yield'!C16:I16,'Bridging Rental Yield'!D39,'Bridging Rental Yield'!F39:G39)=0","=COUNTA('Bridging Rental Yield'!C16:I16,'Bridging Rental Yield'!D39,'Bridging Rental Yield'!F39:G39)=0"
+39,16,"=IF(O39,TRUE,COUNTA('Bridging Rental Yield'!F16:I16)=4)","=IF(O39,TRUE,COUNTA('Bridging Rental Yield'!F16:I16)=4)"
+40,1,Combined Debt,
+40,2,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5A1C3E0>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5A1C3E0>
+40,15,"=COUNTA('Bridging Rental Yield'!C17:I17,'Bridging Rental Yield'!D40,'Bridging Rental Yield'!F40:G40)=0","=COUNTA('Bridging Rental Yield'!C17:I17,'Bridging Rental Yield'!D40,'Bridging Rental Yield'!F40:G40)=0"
+40,16,"=IF(O40,TRUE,COUNTA('Bridging Rental Yield'!F17:I17)=4)","=IF(O40,TRUE,COUNTA('Bridging Rental Yield'!F17:I17)=4)"
+41,1,Combined Income,
+41,2,=I12+L12-W13+W12+SUM(I29:I30)+SUM(L29:L30),=I12+L12-W13+W12+SUM(I29:I30)+SUM(L29:L30)
+41,15,"=COUNTA('Bridging Rental Yield'!C18:I18,'Bridging Rental Yield'!D41,'Bridging Rental Yield'!F41:G41)=0","=COUNTA('Bridging Rental Yield'!C18:I18,'Bridging Rental Yield'!D41,'Bridging Rental Yield'!F41:G41)=0"
+41,16,"=IF(O41,TRUE,COUNTA('Bridging Rental Yield'!F18:I18)=4)","=IF(O41,TRUE,COUNTA('Bridging Rental Yield'!F18:I18)=4)"
+42,1,Debt to Income Ratio,
+42,2,"=IF(B41>0,ROUND(B40/B41,2),0)","=IF(B41>0,ROUND(B40/B41,2),0)"
+42,15,"=COUNTA('Bridging Rental Yield'!C19:I19,'Bridging Rental Yield'!D42,'Bridging Rental Yield'!F42:G42)=0","=COUNTA('Bridging Rental Yield'!C19:I19,'Bridging Rental Yield'!D42,'Bridging Rental Yield'!F42:G42)=0"
+42,16,"=IF(O42,TRUE,COUNTA('Bridging Rental Yield'!F19:I19)=4)","=IF(O42,TRUE,COUNTA('Bridging Rental Yield'!F19:I19)=4)"
+43,15,"=COUNTA('Bridging Rental Yield'!C20:I20,'Bridging Rental Yield'!D43,'Bridging Rental Yield'!F43:G43)=0","=COUNTA('Bridging Rental Yield'!C20:I20,'Bridging Rental Yield'!D43,'Bridging Rental Yield'!F43:G43)=0"
+43,16,"=IF(O43,TRUE,COUNTA('Bridging Rental Yield'!F20:I20)=4)","=IF(O43,TRUE,COUNTA('Bridging Rental Yield'!F20:I20)=4)"
+44,15,"=COUNTA('Bridging Rental Yield'!C21:I21,'Bridging Rental Yield'!D44,'Bridging Rental Yield'!F44:G44)=0","=COUNTA('Bridging Rental Yield'!C21:I21,'Bridging Rental Yield'!D44,'Bridging Rental Yield'!F44:G44)=0"
+44,16,"=IF(O44,TRUE,COUNTA('Bridging Rental Yield'!F21:I21)=4)","=IF(O44,TRUE,COUNTA('Bridging Rental Yield'!F21:I21)=4)"
+45,15,"=COUNTA('Bridging Rental Yield'!C22:I22,'Bridging Rental Yield'!D45,'Bridging Rental Yield'!F45:G45)=0","=COUNTA('Bridging Rental Yield'!C22:I22,'Bridging Rental Yield'!D45,'Bridging Rental Yield'!F45:G45)=0"
+45,16,"=IF(O45,TRUE,COUNTA('Bridging Rental Yield'!F22:I22)=4)","=IF(O45,TRUE,COUNTA('Bridging Rental Yield'!F22:I22)=4)"
+46,15,"=COUNTA('Bridging Rental Yield'!C23:I23,'Bridging Rental Yield'!D46,'Bridging Rental Yield'!F46:G46)=0","=COUNTA('Bridging Rental Yield'!C23:I23,'Bridging Rental Yield'!D46,'Bridging Rental Yield'!F46:G46)=0"
+46,16,"=IF(O46,TRUE,COUNTA('Bridging Rental Yield'!F23:I23)=4)","=IF(O46,TRUE,COUNTA('Bridging Rental Yield'!F23:I23)=4)"
+47,15,"=COUNTA('Bridging Rental Yield'!C24:I24,'Bridging Rental Yield'!D47,'Bridging Rental Yield'!F47:G47)=0","=COUNTA('Bridging Rental Yield'!C24:I24,'Bridging Rental Yield'!D47,'Bridging Rental Yield'!F47:G47)=0"
+47,16,"=IF(O47,TRUE,COUNTA('Bridging Rental Yield'!F24:I24)=4)","=IF(O47,TRUE,COUNTA('Bridging Rental Yield'!F24:I24)=4)"
+48,15,"=COUNTA('Bridging Rental Yield'!C25:I25,'Bridging Rental Yield'!D48,'Bridging Rental Yield'!F48:G48)=0","=COUNTA('Bridging Rental Yield'!C25:I25,'Bridging Rental Yield'!D48,'Bridging Rental Yield'!F48:G48)=0"
+48,16,"=IF(O48,TRUE,COUNTA('Bridging Rental Yield'!F25:I25)=4)","=IF(O48,TRUE,COUNTA('Bridging Rental Yield'!F25:I25)=4)"
+49,15,"=COUNTA('Bridging Rental Yield'!C26:I26,'Bridging Rental Yield'!D49,'Bridging Rental Yield'!F49:G49)=0","=COUNTA('Bridging Rental Yield'!C26:I26,'Bridging Rental Yield'!D49,'Bridging Rental Yield'!F49:G49)=0"
+49,16,"=IF(O49,TRUE,COUNTA('Bridging Rental Yield'!F26:I26)=4)","=IF(O49,TRUE,COUNTA('Bridging Rental Yield'!F26:I26)=4)"
+50,15,=AND(O30:O49),=AND(O30:O49)
+50,16,=AND(P30:P49),=AND(P30:P49)

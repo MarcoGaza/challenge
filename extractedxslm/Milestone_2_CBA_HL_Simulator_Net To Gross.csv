@@ -1,0 +1,46 @@
+Row,Column,Value,Formula
+2,2,Net to Gross Calculator,
+6,3,Applicant 1,
+6,4,Applicant 2,
+6,5,Applicant 3,
+6,6,Applicant 4,
+8,2,Name of Customer,
+9,2,Bank Account Credited,
+10,2,Income Period,
+11,2,Period Start Date,
+12,2,Period End Date,
+14,2,Net Income,
+15,2,Income From Statement,
+17,2,Add Back Deduction from after tax salary,
+18,2,Add back type 1,
+19,2,Add back type 2,
+20,2,Add back type 3,
+21,2,Add back type 4,
+22,2,Add back type 5,
+23,3,True,
+23,4,=T47=FALSE,=T47=FALSE
+23,5,=U47=FALSE,=U47=FALSE
+23,6,=V47=FALSE,=V47=FALSE
+24,2,Total Net Income,
+24,3,"=SUM(C15,C18:C22)","=SUM(C15,C18:C22)"
+24,4,"=SUM(D15,D18:D22)","=SUM(D15,D18:D22)"
+24,5,"=SUM(E15,E18:E22)","=SUM(E15,E18:E22)"
+24,6,"=SUM(F15,F18:F22)","=SUM(F15,F18:F22)"
+25,2,Total Annual Net Income,
+25,3,"=IF(Calculations!S49=FALSE,0,C24*VLOOKUP(C10,Data!$M$30:$N$35,2,0))","=IF(Calculations!S49=FALSE,0,C24*VLOOKUP(C10,Data!$M$30:$N$35,2,0))"
+25,4,"=IF(Calculations!T49=FALSE,0,D24*VLOOKUP(D10,Data!$M$30:$N$35,2,0))","=IF(Calculations!T49=FALSE,0,D24*VLOOKUP(D10,Data!$M$30:$N$35,2,0))"
+25,5,"=IF(Calculations!U49=FALSE,0,E24*VLOOKUP(E10,Data!$M$30:$N$35,2,0))","=IF(Calculations!U49=FALSE,0,E24*VLOOKUP(E10,Data!$M$30:$N$35,2,0))"
+25,6,"=IF(Calculations!V49=FALSE,0,F24*VLOOKUP(F10,Data!$M$30:$N$35,2,0))","=IF(Calculations!V49=FALSE,0,F24*VLOOKUP(F10,Data!$M$30:$N$35,2,0))"
+26,2,Total Annual Gross Income,
+26,3,"=IF(C25<=Data!$J$40,C25,IF(C25<=Data!$J$41,(C25-Data!$I$40*Data!$K$40)/(1-Data!$K$40),IF(C25<=Data!$J$42,(C25-Data!$I$40*Data!$K$41-Data!$I$41*Data!$M$41)/(1-Data!$K$41-Data!$M$41),IF(C25<=Data!$J$43,(C25-Data!$I$40*Data!$K$42+Data!$L$42)/(1-Data!$K$42-Data!$M$42),IF(C25<=Data!$J$44,(C25-Data!$I$43*Data!$K$43+Data!$L$43)/(1-Data!$K$43-Data!$M$43),IF(C25<=Data!$J$45,(C25-Data!$I$44*Data!$K$44+Data!$L$44)/(1-Data!$K$44-Data!$M$44),(C25-Data!$I$45*Data!$K$45+Data!$L$45)/(1-Data!$K$45-Data!$M$45)))))))","=IF(C25<=Data!$J$40,C25,IF(C25<=Data!$J$41,(C25-Data!$I$40*Data!$K$40)/(1-Data!$K$40),IF(C25<=Data!$J$42,(C25-Data!$I$40*Data!$K$41-Data!$I$41*Data!$M$41)/(1-Data!$K$41-Data!$M$41),IF(C25<=Data!$J$43,(C25-Data!$I$40*Data!$K$42+Data!$L$42)/(1-Data!$K$42-Data!$M$42),IF(C25<=Data!$J$44,(C25-Data!$I$43*Data!$K$43+Data!$L$43)/(1-Data!$K$43-Data!$M$43),IF(C25<=Data!$J$45,(C25-Data!$I$44*Data!$K$44+Data!$L$44)/(1-Data!$K$44-Data!$M$44),(C25-Data!$I$45*Data!$K$45+Data!$L$45)/(1-Data!$K$45-Data!$M$45)))))))"
+26,4,"=IF(D25<=Data!$J$40,D25,IF(D25<=Data!$J$41,(D25-Data!$I$40*Data!$K$40)/(1-Data!$K$40),IF(D25<=Data!$J$42,(D25-Data!$I$40*Data!$K$41-Data!$I$41*Data!$M$41)/(1-Data!$K$41-Data!$M$41),IF(D25<=Data!$J$43,(D25-Data!$I$40*Data!$K$42+Data!$L$42)/(1-Data!$K$42-Data!$M$42),IF(D25<=Data!$J$44,(D25-Data!$I$43*Data!$K$43+Data!$L$43)/(1-Data!$K$43-Data!$M$43),IF(D25<=Data!$J$45,(D25-Data!$I$44*Data!$K$44+Data!$L$44)/(1-Data!$K$44-Data!$M$44),(D25-Data!$I$45*Data!$K$45+Data!$L$45)/(1-Data!$K$45-Data!$M$45)))))))","=IF(D25<=Data!$J$40,D25,IF(D25<=Data!$J$41,(D25-Data!$I$40*Data!$K$40)/(1-Data!$K$40),IF(D25<=Data!$J$42,(D25-Data!$I$40*Data!$K$41-Data!$I$41*Data!$M$41)/(1-Data!$K$41-Data!$M$41),IF(D25<=Data!$J$43,(D25-Data!$I$40*Data!$K$42+Data!$L$42)/(1-Data!$K$42-Data!$M$42),IF(D25<=Data!$J$44,(D25-Data!$I$43*Data!$K$43+Data!$L$43)/(1-Data!$K$43-Data!$M$43),IF(D25<=Data!$J$45,(D25-Data!$I$44*Data!$K$44+Data!$L$44)/(1-Data!$K$44-Data!$M$44),(D25-Data!$I$45*Data!$K$45+Data!$L$45)/(1-Data!$K$45-Data!$M$45)))))))"
+26,5,"=IF(E25<=Data!$J$40,E25,IF(E25<=Data!$J$41,(E25-Data!$I$40*Data!$K$40)/(1-Data!$K$40),IF(E25<=Data!$J$42,(E25-Data!$I$40*Data!$K$41-Data!$I$41*Data!$M$41)/(1-Data!$K$41-Data!$M$41),IF(E25<=Data!$J$43,(E25-Data!$I$40*Data!$K$42+Data!$L$42)/(1-Data!$K$42-Data!$M$42),IF(E25<=Data!$J$44,(E25-Data!$I$43*Data!$K$43+Data!$L$43)/(1-Data!$K$43-Data!$M$43),IF(E25<=Data!$J$45,(E25-Data!$I$44*Data!$K$44+Data!$L$44)/(1-Data!$K$44-Data!$M$44),(E25-Data!$I$45*Data!$K$45+Data!$L$45)/(1-Data!$K$45-Data!$M$45)))))))","=IF(E25<=Data!$J$40,E25,IF(E25<=Data!$J$41,(E25-Data!$I$40*Data!$K$40)/(1-Data!$K$40),IF(E25<=Data!$J$42,(E25-Data!$I$40*Data!$K$41-Data!$I$41*Data!$M$41)/(1-Data!$K$41-Data!$M$41),IF(E25<=Data!$J$43,(E25-Data!$I$40*Data!$K$42+Data!$L$42)/(1-Data!$K$42-Data!$M$42),IF(E25<=Data!$J$44,(E25-Data!$I$43*Data!$K$43+Data!$L$43)/(1-Data!$K$43-Data!$M$43),IF(E25<=Data!$J$45,(E25-Data!$I$44*Data!$K$44+Data!$L$44)/(1-Data!$K$44-Data!$M$44),(E25-Data!$I$45*Data!$K$45+Data!$L$45)/(1-Data!$K$45-Data!$M$45)))))))"
+26,6,"=IF(F25<=Data!$J$40,F25,IF(F25<=Data!$J$41,(F25-Data!$I$40*Data!$K$40)/(1-Data!$K$40),IF(F25<=Data!$J$42,(F25-Data!$I$40*Data!$K$41-Data!$I$41*Data!$M$41)/(1-Data!$K$41-Data!$M$41),IF(F25<=Data!$J$43,(F25-Data!$I$40*Data!$K$42+Data!$L$42)/(1-Data!$K$42-Data!$M$42),IF(F25<=Data!$J$44,(F25-Data!$I$43*Data!$K$43+Data!$L$43)/(1-Data!$K$43-Data!$M$43),IF(F25<=Data!$J$45,(F25-Data!$I$44*Data!$K$44+Data!$L$44)/(1-Data!$K$44-Data!$M$44),(F25-Data!$I$45*Data!$K$45+Data!$L$45)/(1-Data!$K$45-Data!$M$45)))))))","=IF(F25<=Data!$J$40,F25,IF(F25<=Data!$J$41,(F25-Data!$I$40*Data!$K$40)/(1-Data!$K$40),IF(F25<=Data!$J$42,(F25-Data!$I$40*Data!$K$41-Data!$I$41*Data!$M$41)/(1-Data!$K$41-Data!$M$41),IF(F25<=Data!$J$43,(F25-Data!$I$40*Data!$K$42+Data!$L$42)/(1-Data!$K$42-Data!$M$42),IF(F25<=Data!$J$44,(F25-Data!$I$43*Data!$K$43+Data!$L$43)/(1-Data!$K$43-Data!$M$43),IF(F25<=Data!$J$45,(F25-Data!$I$44*Data!$K$44+Data!$L$44)/(1-Data!$K$44-Data!$M$44),(F25-Data!$I$45*Data!$K$45+Data!$L$45)/(1-Data!$K$45-Data!$M$45)))))))"
+29,2,Workings,
+32,2,Notes,
+33,2,"●This Calculator is not to be used to calculate total annual gross income if the customer/s have completed a withholding declaration to claim tax offsets.
+●You don't need to complete anything in your tax return in order for us to work out your low or low and middle income tax offset.We work out the amount of this tax offset for you once you lodge your tax return.
+●Income must be credited over a minimum 3 month period. Where there is a difference in amounts, an averaged figure must be used (care must be taken with large variances).
+● Deductions included in the add back deductions fields must be verified from a payslip retained on file.
+● This Calculator is to be used in conjuction with the requirements outlined in CommBroker. Noting the above may vary for different income types.",
+37,2,Product of the Commonwealth Bank of Australia  ABN 48 123 123 124,

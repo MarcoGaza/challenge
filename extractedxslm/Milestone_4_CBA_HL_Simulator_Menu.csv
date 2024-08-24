@@ -1,0 +1,4 @@
+Row,Column,Value,Formula
+3,9,Version:,
+3,10,=Data!A25,=Data!A25
+40,1,"CONFIDENTIAL: Except authorised or otherwise agreed the Commonwealth Bank RBS Net Servicing (‘Tool’) is for the express purpose of undertaking a Home Loan assessment.  The ‘Tool’ remains confidential and is not to be published, disclosed or to be used for any purpose other than as intended",

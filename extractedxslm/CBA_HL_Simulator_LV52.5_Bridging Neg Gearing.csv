@@ -1,0 +1,85 @@
+Row,Column,Value,Formula
+2,2,Negatively Geared Investment Loans,
+3,2,"Refer to the Postcode Lookup Tool for geographic negative gearing eligibility. 
+Note: Negative Gearing calculates the interest and monthly charges to be paid on an investment home loan each year and uses this figure as a tax deduction.  Therefore the applicant(s) taxable income will be less, which means that the tax paid by the applicant(s) will be less.
+Negative gearing is not applicable in the servicing of IHL applications with a Base LVR greater than 90% or for customers receiving the First Home Buyers' grant. Please add in the Ongoing Loan splits (if applicable for Negative Gearing) under 'Bridging Period' tab, to accomodate for the Negative Gearing eligibility during the Bridging Period
+",
+4,2,Existing Loans:,
+5,5,=(Bridging!F26+SUM(Bridging!F30:F31)>0)+(Bridging!H26+SUM(Bridging!H30:H31)>0),=(Bridging!F26+SUM(Bridging!F30:F31)>0)+(Bridging!H26+SUM(Bridging!H30:H31)>0)
+6,5,Tax Benefit % applicable to:,
+7,2,Loan Balance,
+7,3,Interest Rate,
+7,4,Interest,
+7,5,Applicant 1,
+7,6,Applicant 2,
+8,2,"=IF('Bridging Calculations'!Q3,IF(OR(Bridging!B39=""CBA Line of Credit"",Bridging!B39=""OFI Line of Credit (Other financial institution)""),Bridging!G39,Bridging!F39),"""")","=IF('Bridging Calculations'!Q3,IF(OR(Bridging!B39=""CBA Line of Credit"",Bridging!B39=""OFI Line of Credit (Other financial institution)""),Bridging!G39,Bridging!F39),"""")"
+8,4,"=IF(AND(B8<>"""",C8<>""""),B8*C8,"""")","=IF(AND(B8<>"""",C8<>""""),B8*C8,"""")"
+9,2,"=IF('Bridging Calculations'!Q4,IF(OR(Bridging!B40=""CBA Line of Credit"",Bridging!B40=""OFI Line of Credit (Other financial institution)""),Bridging!G40,Bridging!F40),"""")","=IF('Bridging Calculations'!Q4,IF(OR(Bridging!B40=""CBA Line of Credit"",Bridging!B40=""OFI Line of Credit (Other financial institution)""),Bridging!G40,Bridging!F40),"""")"
+9,4,"=IF(AND(B9<>"""",C9<>""""),B9*C9,"""")","=IF(AND(B9<>"""",C9<>""""),B9*C9,"""")"
+10,2,"=IF('Bridging Calculations'!Q5,IF(OR(Bridging!B41=""CBA Line of Credit"",Bridging!B41=""OFI Line of Credit (Other financial institution)""),Bridging!G41,Bridging!F41),"""")","=IF('Bridging Calculations'!Q5,IF(OR(Bridging!B41=""CBA Line of Credit"",Bridging!B41=""OFI Line of Credit (Other financial institution)""),Bridging!G41,Bridging!F41),"""")"
+10,4,"=IF(AND(B10<>"""",C10<>""""),B10*C10,"""")","=IF(AND(B10<>"""",C10<>""""),B10*C10,"""")"
+11,2,"=IF('Bridging Calculations'!Q6,IF(OR(Bridging!B42=""CBA Line of Credit"",Bridging!B42=""OFI Line of Credit (Other financial institution)""),Bridging!G42,Bridging!F42),"""")","=IF('Bridging Calculations'!Q6,IF(OR(Bridging!B42=""CBA Line of Credit"",Bridging!B42=""OFI Line of Credit (Other financial institution)""),Bridging!G42,Bridging!F42),"""")"
+11,4,"=IF(AND(B11<>"""",C11<>""""),B11*C11,"""")","=IF(AND(B11<>"""",C11<>""""),B11*C11,"""")"
+12,2,"=IF('Bridging Calculations'!Q7,IF(OR(Bridging!B43=""CBA Line of Credit"",Bridging!B43=""OFI Line of Credit (Other financial institution)""),Bridging!G43,Bridging!F43),"""")","=IF('Bridging Calculations'!Q7,IF(OR(Bridging!B43=""CBA Line of Credit"",Bridging!B43=""OFI Line of Credit (Other financial institution)""),Bridging!G43,Bridging!F43),"""")"
+12,4,"=IF(AND(B12<>"""",C12<>""""),B12*C12,"""")","=IF(AND(B12<>"""",C12<>""""),B12*C12,"""")"
+13,2,"=IF('Bridging Calculations'!Q8,IF(OR(Bridging!B44=""CBA Line of Credit"",Bridging!B44=""OFI Line of Credit (Other financial institution)""),Bridging!G44,Bridging!F44),"""")","=IF('Bridging Calculations'!Q8,IF(OR(Bridging!B44=""CBA Line of Credit"",Bridging!B44=""OFI Line of Credit (Other financial institution)""),Bridging!G44,Bridging!F44),"""")"
+13,4,"=IF(AND(B13<>"""",C13<>""""),B13*C13,"""")","=IF(AND(B13<>"""",C13<>""""),B13*C13,"""")"
+14,2,"=IF('Bridging Calculations'!Q9,IF(OR(Bridging!B45=""CBA Line of Credit"",Bridging!B45=""OFI Line of Credit (Other financial institution)""),Bridging!G45,Bridging!F45),"""")","=IF('Bridging Calculations'!Q9,IF(OR(Bridging!B45=""CBA Line of Credit"",Bridging!B45=""OFI Line of Credit (Other financial institution)""),Bridging!G45,Bridging!F45),"""")"
+14,4,"=IF(AND(B14<>"""",C14<>""""),B14*C14,"""")","=IF(AND(B14<>"""",C14<>""""),B14*C14,"""")"
+16,2,Bridging Period:,
+18,5,Tax benefit % applicable to:,
+19,2,Loan Balance,
+19,3,Interest Rate,
+19,4,Interest,
+19,5,Applicant 1,
+19,6,Applicant 2,
+20,2,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5AAB800>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5AAB800>
+20,4,"=IF(AND(B20<>"""",C20<>""""),B20*C20,"""")","=IF(AND(B20<>"""",C20<>""""),B20*C20,"""")"
+21,2,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A66114F0>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A66114F0>
+21,4,"=IF(AND(B21<>"""",C21<>""""),B21*C21,"""")","=IF(AND(B21<>"""",C21<>""""),B21*C21,"""")"
+22,2,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A6611730>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A6611730>
+22,4,"=IF(AND(B22<>"""",C22<>""""),B22*C22,"""")","=IF(AND(B22<>"""",C22<>""""),B22*C22,"""")"
+23,2,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5C2F2C0>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5C2F2C0>
+23,4,"=IF(AND(B23<>"""",C23<>""""),B23*C23,"""")","=IF(AND(B23<>"""",C23<>""""),B23*C23,"""")"
+24,2,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5C2D310>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5C2D310>
+24,4,"=IF(AND(B24<>"""",C24<>""""),B24*C24,"""")","=IF(AND(B24<>"""",C24<>""""),B24*C24,"""")"
+25,2,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5B8C500>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5B8C500>
+25,4,"=IF(AND(B25<>"""",C25<>""""),B25*C25,"""")","=IF(AND(B25<>"""",C25<>""""),B25*C25,"""")"
+28,2,Ongoing Period:,
+30,5,Tax benefit % applicable to:,
+31,2,Loan Balance,
+31,3,Interest Rate,
+31,4,Interest,
+31,5,Applicant 1,
+31,6,Applicant 2,
+32,2,"=IF('Bridging Calculations'!Q14,Bridging!E65,"""")","=IF('Bridging Calculations'!Q14,Bridging!E65,"""")"
+32,4,"=IF(AND(B32<>"""",C32<>""""),B32*C32,"""")","=IF(AND(B32<>"""",C32<>""""),B32*C32,"""")"
+33,2,"=IF('Bridging Calculations'!Q15,Bridging!E66,"""")","=IF('Bridging Calculations'!Q15,Bridging!E66,"""")"
+33,4,"=IF(AND(B33<>"""",C33<>""""),B33*C33,"""")","=IF(AND(B33<>"""",C33<>""""),B33*C33,"""")"
+34,2,"=IF('Bridging Calculations'!Q16,Bridging!E67,"""")","=IF('Bridging Calculations'!Q16,Bridging!E67,"""")"
+34,4,"=IF(AND(B34<>"""",C34<>""""),B34*C34,"""")","=IF(AND(B34<>"""",C34<>""""),B34*C34,"""")"
+35,2,"=IF('Bridging Calculations'!Q17,Bridging!E68,"""")","=IF('Bridging Calculations'!Q17,Bridging!E68,"""")"
+35,4,"=IF(AND(B35<>"""",C35<>""""),B35*C35,"""")","=IF(AND(B35<>"""",C35<>""""),B35*C35,"""")"
+36,2,"=IF('Bridging Calculations'!Q18,Bridging!E69,"""")","=IF('Bridging Calculations'!Q18,Bridging!E69,"""")"
+36,4,"=IF(AND(B36<>"""",C36<>""""),B36*C36,"""")","=IF(AND(B36<>"""",C36<>""""),B36*C36,"""")"
+37,2,"=IF('Bridging Calculations'!Q19,Bridging!E70,"""")","=IF('Bridging Calculations'!Q19,Bridging!E70,"""")"
+37,4,"=IF(AND(B37<>"""",C37<>""""),B37*C37,"""")","=IF(AND(B37<>"""",C37<>""""),B37*C37,"""")"
+39,2,Interest Expenses,
+40,3,Bridging,
+40,6,Ongoing,
+41,3,Total,
+41,5,Existing,
+41,6,Proposed,
+42,2,Applicant 1: ,
+42,3,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A65F3890>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A65F3890>
+42,5,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A3FCEAE0>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A3FCEAE0>
+42,6,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A3FCDCD0>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A3FCDCD0>
+43,2,Applicant 2: ,
+43,3,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A3892750>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A3892750>
+43,5,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5893770>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5893770>
+43,6,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A38A73B0>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A38A73B0>
+44,2,Total: ,
+44,3,=SUM(C42:C43),=SUM(C42:C43)
+44,5,=SUM(E42:E43),=SUM(E42:E43)
+44,6,=SUM(F42:F43),=SUM(F42:F43)
+47,6,Product of the Commonwealth Bank of Australia  ABN 48 123 123 124,

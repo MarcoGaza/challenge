@@ -1,0 +1,174 @@
+[
+  {
+    "income": [
+      {
+        "gross_annual_income": 70000,
+        "assessable_annual_income": 70000,
+        "net_annual_income": 53053.5
+      }
+    ],
+    "net_annual_income": 53053.5,
+    "liability_repayments": [],
+    "home_loans": [
+      {
+        "total_repayments": 1609.25
+      }
+    ],
+    "total_existing_repayments": 0,
+    "total_proposed_repayments": 1609.25,
+    "net_cash_position": 2834.8125,
+    "debt_to_income_ratio": 0.09,
+    "maximum_borrowing_capacity": 1682763
+  },
+  {
+    "income": [
+      {
+        "gross_annual_income": 165120,
+        "assessable_annual_income": 165120,
+        "net_annual_income": 113864.5
+      }
+    ],
+    "net_annual_income": 113864.5,
+    "liability_repayments": [],
+    "home_loans": [
+      {
+        "total_repayments": 1799
+      }
+    ],
+    "total_existing_repayments": 0,
+    "total_proposed_repayments": 1799,
+    "net_cash_position": 7822.791666666667,
+    "debt_to_income_ratio": 0.06,
+    "maximum_borrowing_capacity": 4661898
+  },
+  {
+    "income": [
+      {
+        "gross_annual_income": 165120,
+        "assessable_annual_income": 165120,
+        "net_annual_income": 113864.5
+      }
+    ],
+    "net_annual_income": 113864.5,
+    "liability_repayments": [
+      {
+        "total_repayments": 382
+      },
+      {
+        "total_repayments": 200
+      }
+    ],
+    "home_loans": [
+      {
+        "total_repayments": 1609.25
+      }
+    ],
+    "total_existing_repayments": 582,
+    "total_proposed_repayments": 1609.25,
+    "net_cash_position": 6988.458333333333,
+    "debt_to_income_ratio": 0.07,
+    "maximum_borrowing_capacity": 4178236
+  },
+  {
+    "income": [
+      {
+        "gross_annual_income": 70000,
+        "assessable_annual_income": 70000,
+        "net_annual_income": 53053.5
+      }
+    ],
+    "net_annual_income": 53053.5,
+    "liability_repayments": [],
+    "home_loans": [
+      {
+        "total_repayments": 1609.25
+      }
+    ],
+    "total_existing_repayments": 0,
+    "total_proposed_repayments": 1609.25,
+    "net_cash_position": 2834.8125,
+    "debt_to_income_ratio": 0.09,
+    "maximum_borrowing_capacity": 772085
+  },
+  {
+    "income": [
+      {
+        "gross_annual_income": 165120,
+        "assessable_annual_income": 165120,
+        "net_annual_income": 113864.5
+      }
+    ],
+    "net_annual_income": 113864.5,
+    "liability_repayments": [],
+    "home_loans": [
+      {
+        "total_repayments": 6118.92
+      },
+      {
+        "total_repayments": 1609.25
+      }
+    ],
+    "total_existing_repayments": 0,
+    "total_proposed_repayments": 7728.17,
+    "net_cash_position": 1867.2458333333333,
+    "debt_to_income_ratio": 0.23,
+    "maximum_borrowing_capacity": 2375000
+  },
+  {
+    "income": [
+      {
+        "gross_annual_income": 275120,
+        "assessable_annual_income": 275120,
+        "net_annual_income": 181714.5
+      }
+    ],
+    "net_annual_income": 181714.5,
+    "liability_repayments": [],
+    "home_loans": [
+      {
+        "total_repayments": 1609.25
+      }
+    ],
+    "total_existing_repayments": 0,
+    "total_proposed_repayments": 1609.25,
+    "net_cash_position": 13800.125,
+    "debt_to_income_ratio": 0.03,
+    "maximum_borrowing_capacity": 8263184
+  },
+  {
+    "income": [
+      {
+        "gross_annual_income": 230120,
+        "assessable_annual_income": 230120,
+        "net_annual_income": 154809.5
+      },
+      {
+        "gross_annual_income": 230120,
+        "assessable_annual_income": 230120,
+        "net_annual_income": 154809.5
+      }
+    ],
+    "net_annual_income": 309619,
+    "liability_repayments": [
+      {
+        "total_repayments": 382
+      },
+      {
+        "total_repayments": 200
+      }
+    ],
+    "home_loans": [
+      {
+        "total_repayments": 6118.92
+      },
+      {
+        "total_repayments": 1609.25
+      }
+    ],
+    "total_existing_repayments": 6700.92,
+    "total_proposed_repayments": 7728.17,
+    "net_cash_position": 19677.1975,
+    "debt_to_income_ratio": 0.15,
+    "maximum_borrowing_capacity": 5875000
+  }
+]

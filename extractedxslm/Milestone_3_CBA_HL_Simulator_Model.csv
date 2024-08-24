@@ -1,0 +1,250 @@
+Row,Column,Value,Formula
+1,16,=Data!G32,=Data!G32
+2,2,"Home Loan, Investment Home Loan and Line of Credit Servicing Calculator",
+2,16,=Data!G33,=Data!G33
+4,5,Name of applicant 1: ,
+4,6,Angus,
+4,9,Name of applicant 2: ,
+5,5,Name of applicant 3: ,
+5,9,Name of applicant 4: ,
+7,2,Number of properties occupied by the applicants,
+7,8,1,
+7,11,"=IF(H7>COUNT(H10:K10),""must be at least one adult residing in each household"",IF(AND(H7>L16,H7=COUNTA(G16:J16)),""Each household must have an applicant assigned"",IF(H7>COUNTA(G16:J16),""There cannot be more households than applicants"",IF(COUNTA(G16:J16)>SUM(H10:K10),"" Number of applicants cannot be more than the total number of adults           "",""""))))","=IF(H7>COUNT(H10:K10),""must be at least one adult residing in each household"",IF(AND(H7>L16,H7=COUNTA(G16:J16)),""Each household must have an applicant assigned"",IF(H7>COUNTA(G16:J16),""There cannot be more households than applicants"",IF(COUNTA(G16:J16)>SUM(H10:K10),"" Number of applicants cannot be more than the total number of adults           "",""""))))"
+8,2,Number of principal residences plus number of non-income producing properties owned by applicants,
+8,11,"=IF(H8>COUNT(H11:K11),""must be at least one adult residing in each household"",IF(AND(H8>L17,H8=COUNTA(G17:J17)),""Each household must have an applicant assigned"",IF(H8>COUNTA(G17:J17),""There cannot be more households than applicants"",IF(COUNTA(G17:J17)>SUM(H11:K11),"" Number of applicants cannot be more than the total number of adults"",""""))))","=IF(H8>COUNT(H11:K11),""must be at least one adult residing in each household"",IF(AND(H8>L17,H8=COUNTA(G17:J17)),""Each household must have an applicant assigned"",IF(H8>COUNTA(G17:J17),""There cannot be more households than applicants"",IF(COUNTA(G17:J17)>SUM(H11:K11),"" Number of applicants cannot be more than the total number of adults"",""""))))"
+9,8,Household 1,
+9,9,"=IF(H7>1,""Household 2"","""")","=IF(H7>1,""Household 2"","""")"
+9,10,"=IF(H7>2,""Household 3"","""")","=IF(H7>2,""Household 3"","""")"
+9,11,"=IF(H7>3,""Household 4"","""")","=IF(H7>3,""Household 4"","""")"
+10,2,Number of adults (18 or older) residing in each household,
+10,8,1,
+11,2,Number of dependent children residing in each household,
+11,8,0,
+12,2,Monthly Living Expenses,
+12,8,3000,
+14,2,Annual Income Details:,
+14,7,Applicant 1,
+14,8,Applicant 2,
+14,9,Applicant 3,
+14,10,Applicant 4,
+14,12,Eligible Income,
+16,2,Household,
+16,7,Household 1,
+16,12,"=IF(COUNTIF(G16:J16,""Household 1"")>0,1,0)+IF(COUNTIF(G16:J16,""Household 2"")>0,1,0)+IF(COUNTIF(G16:J16,""Household 3"")>0,1,0)+IF(COUNTIF(G16:J16,""Household 4"")>0,1,0)","=IF(COUNTIF(G16:J16,""Household 1"")>0,1,0)+IF(COUNTIF(G16:J16,""Household 2"")>0,1,0)+IF(COUNTIF(G16:J16,""Household 3"")>0,1,0)+IF(COUNTIF(G16:J16,""Household 4"")>0,1,0)"
+17,2,Gross Annual Salary or Wages,
+17,7,70000,
+17,11,annual,
+17,12,=SUM(G17:J17),=SUM(G17:J17)
+18,2,Gross Overtime,
+18,7,1000,
+18,11,annual,
+18,12,=SUM(G18:J18)*Data!C20,=SUM(G18:J18)*Data!C20
+19,2,Gross Bonuses,
+19,11,annual,
+19,12,=SUM(G19:J19)*Data!C21,=SUM(G19:J19)*Data!C21
+20,2,Existing Rental Income,
+20,7,='Rental Yield'!F54,='Rental Yield'!F54
+20,8,='Rental Yield'!G54,='Rental Yield'!G54
+20,9,='Rental Yield'!H54,='Rental Yield'!H54
+20,10,='Rental Yield'!I54,='Rental Yield'!I54
+20,12,=SUM(G20:J20),=SUM(G20:J20)
+21,2,Proposed Rental Income,
+21,7,='Rental Yield'!F55,='Rental Yield'!F55
+21,8,='Rental Yield'!G55,='Rental Yield'!G55
+21,9,='Rental Yield'!H55,='Rental Yield'!H55
+21,10,='Rental Yield'!I55,='Rental Yield'!I55
+21,12,=SUM(G21:J21),=SUM(G21:J21)
+22,2,Investment Income ,
+22,11,annual,
+22,12,=SUM(G22:J22)*Data!C22,=SUM(G22:J22)*Data!C22
+23,2,Pensions,
+23,7,1000,
+23,11,annual,
+23,12,=SUM(G23:J23)*Data!G30,=SUM(G23:J23)*Data!G30
+24,2,Other Income,
+24,11,annual,
+24,12,=SUM(G24:J24),=SUM(G24:J24)
+25,2,Self Employed Income,
+25,7,='Self Employed'!J10+'Self Employed'!J15+'Self Employed'!J17,='Self Employed'!J10+'Self Employed'!J15+'Self Employed'!J17
+25,8,='Self Employed'!J30+'Self Employed'!J35+'Self Employed'!J37,='Self Employed'!J30+'Self Employed'!J35+'Self Employed'!J37
+25,9,='Self Employed'!J50+'Self Employed'!J55+'Self Employed'!J57,='Self Employed'!J50+'Self Employed'!J55+'Self Employed'!J57
+25,10,='Self Employed'!J70+'Self Employed'!J75+'Self Employed'!J77,='Self Employed'!J70+'Self Employed'!J75+'Self Employed'!J77
+25,12,=SUM(G25:J25),=SUM(G25:J25)
+26,2,Gross Annual Income,
+26,7,=SUM(G17:G25),=SUM(G17:G25)
+26,8,=SUM(H17:H25),=SUM(H17:H25)
+26,9,=SUM(I17:I25),=SUM(I17:I25)
+26,10,=SUM(J17:J25),=SUM(J17:J25)
+26,12,=SUM(L17:L25),=SUM(L17:L25)
+27,2,Income Tax(Including Offsets),
+27,7,=Calculations!C13-Calculations!C15-Calculations!C16,=Calculations!C13-Calculations!C15-Calculations!C16
+27,8,=Calculations!G13-Calculations!G15-Calculations!G16,=Calculations!G13-Calculations!G15-Calculations!G16
+27,9,=Calculations!K13-Calculations!K15-Calculations!K16,=Calculations!K13-Calculations!K15-Calculations!K16
+27,10,=Calculations!O13-Calculations!O15-Calculations!O16,=Calculations!O13-Calculations!O15-Calculations!O16
+27,12,=G27+H27+I27+J27,=G27+H27+I27+J27
+28,2,Medicare Levy,
+28,7,=Calculations!C14,=Calculations!C14
+28,8,=Calculations!G14,=Calculations!G14
+28,9,=Calculations!K14,=Calculations!K14
+28,10,=Calculations!O14,=Calculations!O14
+28,12,"=ROUND((Calculations!C14+Calculations!G14+Calculations!K14+Calculations!O14),0)","=ROUND((Calculations!C14+Calculations!G14+Calculations!K14+Calculations!O14),0)"
+29,2,Negative Gearing Tax Effect,
+29,7,=Calculations!C29,=Calculations!C29
+29,8,=Calculations!G29,=Calculations!G29
+29,9,=Calculations!K29,=Calculations!K29
+29,10,=Calculations!O29,=Calculations!O29
+29,12,"=ROUND((Calculations!C17+Calculations!G17+Calculations!K17+Calculations!O17)-(Calculations!C25+Calculations!G25+Calculations!K25+Calculations!O25),0)","=ROUND((Calculations!C17+Calculations!G17+Calculations!K17+Calculations!O17)-(Calculations!C25+Calculations!G25+Calculations!K25+Calculations!O25),0)"
+30,2,Tax Free Income (e.g. Family Allowance),
+30,7,1000,
+30,11,annual,
+30,12,=SUM(G30:J30)*Data!G28,=SUM(G30:J30)*Data!G28
+31,2,Self Employed Add Backs,
+31,7,='Self Employed'!J19-'Self Employed'!J15-'Self Employed'!J17,='Self Employed'!J19-'Self Employed'!J15-'Self Employed'!J17
+31,8,='Self Employed'!J39-'Self Employed'!J35-'Self Employed'!J37,='Self Employed'!J39-'Self Employed'!J35-'Self Employed'!J37
+31,9,='Self Employed'!J59-'Self Employed'!J55-'Self Employed'!J57,='Self Employed'!J59-'Self Employed'!J55-'Self Employed'!J57
+31,10,='Self Employed'!J79-'Self Employed'!J75-'Self Employed'!J77,='Self Employed'!J79-'Self Employed'!J75-'Self Employed'!J77
+31,12,=SUM(G31:J31),=SUM(G31:J31)
+32,10,Net Annual Income,
+32,12,=L26-L27-L28+L29+L30+L31,=L26-L27-L28+L29+L30+L31
+33,10,Net Monthly Income,
+33,12,=L32/12,=L32/12
+34,10,Ongoing Annual Rental Payments,
+36,2,Applicant(s) - Total Continuing Commitments:,
+38,2,Product,
+38,3,Loan Type,
+38,4,Is this tax deductible?,
+38,5,Will this be repaid by proposed loan?,
+38,6,Balance,
+38,7,Limit,
+38,8,Remaining Term,
+38,9,Interest Rate,
+38,10,Monthly Repayment,
+38,11,Monthly Charges,
+38,12,Total Repayments,
+39,2,Credit Card,
+39,3,Owner Occupied,
+39,4,No,
+39,5,Yes,
+39,6,15000,
+39,7,20000,
+39,12,=Calculations!S8,=Calculations!S8
+39,15,"=IF(OR(B39=""CBA Variable Rate Home Loan"",B39=""CBA Fixed Rate Home Loan"",B39=""CBA Line of Credit""),NOT(Calculations!U8),FALSE)","=IF(OR(B39=""CBA Variable Rate Home Loan"",B39=""CBA Fixed Rate Home Loan"",B39=""CBA Line of Credit""),NOT(Calculations!U8),FALSE)"
+40,2,Credit Card,
+40,3,Owner Occupied,
+40,4,No,
+40,5,No,
+40,6,100,
+40,7,500,
+40,11,10,
+40,12,=Calculations!S9,=Calculations!S9
+40,15,"=IF(OR(B40=""CBA Variable Rate Home Loan"",B40=""CBA Fixed Rate Home Loan"",B40=""CBA Line of Credit""),NOT(Calculations!U9),FALSE)","=IF(OR(B40=""CBA Variable Rate Home Loan"",B40=""CBA Fixed Rate Home Loan"",B40=""CBA Line of Credit""),NOT(Calculations!U9),FALSE)"
+41,2,Credit Card,
+41,3,Owner Occupied,
+41,4,No,
+41,5,No,
+41,6,20000,
+41,7,10000,
+41,9,0.11,
+41,10,90,
+41,11,10,
+41,12,=Calculations!S10,=Calculations!S10
+41,15,"=IF(OR(B41=""CBA Variable Rate Home Loan"",B41=""CBA Fixed Rate Home Loan"",B41=""CBA Line of Credit""),NOT(Calculations!U10),FALSE)","=IF(OR(B41=""CBA Variable Rate Home Loan"",B41=""CBA Fixed Rate Home Loan"",B41=""CBA Line of Credit""),NOT(Calculations!U10),FALSE)"
+42,2,Personal Loan,
+42,3,Owner Occupied,
+42,4,No,
+42,5,No,
+42,6,10000,
+42,7,0,
+42,8,7,
+42,9,0.1,
+42,10,150,
+42,11,20,
+42,12,=Calculations!S11,=Calculations!S11
+42,15,"=IF(OR(B42=""CBA Variable Rate Home Loan"",B42=""CBA Fixed Rate Home Loan"",B42=""CBA Line of Credit""),NOT(Calculations!U11),FALSE)","=IF(OR(B42=""CBA Variable Rate Home Loan"",B42=""CBA Fixed Rate Home Loan"",B42=""CBA Line of Credit""),NOT(Calculations!U11),FALSE)"
+43,2,Personal Loan,
+43,3,Owner Occupied,
+43,4,No,
+43,5,No,
+43,6,20000,
+43,7,5000,
+43,8,1,
+43,9,0.02,
+43,10,1714,
+43,11,0,
+43,12,=Calculations!S12,=Calculations!S12
+43,15,"=IF(OR(B43=""CBA Variable Rate Home Loan"",B43=""CBA Fixed Rate Home Loan"",B43=""CBA Line of Credit""),NOT(Calculations!U12),FALSE)","=IF(OR(B43=""CBA Variable Rate Home Loan"",B43=""CBA Fixed Rate Home Loan"",B43=""CBA Line of Credit""),NOT(Calculations!U12),FALSE)"
+44,2,Personal Loan,
+44,3,Owner Occupied,
+44,4,No,
+44,5,Yes,
+44,6,0,
+44,7,5000,
+44,8,6,
+44,9,0.12,
+44,10,10,
+44,12,=Calculations!S13,=Calculations!S13
+44,15,"=IF(OR(B44=""CBA Variable Rate Home Loan"",B44=""CBA Fixed Rate Home Loan"",B44=""CBA Line of Credit""),NOT(Calculations!U13),FALSE)","=IF(OR(B44=""CBA Variable Rate Home Loan"",B44=""CBA Fixed Rate Home Loan"",B44=""CBA Line of Credit""),NOT(Calculations!U13),FALSE)"
+45,12,=Calculations!S14,=Calculations!S14
+45,15,"=IF(OR(B45=""CBA Variable Rate Home Loan"",B45=""CBA Fixed Rate Home Loan"",B45=""CBA Line of Credit""),NOT(Calculations!U14),FALSE)","=IF(OR(B45=""CBA Variable Rate Home Loan"",B45=""CBA Fixed Rate Home Loan"",B45=""CBA Line of Credit""),NOT(Calculations!U14),FALSE)"
+46,2,"=IF(AND(Calculations!V15,NOT(Calculations!W15)),""Click """"Negative Gearing"""" button to input details."","""")","=IF(AND(Calculations!V15,NOT(Calculations!W15)),""Click """"Negative Gearing"""" button to input details."","""")"
+46,10,Total Existing Commitments (monthly),
+46,12,=SUM(L39:L45),=SUM(L39:L45)
+46,15,=OR(O39:O45),=OR(O39:O45)
+47,2,"=IF(AND(O46,Calculations!U15=FALSE),"". Enter the current interest rate for this product. Refer CommBroker for more information"","""")","=IF(AND(O46,Calculations!U15=FALSE),"". Enter the current interest rate for this product. Refer CommBroker for more information"","""")"
+49,2,Proposed Loan Details:,
+51,2,Product,
+51,5,Loan Type,
+51,6,Is this tax deductible?,
+51,7,Balance / Limit,
+51,8,Assessment Rate,
+51,9,Loan Term,
+51,10,Interest Only Period,
+51,11,Monthly Charges,
+51,12,Repayments,
+52,2,CBA Variable Rate Home Loan,
+52,5,Owner Occupied,
+52,7,300000,
+52,8,0.05,
+52,9,30,
+52,11,0,
+52,12,=Calculations!S17,=Calculations!S17
+53,12,=Calculations!S18,=Calculations!S18
+54,12,=Calculations!S19,=Calculations!S19
+55,12,=Calculations!S20,=Calculations!S20
+56,12,=Calculations!S21,=Calculations!S21
+57,12,=Calculations!S22,=Calculations!S22
+58,2,"=IF(AND(Calculations!V23,NOT(Calculations!W23)),""Click """"Negative Gearing"""" button to input details."","""")","=IF(AND(Calculations!V23,NOT(Calculations!W23)),""Click """"Negative Gearing"""" button to input details."","""")"
+58,10,Total monthly repayments including existing commitments,
+58,12,=Calculations!S24,=Calculations!S24
+60,5,Proposed loan result: ,
+60,6,"=IF(Calculations!V5,Calculations!G44,""Input Incomplete"")","=IF(Calculations!V5,Calculations!G44,""Input Incomplete"")"
+60,9,Debt Servicing Ratio: ,
+60,10,"=IF(Calculations!V5,Calculations!S26,"""")","=IF(Calculations!V5,Calculations!S26,"""")"
+61,5,Debt to Income (DTI): ,
+61,6,"=IF(Calculations!V5,Calculations!B53,"""")","=IF(Calculations!V5,Calculations!B53,"""")"
+61,9,Net Cash Position: ,
+61,10,=Calculations!S33,=Calculations!S33
+62,4,"=IF(OR(F61<=6,F61=""""), "" "","" The debt to income ratio is high. Ensure all income sources and account variations are captured accurately."")","=IF(OR(F61<=6,F61=""""), "" "","" The debt to income ratio is high. Ensure all income sources and account variations are captured accurately."")"
+63,2,Maximum borrowing power based on income and existing commitments:,
+65,2,Product,
+65,5,Loan Type,
+65,6,Is this tax deductible?,
+65,7,Balance / Limit,
+65,8,Assessment Rate,
+65,9,Loan Term,
+65,10,Interest Only Period,
+65,11,Monthly Charges,
+65,12,Repayments,
+66,2,"=IF(AND(B52<>"""",B52<>""Credit Card""),B52,"""")","=IF(AND(B52<>"""",B52<>""Credit Card""),B52,"""")"
+66,5,"=IF(AND(E52<>"""",E52<>""Credit Card""),E52,"""")","=IF(AND(E52<>"""",E52<>""Credit Card""),E52,"""")"
+66,6,"=IF(F52="""","""",F52)","=IF(F52="""","""",F52)"
+66,7,"=IF(Calculations!V5,IF(Calculations!S37<0,0,Calculations!S37),0)","=IF(Calculations!V5,IF(Calculations!S37<0,0,Calculations!S37),0)"
+66,8,"=IF(H52="""","""",H52)","=IF(H52="""","""",H52)"
+66,9,"=IF(I52="""","""",I52)","=IF(I52="""","""",I52)"
+66,10,"=IF(J52="""","""",J52)","=IF(J52="""","""",J52)"
+66,11,"=IF(K52="""","""",K52)","=IF(K52="""","""",K52)"
+66,12,"=IF(Calculations!V5,IF(Calculations!S37<=0,0,Calculations!S36),0)","=IF(Calculations!V5,IF(Calculations!S37<=0,0,Calculations!S36),0)"
+67,7,"=IF(Calculations!V5,IF(Calculations!T37<0,0,Calculations!T37),0)","=IF(Calculations!V5,IF(Calculations!T37<0,0,Calculations!T37),0)"
+67,12,"=IF(Calculations!V5,IF(Calculations!T37<=0,0,Calculations!T36),0)","=IF(Calculations!V5,IF(Calculations!T37<=0,0,Calculations!T36),0)"
+69,2,"Important Information: This assessment is based solely on the information you have provided. It is not to be used or considered an approval for a loan.  The calculations are intended as a guide only and are an indication of only one element in the Bank's credit assessment criteria.  The figures and formulae, including interest rates, used within this calculation are subject to change.  Applications for finance are subject to the Bank's normal credit approval.  Full terms and conditions will be included in the Bank's Loan Offer.  Fees and charges are payable.",
+71,12,Product of the Commonwealth Bank of Australia  ABN 48 123 123 124,

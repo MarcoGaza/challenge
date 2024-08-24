@@ -1,0 +1,15 @@
+Row,Column,Value,Formula
+2,2,Year To Date Income Calculator,
+5,2,Gross YTD Income,
+5,5,=COUNTBLANK(C5:C7)=0,=COUNTBLANK(C5:C7)=0
+6,2,Payment Date From,
+7,2,Payment Date To,
+9,2,Monthly Gross Salary,
+9,3,"=IF(E5,(C5/ROUND((C7-C6+1)/7,0))*(52/12),""Input Incomplete"")","=IF(E5,(C5/ROUND((C7-C6+1)/7,0))*(52/12),""Input Incomplete"")"
+10,2,Annual Gross Salary,
+10,3,"=IF(E5,C9*12,""Input Incomplete"")","=IF(E5,C9*12,""Input Incomplete"")"
+12,2,"Important information:
+● Where the YTD period on the payslip is < 3 months, you must also obtain a PAYG payment summary/Income Statement or tax return. Use the lower of the annualised YTD amount and PAYG payment summary/Income Statement or tax return.
+● Where the YTD amount on the payslip contains bonus/commission payments and these are detailed on the payslip, deduct those amounts from the Gross YTD amount prior to inputting into the calculator.
+● This Calculator is to be used in conjunction with the requirements outlined in CommBroker. Noting the above may vary for different income types.",
+14,8,Product of the Commonwealth Bank of Australia  ABN 48 123 123 124,

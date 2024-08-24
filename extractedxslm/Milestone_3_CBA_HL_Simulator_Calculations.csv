@@ -1,0 +1,973 @@
+Row,Column,Value,Formula
+1,1,"The blue represents the net model, the green represents the gross model and the yellow is shared.",
+1,18,Gross non-rental Income,
+1,19,"=SUM(Model!G17:J17,Model!G23:J25,Model!G30:J31)+SUM(Model!G18:J18)*Data!C20+SUM(Model!G19:J19)*Data!C20+SUM(Model!G22:J22)*Data!C22","=SUM(Model!G17:J17,Model!G23:J25,Model!G30:J31)+SUM(Model!G18:J18)*Data!C20+SUM(Model!G19:J19)*Data!C20+SUM(Model!G22:J22)*Data!C22"
+1,26,"=IF('Neg Gearing'!C20="""",Z2-Data!G33,'Neg Gearing'!C20)","=IF('Neg Gearing'!C20="""",Z2-Data!G33,'Neg Gearing'!C20)"
+1,27,Int Rate,
+1,28,Deduction 1,
+1,29,Deduction 2,
+1,30,Deduction 3,
+1,31,Deduction 4,
+1,32,Taxable 1,
+1,33,Taxable 2,
+1,34,Taxable 3,
+1,35,Taxable 4,
+1,36,Tax & ML 1,
+1,37,Tax & ML 2,
+1,38,Tax & ML 3,
+1,39,Tax & ML 4,
+1,40,Monthly Pmt,
+1,41,Max Amount,
+2,2,Applicant 1,
+2,3,Income,
+2,6,Applicant 2,
+2,7,Income,
+2,10,Applicant 3,
+2,11,Income,
+2,14,Applicant 4,
+2,15,Income,
+2,18,Gross rental Income,
+2,19,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5B65F70>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5B65F70>
+2,21,Income Complete,
+2,22,"=OR(SUM(Model!G17:G24,Model!G30)>0,Model!G25<>0,Model!G31<>0)","=OR(SUM(Model!G17:G24,Model!G30)>0,Model!G25<>0,Model!G31<>0)"
+2,26,"=MAX(Model!H52,Data!G32)","=MAX(Model!H52,Data!G32)"
+2,27,Asmt Rate,
+2,28,='Neg Gearing'!E28,='Neg Gearing'!E28
+2,29,='Neg Gearing'!E29,='Neg Gearing'!E29
+2,30,='Neg Gearing'!E30,='Neg Gearing'!E30
+2,31,='Neg Gearing'!E31,='Neg Gearing'!E31
+2,32,"=MAX(C12,0)","=MAX(C12,0)"
+2,33,"=MAX(G12,0)","=MAX(G12,0)"
+2,34,"=MAX(K12,0)","=MAX(K12,0)"
+2,35,"=MAX(O12,0)","=MAX(O12,0)"
+2,36,"=income_tax(AF2)+medicare_levy(AF2)-IF((LITO(AF2,income_tax(AF2))+LMITO(AF2,income_tax(AF2)))>income_tax(AF2),income_tax(AF2),LITO(AF2,income_tax(AF2)))-IF((LITO(AF2,income_tax(AF2))+LMITO(AF2,income_tax(AF2)))>income_tax(AF2),0,LMITO(AF2,income_tax(AF2)))","=income_tax(AF2)+medicare_levy(AF2)-IF((LITO(AF2,income_tax(AF2))+LMITO(AF2,income_tax(AF2)))>income_tax(AF2),income_tax(AF2),LITO(AF2,income_tax(AF2)))-IF((LITO(AF2,income_tax(AF2))+LMITO(AF2,income_tax(AF2)))>income_tax(AF2),0,LMITO(AF2,income_tax(AF2)))"
+2,37,"=income_tax(AG2)+medicare_levy(AG2)-IF((LITO(AG2,income_tax(AG2))+LMITO(AG2,income_tax(AG2)))>income_tax(AG2),income_tax(AG2),LITO(AG2,income_tax(AG2)))-IF((LITO(AG2,income_tax(AG2))+LMITO(AG2,income_tax(AG2)))>income_tax(AG2),0,LMITO(AG2,income_tax(AG2)))","=income_tax(AG2)+medicare_levy(AG2)-IF((LITO(AG2,income_tax(AG2))+LMITO(AG2,income_tax(AG2)))>income_tax(AG2),income_tax(AG2),LITO(AG2,income_tax(AG2)))-IF((LITO(AG2,income_tax(AG2))+LMITO(AG2,income_tax(AG2)))>income_tax(AG2),0,LMITO(AG2,income_tax(AG2)))"
+2,38,"=income_tax(AH2)+medicare_levy(AH2)-IF((LITO(AH2,income_tax(AH2))+LMITO(AH2,income_tax(AH2)))>income_tax(AH2),income_tax(AH2),LITO(AH2,income_tax(AH2)))-IF((LITO(AH2,income_tax(AH2))+LMITO(AH2,income_tax(AH2)))>income_tax(AH2),0,LMITO(AH2,income_tax(AH2)))","=income_tax(AH2)+medicare_levy(AH2)-IF((LITO(AH2,income_tax(AH2))+LMITO(AH2,income_tax(AH2)))>income_tax(AH2),income_tax(AH2),LITO(AH2,income_tax(AH2)))-IF((LITO(AH2,income_tax(AH2))+LMITO(AH2,income_tax(AH2)))>income_tax(AH2),0,LMITO(AH2,income_tax(AH2)))"
+2,39,"=income_tax(AI2)+medicare_levy(AI2)-IF((LITO(AI2,income_tax(AI2))+LMITO(AI2,income_tax(AI2)))>income_tax(AI2),income_tax(AI2),LITO(AI2,income_tax(AI2)))-IF((LITO(AI2,income_tax(AI2))+LMITO(AI2,income_tax(AI2)))>income_tax(AI2),0,LMITO(AI2,income_tax(AI2)))","=income_tax(AI2)+medicare_levy(AI2)-IF((LITO(AI2,income_tax(AI2))+LMITO(AI2,income_tax(AI2)))>income_tax(AI2),income_tax(AI2),LITO(AI2,income_tax(AI2)))-IF((LITO(AI2,income_tax(AI2))+LMITO(AI2,income_tax(AI2)))>income_tax(AI2),0,LMITO(AI2,income_tax(AI2)))"
+2,40,"=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ2:AM2)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)","=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ2:AM2)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)"
+2,41,"=ROUNDDOWN(PV($Z$2/12,$Z$3*12,-(AN2-$Z$4)),0)","=ROUNDDOWN(PV($Z$2/12,$Z$3*12,-(AN2-$Z$4)),0)"
+3,1,Gross Salary or Wages,
+3,2,=Model!G17,=Model!G17
+3,3,=B3,=B3
+3,6,=Model!H17,=Model!H17
+3,7,=F3,=F3
+3,10,=Model!I17,=Model!I17
+3,11,=J3,=J3
+3,14,=Model!J17,=Model!J17
+3,15,=N3,=N3
+3,18,Eligible rental Income,
+3,19,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5B64DD0>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5B64DD0>
+3,21,Housing Complete,
+3,22,"=IF(Model!H7>0,AND(COUNT(Model!H10:K10)>=Model!H7,COUNT(Model!H12:K12)>=Model!H7,Model!G16<>"""",Model!K7="""",Model!H11<>"""",IF(Model!H7>1,Model!I11<>"""",TRUE),IF(Model!H7>2,Model!J11<>"""",TRUE),IF(Model!H7>3,Model!K11<>"""",TRUE)),FALSE)","=IF(Model!H7>0,AND(COUNT(Model!H10:K10)>=Model!H7,COUNT(Model!H12:K12)>=Model!H7,Model!G16<>"""",Model!K7="""",Model!H11<>"""",IF(Model!H7>1,Model!I11<>"""",TRUE),IF(Model!H7>2,Model!J11<>"""",TRUE),IF(Model!H7>3,Model!K11<>"""",TRUE)),FALSE)"
+3,26,=Model!I52-Model!J52,=Model!I52-Model!J52
+3,27,CLT,
+3,28,"=IF($Z$5,$AO2*$Z$1*'Neg Gearing'!E$20+AB$2,0)","=IF($Z$5,$AO2*$Z$1*'Neg Gearing'!E$20+AB$2,0)"
+3,29,"=IF($Z$5,$AO2*$Z$1*'Neg Gearing'!F$20+AC$2,0)","=IF($Z$5,$AO2*$Z$1*'Neg Gearing'!F$20+AC$2,0)"
+3,30,"=IF($Z$5,$AO2*$Z$1*'Neg Gearing'!G$20+AD$2,0)","=IF($Z$5,$AO2*$Z$1*'Neg Gearing'!G$20+AD$2,0)"
+3,31,"=IF($Z$5,$AO2*$Z$1*'Neg Gearing'!H$20+AE$2,0)","=IF($Z$5,$AO2*$Z$1*'Neg Gearing'!H$20+AE$2,0)"
+3,32,"=MAX(AF$2-AB3,0)","=MAX(AF$2-AB3,0)"
+3,33,"=MAX(AG$2-AC3,0)","=MAX(AG$2-AC3,0)"
+3,34,"=MAX(AH$2-AD3,0)","=MAX(AH$2-AD3,0)"
+3,35,"=MAX(AI$2-AE3,0)","=MAX(AI$2-AE3,0)"
+3,36,"=income_tax(AF3)+medicare_levy(AF3)-IF((LITO(AF3,income_tax(AF3))+LMITO(AF3,income_tax(AF3)))>income_tax(AF3),income_tax(AF3),LITO(AF3,income_tax(AF3)))-IF((LITO(AF3,income_tax(AF3))+LMITO(AF3,income_tax(AF3)))>income_tax(AF3),0,LMITO(AF3,income_tax(AF3)))","=income_tax(AF3)+medicare_levy(AF3)-IF((LITO(AF3,income_tax(AF3))+LMITO(AF3,income_tax(AF3)))>income_tax(AF3),income_tax(AF3),LITO(AF3,income_tax(AF3)))-IF((LITO(AF3,income_tax(AF3))+LMITO(AF3,income_tax(AF3)))>income_tax(AF3),0,LMITO(AF3,income_tax(AF3)))"
+3,37,"=income_tax(AG3)+medicare_levy(AG3)-IF((LITO(AG3,income_tax(AG3))+LMITO(AG3,income_tax(AG3)))>income_tax(AG3),income_tax(AG3),LITO(AG3,income_tax(AG3)))-IF((LITO(AG3,income_tax(AG3))+LMITO(AG3,income_tax(AG3)))>income_tax(AG3),0,LMITO(AG3,income_tax(AG3)))","=income_tax(AG3)+medicare_levy(AG3)-IF((LITO(AG3,income_tax(AG3))+LMITO(AG3,income_tax(AG3)))>income_tax(AG3),income_tax(AG3),LITO(AG3,income_tax(AG3)))-IF((LITO(AG3,income_tax(AG3))+LMITO(AG3,income_tax(AG3)))>income_tax(AG3),0,LMITO(AG3,income_tax(AG3)))"
+3,38,"=income_tax(AH3)+medicare_levy(AH3)-IF((LITO(AH3,income_tax(AH3))+LMITO(AH3,income_tax(AH3)))>income_tax(AH3),income_tax(AH3),LITO(AH3,income_tax(AH3)))-IF((LITO(AH3,income_tax(AH3))+LMITO(AH3,income_tax(AH3)))>income_tax(AH3),0,LMITO(AH3,income_tax(AH3)))","=income_tax(AH3)+medicare_levy(AH3)-IF((LITO(AH3,income_tax(AH3))+LMITO(AH3,income_tax(AH3)))>income_tax(AH3),income_tax(AH3),LITO(AH3,income_tax(AH3)))-IF((LITO(AH3,income_tax(AH3))+LMITO(AH3,income_tax(AH3)))>income_tax(AH3),0,LMITO(AH3,income_tax(AH3)))"
+3,39,"=income_tax(AI3)+medicare_levy(AI3)-IF((LITO(AI3,income_tax(AI3))+LMITO(AI3,income_tax(AI3)))>income_tax(AI3),income_tax(AI3),LITO(AI3,income_tax(AI3)))-IF((LITO(AI3,income_tax(AI3))+LMITO(AI3,income_tax(AI3)))>income_tax(AI3),0,LMITO(AI3,income_tax(AI3)))","=income_tax(AI3)+medicare_levy(AI3)-IF((LITO(AI3,income_tax(AI3))+LMITO(AI3,income_tax(AI3)))>income_tax(AI3),income_tax(AI3),LITO(AI3,income_tax(AI3)))-IF((LITO(AI3,income_tax(AI3))+LMITO(AI3,income_tax(AI3)))>income_tax(AI3),0,LMITO(AI3,income_tax(AI3)))"
+3,40,"=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ3:AM3)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)","=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ3:AM3)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)"
+3,41,"=ROUNDDOWN(PV($Z$2/12,$Z$3*12,-(AN3-$Z$4)),0)","=ROUNDDOWN(PV($Z$2/12,$Z$3*12,-(AN3-$Z$4)),0)"
+4,1,Gross Overtime,
+4,2,=Model!G18,=Model!G18
+4,3,=B4*Data!$C$20,=B4*Data!$C$20
+4,6,=Model!H18,=Model!H18
+4,7,=F4*Data!$C$20,=F4*Data!$C$20
+4,10,=Model!I18,=Model!I18
+4,11,=J4*Data!$C$20,=J4*Data!$C$20
+4,14,=Model!J18,=Model!J18
+4,15,=N4*Data!$C$20,=N4*Data!$C$20
+4,18,Total Gross Income,
+4,19,=SUM(S1:S2),=SUM(S1:S2)
+4,21,Exising/Proposed Complete,
+4,22,"=AND(U15,W15,NOT(T23),U23,W23)","=AND(U15,W15,NOT(T23),U23,W23)"
+4,26,=Model!K52,=Model!K52
+4,27,LSF,
+4,28,"=IF($Z$5,$AO3*$Z$1*'Neg Gearing'!E$20+AB$2,0)","=IF($Z$5,$AO3*$Z$1*'Neg Gearing'!E$20+AB$2,0)"
+4,29,"=IF($Z$5,$AO3*$Z$1*'Neg Gearing'!F$20+AC$2,0)","=IF($Z$5,$AO3*$Z$1*'Neg Gearing'!F$20+AC$2,0)"
+4,30,"=IF($Z$5,$AO3*$Z$1*'Neg Gearing'!G$20+AD$2,0)","=IF($Z$5,$AO3*$Z$1*'Neg Gearing'!G$20+AD$2,0)"
+4,31,"=IF($Z$5,$AO3*$Z$1*'Neg Gearing'!H$20+AE$2,0)","=IF($Z$5,$AO3*$Z$1*'Neg Gearing'!H$20+AE$2,0)"
+4,32,"=MAX(AF$2-AB4,0)","=MAX(AF$2-AB4,0)"
+4,33,"=MAX(AG$2-AC4,0)","=MAX(AG$2-AC4,0)"
+4,34,"=MAX(AH$2-AD4,0)","=MAX(AH$2-AD4,0)"
+4,35,"=MAX(AI$2-AE4,0)","=MAX(AI$2-AE4,0)"
+4,36,"=income_tax(AF4)+medicare_levy(AF4)-IF((LITO(AF4,income_tax(AF4))+LMITO(AF4,income_tax(AF4)))>income_tax(AF4),income_tax(AF4),LITO(AF4,income_tax(AF4)))-IF((LITO(AF4,income_tax(AF4))+LMITO(AF4,income_tax(AF4)))>income_tax(AF4),0,LMITO(AF4,income_tax(AF4)))","=income_tax(AF4)+medicare_levy(AF4)-IF((LITO(AF4,income_tax(AF4))+LMITO(AF4,income_tax(AF4)))>income_tax(AF4),income_tax(AF4),LITO(AF4,income_tax(AF4)))-IF((LITO(AF4,income_tax(AF4))+LMITO(AF4,income_tax(AF4)))>income_tax(AF4),0,LMITO(AF4,income_tax(AF4)))"
+4,37,"=income_tax(AG4)+medicare_levy(AG4)-IF((LITO(AG4,income_tax(AG4))+LMITO(AG4,income_tax(AG4)))>income_tax(AG4),income_tax(AG4),LITO(AG4,income_tax(AG4)))-IF((LITO(AG4,income_tax(AG4))+LMITO(AG4,income_tax(AG4)))>income_tax(AG4),0,LMITO(AG4,income_tax(AG4)))","=income_tax(AG4)+medicare_levy(AG4)-IF((LITO(AG4,income_tax(AG4))+LMITO(AG4,income_tax(AG4)))>income_tax(AG4),income_tax(AG4),LITO(AG4,income_tax(AG4)))-IF((LITO(AG4,income_tax(AG4))+LMITO(AG4,income_tax(AG4)))>income_tax(AG4),0,LMITO(AG4,income_tax(AG4)))"
+4,38,"=income_tax(AH4)+medicare_levy(AH4)-IF((LITO(AH4,income_tax(AH4))+LMITO(AH4,income_tax(AH4)))>income_tax(AH4),income_tax(AH4),LITO(AH4,income_tax(AH4)))-IF((LITO(AH4,income_tax(AH4))+LMITO(AH4,income_tax(AH4)))>income_tax(AH4),0,LMITO(AH4,income_tax(AH4)))","=income_tax(AH4)+medicare_levy(AH4)-IF((LITO(AH4,income_tax(AH4))+LMITO(AH4,income_tax(AH4)))>income_tax(AH4),income_tax(AH4),LITO(AH4,income_tax(AH4)))-IF((LITO(AH4,income_tax(AH4))+LMITO(AH4,income_tax(AH4)))>income_tax(AH4),0,LMITO(AH4,income_tax(AH4)))"
+4,39,"=income_tax(AI4)+medicare_levy(AI4)-IF((LITO(AI4,income_tax(AI4))+LMITO(AI4,income_tax(AI4)))>income_tax(AI4),income_tax(AI4),LITO(AI4,income_tax(AI4)))-IF((LITO(AI4,income_tax(AI4))+LMITO(AI4,income_tax(AI4)))>income_tax(AI4),0,LMITO(AI4,income_tax(AI4)))","=income_tax(AI4)+medicare_levy(AI4)-IF((LITO(AI4,income_tax(AI4))+LMITO(AI4,income_tax(AI4)))>income_tax(AI4),income_tax(AI4),LITO(AI4,income_tax(AI4)))-IF((LITO(AI4,income_tax(AI4))+LMITO(AI4,income_tax(AI4)))>income_tax(AI4),0,LMITO(AI4,income_tax(AI4)))"
+4,40,"=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ4:AM4)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)","=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ4:AM4)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)"
+4,41,"=ROUNDDOWN(PV($Z$2/12,$Z$3*12,-(AN4-$Z$4)),0)","=ROUNDDOWN(PV($Z$2/12,$Z$3*12,-(AN4-$Z$4)),0)"
+5,1,Gross Bonuses,
+5,2,=Model!G19,=Model!G19
+5,3,=B5*Data!$C$21,=B5*Data!$C$21
+5,6,=Model!H19,=Model!H19
+5,7,=F5*Data!$C$21,=F5*Data!$C$21
+5,10,=Model!I19,=Model!I19
+5,11,=J5*Data!$C$21,=J5*Data!$C$21
+5,14,=Model!J19,=Model!J19
+5,15,=N5*Data!$C$21,=N5*Data!$C$21
+5,21,Everything Complete,
+5,22,=AND(V2:V4),=AND(V2:V4)
+5,26,"=AND(Model!E66=""Investment"",Model!F66=""Yes"")","=AND(Model!E66=""Investment"",Model!F66=""Yes"")"
+5,27,Neg Gear,
+5,28,"=IF($Z$5,$AO4*$Z$1*'Neg Gearing'!E$20+AB$2,0)","=IF($Z$5,$AO4*$Z$1*'Neg Gearing'!E$20+AB$2,0)"
+5,29,"=IF($Z$5,$AO4*$Z$1*'Neg Gearing'!F$20+AC$2,0)","=IF($Z$5,$AO4*$Z$1*'Neg Gearing'!F$20+AC$2,0)"
+5,30,"=IF($Z$5,$AO4*$Z$1*'Neg Gearing'!G$20+AD$2,0)","=IF($Z$5,$AO4*$Z$1*'Neg Gearing'!G$20+AD$2,0)"
+5,31,"=IF($Z$5,$AO4*$Z$1*'Neg Gearing'!H$20+AE$2,0)","=IF($Z$5,$AO4*$Z$1*'Neg Gearing'!H$20+AE$2,0)"
+5,32,"=MAX(AF$2-AB5,0)","=MAX(AF$2-AB5,0)"
+5,33,"=MAX(AG$2-AC5,0)","=MAX(AG$2-AC5,0)"
+5,34,"=MAX(AH$2-AD5,0)","=MAX(AH$2-AD5,0)"
+5,35,"=MAX(AI$2-AE5,0)","=MAX(AI$2-AE5,0)"
+5,36,"=income_tax(AF5)+medicare_levy(AF5)-IF((LITO(AF5,income_tax(AF5))+LMITO(AF5,income_tax(AF5)))>income_tax(AF5),income_tax(AF5),LITO(AF5,income_tax(AF5)))-IF((LITO(AF5,income_tax(AF5))+LMITO(AF5,income_tax(AF5)))>income_tax(AF5),0,LMITO(AF5,income_tax(AF5)))","=income_tax(AF5)+medicare_levy(AF5)-IF((LITO(AF5,income_tax(AF5))+LMITO(AF5,income_tax(AF5)))>income_tax(AF5),income_tax(AF5),LITO(AF5,income_tax(AF5)))-IF((LITO(AF5,income_tax(AF5))+LMITO(AF5,income_tax(AF5)))>income_tax(AF5),0,LMITO(AF5,income_tax(AF5)))"
+5,37,"=income_tax(AG5)+medicare_levy(AG5)-IF((LITO(AG5,income_tax(AG5))+LMITO(AG5,income_tax(AG5)))>income_tax(AG5),income_tax(AG5),LITO(AG5,income_tax(AG5)))-IF((LITO(AG5,income_tax(AG5))+LMITO(AG5,income_tax(AG5)))>income_tax(AG5),0,LMITO(AG5,income_tax(AG5)))","=income_tax(AG5)+medicare_levy(AG5)-IF((LITO(AG5,income_tax(AG5))+LMITO(AG5,income_tax(AG5)))>income_tax(AG5),income_tax(AG5),LITO(AG5,income_tax(AG5)))-IF((LITO(AG5,income_tax(AG5))+LMITO(AG5,income_tax(AG5)))>income_tax(AG5),0,LMITO(AG5,income_tax(AG5)))"
+5,38,"=income_tax(AH5)+medicare_levy(AH5)-IF((LITO(AH5,income_tax(AH5))+LMITO(AH5,income_tax(AH5)))>income_tax(AH5),income_tax(AH5),LITO(AH5,income_tax(AH5)))-IF((LITO(AH5,income_tax(AH5))+LMITO(AH5,income_tax(AH5)))>income_tax(AH5),0,LMITO(AH5,income_tax(AH5)))","=income_tax(AH5)+medicare_levy(AH5)-IF((LITO(AH5,income_tax(AH5))+LMITO(AH5,income_tax(AH5)))>income_tax(AH5),income_tax(AH5),LITO(AH5,income_tax(AH5)))-IF((LITO(AH5,income_tax(AH5))+LMITO(AH5,income_tax(AH5)))>income_tax(AH5),0,LMITO(AH5,income_tax(AH5)))"
+5,39,"=income_tax(AI5)+medicare_levy(AI5)-IF((LITO(AI5,income_tax(AI5))+LMITO(AI5,income_tax(AI5)))>income_tax(AI5),income_tax(AI5),LITO(AI5,income_tax(AI5)))-IF((LITO(AI5,income_tax(AI5))+LMITO(AI5,income_tax(AI5)))>income_tax(AI5),0,LMITO(AI5,income_tax(AI5)))","=income_tax(AI5)+medicare_levy(AI5)-IF((LITO(AI5,income_tax(AI5))+LMITO(AI5,income_tax(AI5)))>income_tax(AI5),income_tax(AI5),LITO(AI5,income_tax(AI5)))-IF((LITO(AI5,income_tax(AI5))+LMITO(AI5,income_tax(AI5)))>income_tax(AI5),0,LMITO(AI5,income_tax(AI5)))"
+5,40,"=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ5:AM5)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)","=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ5:AM5)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)"
+5,41,"=ROUNDDOWN(PV($Z$2/12,$Z$3*12,-(AN5-$Z$4)),0)","=ROUNDDOWN(PV($Z$2/12,$Z$3*12,-(AN5-$Z$4)),0)"
+6,1,Existing Rental Income,
+6,2,=Model!G20,=Model!G20
+6,3,=B6,=B6
+6,6,=Model!H20,=Model!H20
+6,7,=F6,=F6
+6,10,=Model!I20,=Model!I20
+6,11,=J6,=J6
+6,14,=Model!J20,=Model!J20
+6,15,=N6,=N6
+6,18,Total Gross Annual Elig Inc,
+6,19,=C12+G12+K12+O12+Model!L30+Model!L31,=C12+G12+K12+O12+Model!L30+Model!L31
+6,28,"=IF($Z$5,$AO5*$Z$1*'Neg Gearing'!E$20+AB$2,0)","=IF($Z$5,$AO5*$Z$1*'Neg Gearing'!E$20+AB$2,0)"
+6,29,"=IF($Z$5,$AO5*$Z$1*'Neg Gearing'!F$20+AC$2,0)","=IF($Z$5,$AO5*$Z$1*'Neg Gearing'!F$20+AC$2,0)"
+6,30,"=IF($Z$5,$AO5*$Z$1*'Neg Gearing'!G$20+AD$2,0)","=IF($Z$5,$AO5*$Z$1*'Neg Gearing'!G$20+AD$2,0)"
+6,31,"=IF($Z$5,$AO5*$Z$1*'Neg Gearing'!H$20+AE$2,0)","=IF($Z$5,$AO5*$Z$1*'Neg Gearing'!H$20+AE$2,0)"
+6,32,"=MAX(AF$2-AB6,0)","=MAX(AF$2-AB6,0)"
+6,33,"=MAX(AG$2-AC6,0)","=MAX(AG$2-AC6,0)"
+6,34,"=MAX(AH$2-AD6,0)","=MAX(AH$2-AD6,0)"
+6,35,"=MAX(AI$2-AE6,0)","=MAX(AI$2-AE6,0)"
+6,36,"=income_tax(AF6)+medicare_levy(AF6)-IF((LITO(AF6,income_tax(AF6))+LMITO(AF6,income_tax(AF6)))>income_tax(AF6),income_tax(AF6),LITO(AF6,income_tax(AF6)))-IF((LITO(AF6,income_tax(AF6))+LMITO(AF6,income_tax(AF6)))>income_tax(AF6),0,LMITO(AF6,income_tax(AF6)))","=income_tax(AF6)+medicare_levy(AF6)-IF((LITO(AF6,income_tax(AF6))+LMITO(AF6,income_tax(AF6)))>income_tax(AF6),income_tax(AF6),LITO(AF6,income_tax(AF6)))-IF((LITO(AF6,income_tax(AF6))+LMITO(AF6,income_tax(AF6)))>income_tax(AF6),0,LMITO(AF6,income_tax(AF6)))"
+6,37,"=income_tax(AG6)+medicare_levy(AG6)-IF((LITO(AG6,income_tax(AG6))+LMITO(AG6,income_tax(AG6)))>income_tax(AG6),income_tax(AG6),LITO(AG6,income_tax(AG6)))-IF((LITO(AG6,income_tax(AG6))+LMITO(AG6,income_tax(AG6)))>income_tax(AG6),0,LMITO(AG6,income_tax(AG6)))","=income_tax(AG6)+medicare_levy(AG6)-IF((LITO(AG6,income_tax(AG6))+LMITO(AG6,income_tax(AG6)))>income_tax(AG6),income_tax(AG6),LITO(AG6,income_tax(AG6)))-IF((LITO(AG6,income_tax(AG6))+LMITO(AG6,income_tax(AG6)))>income_tax(AG6),0,LMITO(AG6,income_tax(AG6)))"
+6,38,"=income_tax(AH6)+medicare_levy(AH6)-IF((LITO(AH6,income_tax(AH6))+LMITO(AH6,income_tax(AH6)))>income_tax(AH6),income_tax(AH6),LITO(AH6,income_tax(AH6)))-IF((LITO(AH6,income_tax(AH6))+LMITO(AH6,income_tax(AH6)))>income_tax(AH6),0,LMITO(AH6,income_tax(AH6)))","=income_tax(AH6)+medicare_levy(AH6)-IF((LITO(AH6,income_tax(AH6))+LMITO(AH6,income_tax(AH6)))>income_tax(AH6),income_tax(AH6),LITO(AH6,income_tax(AH6)))-IF((LITO(AH6,income_tax(AH6))+LMITO(AH6,income_tax(AH6)))>income_tax(AH6),0,LMITO(AH6,income_tax(AH6)))"
+6,39,"=income_tax(AI6)+medicare_levy(AI6)-IF((LITO(AI6,income_tax(AI6))+LMITO(AI6,income_tax(AI6)))>income_tax(AI6),income_tax(AI6),LITO(AI6,income_tax(AI6)))-IF((LITO(AI6,income_tax(AI6))+LMITO(AI6,income_tax(AI6)))>income_tax(AI6),0,LMITO(AI6,income_tax(AI6)))","=income_tax(AI6)+medicare_levy(AI6)-IF((LITO(AI6,income_tax(AI6))+LMITO(AI6,income_tax(AI6)))>income_tax(AI6),income_tax(AI6),LITO(AI6,income_tax(AI6)))-IF((LITO(AI6,income_tax(AI6))+LMITO(AI6,income_tax(AI6)))>income_tax(AI6),0,LMITO(AI6,income_tax(AI6)))"
+6,40,"=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ6:AM6)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)","=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ6:AM6)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)"
+6,41,"=ROUNDDOWN(PV($Z$2/12,$Z$3*12,-(AN6-$Z$4)),0)","=ROUNDDOWN(PV($Z$2/12,$Z$3*12,-(AN6-$Z$4)),0)"
+7,1,Proposed Rental Income,
+7,2,=Model!G21,=Model!G21
+7,3,=B7,=B7
+7,6,=Model!H21,=Model!H21
+7,7,=F7,=F7
+7,10,=Model!I21,=Model!I21
+7,11,=J7,=J7
+7,14,=Model!J21,=Model!J21
+7,15,=N7,=N7
+7,20,Blank,
+7,21,Complete,
+7,22,Neg Gear,
+7,23,Complete,
+7,24,Bal/Lim,
+7,28,"=IF($Z$5,$AO6*$Z$1*'Neg Gearing'!E$20+AB$2,0)","=IF($Z$5,$AO6*$Z$1*'Neg Gearing'!E$20+AB$2,0)"
+7,29,"=IF($Z$5,$AO6*$Z$1*'Neg Gearing'!F$20+AC$2,0)","=IF($Z$5,$AO6*$Z$1*'Neg Gearing'!F$20+AC$2,0)"
+7,30,"=IF($Z$5,$AO6*$Z$1*'Neg Gearing'!G$20+AD$2,0)","=IF($Z$5,$AO6*$Z$1*'Neg Gearing'!G$20+AD$2,0)"
+7,31,"=IF($Z$5,$AO6*$Z$1*'Neg Gearing'!H$20+AE$2,0)","=IF($Z$5,$AO6*$Z$1*'Neg Gearing'!H$20+AE$2,0)"
+7,32,"=MAX(AF$2-AB7,0)","=MAX(AF$2-AB7,0)"
+7,33,"=MAX(AG$2-AC7,0)","=MAX(AG$2-AC7,0)"
+7,34,"=MAX(AH$2-AD7,0)","=MAX(AH$2-AD7,0)"
+7,35,"=MAX(AI$2-AE7,0)","=MAX(AI$2-AE7,0)"
+7,36,"=income_tax(AF7)+medicare_levy(AF7)-IF((LITO(AF7,income_tax(AF7))+LMITO(AF7,income_tax(AF7)))>income_tax(AF7),income_tax(AF7),LITO(AF7,income_tax(AF7)))-IF((LITO(AF7,income_tax(AF7))+LMITO(AF7,income_tax(AF7)))>income_tax(AF7),0,LMITO(AF7,income_tax(AF7)))","=income_tax(AF7)+medicare_levy(AF7)-IF((LITO(AF7,income_tax(AF7))+LMITO(AF7,income_tax(AF7)))>income_tax(AF7),income_tax(AF7),LITO(AF7,income_tax(AF7)))-IF((LITO(AF7,income_tax(AF7))+LMITO(AF7,income_tax(AF7)))>income_tax(AF7),0,LMITO(AF7,income_tax(AF7)))"
+7,37,"=income_tax(AG7)+medicare_levy(AG7)-IF((LITO(AG7,income_tax(AG7))+LMITO(AG7,income_tax(AG7)))>income_tax(AG7),income_tax(AG7),LITO(AG7,income_tax(AG7)))-IF((LITO(AG7,income_tax(AG7))+LMITO(AG7,income_tax(AG7)))>income_tax(AG7),0,LMITO(AG7,income_tax(AG7)))","=income_tax(AG7)+medicare_levy(AG7)-IF((LITO(AG7,income_tax(AG7))+LMITO(AG7,income_tax(AG7)))>income_tax(AG7),income_tax(AG7),LITO(AG7,income_tax(AG7)))-IF((LITO(AG7,income_tax(AG7))+LMITO(AG7,income_tax(AG7)))>income_tax(AG7),0,LMITO(AG7,income_tax(AG7)))"
+7,38,"=income_tax(AH7)+medicare_levy(AH7)-IF((LITO(AH7,income_tax(AH7))+LMITO(AH7,income_tax(AH7)))>income_tax(AH7),income_tax(AH7),LITO(AH7,income_tax(AH7)))-IF((LITO(AH7,income_tax(AH7))+LMITO(AH7,income_tax(AH7)))>income_tax(AH7),0,LMITO(AH7,income_tax(AH7)))","=income_tax(AH7)+medicare_levy(AH7)-IF((LITO(AH7,income_tax(AH7))+LMITO(AH7,income_tax(AH7)))>income_tax(AH7),income_tax(AH7),LITO(AH7,income_tax(AH7)))-IF((LITO(AH7,income_tax(AH7))+LMITO(AH7,income_tax(AH7)))>income_tax(AH7),0,LMITO(AH7,income_tax(AH7)))"
+7,39,"=income_tax(AI7)+medicare_levy(AI7)-IF((LITO(AI7,income_tax(AI7))+LMITO(AI7,income_tax(AI7)))>income_tax(AI7),income_tax(AI7),LITO(AI7,income_tax(AI7)))-IF((LITO(AI7,income_tax(AI7))+LMITO(AI7,income_tax(AI7)))>income_tax(AI7),0,LMITO(AI7,income_tax(AI7)))","=income_tax(AI7)+medicare_levy(AI7)-IF((LITO(AI7,income_tax(AI7))+LMITO(AI7,income_tax(AI7)))>income_tax(AI7),income_tax(AI7),LITO(AI7,income_tax(AI7)))-IF((LITO(AI7,income_tax(AI7))+LMITO(AI7,income_tax(AI7)))>income_tax(AI7),0,LMITO(AI7,income_tax(AI7)))"
+7,40,"=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ7:AM7)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)","=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ7:AM7)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)"
+7,41,"=ROUNDDOWN(PV($Z$2/12,$Z$3*12,-(AN7-$Z$4)),0)","=ROUNDDOWN(PV($Z$2/12,$Z$3*12,-(AN7-$Z$4)),0)"
+8,1,Investment Income ,
+8,2,=Model!G22,=Model!G22
+8,3,=B8*Data!$C$22,=B8*Data!$C$22
+8,6,=Model!H22,=Model!H22
+8,7,=F8*Data!$C$22,=F8*Data!$C$22
+8,10,=Model!I22,=Model!I22
+8,11,=J8*Data!$C$22,=J8*Data!$C$22
+8,14,=Model!J22,=Model!J22
+8,15,=N8*Data!$C$22,=N8*Data!$C$22
+8,18,Exisiting 1,
+8,19,"=IF(AND(NOT(T8),U8),ROUNDUP(IF(OR(Model!E39=""Yes"",Model!B39=""Margin Loan""),0,IF(Model!B39=""Credit Card"",MAX(Data!$G$22,MAX(Model!F39:G39)*Data!$G$16),IF(Model!B39=""Overdraft"",MAX(Model!F39:G39)*Data!$G$18,IF(Model!B39=""Commercial Bill"",MAX(Model!F39:G39)*Data!$G$20,IF(OR(Model!B39=""OFI home loan (Other financial institution)"",Model!B39=""OFI Line of Credit (Other financial institution)""),Model!J39*(1+Data!$G$26)+Model!K39,Model!J39+Model!K39))))),),0)","=IF(AND(NOT(T8),U8),ROUNDUP(IF(OR(Model!E39=""Yes"",Model!B39=""Margin Loan""),0,IF(Model!B39=""Credit Card"",MAX(Data!$G$22,MAX(Model!F39:G39)*Data!$G$16),IF(Model!B39=""Overdraft"",MAX(Model!F39:G39)*Data!$G$18,IF(Model!B39=""Commercial Bill"",MAX(Model!F39:G39)*Data!$G$20,IF(OR(Model!B39=""OFI home loan (Other financial institution)"",Model!B39=""OFI Line of Credit (Other financial institution)""),Model!J39*(1+Data!$G$26)+Model!K39,Model!J39+Model!K39))))),),0)"
+8,20,"=AND(ISBLANK(Model!B39),ISBLANK(Model!C39),ISBLANK(Model!D39),ISBLANK(Model!E39),ISBLANK(Model!F39),ISBLANK(Model!H39),ISBLANK(Model!I39),ISBLANK(Model!J39),ISBLANK(Model!K39))","=AND(ISBLANK(Model!B39),ISBLANK(Model!C39),ISBLANK(Model!D39),ISBLANK(Model!E39),ISBLANK(Model!F39),ISBLANK(Model!H39),ISBLANK(Model!I39),ISBLANK(Model!J39),ISBLANK(Model!K39))"
+8,21,"=IF(T8,TRUE,IF(OR(Model!B39=""Credit Card"",Model!B39=""Overdraft"",Model!B39=""Commercial Bill""),AND(Model!F39<>"""",Model!G39<>""""),IF(Model!B39=""Margin Loan"",Model!G39<>"""",IF(Model!B39=""HECS"",Model!J39<>"""",
+IF(AND(Model!E39<>""Yes"",OR(Model!B39=""Personal Loan"",Model!B39=""Lease"",Model!B39=""Hire Purchase"",Model!B39=""Other"")),AND(Model!J39<>"""",Model!K39<>""""),IF(Model!E39=""Yes"",Model!F39<>"""",
+IF(OR(Model!B39=""CBA Variable Rate Home Loan"",Model!B39=""CBA Fixed Rate Home Loan"",Model!B39=""OFI home loan (Other financial institution)""),AND(Model!C39<>"""",Model!F39<>"""",Model!H39<>"""",Model!I39<>"""",Model!K39<>""""),IF(OR(Model!B39=""CBA Line of Credit"",Model!B39=""OFI Line of Credit (Other financial institution)""),AND(Model!F39<>"""",Model!I39<>"""",Model!K39<>""""),FALSE))))))))","=IF(T8,TRUE,IF(OR(Model!B39=""Credit Card"",Model!B39=""Overdraft"",Model!B39=""Commercial Bill""),AND(Model!F39<>"""",Model!G39<>""""),IF(Model!B39=""Margin Loan"",Model!G39<>"""",IF(Model!B39=""HECS"",Model!J39<>"""",
+IF(AND(Model!E39<>""Yes"",OR(Model!B39=""Personal Loan"",Model!B39=""Lease"",Model!B39=""Hire Purchase"",Model!B39=""Other"")),AND(Model!J39<>"""",Model!K39<>""""),IF(Model!E39=""Yes"",Model!F39<>"""",
+IF(OR(Model!B39=""CBA Variable Rate Home Loan"",Model!B39=""CBA Fixed Rate Home Loan"",Model!B39=""OFI home loan (Other financial institution)""),AND(Model!C39<>"""",Model!F39<>"""",Model!H39<>"""",Model!I39<>"""",Model!K39<>""""),IF(OR(Model!B39=""CBA Line of Credit"",Model!B39=""OFI Line of Credit (Other financial institution)""),AND(Model!F39<>"""",Model!I39<>"""",Model!K39<>""""),FALSE))))))))"
+8,22,"=IF(AND(Model!C39=""Investment"",Model!D39=""Yes"",NOT(Model!E39=""Yes"")),TRUE,FALSE)","=IF(AND(Model!C39=""Investment"",Model!D39=""Yes"",NOT(Model!E39=""Yes"")),TRUE,FALSE)"
+8,23,"=IF(NOT(V8),TRUE,AND('Neg Gearing'!C8<>"""",COUNTBLANK('Neg Gearing'!E8:H8)<4))","=IF(NOT(V8),TRUE,AND('Neg Gearing'!C8<>"""",COUNTBLANK('Neg Gearing'!E8:H8)<4))"
+8,24,"=IF(U8,MAX(Model!F39:G39),0)","=IF(U8,MAX(Model!F39:G39),0)"
+8,28,"=IF($Z$5,$AO7*$Z$1*'Neg Gearing'!E$20+AB$2,0)","=IF($Z$5,$AO7*$Z$1*'Neg Gearing'!E$20+AB$2,0)"
+8,29,"=IF($Z$5,$AO7*$Z$1*'Neg Gearing'!F$20+AC$2,0)","=IF($Z$5,$AO7*$Z$1*'Neg Gearing'!F$20+AC$2,0)"
+8,30,"=IF($Z$5,$AO7*$Z$1*'Neg Gearing'!G$20+AD$2,0)","=IF($Z$5,$AO7*$Z$1*'Neg Gearing'!G$20+AD$2,0)"
+8,31,"=IF($Z$5,$AO7*$Z$1*'Neg Gearing'!H$20+AE$2,0)","=IF($Z$5,$AO7*$Z$1*'Neg Gearing'!H$20+AE$2,0)"
+8,32,"=MAX(AF$2-AB8,0)","=MAX(AF$2-AB8,0)"
+8,33,"=MAX(AG$2-AC8,0)","=MAX(AG$2-AC8,0)"
+8,34,"=MAX(AH$2-AD8,0)","=MAX(AH$2-AD8,0)"
+8,35,"=MAX(AI$2-AE8,0)","=MAX(AI$2-AE8,0)"
+8,36,"=income_tax(AF8)+medicare_levy(AF8)-IF((LITO(AF8,income_tax(AF8))+LMITO(AF8,income_tax(AF8)))>income_tax(AF8),income_tax(AF8),LITO(AF8,income_tax(AF8)))-IF((LITO(AF8,income_tax(AF8))+LMITO(AF8,income_tax(AF8)))>income_tax(AF8),0,LMITO(AF8,income_tax(AF8)))","=income_tax(AF8)+medicare_levy(AF8)-IF((LITO(AF8,income_tax(AF8))+LMITO(AF8,income_tax(AF8)))>income_tax(AF8),income_tax(AF8),LITO(AF8,income_tax(AF8)))-IF((LITO(AF8,income_tax(AF8))+LMITO(AF8,income_tax(AF8)))>income_tax(AF8),0,LMITO(AF8,income_tax(AF8)))"
+8,37,"=income_tax(AG8)+medicare_levy(AG8)-IF((LITO(AG8,income_tax(AG8))+LMITO(AG8,income_tax(AG8)))>income_tax(AG8),income_tax(AG8),LITO(AG8,income_tax(AG8)))-IF((LITO(AG8,income_tax(AG8))+LMITO(AG8,income_tax(AG8)))>income_tax(AG8),0,LMITO(AG8,income_tax(AG8)))","=income_tax(AG8)+medicare_levy(AG8)-IF((LITO(AG8,income_tax(AG8))+LMITO(AG8,income_tax(AG8)))>income_tax(AG8),income_tax(AG8),LITO(AG8,income_tax(AG8)))-IF((LITO(AG8,income_tax(AG8))+LMITO(AG8,income_tax(AG8)))>income_tax(AG8),0,LMITO(AG8,income_tax(AG8)))"
+8,38,"=income_tax(AH8)+medicare_levy(AH8)-IF((LITO(AH8,income_tax(AH8))+LMITO(AH8,income_tax(AH8)))>income_tax(AH8),income_tax(AH8),LITO(AH8,income_tax(AH8)))-IF((LITO(AH8,income_tax(AH8))+LMITO(AH8,income_tax(AH8)))>income_tax(AH8),0,LMITO(AH8,income_tax(AH8)))","=income_tax(AH8)+medicare_levy(AH8)-IF((LITO(AH8,income_tax(AH8))+LMITO(AH8,income_tax(AH8)))>income_tax(AH8),income_tax(AH8),LITO(AH8,income_tax(AH8)))-IF((LITO(AH8,income_tax(AH8))+LMITO(AH8,income_tax(AH8)))>income_tax(AH8),0,LMITO(AH8,income_tax(AH8)))"
+8,39,"=income_tax(AI8)+medicare_levy(AI8)-IF((LITO(AI8,income_tax(AI8))+LMITO(AI8,income_tax(AI8)))>income_tax(AI8),income_tax(AI8),LITO(AI8,income_tax(AI8)))-IF((LITO(AI8,income_tax(AI8))+LMITO(AI8,income_tax(AI8)))>income_tax(AI8),0,LMITO(AI8,income_tax(AI8)))","=income_tax(AI8)+medicare_levy(AI8)-IF((LITO(AI8,income_tax(AI8))+LMITO(AI8,income_tax(AI8)))>income_tax(AI8),income_tax(AI8),LITO(AI8,income_tax(AI8)))-IF((LITO(AI8,income_tax(AI8))+LMITO(AI8,income_tax(AI8)))>income_tax(AI8),0,LMITO(AI8,income_tax(AI8)))"
+8,40,"=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ8:AM8)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)","=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ8:AM8)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)"
+8,41,"=ROUNDDOWN(PV($Z$2/12,$Z$3*12,-(AN8-$Z$4)),0)","=ROUNDDOWN(PV($Z$2/12,$Z$3*12,-(AN8-$Z$4)),0)"
+9,1,Pensions,
+9,2,=Model!G23,=Model!G23
+9,3,=B9*Data!G30,=B9*Data!G30
+9,6,=Model!H23,=Model!H23
+9,7,=F9*Data!G30,=F9*Data!G30
+9,10,=Model!I23,=Model!I23
+9,11,=J9*Data!G30,=J9*Data!G30
+9,14,=Model!J23,=Model!J23
+9,15,=N9*Data!G30,=N9*Data!G30
+9,18,Exisiting 2,
+9,19,"=IF(AND(NOT(T9),U9),ROUNDUP(IF(OR(Model!E40=""Yes"",Model!B40=""Margin Loan""),0,IF(Model!B40=""Credit Card"",MAX(Data!$G$22,MAX(Model!F40:G40)*Data!$G$16),IF(Model!B40=""Overdraft"",MAX(Model!F40:G40)*Data!$G$18,IF(Model!B40=""Commercial Bill"",MAX(Model!F40:G40)*Data!$G$20,IF(OR(Model!B40=""OFI home loan (Other financial institution)"",Model!B40=""OFI Line of Credit (Other financial institution)""),Model!J40*(1+Data!$G$26)+Model!K40,Model!J40+Model!K40))))),),0)","=IF(AND(NOT(T9),U9),ROUNDUP(IF(OR(Model!E40=""Yes"",Model!B40=""Margin Loan""),0,IF(Model!B40=""Credit Card"",MAX(Data!$G$22,MAX(Model!F40:G40)*Data!$G$16),IF(Model!B40=""Overdraft"",MAX(Model!F40:G40)*Data!$G$18,IF(Model!B40=""Commercial Bill"",MAX(Model!F40:G40)*Data!$G$20,IF(OR(Model!B40=""OFI home loan (Other financial institution)"",Model!B40=""OFI Line of Credit (Other financial institution)""),Model!J40*(1+Data!$G$26)+Model!K40,Model!J40+Model!K40))))),),0)"
+9,20,"=AND(ISBLANK(Model!B40),ISBLANK(Model!C40),ISBLANK(Model!D40),ISBLANK(Model!E40),ISBLANK(Model!F40),ISBLANK(Model!H40),ISBLANK(Model!I40),ISBLANK(Model!J40),ISBLANK(Model!K40))","=AND(ISBLANK(Model!B40),ISBLANK(Model!C40),ISBLANK(Model!D40),ISBLANK(Model!E40),ISBLANK(Model!F40),ISBLANK(Model!H40),ISBLANK(Model!I40),ISBLANK(Model!J40),ISBLANK(Model!K40))"
+9,21,"=IF(T9,TRUE,IF(OR(Model!B40=""Credit Card"",Model!B40=""Overdraft"",Model!B40=""Commercial Bill""),AND(Model!F40<>"""",Model!G40<>""""),IF(Model!B40=""Margin Loan"",Model!G40<>"""",IF(Model!B40=""HECS"",Model!J40<>"""",
+IF(AND(Model!E40<>""Yes"",OR(Model!B40=""Personal Loan"",Model!B40=""Lease"",Model!B40=""Hire Purchase"",Model!B40=""Other"")),AND(Model!J40<>"""",Model!K40<>""""),IF(Model!E40=""Yes"",Model!F40<>"""",
+IF(OR(Model!B40=""CBA Variable Rate Home Loan"",Model!B40=""CBA Fixed Rate Home Loan"",Model!B40=""OFI home loan (Other financial institution)""),AND(Model!C40<>"""",Model!F40<>"""",Model!H40<>"""",Model!I40<>"""",Model!K40<>""""),IF(OR(Model!B40=""CBA Line of Credit"",Model!B40=""OFI Line of Credit (Other financial institution)""),AND(Model!F40<>"""",Model!I40<>"""",Model!K40<>""""),FALSE))))))))","=IF(T9,TRUE,IF(OR(Model!B40=""Credit Card"",Model!B40=""Overdraft"",Model!B40=""Commercial Bill""),AND(Model!F40<>"""",Model!G40<>""""),IF(Model!B40=""Margin Loan"",Model!G40<>"""",IF(Model!B40=""HECS"",Model!J40<>"""",
+IF(AND(Model!E40<>""Yes"",OR(Model!B40=""Personal Loan"",Model!B40=""Lease"",Model!B40=""Hire Purchase"",Model!B40=""Other"")),AND(Model!J40<>"""",Model!K40<>""""),IF(Model!E40=""Yes"",Model!F40<>"""",
+IF(OR(Model!B40=""CBA Variable Rate Home Loan"",Model!B40=""CBA Fixed Rate Home Loan"",Model!B40=""OFI home loan (Other financial institution)""),AND(Model!C40<>"""",Model!F40<>"""",Model!H40<>"""",Model!I40<>"""",Model!K40<>""""),IF(OR(Model!B40=""CBA Line of Credit"",Model!B40=""OFI Line of Credit (Other financial institution)""),AND(Model!F40<>"""",Model!I40<>"""",Model!K40<>""""),FALSE))))))))"
+9,22,"=IF(AND(Model!C40=""Investment"",Model!D40=""Yes"",NOT(Model!E40=""Yes"")),TRUE,FALSE)","=IF(AND(Model!C40=""Investment"",Model!D40=""Yes"",NOT(Model!E40=""Yes"")),TRUE,FALSE)"
+9,23,"=IF(NOT(V9),TRUE,AND('Neg Gearing'!C9<>"""",COUNTBLANK('Neg Gearing'!E9:H9)<4))","=IF(NOT(V9),TRUE,AND('Neg Gearing'!C9<>"""",COUNTBLANK('Neg Gearing'!E9:H9)<4))"
+9,24,"=IF(U9,MAX(Model!F40:G40),0)","=IF(U9,MAX(Model!F40:G40),0)"
+9,26,"=(SUM(Model!G26,Model!G30:G31)>0)+(SUM(Model!H26,Model!H30:H31)>0)+(SUM(Model!I26,Model!I30:I31)>0)+(SUM(Model!J26,Model!J30:J31)>0)","=(SUM(Model!G26,Model!G30:G31)>0)+(SUM(Model!H26,Model!H30:H31)>0)+(SUM(Model!I26,Model!I30:I31)>0)+(SUM(Model!J26,Model!J30:J31)>0)"
+9,27,Applicants,
+9,28,"=IF($Z$5,$AO8*$Z$1*'Neg Gearing'!E$20+AB$2,0)","=IF($Z$5,$AO8*$Z$1*'Neg Gearing'!E$20+AB$2,0)"
+9,29,"=IF($Z$5,$AO8*$Z$1*'Neg Gearing'!F$20+AC$2,0)","=IF($Z$5,$AO8*$Z$1*'Neg Gearing'!F$20+AC$2,0)"
+9,30,"=IF($Z$5,$AO8*$Z$1*'Neg Gearing'!G$20+AD$2,0)","=IF($Z$5,$AO8*$Z$1*'Neg Gearing'!G$20+AD$2,0)"
+9,31,"=IF($Z$5,$AO8*$Z$1*'Neg Gearing'!H$20+AE$2,0)","=IF($Z$5,$AO8*$Z$1*'Neg Gearing'!H$20+AE$2,0)"
+9,32,"=MAX(AF$2-AB9,0)","=MAX(AF$2-AB9,0)"
+9,33,"=MAX(AG$2-AC9,0)","=MAX(AG$2-AC9,0)"
+9,34,"=MAX(AH$2-AD9,0)","=MAX(AH$2-AD9,0)"
+9,35,"=MAX(AI$2-AE9,0)","=MAX(AI$2-AE9,0)"
+9,36,"=income_tax(AF9)+medicare_levy(AF9)-IF((LITO(AF9,income_tax(AF9))+LMITO(AF9,income_tax(AF9)))>income_tax(AF9),income_tax(AF9),LITO(AF9,income_tax(AF9)))-IF((LITO(AF9,income_tax(AF9))+LMITO(AF9,income_tax(AF9)))>income_tax(AF9),0,LMITO(AF9,income_tax(AF9)))","=income_tax(AF9)+medicare_levy(AF9)-IF((LITO(AF9,income_tax(AF9))+LMITO(AF9,income_tax(AF9)))>income_tax(AF9),income_tax(AF9),LITO(AF9,income_tax(AF9)))-IF((LITO(AF9,income_tax(AF9))+LMITO(AF9,income_tax(AF9)))>income_tax(AF9),0,LMITO(AF9,income_tax(AF9)))"
+9,37,"=income_tax(AG9)+medicare_levy(AG9)-IF((LITO(AG9,income_tax(AG9))+LMITO(AG9,income_tax(AG9)))>income_tax(AG9),income_tax(AG9),LITO(AG9,income_tax(AG9)))-IF((LITO(AG9,income_tax(AG9))+LMITO(AG9,income_tax(AG9)))>income_tax(AG9),0,LMITO(AG9,income_tax(AG9)))","=income_tax(AG9)+medicare_levy(AG9)-IF((LITO(AG9,income_tax(AG9))+LMITO(AG9,income_tax(AG9)))>income_tax(AG9),income_tax(AG9),LITO(AG9,income_tax(AG9)))-IF((LITO(AG9,income_tax(AG9))+LMITO(AG9,income_tax(AG9)))>income_tax(AG9),0,LMITO(AG9,income_tax(AG9)))"
+9,38,"=income_tax(AH9)+medicare_levy(AH9)-IF((LITO(AH9,income_tax(AH9))+LMITO(AH9,income_tax(AH9)))>income_tax(AH9),income_tax(AH9),LITO(AH9,income_tax(AH9)))-IF((LITO(AH9,income_tax(AH9))+LMITO(AH9,income_tax(AH9)))>income_tax(AH9),0,LMITO(AH9,income_tax(AH9)))","=income_tax(AH9)+medicare_levy(AH9)-IF((LITO(AH9,income_tax(AH9))+LMITO(AH9,income_tax(AH9)))>income_tax(AH9),income_tax(AH9),LITO(AH9,income_tax(AH9)))-IF((LITO(AH9,income_tax(AH9))+LMITO(AH9,income_tax(AH9)))>income_tax(AH9),0,LMITO(AH9,income_tax(AH9)))"
+9,39,"=income_tax(AI9)+medicare_levy(AI9)-IF((LITO(AI9,income_tax(AI9))+LMITO(AI9,income_tax(AI9)))>income_tax(AI9),income_tax(AI9),LITO(AI9,income_tax(AI9)))-IF((LITO(AI9,income_tax(AI9))+LMITO(AI9,income_tax(AI9)))>income_tax(AI9),0,LMITO(AI9,income_tax(AI9)))","=income_tax(AI9)+medicare_levy(AI9)-IF((LITO(AI9,income_tax(AI9))+LMITO(AI9,income_tax(AI9)))>income_tax(AI9),income_tax(AI9),LITO(AI9,income_tax(AI9)))-IF((LITO(AI9,income_tax(AI9))+LMITO(AI9,income_tax(AI9)))>income_tax(AI9),0,LMITO(AI9,income_tax(AI9)))"
+9,40,"=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ9:AM9)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)","=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ9:AM9)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)"
+9,41,"=ROUNDDOWN(PV($Z$2/12,$Z$3*12,-(AN9-$Z$4)),0)","=ROUNDDOWN(PV($Z$2/12,$Z$3*12,-(AN9-$Z$4)),0)"
+10,1,Other Income,
+10,2,=Model!G24,=Model!G24
+10,3,=B10,=B10
+10,6,=Model!H24,=Model!H24
+10,7,=F10,=F10
+10,10,=Model!I24,=Model!I24
+10,11,=J10,=J10
+10,14,=Model!J24,=Model!J24
+10,15,=N10,=N10
+10,18,Exisiting 3,
+10,19,"=IF(AND(NOT(T10),U10),ROUNDUP(IF(OR(Model!E41=""Yes"",Model!B41=""Margin Loan""),0,IF(Model!B41=""Credit Card"",MAX(Data!$G$22,MAX(Model!F41:G41)*Data!$G$16),IF(Model!B41=""Overdraft"",MAX(Model!F41:G41)*Data!$G$18,IF(Model!B41=""Commercial Bill"",MAX(Model!F41:G41)*Data!$G$20,IF(OR(Model!B41=""OFI home loan (Other financial institution)"",Model!B41=""OFI Line of Credit (Other financial institution)""),Model!J41*(1+Data!$G$26)+Model!K41,Model!J41+Model!K41))))),),0)","=IF(AND(NOT(T10),U10),ROUNDUP(IF(OR(Model!E41=""Yes"",Model!B41=""Margin Loan""),0,IF(Model!B41=""Credit Card"",MAX(Data!$G$22,MAX(Model!F41:G41)*Data!$G$16),IF(Model!B41=""Overdraft"",MAX(Model!F41:G41)*Data!$G$18,IF(Model!B41=""Commercial Bill"",MAX(Model!F41:G41)*Data!$G$20,IF(OR(Model!B41=""OFI home loan (Other financial institution)"",Model!B41=""OFI Line of Credit (Other financial institution)""),Model!J41*(1+Data!$G$26)+Model!K41,Model!J41+Model!K41))))),),0)"
+10,20,"=AND(ISBLANK(Model!B41),ISBLANK(Model!C41),ISBLANK(Model!D41),ISBLANK(Model!E41),ISBLANK(Model!F41),ISBLANK(Model!H41),ISBLANK(Model!I41),ISBLANK(Model!J41),ISBLANK(Model!K41))","=AND(ISBLANK(Model!B41),ISBLANK(Model!C41),ISBLANK(Model!D41),ISBLANK(Model!E41),ISBLANK(Model!F41),ISBLANK(Model!H41),ISBLANK(Model!I41),ISBLANK(Model!J41),ISBLANK(Model!K41))"
+10,21,"=IF(T10,TRUE,IF(OR(Model!B41=""Credit Card"",Model!B41=""Overdraft"",Model!B41=""Commercial Bill""),AND(Model!F41<>"""",Model!G41<>""""),IF(Model!B41=""Margin Loan"",Model!G41<>"""",IF(Model!B41=""HECS"",Model!J41<>"""",
+IF(AND(Model!E41<>""Yes"",OR(Model!B41=""Personal Loan"",Model!B41=""Lease"",Model!B41=""Hire Purchase"",Model!B41=""Other"")),AND(Model!J41<>"""",Model!K41<>""""),IF(Model!E41=""Yes"",Model!F41<>"""",
+IF(OR(Model!B41=""CBA Variable Rate Home Loan"",Model!B41=""CBA Fixed Rate Home Loan"",Model!B41=""OFI home loan (Other financial institution)""),AND(Model!C41<>"""",Model!F41<>"""",Model!H41<>"""",Model!I41<>"""",Model!K41<>""""),IF(OR(Model!B41=""CBA Line of Credit"",Model!B41=""OFI Line of Credit (Other financial institution)""),AND(Model!F41<>"""",Model!I41<>"""",Model!K41<>""""),FALSE))))))))","=IF(T10,TRUE,IF(OR(Model!B41=""Credit Card"",Model!B41=""Overdraft"",Model!B41=""Commercial Bill""),AND(Model!F41<>"""",Model!G41<>""""),IF(Model!B41=""Margin Loan"",Model!G41<>"""",IF(Model!B41=""HECS"",Model!J41<>"""",
+IF(AND(Model!E41<>""Yes"",OR(Model!B41=""Personal Loan"",Model!B41=""Lease"",Model!B41=""Hire Purchase"",Model!B41=""Other"")),AND(Model!J41<>"""",Model!K41<>""""),IF(Model!E41=""Yes"",Model!F41<>"""",
+IF(OR(Model!B41=""CBA Variable Rate Home Loan"",Model!B41=""CBA Fixed Rate Home Loan"",Model!B41=""OFI home loan (Other financial institution)""),AND(Model!C41<>"""",Model!F41<>"""",Model!H41<>"""",Model!I41<>"""",Model!K41<>""""),IF(OR(Model!B41=""CBA Line of Credit"",Model!B41=""OFI Line of Credit (Other financial institution)""),AND(Model!F41<>"""",Model!I41<>"""",Model!K41<>""""),FALSE))))))))"
+10,22,"=IF(AND(Model!C41=""Investment"",Model!D41=""Yes"",NOT(Model!E41=""Yes"")),TRUE,FALSE)","=IF(AND(Model!C41=""Investment"",Model!D41=""Yes"",NOT(Model!E41=""Yes"")),TRUE,FALSE)"
+10,23,"=IF(NOT(V10),TRUE,AND('Neg Gearing'!C10<>"""",COUNTBLANK('Neg Gearing'!E10:H10)<4))","=IF(NOT(V10),TRUE,AND('Neg Gearing'!C10<>"""",COUNTBLANK('Neg Gearing'!E10:H10)<4))"
+10,24,"=IF(U10,MAX(Model!F41:G41),0)","=IF(U10,MAX(Model!F41:G41),0)"
+10,28,"=IF($Z$5,$AO9*$Z$1*'Neg Gearing'!E$20+AB$2,0)","=IF($Z$5,$AO9*$Z$1*'Neg Gearing'!E$20+AB$2,0)"
+10,29,"=IF($Z$5,$AO9*$Z$1*'Neg Gearing'!F$20+AC$2,0)","=IF($Z$5,$AO9*$Z$1*'Neg Gearing'!F$20+AC$2,0)"
+10,30,"=IF($Z$5,$AO9*$Z$1*'Neg Gearing'!G$20+AD$2,0)","=IF($Z$5,$AO9*$Z$1*'Neg Gearing'!G$20+AD$2,0)"
+10,31,"=IF($Z$5,$AO9*$Z$1*'Neg Gearing'!H$20+AE$2,0)","=IF($Z$5,$AO9*$Z$1*'Neg Gearing'!H$20+AE$2,0)"
+10,32,"=MAX(AF$2-AB10,0)","=MAX(AF$2-AB10,0)"
+10,33,"=MAX(AG$2-AC10,0)","=MAX(AG$2-AC10,0)"
+10,34,"=MAX(AH$2-AD10,0)","=MAX(AH$2-AD10,0)"
+10,35,"=MAX(AI$2-AE10,0)","=MAX(AI$2-AE10,0)"
+10,36,"=income_tax(AF10)+medicare_levy(AF10)-IF((LITO(AF10,income_tax(AF10))+LMITO(AF10,income_tax(AF10)))>income_tax(AF10),income_tax(AF10),LITO(AF10,income_tax(AF10)))-IF((LITO(AF10,income_tax(AF10))+LMITO(AF10,income_tax(AF10)))>income_tax(AF10),0,LMITO(AF10,income_tax(AF10)))","=income_tax(AF10)+medicare_levy(AF10)-IF((LITO(AF10,income_tax(AF10))+LMITO(AF10,income_tax(AF10)))>income_tax(AF10),income_tax(AF10),LITO(AF10,income_tax(AF10)))-IF((LITO(AF10,income_tax(AF10))+LMITO(AF10,income_tax(AF10)))>income_tax(AF10),0,LMITO(AF10,income_tax(AF10)))"
+10,37,"=income_tax(AG10)+medicare_levy(AG10)-IF((LITO(AG10,income_tax(AG10))+LMITO(AG10,income_tax(AG10)))>income_tax(AG10),income_tax(AG10),LITO(AG10,income_tax(AG10)))-IF((LITO(AG10,income_tax(AG10))+LMITO(AG10,income_tax(AG10)))>income_tax(AG10),0,LMITO(AG10,income_tax(AG10)))","=income_tax(AG10)+medicare_levy(AG10)-IF((LITO(AG10,income_tax(AG10))+LMITO(AG10,income_tax(AG10)))>income_tax(AG10),income_tax(AG10),LITO(AG10,income_tax(AG10)))-IF((LITO(AG10,income_tax(AG10))+LMITO(AG10,income_tax(AG10)))>income_tax(AG10),0,LMITO(AG10,income_tax(AG10)))"
+10,38,"=income_tax(AH10)+medicare_levy(AH10)-IF((LITO(AH10,income_tax(AH10))+LMITO(AH10,income_tax(AH10)))>income_tax(AH10),income_tax(AH10),LITO(AH10,income_tax(AH10)))-IF((LITO(AH10,income_tax(AH10))+LMITO(AH10,income_tax(AH10)))>income_tax(AH10),0,LMITO(AH10,income_tax(AH10)))","=income_tax(AH10)+medicare_levy(AH10)-IF((LITO(AH10,income_tax(AH10))+LMITO(AH10,income_tax(AH10)))>income_tax(AH10),income_tax(AH10),LITO(AH10,income_tax(AH10)))-IF((LITO(AH10,income_tax(AH10))+LMITO(AH10,income_tax(AH10)))>income_tax(AH10),0,LMITO(AH10,income_tax(AH10)))"
+10,39,"=income_tax(AI10)+medicare_levy(AI10)-IF((LITO(AI10,income_tax(AI10))+LMITO(AI10,income_tax(AI10)))>income_tax(AI10),income_tax(AI10),LITO(AI10,income_tax(AI10)))-IF((LITO(AI10,income_tax(AI10))+LMITO(AI10,income_tax(AI10)))>income_tax(AI10),0,LMITO(AI10,income_tax(AI10)))","=income_tax(AI10)+medicare_levy(AI10)-IF((LITO(AI10,income_tax(AI10))+LMITO(AI10,income_tax(AI10)))>income_tax(AI10),income_tax(AI10),LITO(AI10,income_tax(AI10)))-IF((LITO(AI10,income_tax(AI10))+LMITO(AI10,income_tax(AI10)))>income_tax(AI10),0,LMITO(AI10,income_tax(AI10)))"
+10,40,"=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ10:AM10)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)","=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ10:AM10)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)"
+10,41,"=ROUNDDOWN(PV($Z$2/12,$Z$3*12,-(AN10-$Z$4)),0)","=ROUNDDOWN(PV($Z$2/12,$Z$3*12,-(AN10-$Z$4)),0)"
+11,1,Self Employed Income,
+11,2,=Model!G25,=Model!G25
+11,3,=B11,=B11
+11,6,=Model!H25,=Model!H25
+11,7,=F11,=F11
+11,10,=Model!I25,=Model!I25
+11,11,=J11,=J11
+11,14,=Model!J25,=Model!J25
+11,15,=N11,=N11
+11,18,Exisiting 4,
+11,19,"=IF(AND(NOT(T11),U11),ROUNDUP(IF(OR(Model!E42=""Yes"",Model!B42=""Margin Loan""),0,IF(Model!B42=""Credit Card"",MAX(Data!$G$22,MAX(Model!F42:G42)*Data!$G$16),IF(Model!B42=""Overdraft"",MAX(Model!F42:G42)*Data!$G$18,IF(Model!B42=""Commercial Bill"",MAX(Model!F42:G42)*Data!$G$20,IF(OR(Model!B42=""OFI home loan (Other financial institution)"",Model!B42=""OFI Line of Credit (Other financial institution)""),Model!J42*(1+Data!$G$26)+Model!K42,Model!J42+Model!K42))))),),0)","=IF(AND(NOT(T11),U11),ROUNDUP(IF(OR(Model!E42=""Yes"",Model!B42=""Margin Loan""),0,IF(Model!B42=""Credit Card"",MAX(Data!$G$22,MAX(Model!F42:G42)*Data!$G$16),IF(Model!B42=""Overdraft"",MAX(Model!F42:G42)*Data!$G$18,IF(Model!B42=""Commercial Bill"",MAX(Model!F42:G42)*Data!$G$20,IF(OR(Model!B42=""OFI home loan (Other financial institution)"",Model!B42=""OFI Line of Credit (Other financial institution)""),Model!J42*(1+Data!$G$26)+Model!K42,Model!J42+Model!K42))))),),0)"
+11,20,"=AND(ISBLANK(Model!B42),ISBLANK(Model!C42),ISBLANK(Model!D42),ISBLANK(Model!E42),ISBLANK(Model!F42),ISBLANK(Model!H42),ISBLANK(Model!I42),ISBLANK(Model!J42),ISBLANK(Model!K42))","=AND(ISBLANK(Model!B42),ISBLANK(Model!C42),ISBLANK(Model!D42),ISBLANK(Model!E42),ISBLANK(Model!F42),ISBLANK(Model!H42),ISBLANK(Model!I42),ISBLANK(Model!J42),ISBLANK(Model!K42))"
+11,21,"=IF(T11,TRUE,IF(OR(Model!B42=""Credit Card"",Model!B42=""Overdraft"",Model!B42=""Commercial Bill""),AND(Model!F42<>"""",Model!G42<>""""),IF(Model!B42=""Margin Loan"",Model!G42<>"""",IF(Model!B42=""HECS"",Model!J42<>"""",
+IF(AND(Model!E42<>""Yes"",OR(Model!B42=""Personal Loan"",Model!B42=""Lease"",Model!B42=""Hire Purchase"",Model!B42=""Other"")),AND(Model!J42<>"""",Model!K42<>""""),IF(Model!E42=""Yes"",Model!F42<>"""",
+IF(OR(Model!B42=""CBA Variable Rate Home Loan"",Model!B42=""CBA Fixed Rate Home Loan"",Model!B42=""OFI home loan (Other financial institution)""),AND(Model!C42<>"""",Model!F42<>"""",Model!H42<>"""",Model!I42<>"""",Model!K42<>""""),IF(OR(Model!B42=""CBA Line of Credit"",Model!B42=""OFI Line of Credit (Other financial institution)""),AND(Model!F42<>"""",Model!I42<>"""",Model!K42<>""""),FALSE))))))))","=IF(T11,TRUE,IF(OR(Model!B42=""Credit Card"",Model!B42=""Overdraft"",Model!B42=""Commercial Bill""),AND(Model!F42<>"""",Model!G42<>""""),IF(Model!B42=""Margin Loan"",Model!G42<>"""",IF(Model!B42=""HECS"",Model!J42<>"""",
+IF(AND(Model!E42<>""Yes"",OR(Model!B42=""Personal Loan"",Model!B42=""Lease"",Model!B42=""Hire Purchase"",Model!B42=""Other"")),AND(Model!J42<>"""",Model!K42<>""""),IF(Model!E42=""Yes"",Model!F42<>"""",
+IF(OR(Model!B42=""CBA Variable Rate Home Loan"",Model!B42=""CBA Fixed Rate Home Loan"",Model!B42=""OFI home loan (Other financial institution)""),AND(Model!C42<>"""",Model!F42<>"""",Model!H42<>"""",Model!I42<>"""",Model!K42<>""""),IF(OR(Model!B42=""CBA Line of Credit"",Model!B42=""OFI Line of Credit (Other financial institution)""),AND(Model!F42<>"""",Model!I42<>"""",Model!K42<>""""),FALSE))))))))"
+11,22,"=IF(AND(Model!C42=""Investment"",Model!D42=""Yes"",NOT(Model!E42=""Yes"")),TRUE,FALSE)","=IF(AND(Model!C42=""Investment"",Model!D42=""Yes"",NOT(Model!E42=""Yes"")),TRUE,FALSE)"
+11,23,"=IF(NOT(V11),TRUE,AND('Neg Gearing'!C11<>"""",COUNTBLANK('Neg Gearing'!E11:H11)<4))","=IF(NOT(V11),TRUE,AND('Neg Gearing'!C11<>"""",COUNTBLANK('Neg Gearing'!E11:H11)<4))"
+11,24,"=IF(U11,MAX(Model!F42:G42),0)","=IF(U11,MAX(Model!F42:G42),0)"
+11,28,"=IF($Z$5,$AO10*$Z$1*'Neg Gearing'!E$20+AB$2,0)","=IF($Z$5,$AO10*$Z$1*'Neg Gearing'!E$20+AB$2,0)"
+11,29,"=IF($Z$5,$AO10*$Z$1*'Neg Gearing'!F$20+AC$2,0)","=IF($Z$5,$AO10*$Z$1*'Neg Gearing'!F$20+AC$2,0)"
+11,30,"=IF($Z$5,$AO10*$Z$1*'Neg Gearing'!G$20+AD$2,0)","=IF($Z$5,$AO10*$Z$1*'Neg Gearing'!G$20+AD$2,0)"
+11,31,"=IF($Z$5,$AO10*$Z$1*'Neg Gearing'!H$20+AE$2,0)","=IF($Z$5,$AO10*$Z$1*'Neg Gearing'!H$20+AE$2,0)"
+11,32,"=MAX(AF$2-AB11,0)","=MAX(AF$2-AB11,0)"
+11,33,"=MAX(AG$2-AC11,0)","=MAX(AG$2-AC11,0)"
+11,34,"=MAX(AH$2-AD11,0)","=MAX(AH$2-AD11,0)"
+11,35,"=MAX(AI$2-AE11,0)","=MAX(AI$2-AE11,0)"
+11,36,"=income_tax(AF11)+medicare_levy(AF11)-IF((LITO(AF11,income_tax(AF11))+LMITO(AF11,income_tax(AF11)))>income_tax(AF11),income_tax(AF11),LITO(AF11,income_tax(AF11)))-IF((LITO(AF11,income_tax(AF11))+LMITO(AF11,income_tax(AF11)))>income_tax(AF11),0,LMITO(AF11,income_tax(AF11)))","=income_tax(AF11)+medicare_levy(AF11)-IF((LITO(AF11,income_tax(AF11))+LMITO(AF11,income_tax(AF11)))>income_tax(AF11),income_tax(AF11),LITO(AF11,income_tax(AF11)))-IF((LITO(AF11,income_tax(AF11))+LMITO(AF11,income_tax(AF11)))>income_tax(AF11),0,LMITO(AF11,income_tax(AF11)))"
+11,37,"=income_tax(AG11)+medicare_levy(AG11)-IF((LITO(AG11,income_tax(AG11))+LMITO(AG11,income_tax(AG11)))>income_tax(AG11),income_tax(AG11),LITO(AG11,income_tax(AG11)))-IF((LITO(AG11,income_tax(AG11))+LMITO(AG11,income_tax(AG11)))>income_tax(AG11),0,LMITO(AG11,income_tax(AG11)))","=income_tax(AG11)+medicare_levy(AG11)-IF((LITO(AG11,income_tax(AG11))+LMITO(AG11,income_tax(AG11)))>income_tax(AG11),income_tax(AG11),LITO(AG11,income_tax(AG11)))-IF((LITO(AG11,income_tax(AG11))+LMITO(AG11,income_tax(AG11)))>income_tax(AG11),0,LMITO(AG11,income_tax(AG11)))"
+11,38,"=income_tax(AH11)+medicare_levy(AH11)-IF((LITO(AH11,income_tax(AH11))+LMITO(AH11,income_tax(AH11)))>income_tax(AH11),income_tax(AH11),LITO(AH11,income_tax(AH11)))-IF((LITO(AH11,income_tax(AH11))+LMITO(AH11,income_tax(AH11)))>income_tax(AH11),0,LMITO(AH11,income_tax(AH11)))","=income_tax(AH11)+medicare_levy(AH11)-IF((LITO(AH11,income_tax(AH11))+LMITO(AH11,income_tax(AH11)))>income_tax(AH11),income_tax(AH11),LITO(AH11,income_tax(AH11)))-IF((LITO(AH11,income_tax(AH11))+LMITO(AH11,income_tax(AH11)))>income_tax(AH11),0,LMITO(AH11,income_tax(AH11)))"
+11,39,"=income_tax(AI11)+medicare_levy(AI11)-IF((LITO(AI11,income_tax(AI11))+LMITO(AI11,income_tax(AI11)))>income_tax(AI11),income_tax(AI11),LITO(AI11,income_tax(AI11)))-IF((LITO(AI11,income_tax(AI11))+LMITO(AI11,income_tax(AI11)))>income_tax(AI11),0,LMITO(AI11,income_tax(AI11)))","=income_tax(AI11)+medicare_levy(AI11)-IF((LITO(AI11,income_tax(AI11))+LMITO(AI11,income_tax(AI11)))>income_tax(AI11),income_tax(AI11),LITO(AI11,income_tax(AI11)))-IF((LITO(AI11,income_tax(AI11))+LMITO(AI11,income_tax(AI11)))>income_tax(AI11),0,LMITO(AI11,income_tax(AI11)))"
+11,40,"=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ11:AM11)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)","=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ11:AM11)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)"
+11,41,"=ROUNDDOWN(PV($Z$2/12,$Z$3*12,-(AN11-$Z$4)),0)","=ROUNDDOWN(PV($Z$2/12,$Z$3*12,-(AN11-$Z$4)),0)"
+12,1,Gross Annual Income,
+12,2,=SUM(B3:B11),=SUM(B3:B11)
+12,3,=SUM(C3:C11),=SUM(C3:C11)
+12,4,=C12,=C12
+12,6,=SUM(F3:F11),=SUM(F3:F11)
+12,7,=SUM(G3:G11),=SUM(G3:G11)
+12,8,=G12,=G12
+12,10,=SUM(J3:J11),=SUM(J3:J11)
+12,11,=SUM(K3:K11),=SUM(K3:K11)
+12,12,=K12,=K12
+12,14,=SUM(N3:N11),=SUM(N3:N11)
+12,15,=SUM(O3:O11),=SUM(O3:O11)
+12,16,=O12,=O12
+12,18,Exisiting 5,
+12,19,"=IF(AND(NOT(T12),U12),ROUNDUP(IF(OR(Model!E43=""Yes"",Model!B43=""Margin Loan""),0,IF(Model!B43=""Credit Card"",MAX(Data!$G$22,MAX(Model!F43:G43)*Data!$G$16),IF(Model!B43=""Overdraft"",MAX(Model!F43:G43)*Data!$G$18,IF(Model!B43=""Commercial Bill"",MAX(Model!F43:G43)*Data!$G$20,IF(OR(Model!B43=""OFI home loan (Other financial institution)"",Model!B43=""OFI Line of Credit (Other financial institution)""),Model!J43*(1+Data!$G$26)+Model!K43,Model!J43+Model!K43))))),),0)","=IF(AND(NOT(T12),U12),ROUNDUP(IF(OR(Model!E43=""Yes"",Model!B43=""Margin Loan""),0,IF(Model!B43=""Credit Card"",MAX(Data!$G$22,MAX(Model!F43:G43)*Data!$G$16),IF(Model!B43=""Overdraft"",MAX(Model!F43:G43)*Data!$G$18,IF(Model!B43=""Commercial Bill"",MAX(Model!F43:G43)*Data!$G$20,IF(OR(Model!B43=""OFI home loan (Other financial institution)"",Model!B43=""OFI Line of Credit (Other financial institution)""),Model!J43*(1+Data!$G$26)+Model!K43,Model!J43+Model!K43))))),),0)"
+12,20,"=AND(ISBLANK(Model!B43),ISBLANK(Model!C43),ISBLANK(Model!D43),ISBLANK(Model!E43),ISBLANK(Model!F43),ISBLANK(Model!H43),ISBLANK(Model!I43),ISBLANK(Model!J43),ISBLANK(Model!K43))","=AND(ISBLANK(Model!B43),ISBLANK(Model!C43),ISBLANK(Model!D43),ISBLANK(Model!E43),ISBLANK(Model!F43),ISBLANK(Model!H43),ISBLANK(Model!I43),ISBLANK(Model!J43),ISBLANK(Model!K43))"
+12,21,"=IF(T12,TRUE,IF(OR(Model!B43=""Credit Card"",Model!B43=""Overdraft"",Model!B43=""Commercial Bill""),AND(Model!F43<>"""",Model!G43<>""""),IF(Model!B43=""Margin Loan"",Model!G43<>"""",IF(Model!B43=""HECS"",Model!J43<>"""",
+IF(AND(Model!E43<>""Yes"",OR(Model!B43=""Personal Loan"",Model!B43=""Lease"",Model!B43=""Hire Purchase"",Model!B43=""Other"")),AND(Model!J43<>"""",Model!K43<>""""),IF(Model!E43=""Yes"",Model!F43<>"""",
+IF(OR(Model!B43=""CBA Variable Rate Home Loan"",Model!B43=""CBA Fixed Rate Home Loan"",Model!B43=""OFI home loan (Other financial institution)""),AND(Model!C43<>"""",Model!F43<>"""",Model!H43<>"""",Model!I43<>"""",Model!K43<>""""),IF(OR(Model!B43=""CBA Line of Credit"",Model!B43=""OFI Line of Credit (Other financial institution)""),AND(Model!F43<>"""",Model!I43<>"""",Model!K43<>""""),FALSE))))))))","=IF(T12,TRUE,IF(OR(Model!B43=""Credit Card"",Model!B43=""Overdraft"",Model!B43=""Commercial Bill""),AND(Model!F43<>"""",Model!G43<>""""),IF(Model!B43=""Margin Loan"",Model!G43<>"""",IF(Model!B43=""HECS"",Model!J43<>"""",
+IF(AND(Model!E43<>""Yes"",OR(Model!B43=""Personal Loan"",Model!B43=""Lease"",Model!B43=""Hire Purchase"",Model!B43=""Other"")),AND(Model!J43<>"""",Model!K43<>""""),IF(Model!E43=""Yes"",Model!F43<>"""",
+IF(OR(Model!B43=""CBA Variable Rate Home Loan"",Model!B43=""CBA Fixed Rate Home Loan"",Model!B43=""OFI home loan (Other financial institution)""),AND(Model!C43<>"""",Model!F43<>"""",Model!H43<>"""",Model!I43<>"""",Model!K43<>""""),IF(OR(Model!B43=""CBA Line of Credit"",Model!B43=""OFI Line of Credit (Other financial institution)""),AND(Model!F43<>"""",Model!I43<>"""",Model!K43<>""""),FALSE))))))))"
+12,22,"=IF(AND(Model!C43=""Investment"",Model!D43=""Yes"",NOT(Model!E43=""Yes"")),TRUE,FALSE)","=IF(AND(Model!C43=""Investment"",Model!D43=""Yes"",NOT(Model!E43=""Yes"")),TRUE,FALSE)"
+12,23,"=IF(NOT(V12),TRUE,AND('Neg Gearing'!C12<>"""",COUNTBLANK('Neg Gearing'!E12:H12)<4))","=IF(NOT(V12),TRUE,AND('Neg Gearing'!C12<>"""",COUNTBLANK('Neg Gearing'!E12:H12)<4))"
+12,24,"=IF(U12,MAX(Model!F43:G43),0)","=IF(U12,MAX(Model!F43:G43),0)"
+12,28,"=IF($Z$5,$AO11*$Z$1*'Neg Gearing'!E$20+AB$2,0)","=IF($Z$5,$AO11*$Z$1*'Neg Gearing'!E$20+AB$2,0)"
+12,29,"=IF($Z$5,$AO11*$Z$1*'Neg Gearing'!F$20+AC$2,0)","=IF($Z$5,$AO11*$Z$1*'Neg Gearing'!F$20+AC$2,0)"
+12,30,"=IF($Z$5,$AO11*$Z$1*'Neg Gearing'!G$20+AD$2,0)","=IF($Z$5,$AO11*$Z$1*'Neg Gearing'!G$20+AD$2,0)"
+12,31,"=IF($Z$5,$AO11*$Z$1*'Neg Gearing'!H$20+AE$2,0)","=IF($Z$5,$AO11*$Z$1*'Neg Gearing'!H$20+AE$2,0)"
+12,32,"=MAX(AF$2-AB12,0)","=MAX(AF$2-AB12,0)"
+12,33,"=MAX(AG$2-AC12,0)","=MAX(AG$2-AC12,0)"
+12,34,"=MAX(AH$2-AD12,0)","=MAX(AH$2-AD12,0)"
+12,35,"=MAX(AI$2-AE12,0)","=MAX(AI$2-AE12,0)"
+12,36,"=income_tax(AF12)+medicare_levy(AF12)-IF((LITO(AF12,income_tax(AF12))+LMITO(AF12,income_tax(AF12)))>income_tax(AF12),income_tax(AF12),LITO(AF12,income_tax(AF12)))-IF((LITO(AF12,income_tax(AF12))+LMITO(AF12,income_tax(AF12)))>income_tax(AF12),0,LMITO(AF12,income_tax(AF12)))","=income_tax(AF12)+medicare_levy(AF12)-IF((LITO(AF12,income_tax(AF12))+LMITO(AF12,income_tax(AF12)))>income_tax(AF12),income_tax(AF12),LITO(AF12,income_tax(AF12)))-IF((LITO(AF12,income_tax(AF12))+LMITO(AF12,income_tax(AF12)))>income_tax(AF12),0,LMITO(AF12,income_tax(AF12)))"
+12,37,"=income_tax(AG12)+medicare_levy(AG12)-IF((LITO(AG12,income_tax(AG12))+LMITO(AG12,income_tax(AG12)))>income_tax(AG12),income_tax(AG12),LITO(AG12,income_tax(AG12)))-IF((LITO(AG12,income_tax(AG12))+LMITO(AG12,income_tax(AG12)))>income_tax(AG12),0,LMITO(AG12,income_tax(AG12)))","=income_tax(AG12)+medicare_levy(AG12)-IF((LITO(AG12,income_tax(AG12))+LMITO(AG12,income_tax(AG12)))>income_tax(AG12),income_tax(AG12),LITO(AG12,income_tax(AG12)))-IF((LITO(AG12,income_tax(AG12))+LMITO(AG12,income_tax(AG12)))>income_tax(AG12),0,LMITO(AG12,income_tax(AG12)))"
+12,38,"=income_tax(AH12)+medicare_levy(AH12)-IF((LITO(AH12,income_tax(AH12))+LMITO(AH12,income_tax(AH12)))>income_tax(AH12),income_tax(AH12),LITO(AH12,income_tax(AH12)))-IF((LITO(AH12,income_tax(AH12))+LMITO(AH12,income_tax(AH12)))>income_tax(AH12),0,LMITO(AH12,income_tax(AH12)))","=income_tax(AH12)+medicare_levy(AH12)-IF((LITO(AH12,income_tax(AH12))+LMITO(AH12,income_tax(AH12)))>income_tax(AH12),income_tax(AH12),LITO(AH12,income_tax(AH12)))-IF((LITO(AH12,income_tax(AH12))+LMITO(AH12,income_tax(AH12)))>income_tax(AH12),0,LMITO(AH12,income_tax(AH12)))"
+12,39,"=income_tax(AI12)+medicare_levy(AI12)-IF((LITO(AI12,income_tax(AI12))+LMITO(AI12,income_tax(AI12)))>income_tax(AI12),income_tax(AI12),LITO(AI12,income_tax(AI12)))-IF((LITO(AI12,income_tax(AI12))+LMITO(AI12,income_tax(AI12)))>income_tax(AI12),0,LMITO(AI12,income_tax(AI12)))","=income_tax(AI12)+medicare_levy(AI12)-IF((LITO(AI12,income_tax(AI12))+LMITO(AI12,income_tax(AI12)))>income_tax(AI12),income_tax(AI12),LITO(AI12,income_tax(AI12)))-IF((LITO(AI12,income_tax(AI12))+LMITO(AI12,income_tax(AI12)))>income_tax(AI12),0,LMITO(AI12,income_tax(AI12)))"
+12,40,"=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ12:AM12)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)","=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ12:AM12)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)"
+12,41,"=ROUNDDOWN(PV($Z$2/12,$Z$3*12,-(AN12-$Z$4)),0)","=ROUNDDOWN(PV($Z$2/12,$Z$3*12,-(AN12-$Z$4)),0)"
+13,1,Income Tax,
+13,2,=income_tax(B12),=income_tax(B12)
+13,3,=income_tax(C12),=income_tax(C12)
+13,4,=income_tax(D12),=income_tax(D12)
+13,6,=income_tax(F12),=income_tax(F12)
+13,7,=income_tax(G12),=income_tax(G12)
+13,8,=income_tax(H12),=income_tax(H12)
+13,10,=income_tax(J12),=income_tax(J12)
+13,11,=income_tax(K12),=income_tax(K12)
+13,12,=income_tax(L12),=income_tax(L12)
+13,14,=income_tax(N12),=income_tax(N12)
+13,15,=income_tax(O12),=income_tax(O12)
+13,16,=income_tax(P12),=income_tax(P12)
+13,18,Exisiting 6,
+13,19,"=IF(AND(NOT(T13),U13),ROUNDUP(IF(OR(Model!E44=""Yes"",Model!B44=""Margin Loan""),0,IF(Model!B44=""Credit Card"",MAX(Data!$G$22,MAX(Model!F44:G44)*Data!$G$16),IF(Model!B44=""Overdraft"",MAX(Model!F44:G44)*Data!$G$18,IF(Model!B44=""Commercial Bill"",MAX(Model!F44:G44)*Data!$G$20,IF(OR(Model!B44=""OFI home loan (Other financial institution)"",Model!B44=""OFI Line of Credit (Other financial institution)""),Model!J44*(1+Data!$G$26)+Model!K44,Model!J44+Model!K44))))),),0)","=IF(AND(NOT(T13),U13),ROUNDUP(IF(OR(Model!E44=""Yes"",Model!B44=""Margin Loan""),0,IF(Model!B44=""Credit Card"",MAX(Data!$G$22,MAX(Model!F44:G44)*Data!$G$16),IF(Model!B44=""Overdraft"",MAX(Model!F44:G44)*Data!$G$18,IF(Model!B44=""Commercial Bill"",MAX(Model!F44:G44)*Data!$G$20,IF(OR(Model!B44=""OFI home loan (Other financial institution)"",Model!B44=""OFI Line of Credit (Other financial institution)""),Model!J44*(1+Data!$G$26)+Model!K44,Model!J44+Model!K44))))),),0)"
+13,20,"=AND(ISBLANK(Model!B44),ISBLANK(Model!C44),ISBLANK(Model!D44),ISBLANK(Model!E44),ISBLANK(Model!F44),ISBLANK(Model!H44),ISBLANK(Model!I44),ISBLANK(Model!J44),ISBLANK(Model!K44))","=AND(ISBLANK(Model!B44),ISBLANK(Model!C44),ISBLANK(Model!D44),ISBLANK(Model!E44),ISBLANK(Model!F44),ISBLANK(Model!H44),ISBLANK(Model!I44),ISBLANK(Model!J44),ISBLANK(Model!K44))"
+13,21,"=IF(T13,TRUE,IF(OR(Model!B44=""Credit Card"",Model!B44=""Overdraft"",Model!B44=""Commercial Bill""),AND(Model!F44<>"""",Model!G44<>""""),IF(Model!B44=""Margin Loan"",Model!G44<>"""",IF(Model!B44=""HECS"",Model!J44<>"""",
+IF(AND(Model!E44<>""Yes"",OR(Model!B44=""Personal Loan"",Model!B44=""Lease"",Model!B44=""Hire Purchase"",Model!B44=""Other"")),AND(Model!J44<>"""",Model!K44<>""""),IF(Model!E44=""Yes"",Model!F44<>"""",
+IF(OR(Model!B44=""CBA Variable Rate Home Loan"",Model!B44=""CBA Fixed Rate Home Loan"",Model!B44=""OFI home loan (Other financial institution)""),AND(Model!C44<>"""",Model!F44<>"""",Model!H44<>"""",Model!I44<>"""",Model!K44<>""""),IF(OR(Model!B44=""CBA Line of Credit"",Model!B44=""OFI Line of Credit (Other financial institution)""),AND(Model!F44<>"""",Model!I44<>"""",Model!K44<>""""),FALSE))))))))","=IF(T13,TRUE,IF(OR(Model!B44=""Credit Card"",Model!B44=""Overdraft"",Model!B44=""Commercial Bill""),AND(Model!F44<>"""",Model!G44<>""""),IF(Model!B44=""Margin Loan"",Model!G44<>"""",IF(Model!B44=""HECS"",Model!J44<>"""",
+IF(AND(Model!E44<>""Yes"",OR(Model!B44=""Personal Loan"",Model!B44=""Lease"",Model!B44=""Hire Purchase"",Model!B44=""Other"")),AND(Model!J44<>"""",Model!K44<>""""),IF(Model!E44=""Yes"",Model!F44<>"""",
+IF(OR(Model!B44=""CBA Variable Rate Home Loan"",Model!B44=""CBA Fixed Rate Home Loan"",Model!B44=""OFI home loan (Other financial institution)""),AND(Model!C44<>"""",Model!F44<>"""",Model!H44<>"""",Model!I44<>"""",Model!K44<>""""),IF(OR(Model!B44=""CBA Line of Credit"",Model!B44=""OFI Line of Credit (Other financial institution)""),AND(Model!F44<>"""",Model!I44<>"""",Model!K44<>""""),FALSE))))))))"
+13,22,"=IF(AND(Model!C44=""Investment"",Model!D44=""Yes"",NOT(Model!E44=""Yes"")),TRUE,FALSE)","=IF(AND(Model!C44=""Investment"",Model!D44=""Yes"",NOT(Model!E44=""Yes"")),TRUE,FALSE)"
+13,23,"=IF(NOT(V13),TRUE,AND('Neg Gearing'!C13<>"""",COUNTBLANK('Neg Gearing'!E13:H13)<4))","=IF(NOT(V13),TRUE,AND('Neg Gearing'!C13<>"""",COUNTBLANK('Neg Gearing'!E13:H13)<4))"
+13,24,"=IF(U13,MAX(Model!F44:G44),0)","=IF(U13,MAX(Model!F44:G44),0)"
+14,1,Medicare Levy,
+14,2,=medicare_levy(B12),=medicare_levy(B12)
+14,3,=medicare_levy(C12),=medicare_levy(C12)
+14,4,=medicare_levy(D12),=medicare_levy(D12)
+14,6,=medicare_levy(F12),=medicare_levy(F12)
+14,7,=medicare_levy(G12),=medicare_levy(G12)
+14,8,=medicare_levy(H12),=medicare_levy(H12)
+14,10,=medicare_levy(J12),=medicare_levy(J12)
+14,11,=medicare_levy(K12),=medicare_levy(K12)
+14,12,=medicare_levy(L12),=medicare_levy(L12)
+14,14,=medicare_levy(N12),=medicare_levy(N12)
+14,15,=medicare_levy(O12),=medicare_levy(O12)
+14,16,=medicare_levy(P12),=medicare_levy(P12)
+14,18,Exisiting 7,
+14,19,"=IF(AND(NOT(T14),U14),ROUNDUP(IF(OR(Model!E45=""Yes"",Model!B45=""Margin Loan""),0,IF(Model!B45=""Credit Card"",MAX(Data!$G$22,MAX(Model!F45:G45)*Data!$G$16),IF(Model!B45=""Overdraft"",MAX(Model!F45:G45)*Data!$G$18,IF(Model!B45=""Commercial Bill"",MAX(Model!F45:G45)*Data!$G$20,IF(OR(Model!B45=""OFI home loan (Other financial institution)"",Model!B45=""OFI Line of Credit (Other financial institution)""),Model!J45*(1+Data!$G$26)+Model!K45,Model!J45+Model!K45))))),),0)","=IF(AND(NOT(T14),U14),ROUNDUP(IF(OR(Model!E45=""Yes"",Model!B45=""Margin Loan""),0,IF(Model!B45=""Credit Card"",MAX(Data!$G$22,MAX(Model!F45:G45)*Data!$G$16),IF(Model!B45=""Overdraft"",MAX(Model!F45:G45)*Data!$G$18,IF(Model!B45=""Commercial Bill"",MAX(Model!F45:G45)*Data!$G$20,IF(OR(Model!B45=""OFI home loan (Other financial institution)"",Model!B45=""OFI Line of Credit (Other financial institution)""),Model!J45*(1+Data!$G$26)+Model!K45,Model!J45+Model!K45))))),),0)"
+14,20,"=AND(ISBLANK(Model!B45),ISBLANK(Model!C45),ISBLANK(Model!D45),ISBLANK(Model!E45),ISBLANK(Model!F45),ISBLANK(Model!H45),ISBLANK(Model!I45),ISBLANK(Model!J45),ISBLANK(Model!K45))","=AND(ISBLANK(Model!B45),ISBLANK(Model!C45),ISBLANK(Model!D45),ISBLANK(Model!E45),ISBLANK(Model!F45),ISBLANK(Model!H45),ISBLANK(Model!I45),ISBLANK(Model!J45),ISBLANK(Model!K45))"
+14,21,"=IF(T14,TRUE,IF(OR(Model!B45=""Credit Card"",Model!B45=""Overdraft"",Model!B45=""Commercial Bill""),AND(Model!F45<>"""",Model!G45<>""""),IF(Model!B45=""Margin Loan"",Model!G45<>"""",IF(Model!B45=""HECS"",Model!J45<>"""",
+IF(AND(Model!E45<>""Yes"",OR(Model!B45=""Personal Loan"",Model!B45=""Lease"",Model!B45=""Hire Purchase"",Model!B45=""Other"")),AND(Model!J45<>"""",Model!K45<>""""),IF(Model!E45=""Yes"",Model!F45<>"""",
+IF(OR(Model!B45=""CBA Variable Rate Home Loan"",Model!B45=""CBA Fixed Rate Home Loan"",Model!B45=""OFI home loan (Other financial institution)""),AND(Model!C45<>"""",Model!F45<>"""",Model!H45<>"""",Model!I45<>"""",Model!K45<>""""),IF(OR(Model!B45=""CBA Line of Credit"",Model!B45=""OFI Line of Credit (Other financial institution)""),AND(Model!F45<>"""",Model!I45<>"""",Model!K45<>""""),FALSE))))))))","=IF(T14,TRUE,IF(OR(Model!B45=""Credit Card"",Model!B45=""Overdraft"",Model!B45=""Commercial Bill""),AND(Model!F45<>"""",Model!G45<>""""),IF(Model!B45=""Margin Loan"",Model!G45<>"""",IF(Model!B45=""HECS"",Model!J45<>"""",
+IF(AND(Model!E45<>""Yes"",OR(Model!B45=""Personal Loan"",Model!B45=""Lease"",Model!B45=""Hire Purchase"",Model!B45=""Other"")),AND(Model!J45<>"""",Model!K45<>""""),IF(Model!E45=""Yes"",Model!F45<>"""",
+IF(OR(Model!B45=""CBA Variable Rate Home Loan"",Model!B45=""CBA Fixed Rate Home Loan"",Model!B45=""OFI home loan (Other financial institution)""),AND(Model!C45<>"""",Model!F45<>"""",Model!H45<>"""",Model!I45<>"""",Model!K45<>""""),IF(OR(Model!B45=""CBA Line of Credit"",Model!B45=""OFI Line of Credit (Other financial institution)""),AND(Model!F45<>"""",Model!I45<>"""",Model!K45<>""""),FALSE))))))))"
+14,22,"=IF(AND(Model!C45=""Investment"",Model!D45=""Yes"",NOT(Model!E45=""Yes"")),TRUE,FALSE)","=IF(AND(Model!C45=""Investment"",Model!D45=""Yes"",NOT(Model!E45=""Yes"")),TRUE,FALSE)"
+14,23,"=IF(NOT(V14),TRUE,AND('Neg Gearing'!C14<>"""",COUNTBLANK('Neg Gearing'!E14:H14)<4))","=IF(NOT(V14),TRUE,AND('Neg Gearing'!C14<>"""",COUNTBLANK('Neg Gearing'!E14:H14)<4))"
+14,24,"=IF(U14,MAX(Model!F45:G45),0)","=IF(U14,MAX(Model!F45:G45),0)"
+14,26,=Z15-Data!G33,=Z15-Data!G33
+14,27,Int Rate,
+14,28,Deduction 1,
+14,29,Deduction 2,
+14,30,Deduction 3,
+14,31,Deduction 4,
+14,32,Taxable 1,
+14,33,Taxable 2,
+14,34,Taxable 3,
+14,35,Taxable 4,
+14,36,Tax & ML 1,
+14,37,Tax & ML 2,
+14,38,Tax & ML 3,
+14,39,Tax & ML 4,
+14,40,Monthly Pmt,
+14,41,Max Amount,
+15,1,LITO,
+15,2,"=IF((LITO(B12,B13)+LMITO(B12,B13))>B13,B13,LITO(B12,B13))","=IF((LITO(B12,B13)+LMITO(B12,B13))>B13,B13,LITO(B12,B13))"
+15,3,"=IF((LITO(C12,C13)+LMITO(C12,C13))>C13,C13,LITO(C12,C13))","=IF((LITO(C12,C13)+LMITO(C12,C13))>C13,C13,LITO(C12,C13))"
+15,4,"=IF((LITO(D12,D13)+LMITO(D12,D13))>D13,D13,LITO(D12,D13))","=IF((LITO(D12,D13)+LMITO(D12,D13))>D13,D13,LITO(D12,D13))"
+15,6,"=IF((LITO(F12,F13)+LMITO(F12,F13))>F13,F13,LITO(F12,F13))","=IF((LITO(F12,F13)+LMITO(F12,F13))>F13,F13,LITO(F12,F13))"
+15,7,"=IF((LITO(G12,G13)+LMITO(G12,G13))>G13,G13,LITO(G12,G13))","=IF((LITO(G12,G13)+LMITO(G12,G13))>G13,G13,LITO(G12,G13))"
+15,8,"=IF((LITO(H12,H13)+LMITO(H12,H13))>H13,H13,LITO(H12,H13))","=IF((LITO(H12,H13)+LMITO(H12,H13))>H13,H13,LITO(H12,H13))"
+15,10,"=IF((LITO(J12,J13)+LMITO(J12,J13))>J13,J13,LITO(J12,J13))","=IF((LITO(J12,J13)+LMITO(J12,J13))>J13,J13,LITO(J12,J13))"
+15,11,"=IF((LITO(K12,K13)+LMITO(K12,K13))>K13,K13,LITO(K12,K13))","=IF((LITO(K12,K13)+LMITO(K12,K13))>K13,K13,LITO(K12,K13))"
+15,12,"=IF((LITO(L12,L13)+LMITO(L12,L13))>L13,L13,LITO(L12,L13))","=IF((LITO(L12,L13)+LMITO(L12,L13))>L13,L13,LITO(L12,L13))"
+15,14,"=IF((LITO(N12,N13)+LMITO(N12,N13))>N13,N13,LITO(N12,N13))","=IF((LITO(N12,N13)+LMITO(N12,N13))>N13,N13,LITO(N12,N13))"
+15,15,"=IF((LITO(O12,O13)+LMITO(O12,O13))>O13,O13,LITO(O12,O13))","=IF((LITO(O12,O13)+LMITO(O12,O13))>O13,O13,LITO(O12,O13))"
+15,16,"=IF((LITO(P12,P13)+LMITO(P12,P13))>P13,P13,LITO(P12,P13))","=IF((LITO(P12,P13)+LMITO(P12,P13))>P13,P13,LITO(P12,P13))"
+15,18,Total Existing Commitments,
+15,19,=SUM(S8:S14),=SUM(S8:S14)
+15,20,=AND(T8:T14),=AND(T8:T14)
+15,21,=AND(U8:U14),=AND(U8:U14)
+15,22,=OR(V8:V14),=OR(V8:V14)
+15,23,=AND(W8:W14),=AND(W8:W14)
+15,26,"=MAX(Model!H67,Data!G32)","=MAX(Model!H67,Data!G32)"
+15,27,Asmt Rate,
+15,28,='Neg Gearing'!E28,='Neg Gearing'!E28
+15,29,='Neg Gearing'!E29,='Neg Gearing'!E29
+15,30,='Neg Gearing'!E30,='Neg Gearing'!E30
+15,31,='Neg Gearing'!E31,='Neg Gearing'!E31
+15,32,"=MAX(C12,0)","=MAX(C12,0)"
+15,33,"=MAX(G12,0)","=MAX(G12,0)"
+15,34,"=MAX(K12,0)","=MAX(K12,0)"
+15,35,"=MAX(O12,0)","=MAX(O12,0)"
+15,36,"=income_tax(AF15)+medicare_levy(AF15)-IF((LITO(AF15,income_tax(AF15))+LMITO(AF15,income_tax(AF15)))>income_tax(AF15),income_tax(AF15),LITO(AF15,income_tax(AF15)))-IF((LITO(AF15,income_tax(AF15))+LMITO(AF15,income_tax(AF15)))>income_tax(AF15),0,LMITO(AF15,income_tax(AF15)))","=income_tax(AF15)+medicare_levy(AF15)-IF((LITO(AF15,income_tax(AF15))+LMITO(AF15,income_tax(AF15)))>income_tax(AF15),income_tax(AF15),LITO(AF15,income_tax(AF15)))-IF((LITO(AF15,income_tax(AF15))+LMITO(AF15,income_tax(AF15)))>income_tax(AF15),0,LMITO(AF15,income_tax(AF15)))"
+15,37,"=income_tax(AG15)+medicare_levy(AG15)-IF((LITO(AG15,income_tax(AG15))+LMITO(AG15,income_tax(AG15)))>income_tax(AG15),income_tax(AG15),LITO(AG15,income_tax(AG15)))-IF((LITO(AG15,income_tax(AG15))+LMITO(AG15,income_tax(AG15)))>income_tax(AG15),0,LMITO(AG15,income_tax(AG15)))","=income_tax(AG15)+medicare_levy(AG15)-IF((LITO(AG15,income_tax(AG15))+LMITO(AG15,income_tax(AG15)))>income_tax(AG15),income_tax(AG15),LITO(AG15,income_tax(AG15)))-IF((LITO(AG15,income_tax(AG15))+LMITO(AG15,income_tax(AG15)))>income_tax(AG15),0,LMITO(AG15,income_tax(AG15)))"
+15,38,"=income_tax(AH15)+medicare_levy(AH15)-IF((LITO(AH15,income_tax(AH15))+LMITO(AH15,income_tax(AH15)))>income_tax(AH15),income_tax(AH15),LITO(AH15,income_tax(AH15)))-IF((LITO(AH15,income_tax(AH15))+LMITO(AH15,income_tax(AH15)))>income_tax(AH15),0,LMITO(AH15,income_tax(AH15)))","=income_tax(AH15)+medicare_levy(AH15)-IF((LITO(AH15,income_tax(AH15))+LMITO(AH15,income_tax(AH15)))>income_tax(AH15),income_tax(AH15),LITO(AH15,income_tax(AH15)))-IF((LITO(AH15,income_tax(AH15))+LMITO(AH15,income_tax(AH15)))>income_tax(AH15),0,LMITO(AH15,income_tax(AH15)))"
+15,39,"=income_tax(AI15)+medicare_levy(AI15)-IF((LITO(AI15,income_tax(AI15))+LMITO(AI15,income_tax(AI15)))>income_tax(AI15),income_tax(AI15),LITO(AI15,income_tax(AI15)))-IF((LITO(AI15,income_tax(AI15))+LMITO(AI15,income_tax(AI15)))>income_tax(AI15),0,LMITO(AI15,income_tax(AI15)))","=income_tax(AI15)+medicare_levy(AI15)-IF((LITO(AI15,income_tax(AI15))+LMITO(AI15,income_tax(AI15)))>income_tax(AI15),income_tax(AI15),LITO(AI15,income_tax(AI15)))-IF((LITO(AI15,income_tax(AI15))+LMITO(AI15,income_tax(AI15)))>income_tax(AI15),0,LMITO(AI15,income_tax(AI15)))"
+15,40,"=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ15:AM15)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)","=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ15:AM15)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)"
+15,41,"=ROUNDDOWN(PV($Z$15/12,$Z$16*12,-(AN15-$Z$17)),0)","=ROUNDDOWN(PV($Z$15/12,$Z$16*12,-(AN15-$Z$17)),0)"
+16,1,LMITO,
+16,2,"=IF((LITO(B12,B13)+LMITO(B12,B13))>B13,0,LMITO(B12,B13))","=IF((LITO(B12,B13)+LMITO(B12,B13))>B13,0,LMITO(B12,B13))"
+16,3,"=IF((LITO(C12,C13)+LMITO(C12,C13))>C13,0,LMITO(C12,C13))","=IF((LITO(C12,C13)+LMITO(C12,C13))>C13,0,LMITO(C12,C13))"
+16,4,"=IF((LITO(D12,D13)+LMITO(D12,D13))>D13,0,LMITO(D12,D13))","=IF((LITO(D12,D13)+LMITO(D12,D13))>D13,0,LMITO(D12,D13))"
+16,6,"=IF((LITO(F12,F13)+LMITO(F12,F13))>F13,0,LMITO(F12,F13))","=IF((LITO(F12,F13)+LMITO(F12,F13))>F13,0,LMITO(F12,F13))"
+16,7,"=IF((LITO(G12,G13)+LMITO(G12,G13))>G13,0,LMITO(G12,G13))","=IF((LITO(G12,G13)+LMITO(G12,G13))>G13,0,LMITO(G12,G13))"
+16,8,"=IF((LITO(H12,H13)+LMITO(H12,H13))>H13,0,LMITO(H12,H13))","=IF((LITO(H12,H13)+LMITO(H12,H13))>H13,0,LMITO(H12,H13))"
+16,10,"=IF((LITO(J12,J13)+LMITO(J12,J13))>J13,0,LMITO(J12,J13))","=IF((LITO(J12,J13)+LMITO(J12,J13))>J13,0,LMITO(J12,J13))"
+16,11,"=IF((LITO(K12,K13)+LMITO(K12,K13))>K13,0,LMITO(K12,K13))","=IF((LITO(K12,K13)+LMITO(K12,K13))>K13,0,LMITO(K12,K13))"
+16,12,"=IF((LITO(L12,L13)+LMITO(L12,L13))>L13,0,LMITO(L12,L13))","=IF((LITO(L12,L13)+LMITO(L12,L13))>L13,0,LMITO(L12,L13))"
+16,14,"=IF((LITO(N12,N13)+LMITO(N12,N13))>N13,0,LMITO(N12,N13))","=IF((LITO(N12,N13)+LMITO(N12,N13))>N13,0,LMITO(N12,N13))"
+16,15,"=IF((LITO(O12,O13)+LMITO(O12,O13))>O13,0,LMITO(O12,O13))","=IF((LITO(O12,O13)+LMITO(O12,O13))>O13,0,LMITO(O12,O13))"
+16,16,"=IF((LITO(P12,P13)+LMITO(P12,P13))>P13,0,LMITO(P12,P13))","=IF((LITO(P12,P13)+LMITO(P12,P13))>P13,0,LMITO(P12,P13))"
+16,20,Blank,
+16,21,Complete,
+16,22,Neg Gear,
+16,23,Complete,
+16,26,=Model!I67-Model!J67,=Model!I67-Model!J67
+16,27,CLT,
+16,28,"=IF($Z$18,$AO15*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!E$20,(100%/$Z$9)*(AF$15>0))+AB$15,0)","=IF($Z$18,$AO15*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!E$20,(100%/$Z$9)*(AF$15>0))+AB$15,0)"
+16,29,"=IF($Z$18,$AO15*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!F$20,(100%/$Z$9)*(AG$15>0))+AC$15,0)","=IF($Z$18,$AO15*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!F$20,(100%/$Z$9)*(AG$15>0))+AC$15,0)"
+16,30,"=IF($Z$18,$AO15*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!G$20,(100%/$Z$9)*(AH$15>0))+AD$15,0)","=IF($Z$18,$AO15*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!G$20,(100%/$Z$9)*(AH$15>0))+AD$15,0)"
+16,31,"=IF($Z$18,$AO15*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!H$20,(100%/$Z$9)*(AI$15>0))+AE$15,0)","=IF($Z$18,$AO15*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!H$20,(100%/$Z$9)*(AI$15>0))+AE$15,0)"
+16,32,"=MAX(AF$2-AB16,0)","=MAX(AF$2-AB16,0)"
+16,33,"=MAX(AG$2-AC16,0)","=MAX(AG$2-AC16,0)"
+16,34,"=MAX(AH$2-AD16,0)","=MAX(AH$2-AD16,0)"
+16,35,"=MAX(AI$2-AE16,0)","=MAX(AI$2-AE16,0)"
+16,36,"=income_tax(AF16)+medicare_levy(AF16)-IF((LITO(AF16,income_tax(AF16))+LMITO(AF16,income_tax(AF16)))>income_tax(AF16),income_tax(AF16),LITO(AF16,income_tax(AF16)))-IF((LITO(AF16,income_tax(AF16))+LMITO(AF16,income_tax(AF16)))>income_tax(AF16),0,LMITO(AF16,income_tax(AF16)))","=income_tax(AF16)+medicare_levy(AF16)-IF((LITO(AF16,income_tax(AF16))+LMITO(AF16,income_tax(AF16)))>income_tax(AF16),income_tax(AF16),LITO(AF16,income_tax(AF16)))-IF((LITO(AF16,income_tax(AF16))+LMITO(AF16,income_tax(AF16)))>income_tax(AF16),0,LMITO(AF16,income_tax(AF16)))"
+16,37,"=income_tax(AG16)+medicare_levy(AG16)-IF((LITO(AG16,income_tax(AG16))+LMITO(AG16,income_tax(AG16)))>income_tax(AG16),income_tax(AG16),LITO(AG16,income_tax(AG16)))-IF((LITO(AG16,income_tax(AG16))+LMITO(AG16,income_tax(AG16)))>income_tax(AG16),0,LMITO(AG16,income_tax(AG16)))","=income_tax(AG16)+medicare_levy(AG16)-IF((LITO(AG16,income_tax(AG16))+LMITO(AG16,income_tax(AG16)))>income_tax(AG16),income_tax(AG16),LITO(AG16,income_tax(AG16)))-IF((LITO(AG16,income_tax(AG16))+LMITO(AG16,income_tax(AG16)))>income_tax(AG16),0,LMITO(AG16,income_tax(AG16)))"
+16,38,"=income_tax(AH16)+medicare_levy(AH16)-IF((LITO(AH16,income_tax(AH16))+LMITO(AH16,income_tax(AH16)))>income_tax(AH16),income_tax(AH16),LITO(AH16,income_tax(AH16)))-IF((LITO(AH16,income_tax(AH16))+LMITO(AH16,income_tax(AH16)))>income_tax(AH16),0,LMITO(AH16,income_tax(AH16)))","=income_tax(AH16)+medicare_levy(AH16)-IF((LITO(AH16,income_tax(AH16))+LMITO(AH16,income_tax(AH16)))>income_tax(AH16),income_tax(AH16),LITO(AH16,income_tax(AH16)))-IF((LITO(AH16,income_tax(AH16))+LMITO(AH16,income_tax(AH16)))>income_tax(AH16),0,LMITO(AH16,income_tax(AH16)))"
+16,39,"=income_tax(AI16)+medicare_levy(AI16)-IF((LITO(AI16,income_tax(AI16))+LMITO(AI16,income_tax(AI16)))>income_tax(AI16),income_tax(AI16),LITO(AI16,income_tax(AI16)))-IF((LITO(AI16,income_tax(AI16))+LMITO(AI16,income_tax(AI16)))>income_tax(AI16),0,LMITO(AI16,income_tax(AI16)))","=income_tax(AI16)+medicare_levy(AI16)-IF((LITO(AI16,income_tax(AI16))+LMITO(AI16,income_tax(AI16)))>income_tax(AI16),income_tax(AI16),LITO(AI16,income_tax(AI16)))-IF((LITO(AI16,income_tax(AI16))+LMITO(AI16,income_tax(AI16)))>income_tax(AI16),0,LMITO(AI16,income_tax(AI16)))"
+16,40,"=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ16:AM16)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)","=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ16:AM16)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)"
+16,41,"=ROUNDDOWN(PV($Z$15/12,$Z$16*12,-(AN16-$Z$17)),0)","=ROUNDDOWN(PV($Z$15/12,$Z$16*12,-(AN16-$Z$17)),0)"
+17,1,Total tax and levy (no n.g.),
+17,2,=B13+B14-B15-B16,=B13+B14-B15-B16
+17,3,=C13+C14-C15-C16,=C13+C14-C15-C16
+17,4,=D13+D14-D15-D16,=D13+D14-D15-D16
+17,6,=F13+F14-F15-F16,=F13+F14-F15-F16
+17,7,=G13+G14-G15-G16,=G13+G14-G15-G16
+17,8,=H13+H14-H15-H16,=H13+H14-H15-H16
+17,10,=J13+J14-J15-J16,=J13+J14-J15-J16
+17,11,=K13+K14-K15-K16,=K13+K14-K15-K16
+17,12,=L13+L14-L15-L16,=L13+L14-L15-L16
+17,14,=N13+N14-N15-N16,=N13+N14-N15-N16
+17,15,=O13+O14-O15-O16,=O13+O14-O15-O16
+17,16,=P13+P14-P15-P16,=P13+P14-P15-P16
+17,18,Loan 1,
+17,19,"=IF(AND(NOT(T17),U17),ROUNDUP(IF(Model!B52=""Credit Card"",Model!G52*Data!$G$16,-PMT(MAX(Model!H52,Data!$G$32)/12,D43*12,Model!G52,0)+Model!K52),0),0)","=IF(AND(NOT(T17),U17),ROUNDUP(IF(Model!B52=""Credit Card"",Model!G52*Data!$G$16,-PMT(MAX(Model!H52,Data!$G$32)/12,D43*12,Model!G52,0)+Model!K52),0),0)"
+17,20,"=AND(Model!B52="""",Model!F52="""",Model!G52="""",Model!H52="""",Model!I52="""",Model!J52="""",Model!K52="""")","=AND(Model!B52="""",Model!F52="""",Model!G52="""",Model!H52="""",Model!I52="""",Model!J52="""",Model!K52="""")"
+17,21,"=IF(T17,TRUE,IF(Model!B52=""Credit Card"",Model!G52<>"""",AND(Model!B52<>"""",Model!E52<>"""",Model!G52<>"""",Model!H52<>"""",Model!I52<>"""",Model!K52<>"""")))","=IF(T17,TRUE,IF(Model!B52=""Credit Card"",Model!G52<>"""",AND(Model!B52<>"""",Model!E52<>"""",Model!G52<>"""",Model!H52<>"""",Model!I52<>"""",Model!K52<>"""")))"
+17,22,"=IF(AND(Model!E52=""Investment"",Model!F52=""Yes""),TRUE,FALSE)","=IF(AND(Model!E52=""Investment"",Model!F52=""Yes""),TRUE,FALSE)"
+17,23,"=IF(NOT(V17),TRUE,AND('Neg Gearing'!C20<>"""",COUNTBLANK('Neg Gearing'!E20:H20)<4))","=IF(NOT(V17),TRUE,AND('Neg Gearing'!C20<>"""",COUNTBLANK('Neg Gearing'!E20:H20)<4))"
+17,26,=Model!K67,=Model!K67
+17,27,LSF,
+17,28,"=IF($Z$18,$AO16*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!E$20,(100%/$Z$9)*(AF$15>0))+AB$15,0)","=IF($Z$18,$AO16*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!E$20,(100%/$Z$9)*(AF$15>0))+AB$15,0)"
+17,29,"=IF($Z$18,$AO16*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!F$20,(100%/$Z$9)*(AG$15>0))+AC$15,0)","=IF($Z$18,$AO16*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!F$20,(100%/$Z$9)*(AG$15>0))+AC$15,0)"
+17,30,"=IF($Z$18,$AO16*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!G$20,(100%/$Z$9)*(AH$15>0))+AD$15,0)","=IF($Z$18,$AO16*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!G$20,(100%/$Z$9)*(AH$15>0))+AD$15,0)"
+17,31,"=IF($Z$18,$AO16*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!H$20,(100%/$Z$9)*(AI$15>0))+AE$15,0)","=IF($Z$18,$AO16*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!H$20,(100%/$Z$9)*(AI$15>0))+AE$15,0)"
+17,32,"=MAX(AF$2-AB17,0)","=MAX(AF$2-AB17,0)"
+17,33,"=MAX(AG$2-AC17,0)","=MAX(AG$2-AC17,0)"
+17,34,"=MAX(AH$2-AD17,0)","=MAX(AH$2-AD17,0)"
+17,35,"=MAX(AI$2-AE17,0)","=MAX(AI$2-AE17,0)"
+17,36,"=income_tax(AF17)+medicare_levy(AF17)-IF((LITO(AF17,income_tax(AF17))+LMITO(AF17,income_tax(AF17)))>income_tax(AF17),income_tax(AF17),LITO(AF17,income_tax(AF17)))-IF((LITO(AF17,income_tax(AF17))+LMITO(AF17,income_tax(AF17)))>income_tax(AF17),0,LMITO(AF17,income_tax(AF17)))","=income_tax(AF17)+medicare_levy(AF17)-IF((LITO(AF17,income_tax(AF17))+LMITO(AF17,income_tax(AF17)))>income_tax(AF17),income_tax(AF17),LITO(AF17,income_tax(AF17)))-IF((LITO(AF17,income_tax(AF17))+LMITO(AF17,income_tax(AF17)))>income_tax(AF17),0,LMITO(AF17,income_tax(AF17)))"
+17,37,"=income_tax(AG17)+medicare_levy(AG17)-IF((LITO(AG17,income_tax(AG17))+LMITO(AG17,income_tax(AG17)))>income_tax(AG17),income_tax(AG17),LITO(AG17,income_tax(AG17)))-IF((LITO(AG17,income_tax(AG17))+LMITO(AG17,income_tax(AG17)))>income_tax(AG17),0,LMITO(AG17,income_tax(AG17)))","=income_tax(AG17)+medicare_levy(AG17)-IF((LITO(AG17,income_tax(AG17))+LMITO(AG17,income_tax(AG17)))>income_tax(AG17),income_tax(AG17),LITO(AG17,income_tax(AG17)))-IF((LITO(AG17,income_tax(AG17))+LMITO(AG17,income_tax(AG17)))>income_tax(AG17),0,LMITO(AG17,income_tax(AG17)))"
+17,38,"=income_tax(AH17)+medicare_levy(AH17)-IF((LITO(AH17,income_tax(AH17))+LMITO(AH17,income_tax(AH17)))>income_tax(AH17),income_tax(AH17),LITO(AH17,income_tax(AH17)))-IF((LITO(AH17,income_tax(AH17))+LMITO(AH17,income_tax(AH17)))>income_tax(AH17),0,LMITO(AH17,income_tax(AH17)))","=income_tax(AH17)+medicare_levy(AH17)-IF((LITO(AH17,income_tax(AH17))+LMITO(AH17,income_tax(AH17)))>income_tax(AH17),income_tax(AH17),LITO(AH17,income_tax(AH17)))-IF((LITO(AH17,income_tax(AH17))+LMITO(AH17,income_tax(AH17)))>income_tax(AH17),0,LMITO(AH17,income_tax(AH17)))"
+17,39,"=income_tax(AI17)+medicare_levy(AI17)-IF((LITO(AI17,income_tax(AI17))+LMITO(AI17,income_tax(AI17)))>income_tax(AI17),income_tax(AI17),LITO(AI17,income_tax(AI17)))-IF((LITO(AI17,income_tax(AI17))+LMITO(AI17,income_tax(AI17)))>income_tax(AI17),0,LMITO(AI17,income_tax(AI17)))","=income_tax(AI17)+medicare_levy(AI17)-IF((LITO(AI17,income_tax(AI17))+LMITO(AI17,income_tax(AI17)))>income_tax(AI17),income_tax(AI17),LITO(AI17,income_tax(AI17)))-IF((LITO(AI17,income_tax(AI17))+LMITO(AI17,income_tax(AI17)))>income_tax(AI17),0,LMITO(AI17,income_tax(AI17)))"
+17,40,"=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ17:AM17)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)","=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ17:AM17)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)"
+17,41,"=ROUNDDOWN(PV($Z$15/12,$Z$16*12,-(AN17-$Z$17)),0)","=ROUNDDOWN(PV($Z$15/12,$Z$16*12,-(AN17-$Z$17)),0)"
+18,18,Loan 2,
+18,19,"=IF(AND(NOT(T18),U18),ROUNDUP(IF(Model!B53=""Credit Card"",Model!G53*Data!$G$16,-PMT(MAX(Model!H53,Data!$G$32)/12,D44*12,Model!G53,0)+Model!K53),0),0)","=IF(AND(NOT(T18),U18),ROUNDUP(IF(Model!B53=""Credit Card"",Model!G53*Data!$G$16,-PMT(MAX(Model!H53,Data!$G$32)/12,D44*12,Model!G53,0)+Model!K53),0),0)"
+18,20,"=AND(Model!B53="""",Model!F53="""",Model!G53="""",Model!H53="""",Model!I53="""",Model!J53="""",Model!K53="""")","=AND(Model!B53="""",Model!F53="""",Model!G53="""",Model!H53="""",Model!I53="""",Model!J53="""",Model!K53="""")"
+18,21,"=IF(T18,TRUE,IF(Model!B53=""Credit Card"",Model!G53<>"""",AND(Model!B53<>"""",Model!E53<>"""",Model!G53<>"""",Model!H53<>"""",Model!I53<>"""",Model!K53<>"""")))","=IF(T18,TRUE,IF(Model!B53=""Credit Card"",Model!G53<>"""",AND(Model!B53<>"""",Model!E53<>"""",Model!G53<>"""",Model!H53<>"""",Model!I53<>"""",Model!K53<>"""")))"
+18,22,"=IF(AND(Model!E53=""Investment"",Model!F53=""Yes""),TRUE,FALSE)","=IF(AND(Model!E53=""Investment"",Model!F53=""Yes""),TRUE,FALSE)"
+18,23,"=IF(NOT(V18),TRUE,AND('Neg Gearing'!C21<>"""",COUNTBLANK('Neg Gearing'!E21:H21)<4))","=IF(NOT(V18),TRUE,AND('Neg Gearing'!C21<>"""",COUNTBLANK('Neg Gearing'!E21:H21)<4))"
+18,26,"=AND(Model!E67=""investment"",Model!F67=""Yes"")","=AND(Model!E67=""investment"",Model!F67=""Yes"")"
+18,27,Neg Gear,
+18,28,"=IF($Z$18,$AO17*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!E$20,(100%/$Z$9)*(AF$15>0))+AB$15,0)","=IF($Z$18,$AO17*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!E$20,(100%/$Z$9)*(AF$15>0))+AB$15,0)"
+18,29,"=IF($Z$18,$AO17*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!F$20,(100%/$Z$9)*(AG$15>0))+AC$15,0)","=IF($Z$18,$AO17*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!F$20,(100%/$Z$9)*(AG$15>0))+AC$15,0)"
+18,30,"=IF($Z$18,$AO17*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!G$20,(100%/$Z$9)*(AH$15>0))+AD$15,0)","=IF($Z$18,$AO17*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!G$20,(100%/$Z$9)*(AH$15>0))+AD$15,0)"
+18,31,"=IF($Z$18,$AO17*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!H$20,(100%/$Z$9)*(AI$15>0))+AE$15,0)","=IF($Z$18,$AO17*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!H$20,(100%/$Z$9)*(AI$15>0))+AE$15,0)"
+18,32,"=MAX(AF$2-AB18,0)","=MAX(AF$2-AB18,0)"
+18,33,"=MAX(AG$2-AC18,0)","=MAX(AG$2-AC18,0)"
+18,34,"=MAX(AH$2-AD18,0)","=MAX(AH$2-AD18,0)"
+18,35,"=MAX(AI$2-AE18,0)","=MAX(AI$2-AE18,0)"
+18,36,"=income_tax(AF18)+medicare_levy(AF18)-IF((LITO(AF18,income_tax(AF18))+LMITO(AF18,income_tax(AF18)))>income_tax(AF18),income_tax(AF18),LITO(AF18,income_tax(AF18)))-IF((LITO(AF18,income_tax(AF18))+LMITO(AF18,income_tax(AF18)))>income_tax(AF18),0,LMITO(AF18,income_tax(AF18)))","=income_tax(AF18)+medicare_levy(AF18)-IF((LITO(AF18,income_tax(AF18))+LMITO(AF18,income_tax(AF18)))>income_tax(AF18),income_tax(AF18),LITO(AF18,income_tax(AF18)))-IF((LITO(AF18,income_tax(AF18))+LMITO(AF18,income_tax(AF18)))>income_tax(AF18),0,LMITO(AF18,income_tax(AF18)))"
+18,37,"=income_tax(AG18)+medicare_levy(AG18)-IF((LITO(AG18,income_tax(AG18))+LMITO(AG18,income_tax(AG18)))>income_tax(AG18),income_tax(AG18),LITO(AG18,income_tax(AG18)))-IF((LITO(AG18,income_tax(AG18))+LMITO(AG18,income_tax(AG18)))>income_tax(AG18),0,LMITO(AG18,income_tax(AG18)))","=income_tax(AG18)+medicare_levy(AG18)-IF((LITO(AG18,income_tax(AG18))+LMITO(AG18,income_tax(AG18)))>income_tax(AG18),income_tax(AG18),LITO(AG18,income_tax(AG18)))-IF((LITO(AG18,income_tax(AG18))+LMITO(AG18,income_tax(AG18)))>income_tax(AG18),0,LMITO(AG18,income_tax(AG18)))"
+18,38,"=income_tax(AH18)+medicare_levy(AH18)-IF((LITO(AH18,income_tax(AH18))+LMITO(AH18,income_tax(AH18)))>income_tax(AH18),income_tax(AH18),LITO(AH18,income_tax(AH18)))-IF((LITO(AH18,income_tax(AH18))+LMITO(AH18,income_tax(AH18)))>income_tax(AH18),0,LMITO(AH18,income_tax(AH18)))","=income_tax(AH18)+medicare_levy(AH18)-IF((LITO(AH18,income_tax(AH18))+LMITO(AH18,income_tax(AH18)))>income_tax(AH18),income_tax(AH18),LITO(AH18,income_tax(AH18)))-IF((LITO(AH18,income_tax(AH18))+LMITO(AH18,income_tax(AH18)))>income_tax(AH18),0,LMITO(AH18,income_tax(AH18)))"
+18,39,"=income_tax(AI18)+medicare_levy(AI18)-IF((LITO(AI18,income_tax(AI18))+LMITO(AI18,income_tax(AI18)))>income_tax(AI18),income_tax(AI18),LITO(AI18,income_tax(AI18)))-IF((LITO(AI18,income_tax(AI18))+LMITO(AI18,income_tax(AI18)))>income_tax(AI18),0,LMITO(AI18,income_tax(AI18)))","=income_tax(AI18)+medicare_levy(AI18)-IF((LITO(AI18,income_tax(AI18))+LMITO(AI18,income_tax(AI18)))>income_tax(AI18),income_tax(AI18),LITO(AI18,income_tax(AI18)))-IF((LITO(AI18,income_tax(AI18))+LMITO(AI18,income_tax(AI18)))>income_tax(AI18),0,LMITO(AI18,income_tax(AI18)))"
+18,40,"=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ18:AM18)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)","=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ18:AM18)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)"
+18,41,"=ROUNDDOWN(PV($Z$15/12,$Z$16*12,-(AN18-$Z$17)),0)","=ROUNDDOWN(PV($Z$15/12,$Z$16*12,-(AN18-$Z$17)),0)"
+19,1,Negative Gearing,
+19,3,='Neg Gearing'!G28,='Neg Gearing'!G28
+19,4,='Neg Gearing'!E28,='Neg Gearing'!E28
+19,7,='Neg Gearing'!G29,='Neg Gearing'!G29
+19,8,='Neg Gearing'!E29,='Neg Gearing'!E29
+19,11,='Neg Gearing'!G30,='Neg Gearing'!G30
+19,12,='Neg Gearing'!E30,='Neg Gearing'!E30
+19,15,='Neg Gearing'!G31,='Neg Gearing'!G31
+19,16,='Neg Gearing'!E31,='Neg Gearing'!E31
+19,18,Loan 3,
+19,19,"=IF(AND(NOT(T19),U19),ROUNDUP(IF(Model!B54=""Credit Card"",Model!G54*Data!$G$16,-PMT(MAX(Model!H54,Data!$G$32)/12,D45*12,Model!G54,0)+Model!K54),0),0)","=IF(AND(NOT(T19),U19),ROUNDUP(IF(Model!B54=""Credit Card"",Model!G54*Data!$G$16,-PMT(MAX(Model!H54,Data!$G$32)/12,D45*12,Model!G54,0)+Model!K54),0),0)"
+19,20,"=AND(Model!B54="""",Model!F54="""",Model!G54="""",Model!H54="""",Model!I54="""",Model!J54="""",Model!K54="""")","=AND(Model!B54="""",Model!F54="""",Model!G54="""",Model!H54="""",Model!I54="""",Model!J54="""",Model!K54="""")"
+19,21,"=IF(T19,TRUE,IF(Model!B54=""Credit Card"",Model!G54<>"""",AND(Model!B54<>"""",Model!E54<>"""",Model!G54<>"""",Model!H54<>"""",Model!I54<>"""",Model!K54<>"""")))","=IF(T19,TRUE,IF(Model!B54=""Credit Card"",Model!G54<>"""",AND(Model!B54<>"""",Model!E54<>"""",Model!G54<>"""",Model!H54<>"""",Model!I54<>"""",Model!K54<>"""")))"
+19,22,"=IF(AND(Model!E54=""Investment"",Model!F54=""Yes""),TRUE,FALSE)","=IF(AND(Model!E54=""Investment"",Model!F54=""Yes""),TRUE,FALSE)"
+19,23,"=IF(NOT(V19),TRUE,AND('Neg Gearing'!C22<>"""",COUNTBLANK('Neg Gearing'!E22:H22)<4))","=IF(NOT(V19),TRUE,AND('Neg Gearing'!C22<>"""",COUNTBLANK('Neg Gearing'!E22:H22)<4))"
+19,28,"=IF($Z$18,$AO18*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!E$20,(100%/$Z$9)*(AF$15>0))+AB$15,0)","=IF($Z$18,$AO18*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!E$20,(100%/$Z$9)*(AF$15>0))+AB$15,0)"
+19,29,"=IF($Z$18,$AO18*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!F$20,(100%/$Z$9)*(AG$15>0))+AC$15,0)","=IF($Z$18,$AO18*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!F$20,(100%/$Z$9)*(AG$15>0))+AC$15,0)"
+19,30,"=IF($Z$18,$AO18*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!G$20,(100%/$Z$9)*(AH$15>0))+AD$15,0)","=IF($Z$18,$AO18*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!G$20,(100%/$Z$9)*(AH$15>0))+AD$15,0)"
+19,31,"=IF($Z$18,$AO18*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!H$20,(100%/$Z$9)*(AI$15>0))+AE$15,0)","=IF($Z$18,$AO18*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!H$20,(100%/$Z$9)*(AI$15>0))+AE$15,0)"
+19,32,"=MAX(AF$2-AB19,0)","=MAX(AF$2-AB19,0)"
+19,33,"=MAX(AG$2-AC19,0)","=MAX(AG$2-AC19,0)"
+19,34,"=MAX(AH$2-AD19,0)","=MAX(AH$2-AD19,0)"
+19,35,"=MAX(AI$2-AE19,0)","=MAX(AI$2-AE19,0)"
+19,36,"=income_tax(AF19)+medicare_levy(AF19)-IF((LITO(AF19,income_tax(AF19))+LMITO(AF19,income_tax(AF19)))>income_tax(AF19),income_tax(AF19),LITO(AF19,income_tax(AF19)))-IF((LITO(AF19,income_tax(AF19))+LMITO(AF19,income_tax(AF19)))>income_tax(AF19),0,LMITO(AF19,income_tax(AF19)))","=income_tax(AF19)+medicare_levy(AF19)-IF((LITO(AF19,income_tax(AF19))+LMITO(AF19,income_tax(AF19)))>income_tax(AF19),income_tax(AF19),LITO(AF19,income_tax(AF19)))-IF((LITO(AF19,income_tax(AF19))+LMITO(AF19,income_tax(AF19)))>income_tax(AF19),0,LMITO(AF19,income_tax(AF19)))"
+19,37,"=income_tax(AG19)+medicare_levy(AG19)-IF((LITO(AG19,income_tax(AG19))+LMITO(AG19,income_tax(AG19)))>income_tax(AG19),income_tax(AG19),LITO(AG19,income_tax(AG19)))-IF((LITO(AG19,income_tax(AG19))+LMITO(AG19,income_tax(AG19)))>income_tax(AG19),0,LMITO(AG19,income_tax(AG19)))","=income_tax(AG19)+medicare_levy(AG19)-IF((LITO(AG19,income_tax(AG19))+LMITO(AG19,income_tax(AG19)))>income_tax(AG19),income_tax(AG19),LITO(AG19,income_tax(AG19)))-IF((LITO(AG19,income_tax(AG19))+LMITO(AG19,income_tax(AG19)))>income_tax(AG19),0,LMITO(AG19,income_tax(AG19)))"
+19,38,"=income_tax(AH19)+medicare_levy(AH19)-IF((LITO(AH19,income_tax(AH19))+LMITO(AH19,income_tax(AH19)))>income_tax(AH19),income_tax(AH19),LITO(AH19,income_tax(AH19)))-IF((LITO(AH19,income_tax(AH19))+LMITO(AH19,income_tax(AH19)))>income_tax(AH19),0,LMITO(AH19,income_tax(AH19)))","=income_tax(AH19)+medicare_levy(AH19)-IF((LITO(AH19,income_tax(AH19))+LMITO(AH19,income_tax(AH19)))>income_tax(AH19),income_tax(AH19),LITO(AH19,income_tax(AH19)))-IF((LITO(AH19,income_tax(AH19))+LMITO(AH19,income_tax(AH19)))>income_tax(AH19),0,LMITO(AH19,income_tax(AH19)))"
+19,39,"=income_tax(AI19)+medicare_levy(AI19)-IF((LITO(AI19,income_tax(AI19))+LMITO(AI19,income_tax(AI19)))>income_tax(AI19),income_tax(AI19),LITO(AI19,income_tax(AI19)))-IF((LITO(AI19,income_tax(AI19))+LMITO(AI19,income_tax(AI19)))>income_tax(AI19),0,LMITO(AI19,income_tax(AI19)))","=income_tax(AI19)+medicare_levy(AI19)-IF((LITO(AI19,income_tax(AI19))+LMITO(AI19,income_tax(AI19)))>income_tax(AI19),income_tax(AI19),LITO(AI19,income_tax(AI19)))-IF((LITO(AI19,income_tax(AI19))+LMITO(AI19,income_tax(AI19)))>income_tax(AI19),0,LMITO(AI19,income_tax(AI19)))"
+19,40,"=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ19:AM19)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)","=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ19:AM19)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)"
+19,41,"=ROUNDDOWN(PV($Z$15/12,$Z$16*12,-(AN19-$Z$17)),0)","=ROUNDDOWN(PV($Z$15/12,$Z$16*12,-(AN19-$Z$17)),0)"
+20,1,Taxable Income (with n.g.),
+20,3,"=MAX(C12-C19,0)","=MAX(C12-C19,0)"
+20,4,"=MAX(D12-D19,0)","=MAX(D12-D19,0)"
+20,7,"=MAX(G12-G19,0)","=MAX(G12-G19,0)"
+20,8,"=MAX(H12-H19,0)","=MAX(H12-H19,0)"
+20,11,"=MAX(K12-K19,0)","=MAX(K12-K19,0)"
+20,12,"=MAX(L12-L19,0)","=MAX(L12-L19,0)"
+20,15,"=MAX(O12-O19,0)","=MAX(O12-O19,0)"
+20,16,"=MAX(P12-P19,0)","=MAX(P12-P19,0)"
+20,18,Loan 4,
+20,19,"=IF(AND(NOT(T20),U20),ROUNDUP(IF(Model!B55=""Credit Card"",Model!G55*Data!$G$16,-PMT(MAX(Model!H55,Data!$G$32)/12,D46*12,Model!G55,0)+Model!K55),0),0)","=IF(AND(NOT(T20),U20),ROUNDUP(IF(Model!B55=""Credit Card"",Model!G55*Data!$G$16,-PMT(MAX(Model!H55,Data!$G$32)/12,D46*12,Model!G55,0)+Model!K55),0),0)"
+20,20,"=AND(Model!B55="""",Model!F55="""",Model!G55="""",Model!H55="""",Model!I55="""",Model!J55="""",Model!K55="""")","=AND(Model!B55="""",Model!F55="""",Model!G55="""",Model!H55="""",Model!I55="""",Model!J55="""",Model!K55="""")"
+20,21,"=IF(T20,TRUE,IF(Model!B55=""Credit Card"",Model!G55<>"""",AND(Model!B55<>"""",Model!E55<>"""",Model!G55<>"""",Model!H55<>"""",Model!I55<>"""",Model!K55<>"""")))","=IF(T20,TRUE,IF(Model!B55=""Credit Card"",Model!G55<>"""",AND(Model!B55<>"""",Model!E55<>"""",Model!G55<>"""",Model!H55<>"""",Model!I55<>"""",Model!K55<>"""")))"
+20,22,"=IF(AND(Model!E55=""Investment"",Model!F55=""Yes""),TRUE,FALSE)","=IF(AND(Model!E55=""Investment"",Model!F55=""Yes""),TRUE,FALSE)"
+20,23,"=IF(NOT(V20),TRUE,AND('Neg Gearing'!C23<>"""",COUNTBLANK('Neg Gearing'!E23:H23)<4))","=IF(NOT(V20),TRUE,AND('Neg Gearing'!C23<>"""",COUNTBLANK('Neg Gearing'!E23:H23)<4))"
+20,28,"=IF($Z$18,$AO19*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!E$20,(100%/$Z$9)*(AF$15>0))+AB$15,0)","=IF($Z$18,$AO19*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!E$20,(100%/$Z$9)*(AF$15>0))+AB$15,0)"
+20,29,"=IF($Z$18,$AO19*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!F$20,(100%/$Z$9)*(AG$15>0))+AC$15,0)","=IF($Z$18,$AO19*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!F$20,(100%/$Z$9)*(AG$15>0))+AC$15,0)"
+20,30,"=IF($Z$18,$AO19*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!G$20,(100%/$Z$9)*(AH$15>0))+AD$15,0)","=IF($Z$18,$AO19*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!G$20,(100%/$Z$9)*(AH$15>0))+AD$15,0)"
+20,31,"=IF($Z$18,$AO19*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!H$20,(100%/$Z$9)*(AI$15>0))+AE$15,0)","=IF($Z$18,$AO19*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!H$20,(100%/$Z$9)*(AI$15>0))+AE$15,0)"
+20,32,"=MAX(AF$2-AB20,0)","=MAX(AF$2-AB20,0)"
+20,33,"=MAX(AG$2-AC20,0)","=MAX(AG$2-AC20,0)"
+20,34,"=MAX(AH$2-AD20,0)","=MAX(AH$2-AD20,0)"
+20,35,"=MAX(AI$2-AE20,0)","=MAX(AI$2-AE20,0)"
+20,36,"=income_tax(AF20)+medicare_levy(AF20)-IF((LITO(AF20,income_tax(AF20))+LMITO(AF20,income_tax(AF20)))>income_tax(AF20),income_tax(AF20),LITO(AF20,income_tax(AF20)))-IF((LITO(AF20,income_tax(AF20))+LMITO(AF20,income_tax(AF20)))>income_tax(AF20),0,LMITO(AF20,income_tax(AF20)))","=income_tax(AF20)+medicare_levy(AF20)-IF((LITO(AF20,income_tax(AF20))+LMITO(AF20,income_tax(AF20)))>income_tax(AF20),income_tax(AF20),LITO(AF20,income_tax(AF20)))-IF((LITO(AF20,income_tax(AF20))+LMITO(AF20,income_tax(AF20)))>income_tax(AF20),0,LMITO(AF20,income_tax(AF20)))"
+20,37,"=income_tax(AG20)+medicare_levy(AG20)-IF((LITO(AG20,income_tax(AG20))+LMITO(AG20,income_tax(AG20)))>income_tax(AG20),income_tax(AG20),LITO(AG20,income_tax(AG20)))-IF((LITO(AG20,income_tax(AG20))+LMITO(AG20,income_tax(AG20)))>income_tax(AG20),0,LMITO(AG20,income_tax(AG20)))","=income_tax(AG20)+medicare_levy(AG20)-IF((LITO(AG20,income_tax(AG20))+LMITO(AG20,income_tax(AG20)))>income_tax(AG20),income_tax(AG20),LITO(AG20,income_tax(AG20)))-IF((LITO(AG20,income_tax(AG20))+LMITO(AG20,income_tax(AG20)))>income_tax(AG20),0,LMITO(AG20,income_tax(AG20)))"
+20,38,"=income_tax(AH20)+medicare_levy(AH20)-IF((LITO(AH20,income_tax(AH20))+LMITO(AH20,income_tax(AH20)))>income_tax(AH20),income_tax(AH20),LITO(AH20,income_tax(AH20)))-IF((LITO(AH20,income_tax(AH20))+LMITO(AH20,income_tax(AH20)))>income_tax(AH20),0,LMITO(AH20,income_tax(AH20)))","=income_tax(AH20)+medicare_levy(AH20)-IF((LITO(AH20,income_tax(AH20))+LMITO(AH20,income_tax(AH20)))>income_tax(AH20),income_tax(AH20),LITO(AH20,income_tax(AH20)))-IF((LITO(AH20,income_tax(AH20))+LMITO(AH20,income_tax(AH20)))>income_tax(AH20),0,LMITO(AH20,income_tax(AH20)))"
+20,39,"=income_tax(AI20)+medicare_levy(AI20)-IF((LITO(AI20,income_tax(AI20))+LMITO(AI20,income_tax(AI20)))>income_tax(AI20),income_tax(AI20),LITO(AI20,income_tax(AI20)))-IF((LITO(AI20,income_tax(AI20))+LMITO(AI20,income_tax(AI20)))>income_tax(AI20),0,LMITO(AI20,income_tax(AI20)))","=income_tax(AI20)+medicare_levy(AI20)-IF((LITO(AI20,income_tax(AI20))+LMITO(AI20,income_tax(AI20)))>income_tax(AI20),income_tax(AI20),LITO(AI20,income_tax(AI20)))-IF((LITO(AI20,income_tax(AI20))+LMITO(AI20,income_tax(AI20)))>income_tax(AI20),0,LMITO(AI20,income_tax(AI20)))"
+20,40,"=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ20:AM20)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)","=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ20:AM20)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)"
+20,41,"=ROUNDDOWN(PV($Z$15/12,$Z$16*12,-(AN20-$Z$17)),0)","=ROUNDDOWN(PV($Z$15/12,$Z$16*12,-(AN20-$Z$17)),0)"
+21,1,Income Tax,
+21,3,=income_tax(C20),=income_tax(C20)
+21,4,=income_tax(D20),=income_tax(D20)
+21,7,=income_tax(G20),=income_tax(G20)
+21,8,=income_tax(H20),=income_tax(H20)
+21,11,=income_tax(K20),=income_tax(K20)
+21,12,=income_tax(L20),=income_tax(L20)
+21,15,=income_tax(O20),=income_tax(O20)
+21,16,=income_tax(P20),=income_tax(P20)
+21,18,Loan 5,
+21,19,"=IF(AND(NOT(T21),U21),ROUNDUP(IF(Model!B56=""Credit Card"",Model!G56*Data!$G$16,-PMT(MAX(Model!H56,Data!$G$32)/12,D47*12,Model!G56,0)+Model!K56),0),0)","=IF(AND(NOT(T21),U21),ROUNDUP(IF(Model!B56=""Credit Card"",Model!G56*Data!$G$16,-PMT(MAX(Model!H56,Data!$G$32)/12,D47*12,Model!G56,0)+Model!K56),0),0)"
+21,20,"=AND(Model!B56="""",Model!F56="""",Model!G56="""",Model!H56="""",Model!I56="""",Model!J56="""",Model!K56="""")","=AND(Model!B56="""",Model!F56="""",Model!G56="""",Model!H56="""",Model!I56="""",Model!J56="""",Model!K56="""")"
+21,21,"=IF(T21,TRUE,IF(Model!B56=""Credit Card"",Model!G56<>"""",AND(Model!B56<>"""",Model!E56<>"""",Model!G56<>"""",Model!H56<>"""",Model!I56<>"""",Model!K56<>"""")))","=IF(T21,TRUE,IF(Model!B56=""Credit Card"",Model!G56<>"""",AND(Model!B56<>"""",Model!E56<>"""",Model!G56<>"""",Model!H56<>"""",Model!I56<>"""",Model!K56<>"""")))"
+21,22,"=IF(AND(Model!E56=""Investment"",Model!F56=""Yes""),TRUE,FALSE)","=IF(AND(Model!E56=""Investment"",Model!F56=""Yes""),TRUE,FALSE)"
+21,23,"=IF(NOT(V21),TRUE,AND('Neg Gearing'!C24<>"""",COUNTBLANK('Neg Gearing'!E24:H24)<4))","=IF(NOT(V21),TRUE,AND('Neg Gearing'!C24<>"""",COUNTBLANK('Neg Gearing'!E24:H24)<4))"
+21,28,"=IF($Z$18,$AO20*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!E$20,(100%/$Z$9)*(AF$15>0))+AB$15,0)","=IF($Z$18,$AO20*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!E$20,(100%/$Z$9)*(AF$15>0))+AB$15,0)"
+21,29,"=IF($Z$18,$AO20*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!F$20,(100%/$Z$9)*(AG$15>0))+AC$15,0)","=IF($Z$18,$AO20*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!F$20,(100%/$Z$9)*(AG$15>0))+AC$15,0)"
+21,30,"=IF($Z$18,$AO20*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!G$20,(100%/$Z$9)*(AH$15>0))+AD$15,0)","=IF($Z$18,$AO20*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!G$20,(100%/$Z$9)*(AH$15>0))+AD$15,0)"
+21,31,"=IF($Z$18,$AO20*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!H$20,(100%/$Z$9)*(AI$15>0))+AE$15,0)","=IF($Z$18,$AO20*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!H$20,(100%/$Z$9)*(AI$15>0))+AE$15,0)"
+21,32,"=MAX(AF$2-AB21,0)","=MAX(AF$2-AB21,0)"
+21,33,"=MAX(AG$2-AC21,0)","=MAX(AG$2-AC21,0)"
+21,34,"=MAX(AH$2-AD21,0)","=MAX(AH$2-AD21,0)"
+21,35,"=MAX(AI$2-AE21,0)","=MAX(AI$2-AE21,0)"
+21,36,"=income_tax(AF21)+medicare_levy(AF21)-IF((LITO(AF21,income_tax(AF21))+LMITO(AF21,income_tax(AF21)))>income_tax(AF21),income_tax(AF21),LITO(AF21,income_tax(AF21)))-IF((LITO(AF21,income_tax(AF21))+LMITO(AF21,income_tax(AF21)))>income_tax(AF21),0,LMITO(AF21,income_tax(AF21)))","=income_tax(AF21)+medicare_levy(AF21)-IF((LITO(AF21,income_tax(AF21))+LMITO(AF21,income_tax(AF21)))>income_tax(AF21),income_tax(AF21),LITO(AF21,income_tax(AF21)))-IF((LITO(AF21,income_tax(AF21))+LMITO(AF21,income_tax(AF21)))>income_tax(AF21),0,LMITO(AF21,income_tax(AF21)))"
+21,37,"=income_tax(AG21)+medicare_levy(AG21)-IF((LITO(AG21,income_tax(AG21))+LMITO(AG21,income_tax(AG21)))>income_tax(AG21),income_tax(AG21),LITO(AG21,income_tax(AG21)))-IF((LITO(AG21,income_tax(AG21))+LMITO(AG21,income_tax(AG21)))>income_tax(AG21),0,LMITO(AG21,income_tax(AG21)))","=income_tax(AG21)+medicare_levy(AG21)-IF((LITO(AG21,income_tax(AG21))+LMITO(AG21,income_tax(AG21)))>income_tax(AG21),income_tax(AG21),LITO(AG21,income_tax(AG21)))-IF((LITO(AG21,income_tax(AG21))+LMITO(AG21,income_tax(AG21)))>income_tax(AG21),0,LMITO(AG21,income_tax(AG21)))"
+21,38,"=income_tax(AH21)+medicare_levy(AH21)-IF((LITO(AH21,income_tax(AH21))+LMITO(AH21,income_tax(AH21)))>income_tax(AH21),income_tax(AH21),LITO(AH21,income_tax(AH21)))-IF((LITO(AH21,income_tax(AH21))+LMITO(AH21,income_tax(AH21)))>income_tax(AH21),0,LMITO(AH21,income_tax(AH21)))","=income_tax(AH21)+medicare_levy(AH21)-IF((LITO(AH21,income_tax(AH21))+LMITO(AH21,income_tax(AH21)))>income_tax(AH21),income_tax(AH21),LITO(AH21,income_tax(AH21)))-IF((LITO(AH21,income_tax(AH21))+LMITO(AH21,income_tax(AH21)))>income_tax(AH21),0,LMITO(AH21,income_tax(AH21)))"
+21,39,"=income_tax(AI21)+medicare_levy(AI21)-IF((LITO(AI21,income_tax(AI21))+LMITO(AI21,income_tax(AI21)))>income_tax(AI21),income_tax(AI21),LITO(AI21,income_tax(AI21)))-IF((LITO(AI21,income_tax(AI21))+LMITO(AI21,income_tax(AI21)))>income_tax(AI21),0,LMITO(AI21,income_tax(AI21)))","=income_tax(AI21)+medicare_levy(AI21)-IF((LITO(AI21,income_tax(AI21))+LMITO(AI21,income_tax(AI21)))>income_tax(AI21),income_tax(AI21),LITO(AI21,income_tax(AI21)))-IF((LITO(AI21,income_tax(AI21))+LMITO(AI21,income_tax(AI21)))>income_tax(AI21),0,LMITO(AI21,income_tax(AI21)))"
+21,40,"=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ21:AM21)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)","=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ21:AM21)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)"
+21,41,"=ROUNDDOWN(PV($Z$15/12,$Z$16*12,-(AN21-$Z$17)),0)","=ROUNDDOWN(PV($Z$15/12,$Z$16*12,-(AN21-$Z$17)),0)"
+22,1,Medicare Levy,
+22,3,=medicare_levy(C20),=medicare_levy(C20)
+22,4,=medicare_levy(D20),=medicare_levy(D20)
+22,7,=medicare_levy(G20),=medicare_levy(G20)
+22,8,=medicare_levy(H20),=medicare_levy(H20)
+22,11,=medicare_levy(K20),=medicare_levy(K20)
+22,12,=medicare_levy(L20),=medicare_levy(L20)
+22,15,=medicare_levy(O20),=medicare_levy(O20)
+22,16,=medicare_levy(P20),=medicare_levy(P20)
+22,18,Loan 6,
+22,19,"=IF(AND(NOT(T22),U22),ROUNDUP(IF(Model!B57=""Credit Card"",Model!G57*Data!$G$16,-PMT(MAX(Model!H57,Data!$G$32)/12,D48*12,Model!G57,0)+Model!K57),0),0)","=IF(AND(NOT(T22),U22),ROUNDUP(IF(Model!B57=""Credit Card"",Model!G57*Data!$G$16,-PMT(MAX(Model!H57,Data!$G$32)/12,D48*12,Model!G57,0)+Model!K57),0),0)"
+22,20,"=AND(Model!B57="""",Model!F57="""",Model!G57="""",Model!H57="""",Model!I57="""",Model!J57="""",Model!K57="""")","=AND(Model!B57="""",Model!F57="""",Model!G57="""",Model!H57="""",Model!I57="""",Model!J57="""",Model!K57="""")"
+22,21,"=IF(T22,TRUE,IF(Model!B57=""Credit Card"",Model!G57<>"""",AND(Model!B57<>"""",Model!E57<>"""",Model!G57<>"""",Model!H57<>"""",Model!I57<>"""",Model!K57<>"""")))","=IF(T22,TRUE,IF(Model!B57=""Credit Card"",Model!G57<>"""",AND(Model!B57<>"""",Model!E57<>"""",Model!G57<>"""",Model!H57<>"""",Model!I57<>"""",Model!K57<>"""")))"
+22,22,"=IF(AND(Model!E57=""Investment"",Model!F57=""Yes""),TRUE,FALSE)","=IF(AND(Model!E57=""Investment"",Model!F57=""Yes""),TRUE,FALSE)"
+22,23,"=IF(NOT(V22),TRUE,AND('Neg Gearing'!C25<>"""",COUNTBLANK('Neg Gearing'!E25:H25)<4))","=IF(NOT(V22),TRUE,AND('Neg Gearing'!C25<>"""",COUNTBLANK('Neg Gearing'!E25:H25)<4))"
+22,28,"=IF($Z$18,$AO21*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!E$20,(100%/$Z$9)*(AF$15>0))+AB$15,0)","=IF($Z$18,$AO21*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!E$20,(100%/$Z$9)*(AF$15>0))+AB$15,0)"
+22,29,"=IF($Z$18,$AO21*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!F$20,(100%/$Z$9)*(AG$15>0))+AC$15,0)","=IF($Z$18,$AO21*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!F$20,(100%/$Z$9)*(AG$15>0))+AC$15,0)"
+22,30,"=IF($Z$18,$AO21*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!G$20,(100%/$Z$9)*(AH$15>0))+AD$15,0)","=IF($Z$18,$AO21*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!G$20,(100%/$Z$9)*(AH$15>0))+AD$15,0)"
+22,31,"=IF($Z$18,$AO21*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!H$20,(100%/$Z$9)*(AI$15>0))+AE$15,0)","=IF($Z$18,$AO21*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!H$20,(100%/$Z$9)*(AI$15>0))+AE$15,0)"
+22,32,"=MAX(AF$2-AB22,0)","=MAX(AF$2-AB22,0)"
+22,33,"=MAX(AG$2-AC22,0)","=MAX(AG$2-AC22,0)"
+22,34,"=MAX(AH$2-AD22,0)","=MAX(AH$2-AD22,0)"
+22,35,"=MAX(AI$2-AE22,0)","=MAX(AI$2-AE22,0)"
+22,36,"=income_tax(AF22)+medicare_levy(AF22)-IF((LITO(AF22,income_tax(AF22))+LMITO(AF22,income_tax(AF22)))>income_tax(AF22),income_tax(AF22),LITO(AF22,income_tax(AF22)))-IF((LITO(AF22,income_tax(AF22))+LMITO(AF22,income_tax(AF22)))>income_tax(AF22),0,LMITO(AF22,income_tax(AF22)))","=income_tax(AF22)+medicare_levy(AF22)-IF((LITO(AF22,income_tax(AF22))+LMITO(AF22,income_tax(AF22)))>income_tax(AF22),income_tax(AF22),LITO(AF22,income_tax(AF22)))-IF((LITO(AF22,income_tax(AF22))+LMITO(AF22,income_tax(AF22)))>income_tax(AF22),0,LMITO(AF22,income_tax(AF22)))"
+22,37,"=income_tax(AG22)+medicare_levy(AG22)-IF((LITO(AG22,income_tax(AG22))+LMITO(AG22,income_tax(AG22)))>income_tax(AG22),income_tax(AG22),LITO(AG22,income_tax(AG22)))-IF((LITO(AG22,income_tax(AG22))+LMITO(AG22,income_tax(AG22)))>income_tax(AG22),0,LMITO(AG22,income_tax(AG22)))","=income_tax(AG22)+medicare_levy(AG22)-IF((LITO(AG22,income_tax(AG22))+LMITO(AG22,income_tax(AG22)))>income_tax(AG22),income_tax(AG22),LITO(AG22,income_tax(AG22)))-IF((LITO(AG22,income_tax(AG22))+LMITO(AG22,income_tax(AG22)))>income_tax(AG22),0,LMITO(AG22,income_tax(AG22)))"
+22,38,"=income_tax(AH22)+medicare_levy(AH22)-IF((LITO(AH22,income_tax(AH22))+LMITO(AH22,income_tax(AH22)))>income_tax(AH22),income_tax(AH22),LITO(AH22,income_tax(AH22)))-IF((LITO(AH22,income_tax(AH22))+LMITO(AH22,income_tax(AH22)))>income_tax(AH22),0,LMITO(AH22,income_tax(AH22)))","=income_tax(AH22)+medicare_levy(AH22)-IF((LITO(AH22,income_tax(AH22))+LMITO(AH22,income_tax(AH22)))>income_tax(AH22),income_tax(AH22),LITO(AH22,income_tax(AH22)))-IF((LITO(AH22,income_tax(AH22))+LMITO(AH22,income_tax(AH22)))>income_tax(AH22),0,LMITO(AH22,income_tax(AH22)))"
+22,39,"=income_tax(AI22)+medicare_levy(AI22)-IF((LITO(AI22,income_tax(AI22))+LMITO(AI22,income_tax(AI22)))>income_tax(AI22),income_tax(AI22),LITO(AI22,income_tax(AI22)))-IF((LITO(AI22,income_tax(AI22))+LMITO(AI22,income_tax(AI22)))>income_tax(AI22),0,LMITO(AI22,income_tax(AI22)))","=income_tax(AI22)+medicare_levy(AI22)-IF((LITO(AI22,income_tax(AI22))+LMITO(AI22,income_tax(AI22)))>income_tax(AI22),income_tax(AI22),LITO(AI22,income_tax(AI22)))-IF((LITO(AI22,income_tax(AI22))+LMITO(AI22,income_tax(AI22)))>income_tax(AI22),0,LMITO(AI22,income_tax(AI22)))"
+22,40,"=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ22:AM22)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)","=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ22:AM22)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)"
+22,41,"=ROUNDDOWN(PV($Z$15/12,$Z$16*12,-(AN22-$Z$17)),0)","=ROUNDDOWN(PV($Z$15/12,$Z$16*12,-(AN22-$Z$17)),0)"
+23,1,LITO,
+23,3,"=IF((LITO(C20,C21)+LMITO(C20,C21))>C21,C21,LITO(C20,C21))","=IF((LITO(C20,C21)+LMITO(C20,C21))>C21,C21,LITO(C20,C21))"
+23,4,"=IF((LITO(D20,D21)+LMITO(D20,D21))>D21,D21,LITO(D20,D21))","=IF((LITO(D20,D21)+LMITO(D20,D21))>D21,D21,LITO(D20,D21))"
+23,7,"=IF((LITO(G20,G21)+LMITO(G20,G21))>G21,G21,LITO(G20,G21))","=IF((LITO(G20,G21)+LMITO(G20,G21))>G21,G21,LITO(G20,G21))"
+23,8,"=IF((LITO(H20,H21)+LMITO(H20,H21))>H21,H21,LITO(H20,H21))","=IF((LITO(H20,H21)+LMITO(H20,H21))>H21,H21,LITO(H20,H21))"
+23,11,"=IF((LITO(K20,K21)+LMITO(K20,K21))>K21,K21,LITO(K20,K21))","=IF((LITO(K20,K21)+LMITO(K20,K21))>K21,K21,LITO(K20,K21))"
+23,12,"=IF((LITO(L20,L21)+LMITO(L20,L21))>L21,L21,LITO(L20,L21))","=IF((LITO(L20,L21)+LMITO(L20,L21))>L21,L21,LITO(L20,L21))"
+23,15,"=IF((LITO(O20,O21)+LMITO(O20,O21))>O21,O21,LITO(O20,O21))","=IF((LITO(O20,O21)+LMITO(O20,O21))>O21,O21,LITO(O20,O21))"
+23,16,"=IF((LITO(P20,P21)+LMITO(P20,P21))>P21,P21,LITO(P20,P21))","=IF((LITO(P20,P21)+LMITO(P20,P21))>P21,P21,LITO(P20,P21))"
+23,18,Total,
+23,19,"=IF(ISERROR(SUM(S17:S22)),0,SUM(S17:S22))","=IF(ISERROR(SUM(S17:S22)),0,SUM(S17:S22))"
+23,20,=AND(T17:T22),=AND(T17:T22)
+23,21,=AND(U17:U22),=AND(U17:U22)
+23,22,=OR(V17:V22),=OR(V17:V22)
+23,23,=AND(W17:W22),=AND(W17:W22)
+23,28,"=IF($Z$18,$AO22*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!E$20,(100%/$Z$9)*(AF$15>0))+AB$15,0)","=IF($Z$18,$AO22*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!E$20,(100%/$Z$9)*(AF$15>0))+AB$15,0)"
+23,29,"=IF($Z$18,$AO22*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!F$20,(100%/$Z$9)*(AG$15>0))+AC$15,0)","=IF($Z$18,$AO22*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!F$20,(100%/$Z$9)*(AG$15>0))+AC$15,0)"
+23,30,"=IF($Z$18,$AO22*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!G$20,(100%/$Z$9)*(AH$15>0))+AD$15,0)","=IF($Z$18,$AO22*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!G$20,(100%/$Z$9)*(AH$15>0))+AD$15,0)"
+23,31,"=IF($Z$18,$AO22*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!H$20,(100%/$Z$9)*(AI$15>0))+AE$15,0)","=IF($Z$18,$AO22*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!H$20,(100%/$Z$9)*(AI$15>0))+AE$15,0)"
+23,32,"=MAX(AF$2-AB23,0)","=MAX(AF$2-AB23,0)"
+23,33,"=MAX(AG$2-AC23,0)","=MAX(AG$2-AC23,0)"
+23,34,"=MAX(AH$2-AD23,0)","=MAX(AH$2-AD23,0)"
+23,35,"=MAX(AI$2-AE23,0)","=MAX(AI$2-AE23,0)"
+23,36,"=income_tax(AF23)+medicare_levy(AF23)-IF((LITO(AF23,income_tax(AF23))+LMITO(AF23,income_tax(AF23)))>income_tax(AF23),income_tax(AF23),LITO(AF23,income_tax(AF23)))-IF((LITO(AF23,income_tax(AF23))+LMITO(AF23,income_tax(AF23)))>income_tax(AF23),0,LMITO(AF23,income_tax(AF23)))","=income_tax(AF23)+medicare_levy(AF23)-IF((LITO(AF23,income_tax(AF23))+LMITO(AF23,income_tax(AF23)))>income_tax(AF23),income_tax(AF23),LITO(AF23,income_tax(AF23)))-IF((LITO(AF23,income_tax(AF23))+LMITO(AF23,income_tax(AF23)))>income_tax(AF23),0,LMITO(AF23,income_tax(AF23)))"
+23,37,"=income_tax(AG23)+medicare_levy(AG23)-IF((LITO(AG23,income_tax(AG23))+LMITO(AG23,income_tax(AG23)))>income_tax(AG23),income_tax(AG23),LITO(AG23,income_tax(AG23)))-IF((LITO(AG23,income_tax(AG23))+LMITO(AG23,income_tax(AG23)))>income_tax(AG23),0,LMITO(AG23,income_tax(AG23)))","=income_tax(AG23)+medicare_levy(AG23)-IF((LITO(AG23,income_tax(AG23))+LMITO(AG23,income_tax(AG23)))>income_tax(AG23),income_tax(AG23),LITO(AG23,income_tax(AG23)))-IF((LITO(AG23,income_tax(AG23))+LMITO(AG23,income_tax(AG23)))>income_tax(AG23),0,LMITO(AG23,income_tax(AG23)))"
+23,38,"=income_tax(AH23)+medicare_levy(AH23)-IF((LITO(AH23,income_tax(AH23))+LMITO(AH23,income_tax(AH23)))>income_tax(AH23),income_tax(AH23),LITO(AH23,income_tax(AH23)))-IF((LITO(AH23,income_tax(AH23))+LMITO(AH23,income_tax(AH23)))>income_tax(AH23),0,LMITO(AH23,income_tax(AH23)))","=income_tax(AH23)+medicare_levy(AH23)-IF((LITO(AH23,income_tax(AH23))+LMITO(AH23,income_tax(AH23)))>income_tax(AH23),income_tax(AH23),LITO(AH23,income_tax(AH23)))-IF((LITO(AH23,income_tax(AH23))+LMITO(AH23,income_tax(AH23)))>income_tax(AH23),0,LMITO(AH23,income_tax(AH23)))"
+23,39,"=income_tax(AI23)+medicare_levy(AI23)-IF((LITO(AI23,income_tax(AI23))+LMITO(AI23,income_tax(AI23)))>income_tax(AI23),income_tax(AI23),LITO(AI23,income_tax(AI23)))-IF((LITO(AI23,income_tax(AI23))+LMITO(AI23,income_tax(AI23)))>income_tax(AI23),0,LMITO(AI23,income_tax(AI23)))","=income_tax(AI23)+medicare_levy(AI23)-IF((LITO(AI23,income_tax(AI23))+LMITO(AI23,income_tax(AI23)))>income_tax(AI23),income_tax(AI23),LITO(AI23,income_tax(AI23)))-IF((LITO(AI23,income_tax(AI23))+LMITO(AI23,income_tax(AI23)))>income_tax(AI23),0,LMITO(AI23,income_tax(AI23)))"
+23,40,"=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ23:AM23)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)","=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ23:AM23)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)"
+23,41,"=ROUNDDOWN(PV($Z$15/12,$Z$16*12,-(AN23-$Z$17)),0)","=ROUNDDOWN(PV($Z$15/12,$Z$16*12,-(AN23-$Z$17)),0)"
+24,1,LMITO,
+24,3,"=IF((LITO(C20,C21)+LMITO(C20,C21))>C21,0,LMITO(C20,C21))","=IF((LITO(C20,C21)+LMITO(C20,C21))>C21,0,LMITO(C20,C21))"
+24,4,"=IF((LITO(D20,D21)+LMITO(D20,D21))>D21,0,LMITO(D20,D21))","=IF((LITO(D20,D21)+LMITO(D20,D21))>D21,0,LMITO(D20,D21))"
+24,7,"=IF((LITO(G20,G21)+LMITO(G20,G21))>G21,0,LMITO(G20,G21))","=IF((LITO(G20,G21)+LMITO(G20,G21))>G21,0,LMITO(G20,G21))"
+24,8,"=IF((LITO(H20,H21)+LMITO(H20,H21))>H21,0,LMITO(H20,H21))","=IF((LITO(H20,H21)+LMITO(H20,H21))>H21,0,LMITO(H20,H21))"
+24,11,"=IF((LITO(K20,K21)+LMITO(K20,K21))>K21,0,LMITO(K20,K21))","=IF((LITO(K20,K21)+LMITO(K20,K21))>K21,0,LMITO(K20,K21))"
+24,12,"=IF((LITO(L20,L21)+LMITO(L20,L21))>L21,0,LMITO(L20,L21))","=IF((LITO(L20,L21)+LMITO(L20,L21))>L21,0,LMITO(L20,L21))"
+24,15,"=IF((LITO(O20,O21)+LMITO(O20,O21))>O21,0,LMITO(O20,O21))","=IF((LITO(O20,O21)+LMITO(O20,O21))>O21,0,LMITO(O20,O21))"
+24,16,"=IF((LITO(P20,P21)+LMITO(P20,P21))>P21,0,LMITO(P20,P21))","=IF((LITO(P20,P21)+LMITO(P20,P21))>P21,0,LMITO(P20,P21))"
+24,18,Total + Commitments,
+24,19,=S15+S23,=S15+S23
+24,28,"=IF($Z$18,$AO23*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!E$20,(100%/$Z$9)*(AF$15>0))+AB$15,0)","=IF($Z$18,$AO23*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!E$20,(100%/$Z$9)*(AF$15>0))+AB$15,0)"
+24,29,"=IF($Z$18,$AO23*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!F$20,(100%/$Z$9)*(AG$15>0))+AC$15,0)","=IF($Z$18,$AO23*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!F$20,(100%/$Z$9)*(AG$15>0))+AC$15,0)"
+24,30,"=IF($Z$18,$AO23*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!G$20,(100%/$Z$9)*(AH$15>0))+AD$15,0)","=IF($Z$18,$AO23*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!G$20,(100%/$Z$9)*(AH$15>0))+AD$15,0)"
+24,31,"=IF($Z$18,$AO23*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!H$20,(100%/$Z$9)*(AI$15>0))+AE$15,0)","=IF($Z$18,$AO23*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!H$20,(100%/$Z$9)*(AI$15>0))+AE$15,0)"
+24,32,"=MAX(AF$2-AB24,0)","=MAX(AF$2-AB24,0)"
+24,33,"=MAX(AG$2-AC24,0)","=MAX(AG$2-AC24,0)"
+24,34,"=MAX(AH$2-AD24,0)","=MAX(AH$2-AD24,0)"
+24,35,"=MAX(AI$2-AE24,0)","=MAX(AI$2-AE24,0)"
+24,36,"=income_tax(AF24)+medicare_levy(AF24)-IF((LITO(AF24,income_tax(AF24))+LMITO(AF24,income_tax(AF24)))>income_tax(AF24),income_tax(AF24),LITO(AF24,income_tax(AF24)))-IF((LITO(AF24,income_tax(AF24))+LMITO(AF24,income_tax(AF24)))>income_tax(AF24),0,LMITO(AF24,income_tax(AF24)))","=income_tax(AF24)+medicare_levy(AF24)-IF((LITO(AF24,income_tax(AF24))+LMITO(AF24,income_tax(AF24)))>income_tax(AF24),income_tax(AF24),LITO(AF24,income_tax(AF24)))-IF((LITO(AF24,income_tax(AF24))+LMITO(AF24,income_tax(AF24)))>income_tax(AF24),0,LMITO(AF24,income_tax(AF24)))"
+24,37,"=income_tax(AG24)+medicare_levy(AG24)-IF((LITO(AG24,income_tax(AG24))+LMITO(AG24,income_tax(AG24)))>income_tax(AG24),income_tax(AG24),LITO(AG24,income_tax(AG24)))-IF((LITO(AG24,income_tax(AG24))+LMITO(AG24,income_tax(AG24)))>income_tax(AG24),0,LMITO(AG24,income_tax(AG24)))","=income_tax(AG24)+medicare_levy(AG24)-IF((LITO(AG24,income_tax(AG24))+LMITO(AG24,income_tax(AG24)))>income_tax(AG24),income_tax(AG24),LITO(AG24,income_tax(AG24)))-IF((LITO(AG24,income_tax(AG24))+LMITO(AG24,income_tax(AG24)))>income_tax(AG24),0,LMITO(AG24,income_tax(AG24)))"
+24,38,"=income_tax(AH24)+medicare_levy(AH24)-IF((LITO(AH24,income_tax(AH24))+LMITO(AH24,income_tax(AH24)))>income_tax(AH24),income_tax(AH24),LITO(AH24,income_tax(AH24)))-IF((LITO(AH24,income_tax(AH24))+LMITO(AH24,income_tax(AH24)))>income_tax(AH24),0,LMITO(AH24,income_tax(AH24)))","=income_tax(AH24)+medicare_levy(AH24)-IF((LITO(AH24,income_tax(AH24))+LMITO(AH24,income_tax(AH24)))>income_tax(AH24),income_tax(AH24),LITO(AH24,income_tax(AH24)))-IF((LITO(AH24,income_tax(AH24))+LMITO(AH24,income_tax(AH24)))>income_tax(AH24),0,LMITO(AH24,income_tax(AH24)))"
+24,39,"=income_tax(AI24)+medicare_levy(AI24)-IF((LITO(AI24,income_tax(AI24))+LMITO(AI24,income_tax(AI24)))>income_tax(AI24),income_tax(AI24),LITO(AI24,income_tax(AI24)))-IF((LITO(AI24,income_tax(AI24))+LMITO(AI24,income_tax(AI24)))>income_tax(AI24),0,LMITO(AI24,income_tax(AI24)))","=income_tax(AI24)+medicare_levy(AI24)-IF((LITO(AI24,income_tax(AI24))+LMITO(AI24,income_tax(AI24)))>income_tax(AI24),income_tax(AI24),LITO(AI24,income_tax(AI24)))-IF((LITO(AI24,income_tax(AI24))+LMITO(AI24,income_tax(AI24)))>income_tax(AI24),0,LMITO(AI24,income_tax(AI24)))"
+24,40,"=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ24:AM24)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)","=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ24:AM24)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)"
+24,41,"=ROUNDDOWN(PV($Z$15/12,$Z$16*12,-(AN24-$Z$17)),0)","=ROUNDDOWN(PV($Z$15/12,$Z$16*12,-(AN24-$Z$17)),0)"
+25,1,Total tax and levy (n.g.),
+25,3,=C21+C22-C23-C24,=C21+C22-C23-C24
+25,4,=D21+D22-D23-D24,=D21+D22-D23-D24
+25,7,=G21+G22-G23-G24,=G21+G22-G23-G24
+25,8,=H21+H22-H23-H24,=H21+H22-H23-H24
+25,11,=K21+K22-K23-K24,=K21+K22-K23-K24
+25,12,=L21+L22-L23-L24,=L21+L22-L23-L24
+25,15,=O21+O22-O23-O24,=O21+O22-O23-O24
+25,16,=P21+P22-P23-P24,=P21+P22-P23-P24
+25,28,"=IF($Z$18,$AO24*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!E$20,(100%/$Z$9)*(AF$15>0))+AB$15,0)","=IF($Z$18,$AO24*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!E$20,(100%/$Z$9)*(AF$15>0))+AB$15,0)"
+25,29,"=IF($Z$18,$AO24*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!F$20,(100%/$Z$9)*(AG$15>0))+AC$15,0)","=IF($Z$18,$AO24*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!F$20,(100%/$Z$9)*(AG$15>0))+AC$15,0)"
+25,30,"=IF($Z$18,$AO24*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!G$20,(100%/$Z$9)*(AH$15>0))+AD$15,0)","=IF($Z$18,$AO24*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!G$20,(100%/$Z$9)*(AH$15>0))+AD$15,0)"
+25,31,"=IF($Z$18,$AO24*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!H$20,(100%/$Z$9)*(AI$15>0))+AE$15,0)","=IF($Z$18,$AO24*$Z$14*IF(SUM('Neg Gearing'!$E$20:$H$20)>0,'Neg Gearing'!H$20,(100%/$Z$9)*(AI$15>0))+AE$15,0)"
+25,32,"=MAX(AF$2-AB25,0)","=MAX(AF$2-AB25,0)"
+25,33,"=MAX(AG$2-AC25,0)","=MAX(AG$2-AC25,0)"
+25,34,"=MAX(AH$2-AD25,0)","=MAX(AH$2-AD25,0)"
+25,35,"=MAX(AI$2-AE25,0)","=MAX(AI$2-AE25,0)"
+25,36,"=income_tax(AF25)+medicare_levy(AF25)-IF((LITO(AF25,income_tax(AF25))+LMITO(AF25,income_tax(AF25)))>income_tax(AF25),income_tax(AF25),LITO(AF25,income_tax(AF25)))-IF((LITO(AF25,income_tax(AF25))+LMITO(AF25,income_tax(AF25)))>income_tax(AF25),0,LMITO(AF25,income_tax(AF25)))","=income_tax(AF25)+medicare_levy(AF25)-IF((LITO(AF25,income_tax(AF25))+LMITO(AF25,income_tax(AF25)))>income_tax(AF25),income_tax(AF25),LITO(AF25,income_tax(AF25)))-IF((LITO(AF25,income_tax(AF25))+LMITO(AF25,income_tax(AF25)))>income_tax(AF25),0,LMITO(AF25,income_tax(AF25)))"
+25,37,"=income_tax(AG25)+medicare_levy(AG25)-IF((LITO(AG25,income_tax(AG25))+LMITO(AG25,income_tax(AG25)))>income_tax(AG25),income_tax(AG25),LITO(AG25,income_tax(AG25)))-IF((LITO(AG25,income_tax(AG25))+LMITO(AG25,income_tax(AG25)))>income_tax(AG25),0,LMITO(AG25,income_tax(AG25)))","=income_tax(AG25)+medicare_levy(AG25)-IF((LITO(AG25,income_tax(AG25))+LMITO(AG25,income_tax(AG25)))>income_tax(AG25),income_tax(AG25),LITO(AG25,income_tax(AG25)))-IF((LITO(AG25,income_tax(AG25))+LMITO(AG25,income_tax(AG25)))>income_tax(AG25),0,LMITO(AG25,income_tax(AG25)))"
+25,38,"=income_tax(AH25)+medicare_levy(AH25)-IF((LITO(AH25,income_tax(AH25))+LMITO(AH25,income_tax(AH25)))>income_tax(AH25),income_tax(AH25),LITO(AH25,income_tax(AH25)))-IF((LITO(AH25,income_tax(AH25))+LMITO(AH25,income_tax(AH25)))>income_tax(AH25),0,LMITO(AH25,income_tax(AH25)))","=income_tax(AH25)+medicare_levy(AH25)-IF((LITO(AH25,income_tax(AH25))+LMITO(AH25,income_tax(AH25)))>income_tax(AH25),income_tax(AH25),LITO(AH25,income_tax(AH25)))-IF((LITO(AH25,income_tax(AH25))+LMITO(AH25,income_tax(AH25)))>income_tax(AH25),0,LMITO(AH25,income_tax(AH25)))"
+25,39,"=income_tax(AI25)+medicare_levy(AI25)-IF((LITO(AI25,income_tax(AI25))+LMITO(AI25,income_tax(AI25)))>income_tax(AI25),income_tax(AI25),LITO(AI25,income_tax(AI25)))-IF((LITO(AI25,income_tax(AI25))+LMITO(AI25,income_tax(AI25)))>income_tax(AI25),0,LMITO(AI25,income_tax(AI25)))","=income_tax(AI25)+medicare_levy(AI25)-IF((LITO(AI25,income_tax(AI25))+LMITO(AI25,income_tax(AI25)))>income_tax(AI25),income_tax(AI25),LITO(AI25,income_tax(AI25)))-IF((LITO(AI25,income_tax(AI25))+LMITO(AI25,income_tax(AI25)))>income_tax(AI25),0,LMITO(AI25,income_tax(AI25)))"
+25,40,"=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ25:AM25)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)","=ROUNDDOWN((($C$12+$G$12+$K$12+$O$12+SUM(Model!$L$30:$L$31)-SUM(AJ25:AM25)-Model!$L$34)/12-$F$40)*(1-$S$42)-$S$15,0)"
+25,41,"=ROUNDDOWN(PV($Z$15/12,$Z$16*12,-(AN25-$Z$17)),0)","=ROUNDDOWN(PV($Z$15/12,$Z$16*12,-(AN25-$Z$17)),0)"
+26,1,Income Tax Adjustment,
+26,3,"=IF(C13-C21<0,C13,C13-C21)","=IF(C13-C21<0,C13,C13-C21)"
+26,4,"=IF(D13-D21<0,D13,D13-D21)","=IF(D13-D21<0,D13,D13-D21)"
+26,7,"=IF(G13-G21<0,G13,G13-G21)","=IF(G13-G21<0,G13,G13-G21)"
+26,8,"=IF(H13-H21<0,H13,H13-H21)","=IF(H13-H21<0,H13,H13-H21)"
+26,11,"=IF(K13-K21<0,K13,K13-K21)","=IF(K13-K21<0,K13,K13-K21)"
+26,12,"=IF(L13-L21<0,L13,L13-L21)","=IF(L13-L21<0,L13,L13-L21)"
+26,15,"=IF(O13-O21<0,O13,O13-O21)","=IF(O13-O21<0,O13,O13-O21)"
+26,16,"=IF(P13-P21<0,P13,P13-P21)","=IF(P13-P21<0,P13,P13-P21)"
+26,18,Commitment Level,
+26,19,"=IF(S4>0,IF(S24*12+Model!L34>S3,IF(S2<S4*Data!C18,(S24*12+Model!L34-S3)/S1,(S24*12+Model!L34)/S4),(S24*12+Model!L34)/S4),0)","=IF(S4>0,IF(S24*12+Model!L34>S3,IF(S2<S4*Data!C18,(S24*12+Model!L34-S3)/S1,(S24*12+Model!L34)/S4),(S24*12+Model!L34)/S4),0)"
+27,1,Medicare Levy Adjustment,
+27,3,"=IF(C14-C22<0,C14,C14-C22)","=IF(C14-C22<0,C14,C14-C22)"
+27,4,"=IF(D14-D22<0,D14,D14-D22)","=IF(D14-D22<0,D14,D14-D22)"
+27,7,"=IF(G14-G22<0,G14,G14-G22)","=IF(G14-G22<0,G14,G14-G22)"
+27,8,"=IF(H14-H22<0,H14,H14-H22)","=IF(H14-H22<0,H14,H14-H22)"
+27,11,"=IF(K14-K22<0,K14,K14-K22)","=IF(K14-K22<0,K14,K14-K22)"
+27,12,"=IF(L14-L22<0,L14,L14-L22)","=IF(L14-L22<0,L14,L14-L22)"
+27,15,"=IF(O14-O22<0,O14,O14-O22)","=IF(O14-O22<0,O14,O14-O22)"
+27,16,"=IF(P14-P22<0,P14,P14-P22)","=IF(P14-P22<0,P14,P14-P22)"
+27,18,Commitment Level Limit,
+27,19,"=VLOOKUP(IF(S2<S4*Data!C18,S1,S4),Data!$I$3:$K$7,3)","=VLOOKUP(IF(S2<S4*Data!C18,S1,S4),Data!$I$3:$K$7,3)"
+28,1,Taxoffset Adjustment,
+28,3,"=IF((C15+C16)-(C23+C24)<0,(C23+C24)-(C15+C16),(C15+C16)-(C23+C24))","=IF((C15+C16)-(C23+C24)<0,(C23+C24)-(C15+C16),(C15+C16)-(C23+C24))"
+28,4,"=IF((D15+D16)-(D23+D24)<0,(D23+D24)-(D15+D16),(D15+D16)-(D23+D24))","=IF((D15+D16)-(D23+D24)<0,(D23+D24)-(D15+D16),(D15+D16)-(D23+D24))"
+28,7,"=IF((G15+G16)-(G23+G24)<0,(G23+G24)-(G15+G16),(G15+G16)-(G23+G24))","=IF((G15+G16)-(G23+G24)<0,(G23+G24)-(G15+G16),(G15+G16)-(G23+G24))"
+28,8,"=IF((H15+H16)-(H23+H24)<0,(H23+H24)-(H15+H16),(H15+H16)-(H23+H24))","=IF((H15+H16)-(H23+H24)<0,(H23+H24)-(H15+H16),(H15+H16)-(H23+H24))"
+28,11,"=IF((K15+K16)-(K23+K24)<0,(K23+K24)-(K15+K16),(K15+K16)-(K23+K24))","=IF((K15+K16)-(K23+K24)<0,(K23+K24)-(K15+K16),(K15+K16)-(K23+K24))"
+28,12,"=IF((L15+L16)-(L23+L24)<0,(L23+L24)-(L15+L16),(L15+L16)-(L23+L24))","=IF((L15+L16)-(L23+L24)<0,(L23+L24)-(L15+L16),(L15+L16)-(L23+L24))"
+28,15,"=IF((O15+O16)-(O23+O24)<0,(O23+O24)-(O15+O16),(O15+O16)-(O23+O24))","=IF((O15+O16)-(O23+O24)<0,(O23+O24)-(O15+O16),(O15+O16)-(O23+O24))"
+28,16,"=IF((P15+P16)-(P23+P24)<0,(P23+P24)-(P15+P16),(P15+P16)-(P23+P24))","=IF((P15+P16)-(P23+P24)<0,(P23+P24)-(P15+P16),(P15+P16)-(P23+P24))"
+28,20,Residual,
+29,1,Total Adjustments,
+29,3,=C17-C25,=C17-C25
+29,4,=D17-D25,=D17-D25
+29,7,=G17-G25,=G17-G25
+29,8,=H17-H25,=H17-H25
+29,11,=K17-K25,=K17-K25
+29,12,=L17-L25,=L17-L25
+29,15,=O17-O25,=O17-O25
+29,16,=P17-P25,=P17-P25
+30,18,Min Repayments,
+30,19,"=IF(Model!B52=""Credit Card"",0,MAX(0,ROUNDDOWN(MAX(S27*S4/12,IF(S2<S4*Data!C18,(S27*(S4-S2)+S3)/12,0))-S15-Model!L34/12,0)))","=IF(Model!B52=""Credit Card"",0,MAX(0,ROUNDDOWN(MAX(S27*S4/12,IF(S2<S4*Data!C18,(S27*(S4-S2)+S3)/12,0))-S15-Model!L34/12,0)))"
+30,20,"=IF(OR(Model!B67="""",Model!H67="""",Model!I67="""",NOT(V5)),0,MAX(0,ROUNDDOWN(MAX(S27*S4/12,IF(S2<S4*Data!C18,(S27*(S4-S2)+S3)/12,0))-S15-Model!L34/12,0)))","=IF(OR(Model!B67="""",Model!H67="""",Model!I67="""",NOT(V5)),0,MAX(0,ROUNDDOWN(MAX(S27*S4/12,IF(S2<S4*Data!C18,(S27*(S4-S2)+S3)/12,0))-S15-Model!L34/12,0)))"
+31,1,Tax Free Income,
+31,2,=Model!G30,=Model!G30
+31,3,=B31*Data!G28,=B31*Data!G28
+31,6,=Model!H30,=Model!H30
+31,7,=F31*Data!G28,=F31*Data!G28
+31,10,=Model!I30,=Model!I30
+31,11,=J31*Data!G28,=J31*Data!G28
+31,14,=Model!J30,=Model!J30
+31,15,=N31*Data!G28,=N31*Data!G28
+31,18,Max Borrowable Amount,
+31,19,"=IF(OR(S30=0,Model!B52=""Credit Card""),0,-PV(Model!H66/12,(Model!I66-IF(Model!J66="""",0,Model!J66))*12,S30-IF(Model!K66="""",0,Model!K66)))","=IF(OR(S30=0,Model!B52=""Credit Card""),0,-PV(Model!H66/12,(Model!I66-IF(Model!J66="""",0,Model!J66))*12,S30-IF(Model!K66="""",0,Model!K66)))"
+31,20,"=IF(T30=0,0,-PV(Model!H67/12,(Model!I67-Model!J67)*12,T30-Model!K67))","=IF(T30=0,0,-PV(Model!H67/12,(Model!I67-Model!J67)*12,T30-Model!K67))"
+32,1,Self Employed Add Backs,
+32,2,=Model!G31,=Model!G31
+32,3,=B32,=B32
+32,6,=Model!H31,=Model!H31
+32,7,=F32,=F32
+32,10,=Model!I31,=Model!I31
+32,11,=J32,=J32
+32,14,=Model!J31,=Model!J31
+32,15,=N32,=N32
+32,19,With buffer,
+32,20,Without buffer,
+33,18,Net Monthly cash,
+33,19,"=IF(V5,S41-S24,0)","=IF(V5,S41-S24,0)"
+33,20,"=IF(V5,S40-S24,0)","=IF(V5,S40-S24,0)"
+34,1,Living Expense Calculation,
+34,2,Household 1,
+34,3,Household 2,
+34,4,Household 3,
+34,5,Household 4,
+34,6,Total,
+34,18,Net monthly cash (for residual),
+34,19,"=IF(V5,ROUNDDOWN((T41-S15),0),0)","=IF(V5,ROUNDDOWN((T41-S15),0),0)"
+35,1,Adults,
+35,2,"=IF(OR(Model!H10="""",Model!H10=0),0,Model!H10)","=IF(OR(Model!H10="""",Model!H10=0),0,Model!H10)"
+35,3,"=IF(OR(Model!I10="""",Model!I10=0),0,Model!I10)","=IF(OR(Model!I10="""",Model!I10=0),0,Model!I10)"
+35,4,"=IF(OR(Model!J10="""",Model!J10=0),0,Model!J10)","=IF(OR(Model!J10="""",Model!J10=0),0,Model!J10)"
+35,5,"=IF(OR(Model!K10="""",Model!K10=0),0,Model!K10)","=IF(OR(Model!K10="""",Model!K10=0),0,Model!K10)"
+35,6,=SUM(B35:E35),=SUM(B35:E35)
+35,20,Residual,
+36,1,Dependents (Children),
+36,2,"=IF(OR(Model!H11="""",Model!H11=0),0,Model!H11)","=IF(OR(Model!H11="""",Model!H11=0),0,Model!H11)"
+36,3,"=IF(OR(Model!I11="""",Model!I11=0),0,Model!I11)","=IF(OR(Model!I11="""",Model!I11=0),0,Model!I11)"
+36,4,"=IF(OR(Model!J11="""",Model!J11=0),0,Model!J11)","=IF(OR(Model!J11="""",Model!J11=0),0,Model!J11)"
+36,5,"=IF(OR(Model!K11="""",Model!K11=0),0,Model!K11)","=IF(OR(Model!K11="""",Model!K11=0),0,Model!K11)"
+36,6,=SUM(B36:E36),=SUM(B36:E36)
+36,18,Min Repayments,
+36,19,"=IF(AND(U23,Model!B52<>""Credit Card""),MAX(-PMT(Model!H66/12,(Model!I66-IF(Model!J66="""",0,Model!J66))*12,S37)+IF(Model!K66="""",0,Model!K66),AN12),0)","=IF(AND(U23,Model!B52<>""Credit Card""),MAX(-PMT(Model!H66/12,(Model!I66-IF(Model!J66="""",0,Model!J66))*12,S37)+IF(Model!K66="""",0,Model!K66),AN12),0)"
+36,20,"=IF(OR(Model!B67="""",Model!H67="""",Model!I67="""",NOT(V5)),0,MAX(-PMT(Model!H67/12,(Model!I67-Model!J67)*12,T37)+Model!K67,AN25))","=IF(OR(Model!B67="""",Model!H67="""",Model!I67="""",NOT(V5)),0,MAX(-PMT(Model!H67/12,(Model!I67-Model!J67)*12,T37)+Model!K67,AN25))"
+37,1,Household Eligible Income,
+37,2,"=IF(Model!$G$16=""Household 1"",$C$12+$C$31+$C$32)+IF(Model!$H$16=""Household 1"",$G$12+$G$31+$G$32)+IF(Model!$I$16=""Household 1"",$K$12+$K$31+$K$32)+IF(Model!$J$16=""Household 1"",$O$12+$O$31+$O$32)","=IF(Model!$G$16=""Household 1"",$C$12+$C$31+$C$32)+IF(Model!$H$16=""Household 1"",$G$12+$G$31+$G$32)+IF(Model!$I$16=""Household 1"",$K$12+$K$31+$K$32)+IF(Model!$J$16=""Household 1"",$O$12+$O$31+$O$32)"
+37,3,"=IF(Model!$G$16=""Household 2"",$C$12+$C$31+$C$32)+IF(Model!$H$16=""Household 2"",$G$12+$G$31+$G$32)+IF(Model!$I$16=""Household 2"",$K$12+$K$31+$K$32)+IF(Model!$J$16=""Household 2"",$O$12+$O$31+$O$32)","=IF(Model!$G$16=""Household 2"",$C$12+$C$31+$C$32)+IF(Model!$H$16=""Household 2"",$G$12+$G$31+$G$32)+IF(Model!$I$16=""Household 2"",$K$12+$K$31+$K$32)+IF(Model!$J$16=""Household 2"",$O$12+$O$31+$O$32)"
+37,4,"=IF(Model!$G$16=""Household 3"",$C$12+$C$31+$C$32)+IF(Model!$H$16=""Household 3"",$G$12+$G$31+$G$32)+IF(Model!$I$16=""Household 3"",$K$12+$K$31+$K$32)+IF(Model!$J$16=""Household 3"",$O$12+$O$31+$O$32)","=IF(Model!$G$16=""Household 3"",$C$12+$C$31+$C$32)+IF(Model!$H$16=""Household 3"",$G$12+$G$31+$G$32)+IF(Model!$I$16=""Household 3"",$K$12+$K$31+$K$32)+IF(Model!$J$16=""Household 3"",$O$12+$O$31+$O$32)"
+37,5,"=IF(Model!$G$16=""Household 4"",$C$12+$C$31+$C$32)+IF(Model!$H$16=""Household 4"",$G$12+$G$31+$G$32)+IF(Model!$I$16=""Household 4"",$K$12+$K$31+$K$32)+IF(Model!$J$16=""Household 4"",$O$12+$O$31+$O$32)","=IF(Model!$G$16=""Household 4"",$C$12+$C$31+$C$32)+IF(Model!$H$16=""Household 4"",$G$12+$G$31+$G$32)+IF(Model!$I$16=""Household 4"",$K$12+$K$31+$K$32)+IF(Model!$J$16=""Household 4"",$O$12+$O$31+$O$32)"
+37,6,=SUM(B37:E37),=SUM(B37:E37)
+37,18,Max Borrowable Amount,
+37,19,"=IF(AND(U23,Model!B52<>""Credit Card""),MAX(ROUNDDOWN(PV(Model!H66/12,(Model!I66-IF(Model!J66="""",0,Model!J66))*12,-(S34-IF(Model!K66="""",0,Model!K66)),0),0),AO12),0)","=IF(AND(U23,Model!B52<>""Credit Card""),MAX(ROUNDDOWN(PV(Model!H66/12,(Model!I66-IF(Model!J66="""",0,Model!J66))*12,-(S34-IF(Model!K66="""",0,Model!K66)),0),0),AO12),0)"
+37,20,"=IF(OR(S34<=0,Model!B67="""",Model!H67="""",Model!I67=""""),0,IF(Model!H67<=0,0,MAX(ROUNDDOWN(MIN(PV(Model!H67/12,(Model!I67-Model!J67)*12,-(S34-Model!K67),0)),0),AO25)))","=IF(OR(S34<=0,Model!B67="""",Model!H67="""",Model!I67=""""),0,IF(Model!H67<=0,0,MAX(ROUNDDOWN(MIN(PV(Model!H67/12,(Model!I67-Model!J67)*12,-(S34-Model!K67),0)),0),AO25)))"
+38,1,HEM calculated living expenses,
+38,2,"=IF(B35=0,0,IF(B35=1,VLOOKUP(B37,Data!$Q$23:$AC$43,3+MIN(3,B36))+IF(B36>3,(B36-3)*VLOOKUP(B37,Data!$Q$23:$AC$43,7),0),VLOOKUP(B37,Data!$Q$23:$AC$43,8+MIN(3,B36))+IF(B36>3,(B36-3)*VLOOKUP(B37,Data!$Q$23:$AC$43,12),0)+IF(B35>2,(B35-2)*VLOOKUP(B37,Data!$Q$23:$AC$43,13),0)))","=IF(B35=0,0,IF(B35=1,VLOOKUP(B37,Data!$Q$23:$AC$43,3+MIN(3,B36))+IF(B36>3,(B36-3)*VLOOKUP(B37,Data!$Q$23:$AC$43,7),0),VLOOKUP(B37,Data!$Q$23:$AC$43,8+MIN(3,B36))+IF(B36>3,(B36-3)*VLOOKUP(B37,Data!$Q$23:$AC$43,12),0)+IF(B35>2,(B35-2)*VLOOKUP(B37,Data!$Q$23:$AC$43,13),0)))"
+38,3,"=IF(C35=0,0,IF(C35=1,VLOOKUP(C37,Data!$Q$23:$AC$43,3+MIN(3,C36))+IF(C36>3,(C36-3)*VLOOKUP(C37,Data!$Q$23:$AC$43,7),0),VLOOKUP(C37,Data!$Q$23:$AC$43,8+MIN(3,C36))+IF(C36>3,(C36-3)*VLOOKUP(C37,Data!$Q$23:$AC$43,12),0)+IF(C35>2,(C35-2)*VLOOKUP(C37,Data!$Q$23:$AC$43,13),0)))","=IF(C35=0,0,IF(C35=1,VLOOKUP(C37,Data!$Q$23:$AC$43,3+MIN(3,C36))+IF(C36>3,(C36-3)*VLOOKUP(C37,Data!$Q$23:$AC$43,7),0),VLOOKUP(C37,Data!$Q$23:$AC$43,8+MIN(3,C36))+IF(C36>3,(C36-3)*VLOOKUP(C37,Data!$Q$23:$AC$43,12),0)+IF(C35>2,(C35-2)*VLOOKUP(C37,Data!$Q$23:$AC$43,13),0)))"
+38,4,"=IF(D35=0,0,IF(D35=1,VLOOKUP(D37,Data!$Q$23:$AC$43,3+MIN(3,D36))+IF(D36>3,(D36-3)*VLOOKUP(D37,Data!$Q$23:$AC$43,7),0),VLOOKUP(D37,Data!$Q$23:$AC$43,8+MIN(3,D36))+IF(D36>3,(D36-3)*VLOOKUP(D37,Data!$Q$23:$AC$43,12),0)+IF(D35>2,(D35-2)*VLOOKUP(D37,Data!$Q$23:$AC$43,13),0)))","=IF(D35=0,0,IF(D35=1,VLOOKUP(D37,Data!$Q$23:$AC$43,3+MIN(3,D36))+IF(D36>3,(D36-3)*VLOOKUP(D37,Data!$Q$23:$AC$43,7),0),VLOOKUP(D37,Data!$Q$23:$AC$43,8+MIN(3,D36))+IF(D36>3,(D36-3)*VLOOKUP(D37,Data!$Q$23:$AC$43,12),0)+IF(D35>2,(D35-2)*VLOOKUP(D37,Data!$Q$23:$AC$43,13),0)))"
+38,5,"=IF(E35=0,0,IF(E35=1,VLOOKUP(E37,Data!$Q$23:$AC$43,3+MIN(3,E36))+IF(E36>3,(E36-3)*VLOOKUP(E37,Data!$Q$23:$AC$43,7),0),VLOOKUP(E37,Data!$Q$23:$AC$43,8+MIN(3,E36))+IF(E36>3,(E36-3)*VLOOKUP(E37,Data!$Q$23:$AC$43,12),0)+IF(E35>2,(E35-2)*VLOOKUP(E37,Data!$Q$23:$AC$43,13),0)))","=IF(E35=0,0,IF(E35=1,VLOOKUP(E37,Data!$Q$23:$AC$43,3+MIN(3,E36))+IF(E36>3,(E36-3)*VLOOKUP(E37,Data!$Q$23:$AC$43,7),0),VLOOKUP(E37,Data!$Q$23:$AC$43,8+MIN(3,E36))+IF(E36>3,(E36-3)*VLOOKUP(E37,Data!$Q$23:$AC$43,12),0)+IF(E35>2,(E35-2)*VLOOKUP(E37,Data!$Q$23:$AC$43,13),0)))"
+38,6,=SUM(B38:E38),=SUM(B38:E38)
+39,1,Customer declared living expenses,
+39,2,"=IF(OR(Model!H12="""",Model!H12=0),0,Model!H12)","=IF(OR(Model!H12="""",Model!H12=0),0,Model!H12)"
+39,3,"=IF(OR(Model!I12="""",Model!I12=0),0,Model!I12)","=IF(OR(Model!I12="""",Model!I12=0),0,Model!I12)"
+39,4,"=IF(OR(Model!J12="""",Model!J12=0),0,Model!J12)","=IF(OR(Model!J12="""",Model!J12=0),0,Model!J12)"
+39,5,"=IF(OR(Model!K12="""",Model!K12=0),0,Model!K12)","=IF(OR(Model!K12="""",Model!K12=0),0,Model!K12)"
+39,6,=SUM(B39:E39),=SUM(B39:E39)
+39,20,Existing Commitments Only,
+40,1,Total,
+40,2,=MAX(B38:B39),=MAX(B38:B39)
+40,3,=MAX(C38:C39),=MAX(C38:C39)
+40,4,=MAX(D38:D39),=MAX(D38:D39)
+40,5,=MAX(E38:E39),=MAX(E38:E39)
+40,6,=SUM(B40:E40),=SUM(B40:E40)
+40,18,Monthly surplus,
+40,19,"=IF(V5,Model!L33-F40-Model!L34/12,0)","=IF(V5,Model!L33-F40-Model!L34/12,0)"
+40,20,"=IF(V5,Model!L33-((C29+G29+K29+O29)-(D29+H29+L29+P29))/12-F40-Model!L34/12,0)","=IF(V5,Model!L33-((C29+G29+K29+O29)-(D29+H29+L29+P29))/12-F40-Model!L34/12,0)"
+41,18,Surplus * cash buffer,
+41,19,"=IF(S40<=0,(1+S42)*S40,(1-S42)*S40)","=IF(S40<=0,(1+S42)*S40,(1-S42)*S40)"
+41,20,"=IF(T40<=0,(1+S42)*T40,(1-S42)*T40)","=IF(T40<=0,(1+S42)*T40,(1-S42)*T40)"
+42,1,Proposed Consumer Loans,
+42,2,Requested P&I Term,
+42,3,Interest Only Period,
+42,4,Servicing Term ,
+42,10,Rental Yield,
+42,18,Cash buffer,
+42,19,"=VLOOKUP(S4,Data!M3:O5,3)","=VLOOKUP(S4,Data!M3:O5,3)"
+43,1,=Model!B52,=Model!B52
+43,2,=Model!I52,=Model!I52
+43,3,"=IF(Model!J52="""",0,IF(A43=""Line of Credit"",MIN(Model!J52,Data!$J$30),IF(Model!E52=""Owner Occupied"",MIN(Model!J52,Data!$J$28),IF(Model!E52=""Investment"",MIN(Model!J52,Data!$J$29),0))))","=IF(Model!J52="""",0,IF(A43=""Line of Credit"",MIN(Model!J52,Data!$J$30),IF(Model!E52=""Owner Occupied"",MIN(Model!J52,Data!$J$28),IF(Model!E52=""Investment"",MIN(Model!J52,Data!$J$29),0))))"
+43,4,"=IF(A43=0,0,MIN(VLOOKUP(A43,Data!$M$11:$N$22,2,0),B43)-C43)","=IF(A43=0,0,MIN(VLOOKUP(A43,Data!$M$11:$N$22,2,0),B43)-C43)"
+43,6,Gross Model,
+43,7,"=IF(V5,IF(S26<=S27,""PASS"",""FAIL""),"""")","=IF(V5,IF(S26<=S27,""PASS"",""FAIL""),"""")"
+43,10,Blank,
+43,11,Complete,
+44,1,=Model!B53,=Model!B53
+44,2,=Model!I53,=Model!I53
+44,3,"=IF(Model!J53="""",0,IF(A44=""Line of Credit"",MIN(Model!J53,Data!$J$30),IF(Model!E53=""Owner Occupied"",MIN(Model!J53,Data!$J$28),IF(Model!E53=""Investment"",MIN(Model!J53,Data!$J$29),0))))","=IF(Model!J53="""",0,IF(A44=""Line of Credit"",MIN(Model!J53,Data!$J$30),IF(Model!E53=""Owner Occupied"",MIN(Model!J53,Data!$J$28),IF(Model!E53=""Investment"",MIN(Model!J53,Data!$J$29),0))))"
+44,4,"=IF(A44=0,0,MIN(VLOOKUP(A44,Data!$M$11:$N$22,2,0),B44)-C44)","=IF(A44=0,0,MIN(VLOOKUP(A44,Data!$M$11:$N$22,2,0),B44)-C44)"
+44,6,Net Model,
+44,7,"=IF(V5,IF(S33>=0,""PASS"",IF(T33>=0,""REFER"",""FAIL"")),"""")","=IF(V5,IF(S33>=0,""PASS"",IF(T33>=0,""REFER"",""FAIL"")),"""")"
+44,10,"=COUNTA('Rental Yield'!C7:H7,'Rental Yield'!D30,'Rental Yield'!F30:I30)=0","=COUNTA('Rental Yield'!C7:H7,'Rental Yield'!D30,'Rental Yield'!F30:I30)=0"
+44,11,"=IF(J44,TRUE,COUNTA('Rental Yield'!F7,'Rental Yield'!G7,'Rental Yield'!H7)=3)","=IF(J44,TRUE,COUNTA('Rental Yield'!F7,'Rental Yield'!G7,'Rental Yield'!H7)=3)"
+45,1,=Model!B54,=Model!B54
+45,2,=Model!I54,=Model!I54
+45,3,"=IF(Model!J54="""",0,IF(A45=""Line of Credit"",MIN(Model!J54,Data!$J$30),IF(Model!E54=""Owner Occupied"",MIN(Model!J54,Data!$J$28),IF(Model!E54=""Investment"",MIN(Model!J54,Data!$J$29),0))))","=IF(Model!J54="""",0,IF(A45=""Line of Credit"",MIN(Model!J54,Data!$J$30),IF(Model!E54=""Owner Occupied"",MIN(Model!J54,Data!$J$28),IF(Model!E54=""Investment"",MIN(Model!J54,Data!$J$29),0))))"
+45,4,"=IF(A45=0,0,MIN(VLOOKUP(A45,Data!$M$11:$N$22,2,0),B45)-C45)","=IF(A45=0,0,MIN(VLOOKUP(A45,Data!$M$11:$N$22,2,0),B45)-C45)"
+45,10,"=COUNTA('Rental Yield'!C8:H8,'Rental Yield'!D31,'Rental Yield'!F31:I31)=0","=COUNTA('Rental Yield'!C8:H8,'Rental Yield'!D31,'Rental Yield'!F31:I31)=0"
+45,11,"=IF(J45,TRUE,COUNTA('Rental Yield'!F8,'Rental Yield'!G8,'Rental Yield'!H8)=3)","=IF(J45,TRUE,COUNTA('Rental Yield'!F8,'Rental Yield'!G8,'Rental Yield'!H8)=3)"
+46,1,=Model!B55,=Model!B55
+46,2,=Model!I55,=Model!I55
+46,3,"=IF(Model!J55="""",0,IF(A46=""Line of Credit"",MIN(Model!J55,Data!$J$30),IF(Model!E55=""Owner Occupied"",MIN(Model!J55,Data!$J$28),IF(Model!E55=""Investment"",MIN(Model!J55,Data!$J$29),0))))","=IF(Model!J55="""",0,IF(A46=""Line of Credit"",MIN(Model!J55,Data!$J$30),IF(Model!E55=""Owner Occupied"",MIN(Model!J55,Data!$J$28),IF(Model!E55=""Investment"",MIN(Model!J55,Data!$J$29),0))))"
+46,4,"=IF(A46=0,0,MIN(VLOOKUP(A46,Data!$M$11:$N$22,2,0),B46)-C46)","=IF(A46=0,0,MIN(VLOOKUP(A46,Data!$M$11:$N$22,2,0),B46)-C46)"
+46,10,"=COUNTA('Rental Yield'!C9:H9,'Rental Yield'!D32,'Rental Yield'!F32:I32)=0","=COUNTA('Rental Yield'!C9:H9,'Rental Yield'!D32,'Rental Yield'!F32:I32)=0"
+46,11,"=IF(J46,TRUE,COUNTA('Rental Yield'!F9,'Rental Yield'!G9,'Rental Yield'!H9)=3)","=IF(J46,TRUE,COUNTA('Rental Yield'!F9,'Rental Yield'!G9,'Rental Yield'!H9)=3)"
+46,19,Net to Gross,
+47,1,=Model!B56,=Model!B56
+47,2,=Model!I56,=Model!I56
+47,3,"=IF(Model!J56="""",0,IF(A47=""Line of Credit"",MIN(Model!J56,Data!$J$30),IF(Model!E56=""Owner Occupied"",MIN(Model!J56,Data!$J$28),IF(Model!E56=""Investment"",MIN(Model!J56,Data!$J$29),0))))","=IF(Model!J56="""",0,IF(A47=""Line of Credit"",MIN(Model!J56,Data!$J$30),IF(Model!E56=""Owner Occupied"",MIN(Model!J56,Data!$J$28),IF(Model!E56=""Investment"",MIN(Model!J56,Data!$J$29),0))))"
+47,4,"=IF(A47=0,0,MIN(VLOOKUP(A47,Data!$M$11:$N$22,2,0),B47)-C47)","=IF(A47=0,0,MIN(VLOOKUP(A47,Data!$M$11:$N$22,2,0),B47)-C47)"
+47,10,"=COUNTA('Rental Yield'!C10:H10,'Rental Yield'!D33,'Rental Yield'!F33:I33)=0","=COUNTA('Rental Yield'!C10:H10,'Rental Yield'!D33,'Rental Yield'!F33:I33)=0"
+47,11,"=IF(J47,TRUE,COUNTA('Rental Yield'!F10,'Rental Yield'!G10,'Rental Yield'!H10)=3)","=IF(J47,TRUE,COUNTA('Rental Yield'!F10,'Rental Yield'!G10,'Rental Yield'!H10)=3)"
+47,19,Applicant 1,
+47,20,Applicant 2,
+47,21,Applicant 3,
+47,22,Applicant 4,
+48,1,=Model!B57,=Model!B57
+48,2,=Model!I57,=Model!I57
+48,3,"=IF(Model!J57="""",0,IF(A48=""Line of Credit"",MIN(Model!J57,Data!$J$30),IF(Model!E57=""Owner Occupied"",MIN(Model!J57,Data!$J$28),IF(Model!E57=""Investment"",MIN(Model!J57,Data!$J$29),0))))","=IF(Model!J57="""",0,IF(A48=""Line of Credit"",MIN(Model!J57,Data!$J$30),IF(Model!E57=""Owner Occupied"",MIN(Model!J57,Data!$J$28),IF(Model!E57=""Investment"",MIN(Model!J57,Data!$J$29),0))))"
+48,4,"=IF(A48=0,0,MIN(VLOOKUP(A48,Data!$M$11:$N$22,2,0),B48)-C48)","=IF(A48=0,0,MIN(VLOOKUP(A48,Data!$M$11:$N$22,2,0),B48)-C48)"
+48,10,"=COUNTA('Rental Yield'!C11:H11,'Rental Yield'!D34,'Rental Yield'!F34:I34)=0","=COUNTA('Rental Yield'!C11:H11,'Rental Yield'!D34,'Rental Yield'!F34:I34)=0"
+48,11,"=IF(J48,TRUE,COUNTA('Rental Yield'!F11,'Rental Yield'!G11,'Rental Yield'!H11)=3)","=IF(J48,TRUE,COUNTA('Rental Yield'!F11,'Rental Yield'!G11,'Rental Yield'!H11)=3)"
+48,18,Blank,
+48,19,"=COUNTA('Net To Gross'!C8:C12,'Net To Gross'!C15,'Net To Gross'!C18:C22)=0","=COUNTA('Net To Gross'!C8:C12,'Net To Gross'!C15,'Net To Gross'!C18:C22)=0"
+48,20,"=COUNTA('Net To Gross'!D8:D12,'Net To Gross'!D15,'Net To Gross'!D18:D22)=0","=COUNTA('Net To Gross'!D8:D12,'Net To Gross'!D15,'Net To Gross'!D18:D22)=0"
+48,21,"=COUNTA('Net To Gross'!E8:E12,'Net To Gross'!E15,'Net To Gross'!E18:E22)=0","=COUNTA('Net To Gross'!E8:E12,'Net To Gross'!E15,'Net To Gross'!E18:E22)=0"
+48,22,"=COUNTA('Net To Gross'!F8:F12,'Net To Gross'!F15,'Net To Gross'!F18:F22)=0","=COUNTA('Net To Gross'!F8:F12,'Net To Gross'!F15,'Net To Gross'!F18:F22)=0"
+49,10,"=COUNTA('Rental Yield'!C12:H12,'Rental Yield'!D35,'Rental Yield'!F35:I35)=0","=COUNTA('Rental Yield'!C12:H12,'Rental Yield'!D35,'Rental Yield'!F35:I35)=0"
+49,11,"=IF(J49,TRUE,COUNTA('Rental Yield'!F12,'Rental Yield'!G12,'Rental Yield'!H12)=3)","=IF(J49,TRUE,COUNTA('Rental Yield'!F12,'Rental Yield'!G12,'Rental Yield'!H12)=3)"
+49,18,Complete,
+49,19,"=AND('Net To Gross'!C10<>"""",'Net To Gross'!C15<>"""")","=AND('Net To Gross'!C10<>"""",'Net To Gross'!C15<>"""")"
+49,20,"=AND('Net To Gross'!D10<>"""",'Net To Gross'!D15<>"""")","=AND('Net To Gross'!D10<>"""",'Net To Gross'!D15<>"""")"
+49,21,"=AND('Net To Gross'!E10<>"""",'Net To Gross'!E15<>"""")","=AND('Net To Gross'!E10<>"""",'Net To Gross'!E15<>"""")"
+49,22,"=AND('Net To Gross'!F10<>"""",'Net To Gross'!F15<>"""")","=AND('Net To Gross'!F10<>"""",'Net To Gross'!F15<>"""")"
+50,1,Debt to Income Calcs,
+50,10,"=COUNTA('Rental Yield'!C13:H13,'Rental Yield'!D36,'Rental Yield'!F36:I36)=0","=COUNTA('Rental Yield'!C13:H13,'Rental Yield'!D36,'Rental Yield'!F36:I36)=0"
+50,11,"=IF(J50,TRUE,COUNTA('Rental Yield'!F13,'Rental Yield'!G13,'Rental Yield'!H13)=3)","=IF(J50,TRUE,COUNTA('Rental Yield'!F13,'Rental Yield'!G13,'Rental Yield'!H13)=3)"
+51,1,Combined Debt,
+51,2,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5C2DBE0>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A5C2DBE0>
+51,10,"=COUNTA('Rental Yield'!C14:H14,'Rental Yield'!D37,'Rental Yield'!F37:I37)=0","=COUNTA('Rental Yield'!C14:H14,'Rental Yield'!D37,'Rental Yield'!F37:I37)=0"
+51,11,"=IF(J51,TRUE,COUNTA('Rental Yield'!F14,'Rental Yield'!G14,'Rental Yield'!H14)=3)","=IF(J51,TRUE,COUNTA('Rental Yield'!F14,'Rental Yield'!G14,'Rental Yield'!H14)=3)"
+52,1,Combined Income,
+52,2,=B12+F12+J12+N12-S3+S2+SUM(B31:B32)+SUM(F31:F32)+SUM(J31:J32)+SUM(N31:N32),=B12+F12+J12+N12-S3+S2+SUM(B31:B32)+SUM(F31:F32)+SUM(J31:J32)+SUM(N31:N32)
+52,10,"=COUNTA('Rental Yield'!C15:H15,'Rental Yield'!D38,'Rental Yield'!F38:I38)=0","=COUNTA('Rental Yield'!C15:H15,'Rental Yield'!D38,'Rental Yield'!F38:I38)=0"
+52,11,"=IF(J52,TRUE,COUNTA('Rental Yield'!F15,'Rental Yield'!G15,'Rental Yield'!H15)=3)","=IF(J52,TRUE,COUNTA('Rental Yield'!F15,'Rental Yield'!G15,'Rental Yield'!H15)=3)"
+53,1,Debt to Income Ratio,
+53,2,"=IF(B52>0,ROUND(B51/B52,2),0)","=IF(B52>0,ROUND(B51/B52,2),0)"
+53,10,"=COUNTA('Rental Yield'!C16:H16,'Rental Yield'!D39,'Rental Yield'!F39:I39)=0","=COUNTA('Rental Yield'!C16:H16,'Rental Yield'!D39,'Rental Yield'!F39:I39)=0"
+53,11,"=IF(J53,TRUE,COUNTA('Rental Yield'!F16,'Rental Yield'!G16,'Rental Yield'!H16)=3)","=IF(J53,TRUE,COUNTA('Rental Yield'!F16,'Rental Yield'!G16,'Rental Yield'!H16)=3)"
+54,10,"=COUNTA('Rental Yield'!C17:H17,'Rental Yield'!D40,'Rental Yield'!F40:I40)=0","=COUNTA('Rental Yield'!C17:H17,'Rental Yield'!D40,'Rental Yield'!F40:I40)=0"
+54,11,"=IF(J54,TRUE,COUNTA('Rental Yield'!F17,'Rental Yield'!G17,'Rental Yield'!H17)=3)","=IF(J54,TRUE,COUNTA('Rental Yield'!F17,'Rental Yield'!G17,'Rental Yield'!H17)=3)"
+55,10,"=COUNTA('Rental Yield'!C18:H18,'Rental Yield'!D41,'Rental Yield'!F41:I41)=0","=COUNTA('Rental Yield'!C18:H18,'Rental Yield'!D41,'Rental Yield'!F41:I41)=0"
+55,11,"=IF(J55,TRUE,COUNTA('Rental Yield'!F18,'Rental Yield'!G18,'Rental Yield'!H18)=3)","=IF(J55,TRUE,COUNTA('Rental Yield'!F18,'Rental Yield'!G18,'Rental Yield'!H18)=3)"
+56,10,"=COUNTA('Rental Yield'!C19:H19,'Rental Yield'!D42,'Rental Yield'!F42:I42)=0","=COUNTA('Rental Yield'!C19:H19,'Rental Yield'!D42,'Rental Yield'!F42:I42)=0"
+56,11,"=IF(J56,TRUE,COUNTA('Rental Yield'!F19,'Rental Yield'!G19,'Rental Yield'!H19)=3)","=IF(J56,TRUE,COUNTA('Rental Yield'!F19,'Rental Yield'!G19,'Rental Yield'!H19)=3)"
+57,10,"=COUNTA('Rental Yield'!C20:H20,'Rental Yield'!D43,'Rental Yield'!F43:I43)=0","=COUNTA('Rental Yield'!C20:H20,'Rental Yield'!D43,'Rental Yield'!F43:I43)=0"
+57,11,"=IF(J57,TRUE,COUNTA('Rental Yield'!F20,'Rental Yield'!G20,'Rental Yield'!H20)=3)","=IF(J57,TRUE,COUNTA('Rental Yield'!F20,'Rental Yield'!G20,'Rental Yield'!H20)=3)"
+58,10,"=COUNTA('Rental Yield'!C21:H21,'Rental Yield'!D44,'Rental Yield'!F44:I44)=0","=COUNTA('Rental Yield'!C21:H21,'Rental Yield'!D44,'Rental Yield'!F44:I44)=0"
+58,11,"=IF(J58,TRUE,COUNTA('Rental Yield'!F21,'Rental Yield'!G21,'Rental Yield'!H21)=3)","=IF(J58,TRUE,COUNTA('Rental Yield'!F21,'Rental Yield'!G21,'Rental Yield'!H21)=3)"
+59,10,"=COUNTA('Rental Yield'!C22:H22,'Rental Yield'!D45,'Rental Yield'!F45:I45)=0","=COUNTA('Rental Yield'!C22:H22,'Rental Yield'!D45,'Rental Yield'!F45:I45)=0"
+59,11,"=IF(J59,TRUE,COUNTA('Rental Yield'!F22,'Rental Yield'!G22,'Rental Yield'!H22)=3)","=IF(J59,TRUE,COUNTA('Rental Yield'!F22,'Rental Yield'!G22,'Rental Yield'!H22)=3)"
+60,10,"=COUNTA('Rental Yield'!C23:H23,'Rental Yield'!D46,'Rental Yield'!F46:I46)=0","=COUNTA('Rental Yield'!C23:H23,'Rental Yield'!D46,'Rental Yield'!F46:I46)=0"
+60,11,"=IF(J60,TRUE,COUNTA('Rental Yield'!F23,'Rental Yield'!G23,'Rental Yield'!H23)=3)","=IF(J60,TRUE,COUNTA('Rental Yield'!F23,'Rental Yield'!G23,'Rental Yield'!H23)=3)"
+61,10,"=COUNTA('Rental Yield'!C24:H24,'Rental Yield'!D47,'Rental Yield'!F47:I47)=0","=COUNTA('Rental Yield'!C24:H24,'Rental Yield'!D47,'Rental Yield'!F47:I47)=0"
+61,11,"=IF(J61,TRUE,COUNTA('Rental Yield'!F24,'Rental Yield'!G24,'Rental Yield'!H24)=3)","=IF(J61,TRUE,COUNTA('Rental Yield'!F24,'Rental Yield'!G24,'Rental Yield'!H24)=3)"
+62,10,"=COUNTA('Rental Yield'!C25:H25,'Rental Yield'!D48,'Rental Yield'!F48:I48)=0","=COUNTA('Rental Yield'!C25:H25,'Rental Yield'!D48,'Rental Yield'!F48:I48)=0"
+62,11,"=IF(J62,TRUE,COUNTA('Rental Yield'!F25,'Rental Yield'!G25,'Rental Yield'!H25)=3)","=IF(J62,TRUE,COUNTA('Rental Yield'!F25,'Rental Yield'!G25,'Rental Yield'!H25)=3)"
+63,10,"=COUNTA('Rental Yield'!C26:H26,'Rental Yield'!D49,'Rental Yield'!F49:I49)=0","=COUNTA('Rental Yield'!C26:H26,'Rental Yield'!D49,'Rental Yield'!F49:I49)=0"
+63,11,"=IF(J63,TRUE,COUNTA('Rental Yield'!F26,'Rental Yield'!G26,'Rental Yield'!H26)=3)","=IF(J63,TRUE,COUNTA('Rental Yield'!F26,'Rental Yield'!G26,'Rental Yield'!H26)=3)"
+64,10,=AND(J44:J63),=AND(J44:J63)
+64,11,=AND(K44:K63),=AND(K44:K63)

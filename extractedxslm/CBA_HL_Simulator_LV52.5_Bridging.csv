@@ -1,0 +1,236 @@
+Row,Column,Value,Formula
+1,16,=Data!G32,=Data!G32
+2,2,"Home Loan, Investment Home Loan and Line of Credit Bridging Calculator",
+2,16,=Data!G33,=Data!G33
+4,5,Name of applicant 1: ,
+4,9,Name of applicant 2: ,
+6,2,Number of properties occupied by the applicants,
+6,10,"=IF(I6>COUNT(I9:L9),""must be at least one adult residing in each household"",IF(AND(I6>K16,I6=COUNTA(F16,H16)),""Each household must have an applicant assigned"",IF(I6>COUNTA(F16,H16),""There cannot be more households than applicants"",IF(COUNTA(F16,H16)>SUM(I9:L9),""Number of applicants cannot be more than the total number of adults"",""""))))","=IF(I6>COUNT(I9:L9),""must be at least one adult residing in each household"",IF(AND(I6>K16,I6=COUNTA(F16,H16)),""Each household must have an applicant assigned"",IF(I6>COUNTA(F16,H16),""There cannot be more households than applicants"",IF(COUNTA(F16,H16)>SUM(I9:L9),""Number of applicants cannot be more than the total number of adults"",""""))))"
+7,2,No of principal residences plus number of non-income producing properties owned by applicants,
+7,11,"=IF(I6>0,AND(COUNT(I9:L9)>=I6,COUNT(I11:L11)>=I6),FALSE)","=IF(I6>0,AND(COUNT(I9:L9)>=I6,COUNT(I11:L11)>=I6),FALSE)"
+8,9,Household 1,
+8,10,"=IF(I6>1,""Household 2"","""")","=IF(I6>1,""Household 2"","""")"
+8,11,"=IF(I6>2,""Household 3"","""")","=IF(I6>2,""Household 3"","""")"
+8,12,"=IF(I6>3,""Household 4"","""")","=IF(I6>3,""Household 4"","""")"
+9,2,Number of adults (18 or older) residing in each household,
+10,2,Number of dependent children residing in each household,
+11,2,Monthly Living Expenses,
+13,2,Annual Income Details:,
+13,6,Applicant 1,
+13,8,Applicant 2,
+13,11,Bridging Totals,
+13,12,Ongoing Totals,
+15,6,Bridging,
+15,7,Ongoing,
+15,8,Bridging,
+15,9,Ongoing,
+16,2,Household,
+16,7,"=IF(F16="""","""",F16)","=IF(F16="""","""",F16)"
+16,9,"=IF(H16="""","""",H16)","=IF(H16="""","""",H16)"
+16,11,"=IF(COUNTIF(F16:I16,""Household 1"")>0,1,0)+IF(COUNTIF(F16:I16,""Household 2"")>0,1,0)+IF(COUNTIF(F16:I16,""Household 3"")>0,1,0)+IF(COUNTIF(F16:I16,""Household 4"")>0,1,0)","=IF(COUNTIF(F16:I16,""Household 1"")>0,1,0)+IF(COUNTIF(F16:I16,""Household 2"")>0,1,0)+IF(COUNTIF(F16:I16,""Household 3"")>0,1,0)+IF(COUNTIF(F16:I16,""Household 4"")>0,1,0)"
+17,2,Gross Annual Salary or Wages,
+17,7,=F17,=F17
+17,9,=H17,=H17
+17,10,annual,
+17,11,=F17+H17,=F17+H17
+17,12,=G17+I17,=G17+I17
+18,2,Gross Overtime,
+18,7,=F18,=F18
+18,9,=H18,=H18
+18,10,annual,
+18,11,=(F18+H18)*Data!C20,=(F18+H18)*Data!C20
+18,12,=(G18+I18)*Data!C20,=(G18+I18)*Data!C20
+19,2,Gross Bonuses,
+19,7,=F19,=F19
+19,9,=H19,=H19
+19,10,annual,
+19,11,=(F19+H19)*Data!C21,=(F19+H19)*Data!C21
+19,12,=(G19+I19)*Data!C21,=(G19+I19)*Data!C21
+20,2,Existing Rental Income,
+20,6,='Bridging Rental Yield'!F54,='Bridging Rental Yield'!F54
+20,7,='Bridging Rental Yield'!F60,='Bridging Rental Yield'!F60
+20,8,='Bridging Rental Yield'!G54,='Bridging Rental Yield'!G54
+20,9,='Bridging Rental Yield'!G60,='Bridging Rental Yield'!G60
+20,11,=(F20+H20),=(F20+H20)
+20,12,=(G20+I20),=(G20+I20)
+21,2,Proposed Rental Income,
+21,6,='Bridging Rental Yield'!F55,='Bridging Rental Yield'!F55
+21,7,='Bridging Rental Yield'!F61,='Bridging Rental Yield'!F61
+21,8,='Bridging Rental Yield'!G55,='Bridging Rental Yield'!G55
+21,9,='Bridging Rental Yield'!G61,='Bridging Rental Yield'!G61
+21,11,=(F21+H21),=(F21+H21)
+21,12,=(G21+I21),=(G21+I21)
+22,2,Investment Income ,
+22,7,=F22,=F22
+22,9,=H22,=H22
+22,10,annual,
+22,11,=(F22+H22)*Data!C22,=(F22+H22)*Data!C22
+22,12,=(G22+I22)*Data!C22,=(G22+I22)*Data!C22
+23,2,Pensions,
+23,7,=F23,=F23
+23,9,=H23,=H23
+23,10,annual,
+23,11,=(F23+H23)*Data!G30,=(F23+H23)*Data!G30
+23,12,=(G23+I23)*Data!G30,=(G23+I23)*Data!G30
+24,2,Other Regular Income,
+24,7,=F24,=F24
+24,9,=H24,=H24
+24,10,annual,
+24,11,=F24+H24,=F24+H24
+24,12,=G24+I24,=G24+I24
+25,2,Self Employed Income,
+25,6,='Bridging Self Employed'!G9+'Bridging Self Employed'!G14+'Bridging Self Employed'!G16,='Bridging Self Employed'!G9+'Bridging Self Employed'!G14+'Bridging Self Employed'!G16
+25,7,=F25,=F25
+25,8,='Bridging Self Employed'!G28+'Bridging Self Employed'!G33+'Bridging Self Employed'!G35,='Bridging Self Employed'!G28+'Bridging Self Employed'!G33+'Bridging Self Employed'!G35
+25,9,=H25,=H25
+25,11,=F25+H25,=F25+H25
+25,12,=G25+I25,=G25+I25
+26,2,Gross Annual Income,
+26,6,=SUM(F17:F25),=SUM(F17:F25)
+26,7,=SUM(G17:G25),=SUM(G17:G25)
+26,8,=SUM(H17:H25),=SUM(H17:H25)
+26,9,=SUM(I17:I25),=SUM(I17:I25)
+26,11,=SUM(K17:K25),=SUM(K17:K25)
+26,12,=SUM(L17:L25),=SUM(L17:L25)
+27,2,Income Tax(Including Offsets),
+27,6,='Bridging Calculations'!C13-'Bridging Calculations'!C15-'Bridging Calculations'!C16,='Bridging Calculations'!C13-'Bridging Calculations'!C15-'Bridging Calculations'!C16
+27,7,='Bridging Calculations'!J13-'Bridging Calculations'!J15-'Bridging Calculations'!J16,='Bridging Calculations'!J13-'Bridging Calculations'!J15-'Bridging Calculations'!J16
+27,8,='Bridging Calculations'!F13-'Bridging Calculations'!F15-'Bridging Calculations'!F16,='Bridging Calculations'!F13-'Bridging Calculations'!F15-'Bridging Calculations'!F16
+27,9,='Bridging Calculations'!M13-'Bridging Calculations'!M15-'Bridging Calculations'!M16,='Bridging Calculations'!M13-'Bridging Calculations'!M15-'Bridging Calculations'!M16
+27,11,=F27+H27,=F27+H27
+27,12,=G27+I27,=G27+I27
+28,2,Medicare Levy,
+28,6,='Bridging Calculations'!C14,='Bridging Calculations'!C14
+28,7,='Bridging Calculations'!J14,='Bridging Calculations'!J14
+28,8,='Bridging Calculations'!F14,='Bridging Calculations'!F14
+28,9,='Bridging Calculations'!M14,='Bridging Calculations'!M14
+28,11,='Bridging Calculations'!C14+'Bridging Calculations'!F14,='Bridging Calculations'!C14+'Bridging Calculations'!F14
+28,12,='Bridging Calculations'!J14+'Bridging Calculations'!M14,='Bridging Calculations'!J14+'Bridging Calculations'!M14
+29,2,Negative gearing tax effect,
+29,6,='Bridging Calculations'!C27,='Bridging Calculations'!C27
+29,7,='Bridging Calculations'!J27,='Bridging Calculations'!J27
+29,8,='Bridging Calculations'!F27,='Bridging Calculations'!F27
+29,9,='Bridging Calculations'!M27,='Bridging Calculations'!M27
+29,11,=('Bridging Calculations'!C17+'Bridging Calculations'!F17)-('Bridging Calculations'!C25+'Bridging Calculations'!F25),=('Bridging Calculations'!C17+'Bridging Calculations'!F17)-('Bridging Calculations'!C25+'Bridging Calculations'!F25)
+29,12,=('Bridging Calculations'!J17+'Bridging Calculations'!M17)-('Bridging Calculations'!J25+'Bridging Calculations'!M25),=('Bridging Calculations'!J17+'Bridging Calculations'!M17)-('Bridging Calculations'!J25+'Bridging Calculations'!M25)
+30,2,Tax Free Income (eg. family allowance),
+30,7,=F30,=F30
+30,9,=H30,=H30
+30,10,annual,
+30,11,=(F30+H30)*Data!G28,=(F30+H30)*Data!G28
+30,12,=(G30+I30)*Data!G28,=(G30+I30)*Data!G28
+31,2,Self Employed Add Backs,
+31,6,='Bridging Self Employed'!G18-'Bridging Self Employed'!G14-'Bridging Self Employed'!G16,='Bridging Self Employed'!G18-'Bridging Self Employed'!G14-'Bridging Self Employed'!G16
+31,7,=F31,=F31
+31,8,='Bridging Self Employed'!G37-'Bridging Self Employed'!G33-'Bridging Self Employed'!G35,='Bridging Self Employed'!G37-'Bridging Self Employed'!G33-'Bridging Self Employed'!G35
+31,9,=H31,=H31
+31,11,=F31+H31,=F31+H31
+31,12,=G31+I31,=G31+I31
+32,9,Net Annual Income,
+32,11,=K26-K27-K28+K29+K30+K31,=K26-K27-K28+K29+K30+K31
+32,12,=L26-L27-L28+L29+L30+L31,=L26-L27-L28+L29+L30+L31
+33,9,Net Monthly Income,
+33,11,=K32/12,=K32/12
+33,12,=L32/12,=L32/12
+34,9,Ongoing Annual Rent Expense,
+36,2,Existing Consumer Commitments:,
+38,2,Product,
+38,3,Loan Type,
+38,4,Is this tax deductible?,
+38,5,Will this be repaid?,
+38,6,Balance,
+38,7,Limit,
+38,8,Remaining Term,
+38,9,Interest Rate,
+38,10,Monthly Repayment,
+38,11,Monthly Charges,
+38,12,Total Repayments,
+39,12,"=IF(AND(NOT('Bridging Calculations'!O3),'Bridging Calculations'!P3),ROUNDUP(IF(OR(E39=""With my funds"",E39=""Add to bridging"",B39=""Margin Loan""),0,IF(B39=""Credit Card"",MAX(Data!$G$22,MAX(F39:G39)*Data!$G$16),IF(B39=""Overdraft"",MAX(F39:G39)*Data!$G$18,IF(B39=""Commercial Bill"",MAX(F39:G39)*Data!$G$20,IF(OR(B39=""OFI home loan (Other financial institution)"",B39=""OFI Line of Credit (Other financial institution)""),J39*(1+Data!$G$26)+K39,J39+K39))))),0),0)","=IF(AND(NOT('Bridging Calculations'!O3),'Bridging Calculations'!P3),ROUNDUP(IF(OR(E39=""With my funds"",E39=""Add to bridging"",B39=""Margin Loan""),0,IF(B39=""Credit Card"",MAX(Data!$G$22,MAX(F39:G39)*Data!$G$16),IF(B39=""Overdraft"",MAX(F39:G39)*Data!$G$18,IF(B39=""Commercial Bill"",MAX(F39:G39)*Data!$G$20,IF(OR(B39=""OFI home loan (Other financial institution)"",B39=""OFI Line of Credit (Other financial institution)""),J39*(1+Data!$G$26)+K39,J39+K39))))),0),0)"
+39,15,"=IF(OR(B39=""CBA Variable Rate Home Loan"",B39=""CBA Fixed Rate Home Loan"",B39=""CBA Line of Credit""),NOT('Bridging Calculations'!P3),FALSE)","=IF(OR(B39=""CBA Variable Rate Home Loan"",B39=""CBA Fixed Rate Home Loan"",B39=""CBA Line of Credit""),NOT('Bridging Calculations'!P3),FALSE)"
+40,12,"=IF(AND(NOT('Bridging Calculations'!O4),'Bridging Calculations'!P4),ROUNDUP(IF(OR(E40=""With my funds"",E40=""Add to bridging"",B40=""Margin Loan""),0,IF(B40=""Credit Card"",MAX(Data!$G$22,MAX(F40:G40)*Data!$G$16),IF(B40=""Overdraft"",MAX(F40:G40)*Data!$G$18,IF(B40=""Commercial Bill"",MAX(F40:G40)*Data!$G$20,IF(OR(B40=""OFI home loan (Other financial institution)"",B40=""OFI Line of Credit (Other financial institution)""),J40*(1+Data!$G$26)+K40,J40+K40))))),0),0)","=IF(AND(NOT('Bridging Calculations'!O4),'Bridging Calculations'!P4),ROUNDUP(IF(OR(E40=""With my funds"",E40=""Add to bridging"",B40=""Margin Loan""),0,IF(B40=""Credit Card"",MAX(Data!$G$22,MAX(F40:G40)*Data!$G$16),IF(B40=""Overdraft"",MAX(F40:G40)*Data!$G$18,IF(B40=""Commercial Bill"",MAX(F40:G40)*Data!$G$20,IF(OR(B40=""OFI home loan (Other financial institution)"",B40=""OFI Line of Credit (Other financial institution)""),J40*(1+Data!$G$26)+K40,J40+K40))))),0),0)"
+40,15,"=IF(OR(B40=""CBA Variable Rate Home Loan"",B40=""CBA Fixed Rate Home Loan"",B40=""CBA Line of Credit""),NOT('Bridging Calculations'!P4),FALSE)","=IF(OR(B40=""CBA Variable Rate Home Loan"",B40=""CBA Fixed Rate Home Loan"",B40=""CBA Line of Credit""),NOT('Bridging Calculations'!P4),FALSE)"
+41,12,"=IF(AND(NOT('Bridging Calculations'!O5),'Bridging Calculations'!P5),ROUNDUP(IF(OR(E41=""With my funds"",E41=""Add to bridging"",B41=""Margin Loan""),0,IF(B41=""Credit Card"",MAX(Data!$G$22,MAX(F41:G41)*Data!$G$16),IF(B41=""Overdraft"",MAX(F41:G41)*Data!$G$18,IF(B41=""Commercial Bill"",MAX(F41:G41)*Data!$G$20,IF(OR(B41=""OFI home loan (Other financial institution)"",B41=""OFI Line of Credit (Other financial institution)""),J41*(1+Data!$G$26)+K41,J41+K41))))),0),0)","=IF(AND(NOT('Bridging Calculations'!O5),'Bridging Calculations'!P5),ROUNDUP(IF(OR(E41=""With my funds"",E41=""Add to bridging"",B41=""Margin Loan""),0,IF(B41=""Credit Card"",MAX(Data!$G$22,MAX(F41:G41)*Data!$G$16),IF(B41=""Overdraft"",MAX(F41:G41)*Data!$G$18,IF(B41=""Commercial Bill"",MAX(F41:G41)*Data!$G$20,IF(OR(B41=""OFI home loan (Other financial institution)"",B41=""OFI Line of Credit (Other financial institution)""),J41*(1+Data!$G$26)+K41,J41+K41))))),0),0)"
+41,15,"=IF(OR(B41=""CBA Variable Rate Home Loan"",B41=""CBA Fixed Rate Home Loan"",B41=""CBA Line of Credit""),NOT('Bridging Calculations'!P5),FALSE)","=IF(OR(B41=""CBA Variable Rate Home Loan"",B41=""CBA Fixed Rate Home Loan"",B41=""CBA Line of Credit""),NOT('Bridging Calculations'!P5),FALSE)"
+42,12,"=IF(AND(NOT('Bridging Calculations'!O6),'Bridging Calculations'!P6),ROUNDUP(IF(OR(E42=""With my funds"",E42=""Add to bridging"",B42=""Margin Loan""),0,IF(B42=""Credit Card"",MAX(Data!$G$22,MAX(F42:G42)*Data!$G$16),IF(B42=""Overdraft"",MAX(F42:G42)*Data!$G$18,IF(B42=""Commercial Bill"",MAX(F42:G42)*Data!$G$20,IF(OR(B42=""OFI home loan (Other financial institution)"",B42=""OFI Line of Credit (Other financial institution)""),J42*(1+Data!$G$26)+K42,J42+K42))))),0),0)","=IF(AND(NOT('Bridging Calculations'!O6),'Bridging Calculations'!P6),ROUNDUP(IF(OR(E42=""With my funds"",E42=""Add to bridging"",B42=""Margin Loan""),0,IF(B42=""Credit Card"",MAX(Data!$G$22,MAX(F42:G42)*Data!$G$16),IF(B42=""Overdraft"",MAX(F42:G42)*Data!$G$18,IF(B42=""Commercial Bill"",MAX(F42:G42)*Data!$G$20,IF(OR(B42=""OFI home loan (Other financial institution)"",B42=""OFI Line of Credit (Other financial institution)""),J42*(1+Data!$G$26)+K42,J42+K42))))),0),0)"
+42,15,"=IF(OR(B42=""CBA Variable Rate Home Loan"",B42=""CBA Fixed Rate Home Loan"",B42=""CBA Line of Credit""),NOT('Bridging Calculations'!P6),FALSE)","=IF(OR(B42=""CBA Variable Rate Home Loan"",B42=""CBA Fixed Rate Home Loan"",B42=""CBA Line of Credit""),NOT('Bridging Calculations'!P6),FALSE)"
+43,12,"=IF(AND(NOT('Bridging Calculations'!O7),'Bridging Calculations'!P7),ROUNDUP(IF(OR(E43=""With my funds"",E43=""Add to bridging"",B43=""Margin Loan""),0,IF(B43=""Credit Card"",MAX(Data!$G$22,MAX(F43:G43)*Data!$G$16),IF(B43=""Overdraft"",MAX(F43:G43)*Data!$G$18,IF(B43=""Commercial Bill"",MAX(F43:G43)*Data!$G$20,IF(OR(B43=""OFI home loan (Other financial institution)"",B43=""OFI Line of Credit (Other financial institution)""),J43*(1+Data!$G$26)+K43,J43+K43))))),0),0)","=IF(AND(NOT('Bridging Calculations'!O7),'Bridging Calculations'!P7),ROUNDUP(IF(OR(E43=""With my funds"",E43=""Add to bridging"",B43=""Margin Loan""),0,IF(B43=""Credit Card"",MAX(Data!$G$22,MAX(F43:G43)*Data!$G$16),IF(B43=""Overdraft"",MAX(F43:G43)*Data!$G$18,IF(B43=""Commercial Bill"",MAX(F43:G43)*Data!$G$20,IF(OR(B43=""OFI home loan (Other financial institution)"",B43=""OFI Line of Credit (Other financial institution)""),J43*(1+Data!$G$26)+K43,J43+K43))))),0),0)"
+43,15,"=IF(OR(B43=""CBA Variable Rate Home Loan"",B43=""CBA Fixed Rate Home Loan"",B43=""CBA Line of Credit""),NOT('Bridging Calculations'!P7),FALSE)","=IF(OR(B43=""CBA Variable Rate Home Loan"",B43=""CBA Fixed Rate Home Loan"",B43=""CBA Line of Credit""),NOT('Bridging Calculations'!P7),FALSE)"
+44,12,"=IF(AND(NOT('Bridging Calculations'!O8),'Bridging Calculations'!P8),ROUNDUP(IF(OR(E44=""With my funds"",E44=""Add to bridging"",B44=""Margin Loan""),0,IF(B44=""Credit Card"",MAX(Data!$G$22,MAX(F44:G44)*Data!$G$16),IF(B44=""Overdraft"",MAX(F44:G44)*Data!$G$18,IF(B44=""Commercial Bill"",MAX(F44:G44)*Data!$G$20,IF(OR(B44=""OFI home loan (Other financial institution)"",B44=""OFI Line of Credit (Other financial institution)""),J44*(1+Data!$G$26)+K44,J44+K44))))),0),0)","=IF(AND(NOT('Bridging Calculations'!O8),'Bridging Calculations'!P8),ROUNDUP(IF(OR(E44=""With my funds"",E44=""Add to bridging"",B44=""Margin Loan""),0,IF(B44=""Credit Card"",MAX(Data!$G$22,MAX(F44:G44)*Data!$G$16),IF(B44=""Overdraft"",MAX(F44:G44)*Data!$G$18,IF(B44=""Commercial Bill"",MAX(F44:G44)*Data!$G$20,IF(OR(B44=""OFI home loan (Other financial institution)"",B44=""OFI Line of Credit (Other financial institution)""),J44*(1+Data!$G$26)+K44,J44+K44))))),0),0)"
+44,15,"=IF(OR(B44=""CBA Variable Rate Home Loan"",B44=""CBA Fixed Rate Home Loan"",B44=""CBA Line of Credit""),NOT('Bridging Calculations'!P8),FALSE)","=IF(OR(B44=""CBA Variable Rate Home Loan"",B44=""CBA Fixed Rate Home Loan"",B44=""CBA Line of Credit""),NOT('Bridging Calculations'!P8),FALSE)"
+45,12,"=IF(AND(NOT('Bridging Calculations'!O9),'Bridging Calculations'!P9),ROUNDUP(IF(OR(E45=""With my funds"",E45=""Add to bridging"",B45=""Margin Loan""),0,IF(B45=""Credit Card"",MAX(Data!$G$22,MAX(F45:G45)*Data!$G$16),IF(B45=""Overdraft"",MAX(F45:G45)*Data!$G$18,IF(B45=""Commercial Bill"",MAX(F45:G45)*Data!$G$20,IF(OR(B45=""OFI home loan (Other financial institution)"",B45=""OFI Line of Credit (Other financial institution)""),J45*(1+Data!$G$26)+K45,J45+K45))))),0),0)","=IF(AND(NOT('Bridging Calculations'!O9),'Bridging Calculations'!P9),ROUNDUP(IF(OR(E45=""With my funds"",E45=""Add to bridging"",B45=""Margin Loan""),0,IF(B45=""Credit Card"",MAX(Data!$G$22,MAX(F45:G45)*Data!$G$16),IF(B45=""Overdraft"",MAX(F45:G45)*Data!$G$18,IF(B45=""Commercial Bill"",MAX(F45:G45)*Data!$G$20,IF(OR(B45=""OFI home loan (Other financial institution)"",B45=""OFI Line of Credit (Other financial institution)""),J45*(1+Data!$G$26)+K45,J45+K45))))),0),0)"
+45,15,"=IF(OR(B45=""CBA Variable Rate Home Loan"",B45=""CBA Fixed Rate Home Loan"",B45=""CBA Line of Credit""),NOT('Bridging Calculations'!P9),FALSE)","=IF(OR(B45=""CBA Variable Rate Home Loan"",B45=""CBA Fixed Rate Home Loan"",B45=""CBA Line of Credit""),NOT('Bridging Calculations'!P9),FALSE)"
+46,2,"=IF(NOT('Bridging Calculations'!R10),""Click """"Negative Gearing"""" button to input details."","""")","=IF(NOT('Bridging Calculations'!R10),""Click """"Negative Gearing"""" button to input details."","""")"
+46,11,Total existing consumer commitments (monthly) ,
+46,12,=SUM(L39:L45),=SUM(L39:L45)
+46,15,=OR(O39:O45),=OR(O39:O45)
+47,2,"=IF(O46,""Enter the current interest rate for this product. Refer CommBroker for more information"","""")","=IF(O46,""Enter the current interest rate for this product. Refer CommBroker for more information"","""")"
+48,2,Bridging Period:,
+50,5,Valuation of the property to be sold ,
+50,10,Additional amount required to settle on new property ,
+50,16,Bridging IO     ,
+50,17,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A59B4080>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A59B4080>
+50,19,Bridging repayment,
+51,5,Valuation of replacement property ,
+51,10,Projected Sale Proceeds ,
+51,11,=F50*Data!G11,=F50*Data!G11
+51,16,Bridging PI     ,
+51,17,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A59B7830>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A59B7830>
+51,19,Ongoing repayment 1,
+52,5,Monthly Charges on bridging debt ,
+52,10,Sale proceeds to be used for CBA debt deduction ,
+52,16,Ongoing IO  ,
+52,17,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A59B4380>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A59B4380>
+52,19,Ongoing repayment 2,
+53,5,Bridging Assessment Rate ,
+53,10,Combined CBA bridging debt ,
+53,11,"=SUMIF(E39:E45,""Add to bridging"",'Bridging Calculations'!S3:S9)+K50","=SUMIF(E39:E45,""Add to bridging"",'Bridging Calculations'!S3:S9)+K50"
+53,16,Ongoing PI  ,
+53,17,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A595A450>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A595A450>
+53,19,Ongoing repyament 3,
+54,10,Projected Ongoing Debt ,
+54,11,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A59B7470>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A59B7470>
+54,19,Ongoing repayment 4,
+55,19,Ongoing repayment 5,
+55,34,IO,
+56,10,Bridging commitments ,
+56,11,"=ROUNDUP(K53*((F53-F54)/12)+F52,0)","=ROUNDUP(K53*((F53-F54)/12)+F52,0)"
+56,19,Ongoing repyament 6,
+56,34,PI,
+57,10,Total Proposed Monthly Commitments during bridging period ,
+57,11,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A59B7950>,<openpyxl.worksheet.formula.ArrayFormula object at 0x00000254A59B7950>
+59,6,Proposed loan result (bridging): ,
+59,7,"=IF('Bridging Calculations'!Z15,'Bridging Calculations'!V24,""Input Incomplete"")","=IF('Bridging Calculations'!Z15,'Bridging Calculations'!V24,""Input Incomplete"")"
+59,11,Debt Servicing Ratio (bridging): ,
+59,12,"=IF('Bridging Calculations'!Z15,'Bridging Calculations'!V16,"""")","=IF('Bridging Calculations'!Z15,'Bridging Calculations'!V16,"""")"
+60,6,Net Cash Position: ,
+60,7,='Bridging Calculations'!V21,='Bridging Calculations'!V21
+62,2,Ongoing Period:,
+64,2,Product,
+64,3,Loan Type,
+64,4,Is this tax deductible?,
+64,5,Balance/Limit,
+64,6,Assessment Rate,
+64,9,Loan Term,
+64,10,Interest only period,
+64,11,Monthly Charges,
+64,12,Repayments,
+65,12,"=IF(AND(NOT('Bridging Calculations'!O14),'Bridging Calculations'!P14),ROUNDUP(IF(B65=""Credit Card"",E65*Data!$G$16,-PMT(MAX(F65,Data!$G$32)/12,(I65-J65)*12,E65)+K65),0),0)","=IF(AND(NOT('Bridging Calculations'!O14),'Bridging Calculations'!P14),ROUNDUP(IF(B65=""Credit Card"",E65*Data!$G$16,-PMT(MAX(F65,Data!$G$32)/12,(I65-J65)*12,E65)+K65),0),0)"
+66,12,"=IF(AND(NOT('Bridging Calculations'!O15),'Bridging Calculations'!P15),ROUNDUP(IF(B66=""Credit Card"",E66*Data!$G$16,-PMT(MAX(F66,Data!$G$32)/12,(I66-J66)*12,E66)+K66),0),0)","=IF(AND(NOT('Bridging Calculations'!O15),'Bridging Calculations'!P15),ROUNDUP(IF(B66=""Credit Card"",E66*Data!$G$16,-PMT(MAX(F66,Data!$G$32)/12,(I66-J66)*12,E66)+K66),0),0)"
+67,12,"=IF(AND(NOT('Bridging Calculations'!O16),'Bridging Calculations'!P16),ROUNDUP(IF(B67=""Credit Card"",E67*Data!$G$16,-PMT(MAX(F67,Data!$G$32)/12,(I67-J67)*12,E67)+K67),0),0)","=IF(AND(NOT('Bridging Calculations'!O16),'Bridging Calculations'!P16),ROUNDUP(IF(B67=""Credit Card"",E67*Data!$G$16,-PMT(MAX(F67,Data!$G$32)/12,(I67-J67)*12,E67)+K67),0),0)"
+68,12,"=IF(AND(NOT('Bridging Calculations'!O17),'Bridging Calculations'!P17),ROUNDUP(IF(B68=""Credit Card"",E68*Data!$G$16,-PMT(MAX(F68,Data!$G$32)/12,(I68-J68)*12,E68)+K68),0),0)","=IF(AND(NOT('Bridging Calculations'!O17),'Bridging Calculations'!P17),ROUNDUP(IF(B68=""Credit Card"",E68*Data!$G$16,-PMT(MAX(F68,Data!$G$32)/12,(I68-J68)*12,E68)+K68),0),0)"
+69,12,"=IF(AND(NOT('Bridging Calculations'!O18),'Bridging Calculations'!P18),ROUNDUP(IF(B69=""Credit Card"",E69*Data!$G$16,-PMT(MAX(F69,Data!$G$32)/12,(I69-J69)*12,E69)+K69),0),0)","=IF(AND(NOT('Bridging Calculations'!O18),'Bridging Calculations'!P18),ROUNDUP(IF(B69=""Credit Card"",E69*Data!$G$16,-PMT(MAX(F69,Data!$G$32)/12,(I69-J69)*12,E69)+K69),0),0)"
+70,12,"=IF(AND(NOT('Bridging Calculations'!O19),'Bridging Calculations'!P19),ROUNDUP(IF(B70=""Credit Card"",E70*Data!$G$16,-PMT(MAX(F70,Data!$G$32)/12,(I70-J70)*12,E70)+K70),0),0)","=IF(AND(NOT('Bridging Calculations'!O19),'Bridging Calculations'!P19),ROUNDUP(IF(B70=""Credit Card"",E70*Data!$G$16,-PMT(MAX(F70,Data!$G$32)/12,(I70-J70)*12,E70)+K70),0),0)"
+71,2,"=IF(NOT('Bridging Calculations'!R20),""Click """"Negative Gearing"""" button to input details."","""")","=IF(NOT('Bridging Calculations'!R20),""Click """"Negative Gearing"""" button to input details."","""")"
+71,11,Total Proposed Monthly Commitments Ongoing ,
+71,12,"=SUM(L65:L70)+SUMIF(E39:E45,""No"",L39:L45)","=SUM(L65:L70)+SUMIF(E39:E45,""No"",L39:L45)"
+73,6,Proposed loan result (Ongoing): ,
+73,7,"=IF('Bridging Calculations'!Z15,'Bridging Calculations'!W24,""Input Incomplete"")","=IF('Bridging Calculations'!Z15,'Bridging Calculations'!W24,""Input Incomplete"")"
+73,11,Debt Servicing Ratio (Ongoing): ,
+73,12,"=IF('Bridging Calculations'!Z15,'Bridging Calculations'!W16,"""")","=IF('Bridging Calculations'!Z15,'Bridging Calculations'!W16,"""")"
+74,6,Net Cash Position: ,
+74,7,='Bridging Calculations'!W21,='Bridging Calculations'!W21
+75,6,Debt to Income (DTI): ,
+75,7,"=IF('Bridging Calculations'!Z15,'Bridging Calculations'!B42,"""")","=IF('Bridging Calculations'!Z15,'Bridging Calculations'!B42,"""")"
+76,4,"=IF(OR(G75<=6,G75=""""), "" "","" The debt to income ratio is high. Ensure all income sources and account variations are captured accurately."")","=IF(OR(G75<=6,G75=""""), "" "","" The debt to income ratio is high. Ensure all income sources and account variations are captured accurately."")"
+77,2,"Important Information: This assessment is based solely on the information you have provided.  It is not to be used or considered an approval for a loan.  The calculations are intended as a guide only and are an indication of only one element in the Bank's credit assessment criteria.  The figures and formulae, including interest rates, used within this calculation are subject to change.  Applications for finance are subject to the Bank's normal credit approval.  Full terms and conditions will be included in the Bank's Loan Offer.  Fees and charges are payable.",
+79,12,Product of the Commonwealth Bank  ABN 48 123 123 124,
